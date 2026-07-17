@@ -49,8 +49,7 @@
     --ok:#12986E; --warn:#B07D18;
     --shadow:0 1px 2px rgba(28,37,35,.04),0 6px 20px rgba(28,37,35,.05);
     --shadow-lift:0 3px 8px rgba(28,37,35,.07),0 18px 40px rgba(28,37,35,.11);
-    --serif:Georgia,'Times New Roman',serif;
-    --sans:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+    --sans:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Liberation Sans',sans-serif;
     --r:15px;
   }
   @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
@@ -96,7 +95,7 @@
   .brand .kick{display:inline-flex;align-items:center;gap:6px;font:600 11px/1 var(--sans);letter-spacing:.13em;
     text-transform:uppercase;color:var(--brand)}
   .brand h1{margin:0;font:700 20px/1.15 var(--sans);letter-spacing:-.015em}
-  .brand .sub{display:inline-flex;align-items:center;gap:7px;font:italic 400 13.5px/1.4 var(--serif);color:var(--muted)}
+  .brand .sub{display:inline-flex;align-items:center;gap:7px;font:italic 400 13px/1.4 var(--sans);color:var(--muted)}
   .brand .sub .i{color:var(--faint)}
   .hstats{display:flex;align-items:center;gap:16px}
   .ring{width:54px;height:54px;flex:none;position:relative}
@@ -134,7 +133,7 @@
   .phase h2{margin:7px 0 9px;font:700 24px/1.12 var(--sans);letter-spacing:-.015em;text-wrap:balance}
   .phase .pmeta{display:flex;gap:18px;flex-wrap:wrap;font:500 13px/1.4 var(--sans);opacity:.95}
   .phase .pmeta span{display:inline-flex;align-items:center;gap:7px}
-  .phase .pmeta .mantra{font:italic 400 14px/1.4 var(--serif)}
+  .phase .pmeta .mantra{font:italic 400 13.5px/1.4 var(--sans)}
   .phase::after{content:"";position:absolute;right:-50px;top:-50px;width:190px;height:190px;border-radius:50%;
     background:rgba(255,255,255,.06)}
 
@@ -221,7 +220,7 @@
   .alarm{background:linear-gradient(180deg,var(--gold-bg),var(--surface));border-color:color-mix(in srgb,var(--milestone) 26%,var(--line))}
   .alarm .time{display:inline-flex;align-items:center;gap:7px;font:700 11.5px/1 var(--sans);letter-spacing:.09em;
     color:var(--milestone);text-transform:uppercase}
-  .alarm p{font:italic 400 14px/1.55 var(--serif);color:var(--ink);margin:11px 0}
+  .alarm p{font:italic 400 13.5px/1.6 var(--sans);color:var(--ink);margin:11px 0}
   .alarm .say{font:600 13px/1.5 var(--sans);color:var(--brand-ink);background:var(--surface);
     border-left:3px solid var(--brand);padding:9px 12px;border-radius:0 9px 9px 0}
   .alarm .end{display:inline-flex;align-items:center;gap:7px}
