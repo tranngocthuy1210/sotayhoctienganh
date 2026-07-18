@@ -35,6 +35,7 @@
 <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></symbol>
 <symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol>
 <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+<symbol id="i-volume" viewBox="0 0 24 24"><path d="M11 4.7a.7.7 0 0 0-1.2-.5L6.4 7.6A1.4 1.4 0 0 1 5.4 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.4a1.4 1.4 0 0 1 1 .4l3.4 3.4a.7.7 0 0 0 1.2-.5z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.4 5.6a9 9 0 0 1 0 12.7"/></symbol>
 </defs></svg>
 
 <style>
@@ -346,6 +347,8 @@
   .myitem .mi-main{flex:1;min-width:0}
   .myitem .mi-term,.myitem .mi-title{font:700 13.5px/1.35 var(--sans);color:var(--ink)}
   .myitem .mi-title{color:var(--c);margin-bottom:4px}
+  .myitem .mi-term-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .myitem .mi-ipa{font:600 12px/1.3 var(--sans);color:var(--muted);margin-top:2px}
   .myitem .mi-mean{font:500 12.5px/1.4 var(--sans);color:var(--muted)}
   .myitem .mi-note{font:500 12px/1.4 var(--sans);color:var(--faint);margin-top:2px}
   .myitem .mi-body{font:500 13px/1.5 var(--sans);color:var(--ink);white-space:pre-wrap}
@@ -358,6 +361,39 @@
   .mi-del:hover{color:var(--damphan);border-color:var(--damphan)}
   .reveal{opacity:0;transform:translateY(8px);animation:rise .5s ease forwards}
   @keyframes rise{to{opacity:1;transform:none}}
+
+  /* Phát âm + IPA */
+  .pronbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:16px 0 2px;padding:11px 15px;
+    border:1px solid var(--line);border-radius:13px;background:var(--surface);box-shadow:var(--shadow)}
+  .pronbar-lbl{display:inline-flex;align-items:center;gap:7px;font:700 12.5px/1 var(--sans);color:var(--ink)}
+  .pronbar-lbl .i{color:var(--brand)}
+  .segwrap{display:inline-flex;border:1px solid var(--line-strong);border-radius:9px;overflow:hidden;background:var(--surface-2)}
+  .seg{appearance:none;border:none;background:none;cursor:pointer;font:600 12px/1 var(--sans);color:var(--muted);padding:7px 13px}
+  .seg+.seg{border-left:1px solid var(--line-strong)}
+  .seg[aria-pressed="true"]{background:var(--brand);color:#fff}
+  .seg:hover:not([aria-pressed="true"]){color:var(--brand)}
+  .seg:focus-visible{outline:2px solid var(--brand);outline-offset:-2px}
+  .pronbar-hint{font:500 11.5px/1.4 var(--sans);color:var(--faint);margin-left:auto;max-width:280px}
+  .say{appearance:none;cursor:pointer;border:1px solid color-mix(in srgb,var(--brand) 30%,var(--line));
+    background:color-mix(in srgb,var(--brand) 9%,var(--surface));color:var(--brand);border-radius:7px;
+    padding:3px 5px;display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;line-height:0;flex:none}
+  .say:hover{background:color-mix(in srgb,var(--brand) 18%,var(--surface))}
+  .say.speaking{background:var(--brand);color:#fff;border-color:var(--brand)}
+  .say:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+  .say .i{width:14px;height:14px}
+  .ipa{font:600 12px/1.3 var(--sans);color:var(--muted)}
+  /* IPA + loa trong bảng Sản phẩm */
+  .tbl td.pron-cell{white-space:nowrap}
+  .tbl td.pron-cell .ipa{margin-left:7px}
+  /* Chip từ vựng có phát âm (wlwords) */
+  .wlwords .wlword{display:inline-flex;align-items:center;gap:7px;padding:5px 9px;border-radius:8px;
+    background:var(--surface-2);border:1px solid var(--line)}
+  .wlwords .wlword>span{background:none;border:none;padding:0;font:700 12px/1.2 var(--sans);color:var(--ink)}
+  .wlwords .wlword.phrase>span{font:600 12px/1.3 var(--sans)}
+  .wlwords .wlword .ipa{font:600 11.5px/1.2 var(--sans);color:var(--muted)}
+  .wlwords .wlword .say{padding:2px 4px}
+  /* Loa trong kịch bản */
+  .sl .say,.qa .txt .say{margin-left:7px}
 </style>
 
 <header class="top">
@@ -401,6 +437,18 @@
       <div><h2>Sổ tay: Từ vựng &amp; Kịch bản</h2>
         <p>Hai tab bên dưới — bấm để chuyển. Mọi chữ trong Sổ tay đều bấm vào sửa trực tiếp được, tự lưu trên máy.</p></div>
     </div>
+    <div class="pronbar" id="pronbar">
+      <span class="pronbar-lbl"><svg class="i i-sm"><use href="#i-volume"/></svg>Phát âm</span>
+      <div class="segwrap" role="group" aria-label="Chọn giọng">
+        <button type="button" class="seg" data-acc="us" aria-pressed="true">Mỹ</button>
+        <button type="button" class="seg" data-acc="uk" aria-pressed="false">Anh</button>
+      </div>
+      <div class="segwrap" role="group" aria-label="Tốc độ đọc">
+        <button type="button" class="seg" data-rate="0.7" aria-pressed="false">Chậm</button>
+        <button type="button" class="seg" data-rate="1" aria-pressed="true">Thường</button>
+      </div>
+      <span class="pronbar-hint">Bấm nút loa cạnh mỗi từ để nghe. Đổi Mỹ/Anh thì IPA và giọng đọc đổi theo.</span>
+    </div>
     <div class="tabbar" role="tablist">
       <button class="tab active" data-tab="voc" role="tab" aria-selected="true"><svg class="i"><use href="#i-layers"/></svg>Từ vựng</button>
       <button class="tab" data-tab="script" role="tab" aria-selected="false"><svg class="i"><use href="#i-mic"/></svg>Kịch bản</button>
@@ -418,7 +466,7 @@
         </tbody></table></div>
         <h4><span class="tag">Tuần 5</span>Sản phẩm của bạn — 60 từ</h4>
         <p>Nhóm quan trọng nhất. Bạn không thể bán thứ mình không gọi tên được.</p>
-        <div class="tblwrap"><table class="tbl"><thead><tr><th>Tiếng Anh</th><th>Nghĩa</th><th>Bẫy phát âm</th></tr></thead><tbody>
+        <div class="tblwrap"><table class="tbl" id="tbl-sanpham"><thead><tr><th>Tiếng Anh</th><th>Nghĩa</th><th>Bẫy phát âm</th></tr></thead><tbody>
           <tr><td class="en">POS system</td><td>Máy tính tiền / hệ thống bán hàng</td><td class="tip">đọc “pi-âu-ES”, không đọc “pốt”</td></tr>
           <tr><td class="en">KDS</td><td>Màn hình bếp (Kitchen Display System)</td><td class="tip">—</td></tr>
           <tr><td class="en">table management</td><td>quản lý bàn / sơ đồ bàn</td><td class="tip">—</td></tr>
@@ -447,6 +495,7 @@
         </div>
         <form class="myform" data-form="vocab" autocomplete="off">
           <input name="term" placeholder="Từ / cụm (bắt buộc)" required>
+          <input name="ipa" placeholder="IPA — dán từ Cambridge (không bắt buộc)">
           <input name="meaning" placeholder="Nghĩa tiếng Việt">
           <input name="group_name" placeholder="Nhóm (vd: Sản phẩm)">
           <input name="note" placeholder="Ghi chú / mẹo phát âm">
@@ -904,6 +953,183 @@
 })();
 </script>
 
+<script>
+/* ➊ Nghe phát âm + IPA — soạn tay theo Cambridge, giọng Mỹ (US) mặc định */
+(function(){
+  var PKEY="ielts90.pron.v1", PRON={acc:"us",rate:1};
+  try{var sv=JSON.parse(localStorage.getItem(PKEY)||"{}");if(sv&&sv.acc)PRON.acc=(sv.acc==="uk"?"uk":"us");if(sv&&(sv.rate==0.7||sv.rate==1))PRON.rate=+sv.rate;}catch(e){}
+  function savePron(){try{localStorage.setItem(PKEY,JSON.stringify(PRON));}catch(e){}}
+
+  // IPA chuẩn Cambridge — {us, uk}. Key = chữ tiếng Anh viết thường.
+  var IPA={
+    // Tuần 5 — Sản phẩm
+    "pos system":{us:"ˌpiː.oʊˈes ˈsɪs.təm",uk:"ˌpiː.əʊˈes ˈsɪs.təm"},
+    "kds":{us:"ˌkeɪ.diːˈes",uk:"ˌkeɪ.diːˈes"},
+    "table management":{us:"ˈteɪ.bəl ˈmæn.ɪdʒ.mənt",uk:"ˈteɪ.bl̩ ˈmæn.ɪdʒ.mənt"},
+    "inventory":{us:"ˈɪn.vən.tɔːr.i",uk:"ˈɪn.vən.tər.i"},
+    "stock / out of stock":{us:"stɑːk / ˌaʊt əv ˈstɑːk",uk:"stɒk / ˌaʊt əv ˈstɒk"},
+    "order":{us:"ˈɔːr.dɚ",uk:"ˈɔː.dər"},
+    "receipt":{us:"rɪˈsiːt",uk:"rɪˈsiːt"},
+    "revenue":{us:"ˈrev.ə.nuː",uk:"ˈrev.ən.juː"},
+    "chain / franchise":{us:"tʃeɪn / ˈfræn.tʃaɪz",uk:"tʃeɪn / ˈfræn.tʃaɪz"},
+    "outlet / branch":{us:"ˈaʊt.let / bræntʃ",uk:"ˈaʊt.lət / brɑːntʃ"},
+    "integration":{us:"ˌɪn.təˈɡreɪ.ʃən",uk:"ˌɪn.tɪˈɡreɪ.ʃən"},
+    "offline mode":{us:"ˌɑːf.laɪn ˈmoʊd",uk:"ˌɒf.laɪn ˈməʊd"},
+    // Tuần 6 — Nhân sự
+    "target":{us:"ˈtɑːr.ɡɪt",uk:"ˈtɑː.ɡɪt"},
+    "kpi":{us:"ˌkeɪ.piːˈaɪ",uk:"ˌkeɪ.piːˈaɪ"},
+    "quota":{us:"ˈkwoʊ.tə",uk:"ˈkwəʊ.tə"},
+    "pipeline":{us:"ˈpaɪp.laɪn",uk:"ˈpaɪp.laɪn"},
+    "lead":{us:"liːd",uk:"liːd"},
+    "deal":{us:"diːl",uk:"diːl"},
+    "close a deal":{us:"ˌkloʊz ə ˈdiːl",uk:"ˌkləʊz ə ˈdiːl"},
+    "follow up":{us:"ˈfɑː.loʊ ˌʌp",uk:"ˈfɒl.əʊ ˌʌp"},
+    "demo":{us:"ˈdem.oʊ",uk:"ˈdem.əʊ"},
+    "onboard":{us:"ˌɑːnˈbɔːrd",uk:"ˌɒnˈbɔːd"},
+    "training":{us:"ˈtreɪ.nɪŋ",uk:"ˈtreɪ.nɪŋ"},
+    "deadline":{us:"ˈded.laɪn",uk:"ˈded.laɪn"},
+    "progress":{us:"ˈprɑː.ɡres",uk:"ˈprəʊ.ɡres"},
+    "update":{us:"ˈʌp.deɪt",uk:"ˈʌp.deɪt"},
+    "support":{us:"səˈpɔːrt",uk:"səˈpɔːt"},
+    "struggle":{us:"ˈstrʌɡ.əl",uk:"ˈstrʌɡ.əl"},
+    "mistake":{us:"mɪˈsteɪk",uk:"mɪˈsteɪk"},
+    "improve":{us:"ɪmˈpruːv",uk:"ɪmˈpruːv"},
+    "feedback":{us:"ˈfiːd.bæk",uk:"ˈfiːd.bæk"},
+    "praise":{us:"preɪz",uk:"preɪz"},
+    "concern":{us:"kənˈsɜːrn",uk:"kənˈsɜːn"},
+    "workload":{us:"ˈwɜːrk.loʊd",uk:"ˈwɜːk.ləʊd"},
+    "overtime":{us:"ˈoʊ.vɚ.taɪm",uk:"ˈəʊ.və.taɪm"},
+    "resign":{us:"rɪˈzaɪn",uk:"rɪˈzaɪn"},
+    "promote":{us:"prəˈmoʊt",uk:"prəˈməʊt"},
+    // Tuần 7 — Đàm phán
+    "contract":{us:"ˈkɑːn.trækt",uk:"ˈkɒn.trækt"},
+    "quote":{us:"kwoʊt",uk:"kwəʊt"},
+    "price":{us:"praɪs",uk:"praɪs"},
+    "cost":{us:"kɑːst",uk:"kɒst"},
+    "discount":{us:"ˈdɪs.kaʊnt",uk:"ˈdɪs.kaʊnt"},
+    "budget":{us:"ˈbʌdʒ.ɪt",uk:"ˈbʌdʒ.ɪt"},
+    "payment terms":{us:"ˈpeɪ.mənt ˌtɜːrmz",uk:"ˈpeɪ.mənt ˌtɜːmz"},
+    "monthly fee":{us:"ˌmʌnθ.li ˈfiː",uk:"ˌmʌnθ.li ˈfiː"},
+    "one-time fee":{us:"ˌwʌn.taɪm ˈfiː",uk:"ˌwʌn.taɪm ˈfiː"},
+    "license":{us:"ˈlaɪ.səns",uk:"ˈlaɪ.səns"},
+    "subscription":{us:"səbˈskrɪp.ʃən",uk:"səbˈskrɪp.ʃən"},
+    "per outlet":{us:"pɚ ˈaʊt.let",uk:"pə ˈaʊt.lət"},
+    "deposit":{us:"dɪˈpɑː.zɪt",uk:"dɪˈpɒz.ɪt"},
+    "sign":{us:"saɪn",uk:"saɪn"},
+    "extend":{us:"ɪkˈstend",uk:"ɪkˈstend"},
+    "renew":{us:"rɪˈnuː",uk:"rɪˈnjuː"},
+    "cancel":{us:"ˈkæn.səl",uk:"ˈkæn.səl"},
+    "trial":{us:"ˈtraɪ.əl",uk:"ˈtraɪ.əl"},
+    "free trial":{us:"ˌfriː ˈtraɪ.əl",uk:"ˌfriː ˈtraɪ.əl"},
+    "implementation":{us:"ˌɪm.plə.menˈteɪ.ʃən",uk:"ˌɪm.plɪ.menˈteɪ.ʃən"},
+    "go-live":{us:"ˈɡoʊ.laɪv",uk:"ˈɡəʊ.laɪv"},
+    "sla":{us:"ˌes.elˈeɪ",uk:"ˌes.elˈeɪ"},
+    "support hours":{us:"səˈpɔːrt ˌaʊɚz",uk:"səˈpɔːt ˌaʊəz"},
+    "upgrade":{us:"ˈʌp.ɡreɪd",uk:"ˈʌp.ɡreɪd"},
+    "scope":{us:"skoʊp",uk:"skəʊp"}
+  };
+
+  function attr(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;");}
+  function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+  var VOL='<svg class="i i-sm"><use href="#i-volume"/></svg>';
+  function sayBtn(t){return '<button type="button" class="say" data-say="'+attr(t)+'" title="Nghe phát âm" aria-label="Nghe phát âm">'+VOL+'</button>';}
+
+  // ---- Text-to-speech ----
+  var voices=[];
+  function loadVoices(){try{voices=window.speechSynthesis.getVoices()||[];}catch(e){voices=[];}}
+  if("speechSynthesis" in window){loadVoices();try{window.speechSynthesis.onvoiceschanged=loadVoices;}catch(e){}}
+  function pickVoice(lang){
+    var en=voices.filter(function(v){return /^en/i.test(v.lang);});
+    var want=lang.toLowerCase().replace("_","-");
+    var exact=en.filter(function(v){return v.lang.toLowerCase().replace("_","-")===want;});
+    if(exact.length)return exact[0];
+    var reg=want.split("-")[1];
+    var byReg=en.filter(function(v){return v.lang.toLowerCase().indexOf(reg)>-1;});
+    if(byReg.length)return byReg[0];
+    return en[0]||null;
+  }
+  var speakingBtn=null;
+  function markStop(){if(speakingBtn){speakingBtn.classList.remove("speaking");speakingBtn=null;}}
+  function speak(text,btn){
+    if(!text)return;
+    if(!("speechSynthesis" in window)){alert("Trình duyệt này không hỗ trợ đọc phát âm.");return;}
+    try{window.speechSynthesis.cancel();}catch(e){}
+    markStop();
+    var say=String(text).replace(/\s*\/\s*/g,", ").replace(/…/g," ").replace(/\[[^\]]*\]/g," ").trim();
+    if(!say)return;
+    var lang=PRON.acc==="uk"?"en-GB":"en-US";
+    var u=new SpeechSynthesisUtterance(say);
+    u.lang=lang;u.rate=PRON.rate;
+    var v=pickVoice(lang);if(v)u.voice=v;
+    if(btn){speakingBtn=btn;btn.classList.add("speaking");
+      u.onend=markStop;u.onerror=markStop;}
+    try{window.speechSynthesis.speak(u);}catch(e){markStop();}
+  }
+
+  // ---- Áp dụng giọng: đổi IPA + trạng thái nút ----
+  function applyAccent(){
+    Array.prototype.forEach.call(document.querySelectorAll(".ipa[data-us]"),function(s){
+      s.textContent=(PRON.acc==="uk"?s.getAttribute("data-uk"):s.getAttribute("data-us"))||"";
+    });
+    Array.prototype.forEach.call(document.querySelectorAll(".seg[data-acc]"),function(b){
+      b.setAttribute("aria-pressed",b.getAttribute("data-acc")===PRON.acc?"true":"false");});
+    Array.prototype.forEach.call(document.querySelectorAll(".seg[data-rate]"),function(b){
+      b.setAttribute("aria-pressed",(+b.getAttribute("data-rate"))===PRON.rate?"true":"false");});
+  }
+  function ipaSpan(d){return '<span class="ipa" data-us="'+attr(d.us)+'" data-uk="'+attr(d.uk)+'">'+esc(d.us)+'</span>';}
+
+  // ---- Gắn UI phát âm vào nội dung tĩnh (chạy SAU khi khôi phục sửa tay) ----
+  function enhanceStatic(){
+    // Bảng Sản phẩm: thêm cột "Nghe · IPA"
+    var tbl=document.getElementById("tbl-sanpham");
+    if(tbl && !tbl.getAttribute("data-pron")){
+      tbl.setAttribute("data-pron","1");
+      var htr=tbl.querySelector("thead tr");
+      if(htr){var th=document.createElement("th");th.textContent="Nghe · IPA";htr.appendChild(th);}
+      Array.prototype.forEach.call(tbl.querySelectorAll("tbody tr"),function(tr){
+        var en=tr.querySelector(".en"),td=document.createElement("td");td.className="pron-cell";
+        if(en){var t=en.textContent.trim(),d=IPA[t.toLowerCase()];
+          td.innerHTML=sayBtn(t)+(d?ipaSpan(d):"");}
+        tr.appendChild(td);
+      });
+    }
+    // Chip từ vựng (wlwords) ở cả 2 tab
+    Array.prototype.forEach.call(document.querySelectorAll("#tab-voc .wlwords>span,#tab-script .wlwords>span"),function(sp){
+      if(sp.parentNode.classList.contains("wlword"))return;
+      var t=sp.textContent.trim(),d=IPA[t.toLowerCase()];
+      var wrap=document.createElement("span");wrap.className="wlword"+(d?"":" phrase");
+      sp.parentNode.insertBefore(wrap,sp);wrap.appendChild(sp);
+      wrap.insertAdjacentHTML("beforeend",sayBtn(t));
+      if(d)wrap.insertAdjacentHTML("beforeend",ipaSpan(d));
+    });
+    // Kịch bản: chỉ nút loa (audio cả câu)
+    Array.prototype.forEach.call(document.querySelectorAll("#tab-script .script .sl,#tab-script .qa .txt"),function(el){
+      if(el.querySelector(".say"))return;
+      var t=el.textContent.trim();if(!t)return;
+      el.insertAdjacentHTML("beforeend"," "+sayBtn(t));
+    });
+  }
+
+  // Nút chọn giọng / tốc độ
+  Array.prototype.forEach.call(document.querySelectorAll(".seg[data-acc]"),function(b){
+    b.addEventListener("click",function(){PRON.acc=b.getAttribute("data-acc")==="uk"?"uk":"us";savePron();applyAccent();});});
+  Array.prototype.forEach.call(document.querySelectorAll(".seg[data-rate]"),function(b){
+    b.addEventListener("click",function(){PRON.rate=+b.getAttribute("data-rate");savePron();applyAccent();});});
+
+  // Bấm nút loa ở bất cứ đâu (tĩnh hoặc "Của tôi")
+  document.addEventListener("click",function(e){
+    var b=e.target.closest?e.target.closest(".say"):null;if(!b)return;
+    e.preventDefault();speak(b.getAttribute("data-say"),b);
+  });
+
+  enhanceStatic();
+  applyAccent();
+
+  // Cho khối "Của tôi" (script sau) dùng chung
+  window.PRON={speak:speak,sayBtn:sayBtn,ipaSpanFor:function(t){var d=IPA[String(t||"").trim().toLowerCase()];return d?ipaSpan(d):"";},refresh:function(){applyAccent();}};
+})();
+</script>
+
 <script src="./config.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
@@ -944,9 +1170,11 @@
 
   function itemHTML(k,it){
     if(k==="vocab"){
+      var sb=window.PRON?window.PRON.sayBtn(it.term):"";
       return '<div class="myitem" data-id="'+esc(it.id)+'"><div class="mi-main">'+
         (it.group_name?'<span class="mi-grp" contenteditable="true" data-f="group_name">'+esc(it.group_name)+'</span><br>':'')+
-        '<div class="mi-term" contenteditable="true" data-f="term">'+esc(it.term)+'</div>'+
+        '<div class="mi-term-row"><div class="mi-term" contenteditable="true" data-f="term">'+esc(it.term)+'</div>'+sb+'</div>'+
+        (it.ipa?'<div class="mi-ipa" contenteditable="true" data-f="ipa">'+esc(it.ipa)+'</div>':'')+
         '<div class="mi-mean" contenteditable="true" data-f="meaning">'+esc(it.meaning||"")+'</div>'+
         (it.note?'<div class="mi-note" contenteditable="true" data-f="note">'+esc(it.note)+'</div>':'')+
         '</div><button class="mi-del" title="Xoá" aria-label="Xoá">'+ic("i-trash")+'</button></div>';

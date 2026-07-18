@@ -28,10 +28,13 @@ create table if not exists vocab (
   id uuid primary key default gen_random_uuid(),
   group_name text default '',
   term text not null,
+  ipa text default '',
   meaning text default '',
   note text default '',
   created_at timestamptz default now()
 );
+-- Nếu bảng vocab đã tạo TRƯỚC khi có tính năng IPA, chạy thêm dòng này 1 lần:
+-- alter table vocab add column if not exists ipa text default '';
 
 create table if not exists scripts (
   id uuid primary key default gen_random_uuid(),
