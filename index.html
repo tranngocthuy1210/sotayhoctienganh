@@ -396,6 +396,29 @@
   .wlwords .wlword .say{padding:2px 4px}
   /* Loa trong kịch bản */
   .sl .say,.qa .txt .say{margin-left:7px}
+  /* Bộ 600 từ theo chủ đề */
+  #voc600{margin:10px 0 6px}
+  details.acc.voc-theme{margin:10px 0}
+  .voc-list{padding:2px 16px 12px}
+  details.vw{border-bottom:1px solid var(--line)}
+  details.vw:last-child{border-bottom:none}
+  details.vw>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:10px 4px;flex-wrap:wrap}
+  details.vw>summary::-webkit-details-marker{display:none}
+  details.vw>summary:focus-visible{outline:2px solid var(--brand);outline-offset:-2px;border-radius:7px}
+  .vw-word{font:700 14px/1.2 var(--sans);color:var(--ink);min-width:104px}
+  .vw .ipa{font:600 12px/1.2 var(--sans);color:var(--muted)}
+  .vw-pos{font:700 9px/1 var(--sans);text-transform:uppercase;letter-spacing:.03em;color:var(--c);
+    background:color-mix(in srgb,var(--c) 12%,var(--surface));border:1px solid color-mix(in srgb,var(--c) 24%,transparent);
+    padding:3px 6px;border-radius:6px;flex:none}
+  .vw-mean{font:500 13px/1.4 var(--sans);color:var(--ink);flex:1;min-width:120px}
+  .vw-chev{margin-left:auto;color:var(--faint);transition:transform .2s;flex:none;width:15px;height:15px}
+  details.vw[open]>summary .vw-chev{transform:rotate(90deg)}
+  .vw-body{padding:0 4px 12px}
+  .vw-ex{display:flex;align-items:flex-start;gap:8px;font:500 13px/1.5 var(--sans);color:var(--ink);
+    background:var(--surface-2);border-left:3px solid var(--c);border-radius:0 8px 8px 0;padding:8px 11px}
+  .vw-ex .exq{flex:1}
+  .vw-tip{font:500 12px/1.45 var(--sans);color:var(--muted);margin-top:7px;display:flex;gap:7px}
+  .vw-tip .i{color:var(--c);flex:none;margin-top:1px}
 </style>
 
 <header class="top">
@@ -482,13 +505,9 @@
     <div class="tabpanel" id="tab-voc">
       <div class="acc-body">
         <div class="rule-gold" id="acc-voc">Luật vàng: 10 từ/ngày, mỗi từ phải NÓI thành tiếng 1 câu có ngữ cảnh thật của bạn. Không nói ra tiếng = chưa học.</div>
-        <h4><span class="tag">Tháng 1</span>300 từ nền tảng</h4>
-        <div class="tblwrap"><table class="tbl"><thead><tr><th>Nhóm</th><th>Số từ</th><th>Ví dụ</th></tr></thead><tbody>
-          <tr><td>Động từ đời sống</td><td>100</td><td class="tip">go, take, get, make, work, meet, send, need, want, try…</td></tr>
-          <tr><td>Bản thân &amp; gia đình</td><td>60</td><td class="tip">married, hometown, siblings, apartment, cousin…</td></tr>
-          <tr><td>Công việc (F&amp;B / phần mềm)</td><td>80</td><td class="tip">client, deadline, meeting, report, team, project, deploy, issue…</td></tr>
-          <tr><td>Nối câu &amp; cảm xúc</td><td>60</td><td class="tip">because, however, actually, busy, tired, excited, honestly…</td></tr>
-        </tbody></table></div>
+        <h4 id="voc600-head"><span class="tag">Nền tảng</span>600 từ thông dụng theo chủ đề</h4>
+        <p>Bấm vào từng chủ đề để mở danh sách từ, rồi bấm 1 từ để xem nghĩa, ví dụ và mẹo. Mỗi từ có IPA (giọng Mỹ) + nút loa nghe. Học 10 từ/ngày, nhớ NÓI thành tiếng.</p>
+        <div id="voc600"><div class="myempty">Đang tải bộ 600 từ…</div></div>
         <h4><span class="tag">Tuần 5</span>Sản phẩm của bạn — 60 từ</h4>
         <p>Nhóm quan trọng nhất. Bạn không thể bán thứ mình không gọi tên được.</p>
         <div class="tblwrap"><table class="tbl" id="tbl-sanpham"><thead><tr><th>Tiếng Anh</th><th>Nghĩa</th><th>Bẫy phát âm</th></tr></thead><tbody>
@@ -1132,6 +1151,43 @@
 
   // Cho khối "Của tôi" (script sau) dùng chung
   window.PRON={speak:speak,sayBtn:sayBtn,ipaSpanFor:function(t){var d=IPA[String(t||"").trim().toLowerCase()];return d?ipaSpan(d):"";},refresh:function(){applyAccent();}};
+})();
+</script>
+
+<script src="./data-vocab.js"></script>
+<script>
+/* Render bộ 600 từ theo chủ đề vào #voc600 */
+(function(){
+  var host=document.getElementById("voc600");if(!host)return;
+  if(!window.VOCAB600){host.innerHTML='<div class="myempty">Không tải được bộ 600 từ (data-vocab.js).</div>';return;}
+  var CVAR={noi:"--noi",nghe:"--nghe",doc:"--doc",viet:"--viet",damphan:"--damphan",tonghop:"--tonghop",italki:"--italki"};
+  var POS={v:"động từ",n:"danh từ",adj:"tính từ",adv:"trạng từ",phr:"cụm từ",prep:"giới từ"};
+  function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+  var sb=(window.PRON&&window.PRON.sayBtn)?window.PRON.sayBtn:function(){return "";};
+  function icon(id){return '<svg class="i i-sm"><use href="#'+id+'"/></svg>';}
+  var html="";
+  window.VOCAB600.forEach(function(g){
+    var cvar=CVAR[g.c]||"--tonghop";
+    html+='<details class="acc voc-theme" style="--c:var('+cvar+')">'+
+      '<summary><span class="sicon">'+icon(g.icon||"i-layers")+'</span>'+esc(g.title)+
+      '<span class="scount">'+g.words.length+' từ</span><span class="chev">'+icon("i-arrow")+'</span></summary>'+
+      '<div class="voc-list">';
+    (g.words||[]).forEach(function(w){
+      html+='<details class="vw"><summary>'+
+        '<span class="vw-word">'+esc(w.t)+'</span>'+
+        (w.ipa?'<span class="ipa">/'+esc(w.ipa)+'/</span>':'')+
+        sb(w.t)+
+        (w.p&&POS[w.p]?'<span class="vw-pos">'+POS[w.p]+'</span>':'')+
+        '<span class="vw-mean">'+esc(w.vn||"")+'</span>'+
+        '<span class="vw-chev">'+icon("i-arrow")+'</span></summary>'+
+        '<div class="vw-body">'+
+        (w.ex?'<div class="vw-ex"><span class="exq">“'+esc(w.ex)+'”</span>'+sb(w.ex)+'</div>':'')+
+        (w.tip?'<div class="vw-tip">'+icon("i-target")+'<span>'+esc(w.tip)+'</span></div>':'')+
+        '</div></details>';
+    });
+    html+='</div></details>';
+  });
+  host.innerHTML=html;
 })();
 </script>
 
