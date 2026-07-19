@@ -421,6 +421,13 @@
   .wlwords .wlword .say{padding:2px 4px}
   /* Loa trong kịch bản */
   .sl .say,.qa .txt .say{margin-left:7px}
+  /* Dòng nghĩa tiếng Việt dưới câu tiếng Anh */
+  .vn{font:500 12.5px/1.5 var(--sans);color:var(--muted)}
+  .script .vn{padding-left:16px;margin:-3px 0 7px}
+  .script .vn:last-child{margin-bottom:0}
+  .qbody{display:flex;flex-direction:column;gap:3px;flex:1;min-width:0}
+  .qbody .vn{margin:0}
+  .qa .row.stack{align-items:flex-start}
   /* Nút thu âm trên thẻ ngày */
   .recmini{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;cursor:pointer;
     font:700 11.5px/1 var(--sans);color:#fff;background:var(--c);border:none;
@@ -667,7 +674,7 @@
     </details>
 
     <details class="acc" id="acc-s3" style="--c:var(--damphan)">
-      <summary><span class="sicon"><svg class="i"><use href="#i-scale"/></svg></span>C · Kịch bản đàm phán Tháng 3<span class="scount">4 kịch bản</span><span class="chev"><svg class="i"><use href="#i-arrow"/></svg></span></summary>
+      <summary><span class="sicon"><svg class="i"><use href="#i-scale"/></svg></span>C · Kịch bản đàm phán Tháng 3<span class="scount">4 kịch bản · 12 câu hỏi · 3 hội thoại</span><span class="chev"><svg class="i"><use href="#i-arrow"/></svg></span></summary>
       <div class="acc-body">
         <h4 id="kb-discovery"><span class="tag">Tuần 9</span>Discovery — hỏi nhu cầu trước khi báo giá · Ngày 61</h4>
         <div class="script">
@@ -678,6 +685,95 @@
           <div class="sl">How many staff will use the system?</div>
         </div>
         <div class="snote"><svg class="i i-sm"><use href="#i-target"/></svg><span><b>Bí quyết:</b> tiếng Anh yếu thì HỎI nhiều hơn NÓI. Bạn hỏi 1 câu 8 từ, khách trả lời 2 phút — bạn có thời gian nghĩ, khách thấy bạn chuyên nghiệp.</span></div>
+
+        <h4 id="kb-disc-open"><span class="tag">Mẫu câu</span>Mở đầu &amp; chốt sang báo giá</h4>
+        <div class="script">
+          <div class="sl nokey">May I ask a few quick questions to understand your needs and give you the most accurate quote?</div>
+          <div class="vn">Em xin phép hỏi nhanh vài thông tin để tư vấn đúng nhu cầu và báo giá sát nhất cho anh/chị nhé.</div>
+          <div class="sl nokey">To provide you with the most precise pricing, I'd like to ask a bit more about your current business model and requirements.</div>
+          <div class="vn">Để em báo giá chuẩn hơn, em xin khai thác thêm một chút về mô hình và nhu cầu hiện tại của mình.</div>
+        </div>
+        <div class="script">
+          <div class="sl nokey">Based on your needs, I will recommend the most suitable package to optimize your costs.</div>
+          <div class="vn">Dựa trên nhu cầu của anh/chị, em sẽ tư vấn gói phù hợp nhất để tối ưu chi phí.</div>
+          <div class="sl nokey">Let me summarize your exact requirements and send you a detailed, itemized quote.</div>
+          <div class="vn">Em chốt lại đúng bài toán của mình rồi gửi báo giá chi tiết theo từng hạng mục nhé.</div>
+          <div class="sl nokey">If you prefer a streamlined and cost-effective operation, I will propose the most suitable setup rather than the most expensive package.</div>
+          <div class="vn">Nếu mình ưu tiên vận hành gọn và tiết kiệm, em sẽ đề xuất cấu hình phù hợp nhất thay vì báo theo gói cao nhất.</div>
+        </div>
+        <div class="snote"><svg class="i i-sm"><use href="#i-star"/></svg><span>Học thuộc <b>1 câu mở</b> + <b>1 câu chốt</b> là đủ dùng cả buổi. Đừng học hết 5 câu cùng lúc.</span></div>
+
+        <h4 id="kb-disc-q"><span class="tag">Nhóm A</span>Mô hình kinh doanh</h4>
+        <div class="script">
+          <div class="sl nokey">What type of F&amp;B business are you running? A cafe, restaurant, spa, retail shop, or a chain?</div>
+          <div class="vn">Anh/chị đang kinh doanh mô hình gì ạ — quán cà phê, nhà hàng, spa, cửa hàng bán lẻ hay chuỗi?</div>
+          <div class="sl nokey">How many branches or stores do you currently have?</div>
+          <div class="vn">Hiện tại mình có mấy chi nhánh / cửa hàng ạ?</div>
+          <div class="sl nokey">What is your average daily order volume?</div>
+          <div class="vn">Mỗi ngày trung bình có khoảng bao nhiêu đơn ạ?</div>
+        </div>
+
+        <h4><span class="tag">Nhóm B</span>Vấn đề đang gặp</h4>
+        <div class="script">
+          <div class="sl nokey">What software or hardware are you currently using?</div>
+          <div class="vn">Hiện anh/chị đang dùng phần mềm hay thiết bị nào rồi ạ?</div>
+          <div class="sl nokey">What are you most dissatisfied with regarding your current system?</div>
+          <div class="vn">Điều anh/chị đang chưa hài lòng nhất ở hệ thống hiện tại là gì ạ?</div>
+          <div class="sl nokey">Are you facing any issues like slow ordering, incorrect items, inventory loss, difficulty managing staff, or delayed shift reconciliation?</div>
+          <div class="vn">Mình có đang gặp các vấn đề như: chậm order, sai món, thất thoát, khó quản lý nhân viên, chốt ca lâu không ạ?</div>
+        </div>
+
+        <h4><span class="tag">Nhóm C</span>Nhu cầu cụ thể</h4>
+        <div class="script">
+          <div class="sl nokey">What is your top priority right now: sales operations, inventory management, staff management, reporting, customer care, or multi-store management?</div>
+          <div class="vn">Anh/chị đang cần ưu tiên nhất cái nào: bán hàng, quản lý kho, quản lý nhân viên, báo cáo, chăm sóc khách, hay quản lý chuỗi?</div>
+          <div class="sl nokey">Do you need features like e-invoicing, Kitchen Display System integration, tablet ordering, label printing, or a loyalty program?</div>
+          <div class="vn">Mình có cần xuất hóa đơn điện tử, kết nối màn hình bếp, order bằng tablet, in tem, hay tích điểm không ạ?</div>
+          <div class="sl nokey">Do you require offline and online capabilities, or multi-device synchronization?</div>
+          <div class="vn">Mình có cần làm được cả online/offline, hay đồng bộ nhiều thiết bị không ạ?</div>
+        </div>
+
+        <h4><span class="tag">Nhóm D</span>Quy mô &amp; ngân sách</h4>
+        <div class="script">
+          <div class="sl nokey">How many POS terminals or users are you planning to deploy?</div>
+          <div class="vn">Dự kiến mình triển khai cho bao nhiêu máy / bao nhiêu người dùng ạ?</div>
+          <div class="sl nokey">What is your estimated budget for this investment?</div>
+          <div class="vn">Anh/chị đang muốn đầu tư ở mức ngân sách khoảng bao nhiêu ạ?</div>
+          <div class="sl nokey">Are you looking for a basic setup first, or a comprehensive solution right from the start?</div>
+          <div class="vn">Mình muốn làm giải pháp cơ bản trước, hay làm đầy đủ ngay từ đầu ạ?</div>
+        </div>
+        <div class="snote"><svg class="i i-sm"><use href="#i-target"/></svg><span><b>Cách dùng:</b> mỗi buổi gặp khách chỉ cần <b>3–4 câu</b> — 1 câu nhóm A, 1–2 câu nhóm B, 1 câu nhóm D. Hỏi hết 12 câu là thành hỏi cung.</span></div>
+
+        <h4 id="kb-disc-d1"><span class="tag">Hội thoại 1</span>Ngắn gọn — hỏi 3 ý là báo giá</h4>
+        <div class="qa">
+          <div class="row stack"><span class="who you">Bạn</span><span class="qbody"><span class="txt nokey">To give you the best quote, could I quickly ask three things: what is your business model, how many POS terminals do you need, and what is your biggest operational challenge right now?</span><span class="vn">Để em báo giá sát nhất, em xin hỏi nhanh 3 ý: mình kinh doanh mô hình gì, cần bao nhiêu máy, và vấn đề lớn nhất đang gặp là gì ạ?</span></span></div>
+          <div class="row stack"><span class="who">Khách</span><span class="qbody"><span class="txt nokey">I run a small cafe, I just need one machine, and my current system is too slow during rush hours.</span><span class="vn">Anh chạy quán cà phê nhỏ, chỉ cần 1 máy, hệ thống hiện tại quá chậm lúc đông khách.</span></span></div>
+          <div class="row stack"><span class="who you">Bạn</span><span class="qbody"><span class="txt nokey gold">Understood. Based on your needs, I'll propose a lightweight solution that speeds up ordering and fits your budget. I'll send the detailed quote right away.</span><span class="vn">Đã rõ. Dựa trên nhu cầu của anh, em sẽ đề xuất phương án gọn nhẹ, tăng tốc order và vừa ngân sách. Em gửi báo giá chi tiết ngay ạ.</span></span></div>
+        </div>
+
+        <h4 id="kb-disc-d2"><span class="tag">Hội thoại 2</span>Khách nhà hàng — sai món vì dùng giấy</h4>
+        <div class="qa">
+          <div class="row stack"><span class="who you">Bạn</span><span class="qbody"><span class="txt nokey">May I ask a few quick questions to understand your needs and give you the most accurate quote?</span><span class="vn">Em xin phép hỏi nhanh vài thông tin để tư vấn đúng nhu cầu và báo giá sát nhất nhé ạ.</span></span></div>
+          <div class="row stack"><span class="who">Khách</span><span class="qbody"><span class="txt nokey">Sure, go ahead.</span><span class="vn">Được, em hỏi đi.</span></span></div>
+          <div class="row stack"><span class="who you">Bạn</span><span class="qbody"><span class="txt nokey">Are you running a cafe, a restaurant, or a chain? And what is your top priority right now?</span><span class="vn">Anh/chị đang kinh doanh quán cà phê, nhà hàng hay chuỗi ạ? Và ưu tiên lớn nhất lúc này là gì?</span></span></div>
+          <div class="row stack"><span class="who">Khách</span><span class="qbody"><span class="txt nokey">It's a two-story restaurant. My biggest issue is incorrect items being made because the waitstaff use paper tickets for the kitchen.</span><span class="vn">Nhà hàng 2 tầng. Vấn đề lớn nhất là làm sai món vì nhân viên ghi giấy đưa xuống bếp.</span></span></div>
+          <div class="row stack"><span class="who you">Bạn</span><span class="qbody"><span class="txt nokey">I see. Do you think a tablet ordering system for your staff, connected directly to a Kitchen Display System, would solve that?</span><span class="vn">Em hiểu rồi. Anh/chị thấy hệ thống order bằng tablet cho nhân viên, nối thẳng vào màn hình bếp, có giải quyết được không ạ?</span></span></div>
+          <div class="row stack"><span class="who">Khách</span><span class="qbody"><span class="txt nokey">Yes, that sounds exactly like what we need.</span><span class="vn">Có, đúng cái bên anh cần.</span></span></div>
+          <div class="row stack"><span class="who you">Bạn</span><span class="qbody"><span class="txt nokey gold">Perfect. Let me summarize your exact requirements for the POS, tablets, and kitchen screens, and send you a detailed, itemized quote.</span><span class="vn">Tuyệt vời ạ. Em chốt lại bài toán về máy POS, tablet và màn hình bếp rồi gửi báo giá chi tiết theo từng hạng mục nhé.</span></span></div>
+        </div>
+
+        <h4 id="kb-disc-d3"><span class="tag">Hội thoại 3</span>Khách chuỗi — thất thoát &amp; báo cáo nhiều cửa hàng</h4>
+        <div class="qa">
+          <div class="row stack"><span class="who you">Bạn</span><span class="qbody"><span class="txt nokey">To provide you with the most precise pricing, I'd like to ask a bit more about your current model. How many branches do you currently have?</span><span class="vn">Để báo giá chuẩn hơn, em xin khai thác thêm về mô hình của mình. Hiện anh/chị có bao nhiêu chi nhánh ạ?</span></span></div>
+          <div class="row stack"><span class="who">Khách</span><span class="qbody"><span class="txt nokey">We have three bubble tea shops. We process about five hundred orders a day per store.</span><span class="vn">Bên chị có 3 quán trà sữa, khoảng 500 đơn/ngày mỗi quán.</span></span></div>
+          <div class="row stack"><span class="who you">Bạn</span><span class="qbody"><span class="txt nokey">That's a great volume. Are you facing any issues with inventory loss or multi-store reporting?</span><span class="vn">Lượng đơn rất tốt ạ. Mình có đang gặp vấn đề về thất thoát nguyên liệu hay báo cáo chuỗi không ạ?</span></span></div>
+          <div class="row stack"><span class="who">Khách</span><span class="qbody"><span class="txt nokey">Yes, checking inventory across three stores takes too much time, and the end-of-shift reconciliation is often delayed.</span><span class="vn">Có, kiểm kho 3 quán mất quá nhiều thời gian, và chốt ca thường bị trễ.</span></span></div>
+          <div class="row stack"><span class="who you">Bạn</span><span class="qbody"><span class="txt nokey">Our software specializes in multi-store management and real-time inventory tracking. Are you looking to implement a comprehensive solution right from the start for all three stores?</span><span class="vn">Phần mềm bên em chuyên về quản lý chuỗi và theo dõi tồn kho theo thời gian thực. Mình muốn triển khai đầy đủ ngay từ đầu cho cả 3 quán luôn chứ ạ?</span></span></div>
+          <div class="row stack"><span class="who">Khách</span><span class="qbody"><span class="txt nokey">Yes, I need a complete package.</span><span class="vn">Đúng vậy, chị cần một gói toàn diện.</span></span></div>
+          <div class="row stack"><span class="who you">Bạn</span><span class="qbody"><span class="txt nokey gold">Based on your needs, I will recommend our enterprise package to optimize your operations. I'll send the proposal to your email shortly.</span><span class="vn">Dựa trên nhu cầu của chị, em sẽ đề xuất gói doanh nghiệp để tối ưu vận hành. Em gửi báo giá qua email cho mình ngay ạ.</span></span></div>
+        </div>
+        <div class="snote"><svg class="i i-sm"><use href="#i-mic"/></svg><span><b>Luyện thế nào:</b> đọc to phần <b>Bạn</b>, bấm loa nghe lại câu của <b>Khách</b> để quen tai. Ngày 61 và 69 (italki) đem đúng 3 hội thoại này ra roleplay.</span></div>
+
         <h4 id="kb-quote"><span class="tag">Tuần 10</span>Báo giá — giải thích cơ cấu giá · Ngày 68</h4>
         <div class="script">
           <div class="sl">Our price has two parts.</div>
@@ -1075,7 +1171,8 @@
   });});
 
   // Make Sổ tay text editable + persist
-  var HB_SEL="#tab-voc .rule-gold,#tab-voc .tbl td,#tab-voc .wlwords span,#tab-voc p,#tab-script .sl,#tab-script .qa .txt,#tab-script .wlwords span,#tab-script .tbl td,#tab-script .tgv .v,#tab-script .acc-body>p";
+  // ".nokey" = khối thêm sau, KHÔNG tham gia đánh số key → không làm lệch chữ đã sửa tay
+  var HB_SEL="#tab-voc .rule-gold,#tab-voc .tbl td,#tab-voc .wlwords span,#tab-voc p,#tab-script .sl:not(.nokey),#tab-script .qa .txt:not(.nokey),#tab-script .wlwords span,#tab-script .tbl td,#tab-script .tgv .v,#tab-script .acc-body>p";
   Array.prototype.forEach.call(document.querySelectorAll(HB_SEL),function(el,i){
     var k="e"+i;el.setAttribute("contenteditable","true");el.setAttribute("spellcheck","false");
     el.classList.add("edt");el.setAttribute("data-ek",k);
