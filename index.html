@@ -361,6 +361,7 @@
   .syncbadge.cloud{color:var(--doc);border-color:color-mix(in srgb,var(--doc) 40%,var(--line));background:color-mix(in srgb,var(--doc) 8%,var(--surface))}
   .syncbadge.local{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 40%,var(--line));background:color-mix(in srgb,var(--warn) 8%,var(--surface))}
   .myform{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+  .myform[hidden]{display:none}
   .myform.col{flex-direction:column}
   .myform input,.myform textarea{font:500 13px/1.4 var(--sans);color:var(--ink);background:var(--surface-2);
     border:1px solid var(--line);border-radius:9px;padding:9px 11px;flex:1 1 140px;min-width:120px}
@@ -1713,35 +1714,51 @@
   function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
   function ic(id){return '<svg class="i i-sm"><use href="#'+id+'"/></svg>';}
 
+  /* Dữ liệu "Của tôi" được khoá riêng theo tài khoản: phải đăng nhập mới đọc/ghi được. */
+  var user=null;
+  function needLogin(){return MODE==="cloud"&&!user;}
+  function useCloud(){return MODE==="cloud"&&!!user;}
+  function guard(){if(needLogin())throw new Error("Cần đăng nhập trước.");}
+
   async function list(k){
-    if(MODE==="cloud"){var r=await sb.from(k).select("*").order("created_at",{ascending:true});if(r.error)throw r.error;return r.data||[];}
+    if(needLogin())return [];
+    if(useCloud()){var r=await sb.from(k).select("*").order("created_at",{ascending:true});if(r.error)throw r.error;return r.data||[];}
     return lget(k);
   }
   async function add(k,o){
-    if(MODE==="cloud"){var r=await sb.from(k).insert(o).select().single();if(r.error)throw r.error;return r.data;}
+    guard();
+    if(useCloud()){o.user_id=user.id;var r=await sb.from(k).insert(o).select().single();if(r.error)throw r.error;return r.data;}
     o.id="loc_"+Date.now()+"_"+Math.random().toString(36).slice(2,6);o.created_at=new Date().toISOString();
     var a=lget(k);a.push(o);lset(k,a);return o;
   }
   async function del(k,id){
-    if(MODE==="cloud"){var r=await sb.from(k).delete().eq("id",id);if(r.error)throw r.error;return;}
+    guard();
+    if(useCloud()){var r=await sb.from(k).delete().eq("id",id);if(r.error)throw r.error;return;}
     lset(k,lget(k).filter(function(x){return String(x.id)!==String(id);}));
   }
   async function upd(k,id,p){
-    if(MODE==="cloud"){var r=await sb.from(k).update(p).eq("id",id);if(r.error)throw r.error;return;}
+    guard();
+    if(useCloud()){var r=await sb.from(k).update(p).eq("id",id);if(r.error)throw r.error;return;}
     lset(k,lget(k).map(function(x){return String(x.id)===String(id)?Object.assign(x,p):x;}));
   }
 
-  document.querySelectorAll("[data-sync]").forEach(function(b){
-    if(MODE==="cloud"){b.className="syncbadge cloud";b.innerHTML=ic("i-check")+"Đồng bộ đám mây";b.title="Đã nối Supabase — nội dung đồng bộ mọi thiết bị.";}
-    else{b.className="syncbadge local";b.innerHTML=ic("i-alert")+"Lưu tại máy này";b.title="Chưa nối Supabase. Điền config.js theo SETUP.md để bật đồng bộ.";}
-  });
+  function refreshBadge(){
+    document.querySelectorAll("[data-sync]").forEach(function(b){
+      if(useCloud()){b.className="syncbadge cloud";b.innerHTML=ic("i-check")+"Đồng bộ đám mây";
+        b.title="Đã đăng nhập ("+(user.email||"")+") — nội dung khoá riêng, đồng bộ mọi thiết bị.";}
+      else if(needLogin()){b.className="syncbadge local";b.innerHTML=ic("i-alert")+"Cần đăng nhập";
+        b.title="Nội dung của bạn được khoá riêng. Đăng nhập ở tab Ghi âm & tiến bộ để xem và thêm.";}
+      else{b.className="syncbadge local";b.innerHTML=ic("i-alert")+"Lưu tại máy này";
+        b.title="Chưa nối Supabase. Điền config.js theo SETUP.md để bật đồng bộ.";}
+    });
+  }
 
   function itemHTML(k,it){
     if(k==="vocab"){
-      var sb=window.PRON?window.PRON.sayBtn(it.term):"";
+      var sbtn=window.PRON?window.PRON.sayBtn(it.term):"";
       return '<div class="myitem" data-id="'+esc(it.id)+'"><div class="mi-main">'+
         (it.group_name?'<span class="mi-grp" contenteditable="true" data-f="group_name">'+esc(it.group_name)+'</span><br>':'')+
-        '<div class="mi-term-row"><div class="mi-term" contenteditable="true" data-f="term">'+esc(it.term)+'</div>'+sb+'</div>'+
+        '<div class="mi-term-row"><div class="mi-term" contenteditable="true" data-f="term">'+esc(it.term)+'</div>'+sbtn+'</div>'+
         (it.ipa?'<div class="mi-ipa" contenteditable="true" data-f="ipa">'+esc(it.ipa)+'</div>':'')+
         '<div class="mi-mean" contenteditable="true" data-f="meaning">'+esc(it.meaning||"")+'</div>'+
         (it.note?'<div class="mi-note" contenteditable="true" data-f="note">'+esc(it.note)+'</div>':'')+
@@ -1755,6 +1772,13 @@
 
   async function render(k){
     var wrap=document.querySelector('[data-list="'+k+'"]');if(!wrap)return;
+    var form=document.querySelector('.myform[data-form="'+k+'"]');
+    if(needLogin()){
+      if(form)form.hidden=true;
+      wrap.innerHTML='<div class="myempty">Nội dung của bạn được <b>khoá riêng</b> — người khác có link cũng không xem hay sửa được.<br>Hãy <b>đăng nhập</b> ở tab <b>Ghi âm &amp; tiến bộ</b> để xem và thêm mục.</div>';
+      return;
+    }
+    if(form)form.hidden=false;
     try{
       var items=await list(k);
       wrap.innerHTML=items.length?items.map(function(it){return itemHTML(k,it);}).join("")
@@ -1791,7 +1815,16 @@
     });
   });
 
-  render("vocab");render("scripts");
+  function renderAll(){refreshBadge();render("vocab");render("scripts");}
+
+  if(sb){
+    sb.auth.getSession().then(function(r){
+      user=(r&&r.data&&r.data.session)?r.data.session.user:null;renderAll();
+    }).catch(function(){renderAll();});
+    sb.auth.onAuthStateChange(function(_e,session){
+      user=session?session.user:null;renderAll();
+    });
+  }else{renderAll();}
 })();
 </script>
 

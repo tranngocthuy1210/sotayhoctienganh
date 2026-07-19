@@ -128,6 +128,55 @@ Xong 3 bước trên, báo mình (hoặc commit `config.js` đã điền khóa) 
 
 ---
 
+## PHẦN 1C — KHOÁ khu "Của tôi" (Từ vựng & Kịch bản bạn tự thêm)
+
+> **Vì sao cần:** SQL ở PHẦN 1 để 2 bảng `vocab` / `scripts` ở chế độ **mở** (`using (true)`) cho tiện dùng ngay.
+> Nghĩa là **bất kỳ ai có link web đều đọc / sửa / xoá được** từ vựng và kịch bản bạn tự thêm.
+> Khối SQL dưới đây khoá lại: mỗi người chỉ thấy và sửa được dữ liệu của chính mình — giống phần ghi âm.
+>
+> *(Nội dung bạn sửa trực tiếp trên trang — câu kịch bản, chữ ô lịch, tick tiến độ — vốn chỉ lưu trong trình duyệt máy bạn, không ai đụng tới được. Phần này chỉ liên quan khu "Của tôi".)*
+
+SQL Editor → New query → dán → **Run**:
+
+```sql
+-- 1) Thêm cột chủ sở hữu
+alter table vocab   add column if not exists user_id uuid references auth.users(id) on delete cascade;
+alter table scripts add column if not exists user_id uuid references auth.users(id) on delete cascade;
+
+-- 2) Gán dữ liệu cũ (nếu đã lỡ thêm) cho tài khoản của bạn
+--    >>> ĐỔI email bên dưới cho đúng tài khoản bạn dùng <<<
+update vocab   set user_id = (select id from auth.users where email='tranngocthuy1210@gmail.com')
+  where user_id is null;
+update scripts set user_id = (select id from auth.users where email='tranngocthuy1210@gmail.com')
+  where user_id is null;
+
+-- 3) Mục thêm mới tự gắn chủ sở hữu
+alter table vocab   alter column user_id set default auth.uid();
+alter table scripts alter column user_id set default auth.uid();
+
+-- 4) Thay chính sách MỞ bằng chính sách CHỈ-CHỦ-SỞ-HỮU
+drop policy if exists "cho phep doc ghi vocab"   on vocab;
+drop policy if exists "cho phep doc ghi scripts" on scripts;
+
+create policy "vocab_own"   on vocab   for all
+  using (auth.uid() = user_id) with check (auth.uid() = user_id);
+create policy "scripts_own" on scripts for all
+  using (auth.uid() = user_id) with check (auth.uid() = user_id);
+```
+
+Chạy xong: khu "Của tôi" sẽ hiện **"Cần đăng nhập"** cho tới khi bạn đăng nhập ở tab **Ghi âm & tiến bộ**. Đăng nhập rồi thì huy hiệu chuyển sang xanh **"Đồng bộ đám mây"** và dùng bình thường.
+
+### Bảng tóm tắt: ai làm được gì sau khi khoá
+
+| Dữ liệu | Lưu ở đâu | Người lạ có link |
+|---|---|---|
+| Câu kịch bản / chữ ô lịch / tick tiến độ bạn sửa | Trình duyệt máy bạn | Không thấy, không sửa được của bạn |
+| "Của tôi" — Từ vựng & Kịch bản | Supabase, khoá theo `user_id` | **Không** (sau khi chạy SQL trên) |
+| Ghi âm | Supabase, bucket riêng tư | **Không** |
+| Mã nguồn web | GitHub | **Không** |
+
+---
+
 ## PHẦN 2 — Đăng lên GitHub Pages (miễn phí, tên miền `tranngocthuy.github.io`)
 
 ### Bước 1. Tạo tài khoản & kho chứa (repository)
