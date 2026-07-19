@@ -68,6 +68,60 @@ Xong! Mở lại `index.html`, huy hiệu ở khu "Của tôi" chuyển sang xan
 
 ---
 
+## PHẦN 1B — Bật GHI ÂM lưu cloud (có đăng nhập) — cho tính năng ➌
+
+Để ghi âm bài nói, lưu lên đám mây và nghe lại trên mọi thiết bị (kể cả so sánh Ngày 3 ↔ Ngày 83), làm thêm 3 việc trong Supabase (vẫn miễn phí, gói free 1 GB — thừa cho hàng ngàn bản thu giọng nói).
+
+> Ghi âm KHÔNG lưu vào GitHub. GitHub chỉ chứa mã nguồn. File âm thanh nằm trong Supabase Storage của bạn.
+
+### Bước A. Tạo bảng + kho chứa file + phân quyền (SQL)
+SQL Editor → New query → dán đoạn dưới → **Run**:
+
+```sql
+-- Bảng ghi thông tin từng bản thu (không chứa file, chỉ metadata)
+create table if not exists recordings (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null default auth.uid() references auth.users(id) on delete cascade,
+  day int,                 -- ngày trong lộ trình (vd 3, 83), có thể để trống
+  label text default '',   -- nhãn tự do (vd "Tự giới thiệu")
+  path text not null,      -- đường dẫn file trong kho
+  duration real default 0, -- độ dài (giây)
+  created_at timestamptz default now()
+);
+alter table recordings enable row level security;
+create policy "rec_select_own" on recordings for select using (auth.uid() = user_id);
+create policy "rec_insert_own" on recordings for insert with check (auth.uid() = user_id);
+create policy "rec_delete_own" on recordings for delete using (auth.uid() = user_id);
+
+-- Kho chứa file âm thanh, để RIÊNG TƯ (không public)
+insert into storage.buckets (id, name, public) values ('recordings','recordings', false)
+on conflict (id) do nothing;
+
+-- Chỉ chủ sở hữu mới đọc/ghi/xoá file trong thư mục mang tên user_id của họ
+create policy "rec_files_select" on storage.objects for select
+  using (bucket_id='recordings' and auth.uid()::text = (storage.foldername(name))[1]);
+create policy "rec_files_insert" on storage.objects for insert
+  with check (bucket_id='recordings' and auth.uid()::text = (storage.foldername(name))[1]);
+create policy "rec_files_delete" on storage.objects for delete
+  using (bucket_id='recordings' and auth.uid()::text = (storage.foldername(name))[1]);
+```
+
+### Bước B. Bật đăng nhập bằng email (magic link)
+1. Menu trái → **Authentication** → **Providers** → **Email**: để **bật** (mặc định đã bật). Có thể **TẮT** "Confirm email" cho đỡ 1 bước xác nhận.
+2. **Authentication** → **URL Configuration**:
+   - **Site URL**: `https://sotayhoctienganh.vercel.app`
+   - **Redirect URLs** → Add: `https://sotayhoctienganh.vercel.app/` và `https://tranngocthuy1210.github.io/sotayhoctienganh/`
+3. (Không cần đổi gì thêm — người dùng nhập email, nhận link đăng nhập trong hộp thư, bấm là vào.)
+
+### Bước C. Dán khóa vào config.js
+Giống PHẦN 1 (URL + anon key). Nếu đã làm PHẦN 1 rồi thì **không cần làm lại** — dùng chung 1 dự án Supabase.
+
+Xong 3 bước trên, báo mình (hoặc commit `config.js` đã điền khóa) — mình sẽ bật khu **"Ghi âm & tiến bộ"**: nút thu trong các ngày có bài NÓI, nghe lại, và màn hình so sánh mốc đầu ↔ cuối.
+
+> **Bảo mật:** file để bucket riêng tư + phân quyền theo `user_id`, nên **chỉ bạn (sau khi đăng nhập email của bạn)** mới nghe/tải được bản thu của mình. Người khác có link web cũng không truy cập được file.
+
+---
+
 ## PHẦN 2 — Đăng lên GitHub Pages (miễn phí, tên miền `tranngocthuy.github.io`)
 
 ### Bước 1. Tạo tài khoản & kho chứa (repository)
