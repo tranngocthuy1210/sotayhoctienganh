@@ -421,6 +421,17 @@
   .wlwords .wlword .say{padding:2px 4px}
   /* Loa trong kịch bản */
   .sl .say,.qa .txt .say{margin-left:7px}
+  /* Nút thu âm trên thẻ ngày */
+  .recmini{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;cursor:pointer;
+    font:700 11.5px/1 var(--sans);color:#fff;background:var(--c);border:none;
+    padding:7px 11px;border-radius:9px;margin-top:6px}
+  .recmini:hover{filter:brightness(1.09)}
+  .recmini:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  .recmini:disabled{opacity:.55;cursor:default}
+  .recmini.on{background:var(--damphan);animation:recpulse 1.2s ease-in-out infinite}
+  .recmini .rt{font-variant-numeric:tabular-nums}
+  .recmini .rt:empty{display:none}
+  @keyframes recpulse{50%{opacity:.68}}
   /* Khu Ghi âm & tiến bộ */
   .recbox{margin:14px 0}
   .recbox h3{margin:0 0 10px}
@@ -974,6 +985,12 @@
         return '<div class="tl" contenteditable="true" spellcheck="false" data-n="'+day.n+'" data-li="'+li+'">'+esc(tx)+'</div>';}).join("")+'</div>';
       var rf=REFS[day.n];if(rf){html+='<a class="ref" href="#'+rf[1]+'">'+svg("i-book","i-sm")+'Sổ tay: '+esc(rf[0])+'</a>';}
       if(day.link){html+='<a class="vid" href="'+day.link.u+'" target="_blank" rel="noopener">'+svg("i-cplay","i-sm")+esc(day.link.t)+'</a>';}
+      // Nút thu âm: chỉ ngày có bài NÓI (hoặc việc ghi "thu âm")
+      var spoken=(day.s==="noi"||day.s==="damphan"||day.s==="italki"||day.s==="milestone"||day.s==="finish");
+      if(spoken||day.t.join(" ").toLowerCase().indexOf("thu âm")>-1){
+        html+='<button class="recmini" type="button" data-recday="'+day.n+'" data-reclabel="'+esc(day.lab)+'">'+
+          svg("i-mic","i-sm")+'<span class="rl">Thu âm</span><span class="rt"></span></button>';
+      }
       var hb='<div class="habits'+(day.link?" pinned":"")+'">',st=get(day.n);
       HAB.forEach(function(h,i){var id="h"+day.n+"_"+i;
         hb+='<div class="hb"><input type="checkbox" id="'+id+'" data-n="'+day.n+'" data-i="'+i+'"'+(st[i]?" checked":"")+'>'+
@@ -1462,48 +1479,106 @@
     }
   }
 
-  /* ---------- Thu âm ---------- */
-  var mr=null,chunks=[],t0=0,tick=null;
+  /* ---------- Thu âm (dùng chung: nút lớn + nút trên thẻ ngày) ---------- */
+  var mr=null,chunks=[],t0=0,tick=null,ctx=null;
   function fmt(s){var m=Math.floor(s/60),x=Math.floor(s%60);return (m<10?"0":"")+m+":"+(x<10?"0":"")+x;}
-  function setBtn(on){goBtn.classList.toggle("on",on);
-    var sp=goBtn.querySelector("span");if(sp)sp.textContent=on?"Dừng & lưu":"Bắt đầu thu";}
+  function isMini(c){return !!(c&&c.btn);}
+  function status(c,m){if(!isMini(c))msgEl.textContent=m||"";}
+  function fail(c,m){if(isMini(c))alert(m);else msgEl.textContent=m;}
+  function miniLabel(btn,txt,revert){
+    var l=btn.querySelector(".rl");if(!l)return;
+    l.textContent=txt;
+    if(revert)setTimeout(function(){l.textContent="Thu âm";},2200);
+  }
+  function setUI(c,on){
+    if(isMini(c)){
+      c.btn.classList.toggle("on",on);
+      miniLabel(c.btn,on?"Dừng":"Thu âm",false);
+      var t=c.btn.querySelector(".rt");if(t)t.textContent=on?"00:00":"";
+    }else{
+      goBtn.classList.toggle("on",on);
+      var sp=goBtn.querySelector("span");if(sp)sp.textContent=on?"Dừng & lưu":"Bắt đầu thu";
+      if(!on)timeEl.textContent="00:00";
+    }
+  }
+  function showTime(c,txt){
+    if(isMini(c)){var t=c.btn.querySelector(".rt");if(t)t.textContent=txt;}
+    else timeEl.textContent=txt;
+  }
 
-  goBtn.addEventListener("click",async function(){
-    if(mr&&mr.state==="recording"){mr.stop();return;}
-    if(!navigator.mediaDevices||!window.MediaRecorder){msgEl.textContent="Trình duyệt này không hỗ trợ ghi âm.";return;}
+  async function startRec(c){
+    if(mr&&mr.state==="recording")return;
+    if(!user){
+      alert('Bạn cần đăng nhập ở tab "Ghi âm & tiến bộ" trước khi thu.');
+      var tb=document.querySelector('.tab[data-tab="rec"]');if(tb)tb.click();
+      return;
+    }
+    if(!navigator.mediaDevices||!window.MediaRecorder){fail(c,"Trình duyệt này không hỗ trợ ghi âm.");return;}
     try{
       var stream=await navigator.mediaDevices.getUserMedia({audio:true});
       var opt={audioBitsPerSecond:32000};
       if(window.MediaRecorder.isTypeSupported&&MediaRecorder.isTypeSupported("audio/webm;codecs=opus"))opt.mimeType="audio/webm;codecs=opus";
       else if(window.MediaRecorder.isTypeSupported&&MediaRecorder.isTypeSupported("audio/mp4"))opt.mimeType="audio/mp4";
-      mr=new MediaRecorder(stream,opt);chunks=[];
+      mr=new MediaRecorder(stream,opt);chunks=[];ctx=c;
       mr.ondataavailable=function(e){if(e.data&&e.data.size)chunks.push(e.data);};
       mr.onstop=function(){
         try{stream.getTracks().forEach(function(t){t.stop();});}catch(e){}
-        clearInterval(tick);setBtn(false);
-        save(new Blob(chunks,{type:mr.mimeType||"audio/webm"}),(Date.now()-t0)/1000);
+        clearInterval(tick);
+        var blob=new Blob(chunks,{type:mr.mimeType||"audio/webm"});
+        var dur=(Date.now()-t0)/1000, cc=ctx;
+        setUI(cc,false);
+        save(blob,dur,cc);
       };
-      mr.start();t0=Date.now();setBtn(true);
-      msgEl.textContent="Đang thu… nói to và rõ.";timeEl.textContent="00:00";
-      tick=setInterval(function(){timeEl.textContent=fmt((Date.now()-t0)/1000);},250);
-    }catch(err){msgEl.textContent="Không mở được micro: "+(err.message||err);}
+      mr.start();t0=Date.now();setUI(c,true);status(c,"Đang thu… nói to và rõ.");
+      showTime(c,"00:00");
+      tick=setInterval(function(){showTime(c,fmt((Date.now()-t0)/1000));},250);
+    }catch(err){fail(c,"Không mở được micro: "+(err.message||err));}
+  }
+
+  goBtn.addEventListener("click",function(){
+    if(mr&&mr.state==="recording"){mr.stop();return;}
+    startRec({btn:null});
   });
 
-  async function save(blob,dur){
-    if(!user){msgEl.textContent="Cần đăng nhập trước.";return;}
-    msgEl.textContent="Đang tải lên… ("+Math.round(blob.size/1024)+" KB)";
+  /* Nút thu trên thẻ ngày (lịch) — uỷ quyền sự kiện nên không cần gắn từng nút */
+  document.addEventListener("click",function(e){
+    var b=e.target.closest?e.target.closest(".recmini"):null;if(!b)return;
+    e.preventDefault();
+    if(mr&&mr.state==="recording"){
+      if(ctx&&ctx.btn===b)mr.stop();
+      else alert("Đang thu ở một ngày khác — bấm Dừng ở ngày đó trước đã.");
+      return;
+    }
+    var d=parseInt(b.getAttribute("data-recday"),10);
+    startRec({btn:b,day:isNaN(d)?null:d,label:b.getAttribute("data-reclabel")||""});
+  });
+
+  async function save(blob,dur,c){
+    if(!user){ctx=null;return;}
+    var day,label,btn=isMini(c)?c.btn:null;
+    if(isMini(c)){day=c.day;label=c.label;}
+    else{
+      day=parseInt(document.getElementById("rec-day").value,10);
+      if(isNaN(day))day=null;
+      label=(document.getElementById("rec-label").value||"").trim();
+    }
+    if(btn){btn.disabled=true;miniLabel(btn,"Đang lưu…",false);}
+    else msgEl.textContent="Đang tải lên… ("+Math.round(blob.size/1024)+" KB)";
     try{
       var ext=(blob.type.indexOf("mp4")>-1||blob.type.indexOf("m4a")>-1)?"m4a":"webm";
       var path=user.id+"/"+Date.now()+"."+ext;
       var up=await sb.storage.from("recordings").upload(path,blob,{contentType:blob.type||"audio/webm"});
       if(up.error)throw up.error;
-      var dv=parseInt(document.getElementById("rec-day").value,10);
-      var lb=(document.getElementById("rec-label").value||"").trim();
-      var ins=await sb.from("recordings").insert({user_id:user.id,day:isNaN(dv)?null:dv,label:lb,path:path,duration:dur});
+      var ins=await sb.from("recordings").insert({user_id:user.id,day:day,label:label,path:path,duration:dur});
       if(ins.error)throw ins.error;
-      msgEl.textContent="Đã lưu lên đám mây ✓";
+      if(btn){btn.disabled=false;miniLabel(btn,"Đã lưu ✓",true);}
+      else msgEl.textContent="Đã lưu lên đám mây ✓";
       await loadList();
-    }catch(err){msgEl.textContent="Lỗi lưu: "+(err.message||err);}
+    }catch(err){
+      if(btn){btn.disabled=false;miniLabel(btn,"Lỗi!",true);alert("Lỗi lưu bản thu: "+(err.message||err));}
+      else msgEl.textContent="Lỗi lưu: "+(err.message||err);
+    }
+    ctx=null;
   }
 
   /* ---------- Danh sách + nghe lại ---------- */
