@@ -82,6 +82,7 @@
   body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5;
     -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   .wrap{max-width:1320px;margin:0 auto;padding:0 20px 80px}
+  [id]{scroll-margin-top:calc(var(--headerH,66px) + 60px)}
   a{color:inherit}
   .i{width:16px;height:16px;display:inline-block;vertical-align:middle;stroke:currentColor;fill:none;
     stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
@@ -236,8 +237,20 @@
   .note{font:500 12px/1.5 var(--sans);color:var(--faint);margin-top:22px;text-align:center;text-wrap:balance}
 
   @media (max-width:1080px){.mgrid,.dow-head{grid-template-columns:repeat(4,1fr)}.dow-head{display:none}.foot{grid-template-columns:1fr}}
-  @media (max-width:720px){.mgrid{grid-template-columns:repeat(2,1fr)}.brand h1{font-size:17px}.hstats{gap:12px}.todaybox{display:none}}
-  @media (max-width:460px){.mgrid{grid-template-columns:1fr}.day{min-height:0}.jump{display:none}}
+  @media (max-width:720px){.mgrid{grid-template-columns:repeat(2,1fr)}.brand h1{font-size:17px}.hstats{gap:12px}.todaybox{display:none}
+    .brand .sub{display:none}.top-inner{gap:12px;padding:11px 16px}.wrap{padding:0 16px 70px}
+    .main-tabs .tab{font-size:14px;padding:12px 9px;gap:6px}
+    .pronbar-hint{display:none}.pronbar{gap:9px;padding:9px 12px}
+    .phase{padding:16px 18px}.phase h2{font-size:20px}
+    .sotay-head h2{font-size:19px}}
+  @media (max-width:560px){
+    .tab .lb-full{display:none}.tab .lb-mini{display:inline}
+    .main-tabs .tab{font-size:13.5px;padding:11px 10px}
+    .vw-word{min-width:0}.vw-mean{flex-basis:100%;order:6;min-width:0}
+    details.vw>summary{gap:8px;padding:11px 2px}
+    .wlwords .wlword{padding:5px 8px}}
+  @media (max-width:460px){.mgrid{grid-template-columns:1fr}.day{min-height:0}.jump{display:none}
+    .wrap{padding:0 12px 60px}.brand .kick{font-size:10px}}
   @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
   @media print{header.top,.subbar,.reset,.tbtn{display:none!important}body{background:#fff}
     .day{break-inside:avoid;box-shadow:none;border-color:#ccc}.phase{color:#000;background:#eee!important;box-shadow:none}
@@ -313,8 +326,12 @@
   .tl[contenteditable="true"]:focus,.edt:focus{outline:none;background:color-mix(in srgb,var(--brand) 12%,transparent);
     box-shadow:0 0 0 2px color-mix(in srgb,var(--brand) 34%,transparent)}
   .tabbar{display:flex;gap:10px;margin:18px 0 16px;border-bottom:1px solid var(--line)}
-  .main-tabs{flex-wrap:wrap;gap:4px;margin:16px 0 14px}
-  .main-tabs .tab{font-size:15px;padding:14px 12px}
+  .main-tabs{position:sticky;top:var(--headerH,66px);z-index:16;flex-wrap:nowrap;overflow-x:auto;
+    gap:4px;margin:0 0 14px;padding:10px 0 0;scrollbar-width:none;
+    background:color-mix(in srgb,var(--paper) 93%,transparent);backdrop-filter:blur(10px)}
+  .main-tabs::-webkit-scrollbar{display:none}
+  .main-tabs .tab{font-size:15px;padding:14px 12px;white-space:nowrap;flex:none}
+  .tab .lb-mini{display:none}
   .tab{appearance:none;background:none;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;
     font:700 14.5px/1 var(--sans);color:var(--muted);padding:13px 8px;margin-bottom:-1px;border-bottom:2.5px solid transparent}
   .tab .i{color:var(--faint)}
@@ -447,9 +464,9 @@
 
 <div class="wrap">
   <div class="tabbar main-tabs" role="tablist">
-    <button class="tab active" data-tab="cal" role="tab" aria-selected="true"><svg class="i"><use href="#i-cal"/></svg>Thời khóa biểu</button>
-    <button class="tab" data-tab="voc" role="tab" aria-selected="false"><svg class="i"><use href="#i-layers"/></svg>Sổ tay từ vựng</button>
-    <button class="tab" data-tab="script" role="tab" aria-selected="false"><svg class="i"><use href="#i-mic"/></svg>Kịch bản đối thoại F&amp;B</button>
+    <button class="tab active" data-tab="cal" role="tab" aria-selected="true"><svg class="i"><use href="#i-cal"/></svg><span class="lb-full">Thời khóa biểu</span><span class="lb-mini">Lịch học</span></button>
+    <button class="tab" data-tab="voc" role="tab" aria-selected="false"><svg class="i"><use href="#i-layers"/></svg><span class="lb-full">Sổ tay từ vựng</span><span class="lb-mini">Từ vựng</span></button>
+    <button class="tab" data-tab="script" role="tab" aria-selected="false"><svg class="i"><use href="#i-mic"/></svg><span class="lb-full">Kịch bản đối thoại F&amp;B</span><span class="lb-mini">Kịch bản</span></button>
   </div>
   <div class="pronbar" id="pronbar" hidden>
     <span class="pronbar-lbl"><svg class="i i-sm"><use href="#i-volume"/></svg>Phát âm</span>
@@ -913,6 +930,16 @@
     W.forEach(function(w){w.days.forEach(function(x){if(x.n===dd)found=x;});});
     if(found){var c=document.getElementById("d"+dd);if(c)c.classList.add("today");
       box.innerHTML="<b>Hôm nay · Ngày "+dd+"</b>"+found.dw+" "+found.d+" — "+esc(found.lab);}
+  })();
+
+  // Đo chiều cao header để ghim thanh tab ngay bên dưới (header co giãn theo màn hình)
+  (function(){
+    var hdr=document.querySelector("header.top");if(!hdr)return;
+    function setH(){document.documentElement.style.setProperty("--headerH",hdr.offsetHeight+"px");}
+    setH();
+    window.addEventListener("resize",setH,{passive:true});
+    window.addEventListener("load",setH);
+    if(document.fonts&&document.fonts.ready)document.fonts.ready.then(setH);
   })();
 
   var tkey="ielts90.theme";
