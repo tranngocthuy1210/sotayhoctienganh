@@ -421,6 +421,31 @@
   .wlwords .wlword .say{padding:2px 4px}
   /* Loa trong kịch bản */
   .sl .say,.qa .txt .say{margin-left:7px}
+  /* Tab dọc trong mỗi khối kịch bản */
+  .vtabs{display:grid;grid-template-columns:214px minmax(0,1fr);gap:20px;margin-top:10px}
+  .vtabs-nav{display:flex;flex-direction:column;gap:4px;align-self:start;
+    position:sticky;top:calc(var(--headerH,66px) + 58px)}
+  .vtab{appearance:none;cursor:pointer;text-align:left;width:100%;border:1px solid transparent;
+    border-radius:10px;background:none;padding:9px 11px;display:flex;flex-direction:column;gap:3px;color:var(--muted)}
+  .vtab:hover{background:var(--surface-2);color:var(--ink)}
+  .vtab[aria-selected="true"]{background:color-mix(in srgb,var(--c) 12%,var(--surface));
+    border-color:color-mix(in srgb,var(--c) 30%,transparent);color:var(--ink)}
+  .vtab:focus-visible{outline:2px solid var(--c);outline-offset:1px}
+  .vt-tag{font:700 9.5px/1 var(--sans);text-transform:uppercase;letter-spacing:.05em;color:var(--c)}
+  .vt-name{font:600 12.5px/1.35 var(--sans)}
+  .vtab[aria-selected="true"] .vt-name{font-weight:700}
+  .vtabs-body{min-width:0}
+  .vtab-panel{display:none}
+  .vtab-panel.on{display:block;animation:rise .28s ease}
+  .vtab-panel>h4:first-child{margin-top:0}
+  @media (max-width:760px){
+    .vtabs{grid-template-columns:1fr;gap:8px}
+    .vtabs-nav{position:static;flex-direction:row;overflow-x:auto;gap:6px;padding-bottom:5px;scrollbar-width:none}
+    .vtabs-nav::-webkit-scrollbar{display:none}
+    .vtab{width:auto;flex:none;white-space:nowrap;border-color:var(--line);background:var(--surface-2);padding:8px 12px}
+    .vt-name{display:none}
+    .vt-tag{font-size:11.5px;letter-spacing:.03em}
+  }
   /* Dòng nghĩa tiếng Việt dưới câu tiếng Anh */
   .vn{font:500 12.5px/1.5 var(--sans);color:var(--muted)}
   .script .vn{padding-left:16px;margin:-3px 0 7px}
@@ -701,7 +726,7 @@
     <details class="acc" id="acc-s3" style="--c:var(--damphan)">
       <summary><span class="sicon"><svg class="i"><use href="#i-scale"/></svg></span>C · Kịch bản đàm phán Tháng 3<span class="scount">4 kịch bản · 12 câu hỏi · 3 hội thoại</span><span class="chev"><svg class="i"><use href="#i-arrow"/></svg></span></summary>
       <div class="acc-body">
-        <h4 id="kb-discovery"><span class="tag">Tuần 9</span>Discovery — hỏi nhu cầu trước khi báo giá · Ngày 61</h4>
+        <h4 id="kb-discovery" class="vmain"><span class="tag">Tuần 9</span>Discovery — hỏi nhu cầu trước khi báo giá · Ngày 61</h4>
         <div class="script">
           <div class="sl">Before I give you a price, can I ask a few questions?</div>
           <div class="sl">How many outlets do you have now?</div>
@@ -799,7 +824,7 @@
         </div>
         <div class="snote"><svg class="i i-sm"><use href="#i-mic"/></svg><span><b>Luyện thế nào:</b> đọc to phần <b>Bạn</b>, bấm loa nghe lại câu của <b>Khách</b> để quen tai. Ngày 61 và 69 (italki) đem đúng 3 hội thoại này ra roleplay.</span></div>
 
-        <h4 id="kb-quote"><span class="tag">Tuần 10</span>Báo giá — giải thích cơ cấu giá · Ngày 68</h4>
+        <h4 id="kb-quote" class="vmain"><span class="tag">Tuần 10</span>Báo giá — giải thích cơ cấu giá · Ngày 68</h4>
         <div class="script">
           <div class="sl">Our price has two parts.</div>
           <div class="sl">First, a one-time setup fee. This includes installation and training for your staff.</div>
@@ -870,7 +895,7 @@
           <div class="vn">Em đề xuất phương án này vì cân bằng giữa chi phí ban đầu và dùng lâu dài.</div>
         </div>
 
-        <h4 id="kb-obj"><span class="tag">Tuần 11</span>Xử lý phản đối về giá · Ngày 75</h4>
+        <h4 id="kb-obj" class="vmain"><span class="tag">Tuần 11</span>Xử lý phản đối về giá · Ngày 75</h4>
         <div class="qa">
           <div class="row"><span class="who">Khách</span><span class="txt">It's too expensive.</span></div>
           <div class="row"><span class="who you">Bạn</span><span class="txt gold">I understand. Can I ask — expensive compared to what?</span></div>
@@ -910,7 +935,7 @@
         </div>
         <div class="snote"><svg class="i i-sm"><use href="#i-scale"/></svg><span>Ghép với Ngày 68: khi khách chê giá, dùng <b>Bước 3</b> ở đây rồi lấy đúng phần “giá có 3 phần” bên Tuần 10 ra tách.</span></div>
 
-        <h4 id="kb-close"><span class="tag">Tuần 12</span>Chốt &amp; xác nhận điều khoản · Ngày 82</h4>
+        <h4 id="kb-close" class="vmain"><span class="tag">Tuần 12</span>Chốt &amp; xác nhận điều khoản · Ngày 82</h4>
         <div class="script">
           <div class="sl"><b>So, let me confirm what we agreed.</b></div>
           <div class="sl">Five outlets. The POS and the inventory module. No KDS for now.</div>
@@ -1551,6 +1576,83 @@
 
   // Cho khối "Của tôi" (script sau) dùng chung
   window.PRON={speak:speak,sayBtn:sayBtn,ipaSpanFor:function(t){var d=IPA[String(t||"").trim().toLowerCase()];return d?ipaSpan(d):"";},refresh:function(){applyAccent();}};
+})();
+</script>
+
+<script>
+/* Tab dọc cho từng khối kịch bản.
+   Chạy SAU khi trang đã gán key sửa-tay → di chuyển khối không mất chữ đã sửa
+   (key nằm trên thuộc tính data-ek của từng phần tử, đi theo phần tử).
+   Quy tắc gom nhóm: nếu khối có h4.vmain thì lấy đó làm mục chính (các h4 nhỏ
+   nằm gọn bên trong); nếu không có thì mỗi h4 là một mục. */
+(function(){
+  var bodies=document.querySelectorAll("#tab-script details.acc > .acc-body");
+  Array.prototype.forEach.call(bodies,function(body){
+    var kids=Array.prototype.slice.call(body.children);
+    var hasMain=!!body.querySelector("h4.vmain");
+    var groups=[],cur=null;
+    kids.forEach(function(el){
+      var boundary=(el.tagName==="H4")&&(!hasMain||el.classList.contains("vmain"));
+      if(boundary){cur={h4:el,nodes:[]};groups.push(cur);}
+      else if(cur)cur.nodes.push(el);
+    });
+    if(groups.length<3)return;
+
+    var wrap=document.createElement("div");wrap.className="vtabs";
+    var nav=document.createElement("nav");nav.className="vtabs-nav";nav.setAttribute("role","tablist");
+    var panes=document.createElement("div");panes.className="vtabs-body";
+    wrap.appendChild(nav);wrap.appendChild(panes);
+
+    function show(i){
+      var tabs=nav.querySelectorAll(".vtab"),ps=panes.querySelectorAll(".vtab-panel");
+      for(var k=0;k<ps.length;k++){
+        ps[k].classList.toggle("on",k===i);
+        tabs[k].setAttribute("aria-selected",k===i?"true":"false");
+      }
+    }
+
+    groups.forEach(function(g,i){
+      var panel=document.createElement("section");
+      panel.className="vtab-panel"+(i===0?" on":"");
+      panel.setAttribute("role","tabpanel");
+      panel.appendChild(g.h4);
+      g.nodes.forEach(function(n){panel.appendChild(n);});
+      panes.appendChild(panel);
+
+      var clone=g.h4.cloneNode(true),t=clone.querySelector(".tag");
+      var tag=t?t.textContent.trim():"";
+      if(t&&t.parentNode)t.parentNode.removeChild(t);
+      var name=clone.textContent.trim();
+      if(!tag)tag=name.length>18?name.slice(0,18)+"…":name;
+
+      var b=document.createElement("button");
+      b.type="button";b.className="vtab";b.setAttribute("role","tab");
+      b.setAttribute("aria-selected",i===0?"true":"false");
+      var st=document.createElement("span");st.className="vt-tag";st.textContent=tag;
+      var sn=document.createElement("span");sn.className="vt-name";sn.textContent=name;
+      b.appendChild(st);b.appendChild(sn);
+      b.addEventListener("click",function(){show(i);});
+      nav.appendChild(b);
+    });
+
+    wrap._show=show;
+    body.appendChild(wrap);
+  });
+
+  /* Bấm link tới mục đang nằm trong tab ẩn → mở đúng tab rồi cuộn tới */
+  document.addEventListener("click",function(e){
+    var a=e.target.closest?e.target.closest('a[href^="#"]'):null;if(!a)return;
+    var id=a.getAttribute("href").slice(1);if(!id)return;
+    var el=document.getElementById(id);if(!el)return;
+    var panel=el.closest(".vtab-panel");if(!panel)return;
+    var wrap=panel.closest(".vtabs");if(!wrap||!wrap._show)return;
+    var ps=wrap.querySelectorAll(".vtab-panel");
+    for(var k=0;k<ps.length;k++){if(ps[k]===panel){wrap._show(k);break;}}
+    setTimeout(function(){
+      var rm=matchMedia("(prefers-reduced-motion:reduce)").matches;
+      el.scrollIntoView({behavior:rm?"auto":"smooth",block:"start"});
+    },40);
+  });
 })();
 </script>
 
