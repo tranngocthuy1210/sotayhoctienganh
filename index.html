@@ -421,6 +421,31 @@
   .wlwords .wlword .say{padding:2px 4px}
   /* Loa trong kịch bản */
   .sl .say,.qa .txt .say{margin-left:7px}
+  /* Khu Ghi âm & tiến bộ */
+  .recbox{margin:14px 0}
+  .recbox h3{margin:0 0 10px}
+  .recbox .scount{margin-left:auto;font:600 11.5px/1 var(--sans);color:var(--faint)}
+  .recctl{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:8px}
+  .recbtn{appearance:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;border:none;border-radius:11px;
+    padding:12px 18px;font:700 13.5px/1 var(--sans);color:#fff;background:var(--damphan)}
+  .recbtn.on{background:var(--brand)}
+  .recbtn:disabled{opacity:.5;cursor:default}
+  .recbtn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  .rectime{font:700 16px/1 var(--sans);font-variant-numeric:tabular-nums;color:var(--ink)}
+  .recmsg{font:500 12.5px/1.45 var(--sans);color:var(--muted)}
+  .recitem{display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap;padding:11px 13px;
+    border:1px solid var(--line);border-radius:11px;background:var(--surface-2)}
+  .recitem .ri-main{flex:1;min-width:170px}
+  .recitem .ri-t{font:700 13.5px/1.35 var(--sans);color:var(--ink)}
+  .recitem .ri-m{font:500 12px/1.4 var(--sans);color:var(--faint);margin-top:2px}
+  .recitem audio{width:100%;margin-top:9px}
+  .cmpgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:10px}
+  .cmpgrid label{display:block;font:700 10.5px/1 var(--sans);text-transform:uppercase;letter-spacing:.05em;
+    color:var(--faint);margin-bottom:6px}
+  .cmpgrid select{width:100%;font:500 13px/1.4 var(--sans);color:var(--ink);background:var(--surface-2);
+    border:1px solid var(--line);border-radius:9px;padding:9px 11px}
+  .cmpgrid audio{width:100%;margin-top:9px}
+  @media (max-width:560px){.cmpgrid{grid-template-columns:1fr}}
   /* Banner cài app (PWA) */
   #pwa-install{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom));
     z-index:60;max-width:calc(100% - 24px);display:flex;align-items:center;gap:11px;
@@ -490,6 +515,7 @@
     <button class="tab active" data-tab="cal" role="tab" aria-selected="true"><svg class="i"><use href="#i-cal"/></svg><span class="lb-full">Thời khóa biểu</span><span class="lb-mini">Lịch học</span></button>
     <button class="tab" data-tab="voc" role="tab" aria-selected="false"><svg class="i"><use href="#i-layers"/></svg><span class="lb-full">Sổ tay từ vựng</span><span class="lb-mini">Từ vựng</span></button>
     <button class="tab" data-tab="script" role="tab" aria-selected="false"><svg class="i"><use href="#i-mic"/></svg><span class="lb-full">Kịch bản đối thoại F&amp;B</span><span class="lb-mini">Kịch bản</span></button>
+    <button class="tab" data-tab="rec" role="tab" aria-selected="false"><svg class="i"><use href="#i-headphones"/></svg><span class="lb-full">Ghi âm &amp; tiến bộ</span><span class="lb-mini">Ghi âm</span></button>
   </div>
   <div class="pronbar" id="pronbar" hidden>
     <span class="pronbar-lbl"><svg class="i i-sm"><use href="#i-volume"/></svg>Phát âm</span>
@@ -720,6 +746,44 @@
         </form>
         <div class="mylist" data-list="scripts"><div class="myempty">Đang tải…</div></div>
       </section>
+    </div>
+  </section>
+
+  <section class="tabpanel" id="tab-rec">
+    <div class="sotay-head" style="margin-top:6px">
+      <span class="si"><svg class="i i-lg"><use href="#i-mic"/></svg></span>
+      <div><h2>Ghi âm &amp; tiến bộ</h2>
+        <p>Thu bài nói, lưu lên đám mây riêng của bạn, nghe lại mọi lúc và so sánh mốc đầu ↔ cuối.</p></div>
+    </div>
+
+    <div class="card recbox" id="rec-auth"><div class="myempty">Đang kiểm tra…</div></div>
+
+    <div class="card recbox" id="rec-main" hidden>
+      <h3><svg class="i i-lg"><use href="#i-mic"/></svg>Thu bài nói</h3>
+      <p class="metanote">Ghi ngày trong lộ trình để sau này dễ so sánh (vd Ngày 3 — Tự giới thiệu, Ngày 83 — Đàm phán).</p>
+      <div class="myform">
+        <input id="rec-day" type="number" min="1" max="84" placeholder="Ngày (vd 3)">
+        <input id="rec-label" placeholder="Nhãn (vd: Tự giới thiệu)">
+      </div>
+      <div class="recctl">
+        <button class="recbtn" id="rec-go" type="button"><svg class="i"><use href="#i-mic"/></svg><span>Bắt đầu thu</span></button>
+        <span class="rectime" id="rec-time">00:00</span>
+        <span class="recmsg" id="rec-msg"></span>
+      </div>
+    </div>
+
+    <div class="card recbox" id="rec-listbox" hidden>
+      <h3><svg class="i i-lg"><use href="#i-headphones"/></svg>Bản thu của bạn <span class="scount" id="rec-count"></span></h3>
+      <div class="mylist" id="rec-list"><div class="myempty">Đang tải…</div></div>
+    </div>
+
+    <div class="card recbox" id="rec-cmp" hidden>
+      <h3><svg class="i i-lg"><use href="#i-trophy"/></svg>So sánh tiến bộ</h3>
+      <p class="metanote">Chọn 2 bản để nghe cạnh nhau — đúng kế hoạch Ngày 84: nghe bản 22/07 rồi nghe bản 10/10.</p>
+      <div class="cmpgrid">
+        <div><label for="cmp-a">Bản đầu</label><select id="cmp-a"></select><div id="cmp-ap"></div></div>
+        <div><label for="cmp-b">Bản sau</label><select id="cmp-b"></select><div id="cmp-bp"></div></div>
+      </div>
     </div>
   </section>
 </div>
@@ -1250,6 +1314,7 @@
   if(URL && KEY && window.supabase){
     try{ sb=window.supabase.createClient(URL,KEY); MODE="cloud"; }catch(e){ MODE="local"; }
   }
+  window.SBC=sb; window.SB_MODE=MODE;   // dùng chung cho khu Ghi âm
   var LK={vocab:"ielts90.myvocab.v1", scripts:"ielts90.myscripts.v1"};
   function lget(k){try{return JSON.parse(localStorage.getItem(LK[k])||"[]");}catch(e){return [];}}
   function lset(k,a){try{localStorage.setItem(LK[k],JSON.stringify(a));}catch(e){}}
@@ -1335,6 +1400,190 @@
   });
 
   render("vocab");render("scripts");
+})();
+</script>
+
+<script>
+/* ➌ Ghi âm & tiến bộ — thu bài nói, lưu Supabase Storage (riêng tư), nghe lại, so sánh */
+(function(){
+  var panel=document.getElementById("tab-rec");if(!panel)return;
+  var authBox=document.getElementById("rec-auth"),
+      mainBox=document.getElementById("rec-main"),
+      listBox=document.getElementById("rec-listbox"),
+      cmpBox=document.getElementById("rec-cmp");
+  function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+  function ic(id,cls){return '<svg class="i '+(cls||"i-sm")+'"><use href="#'+id+'"/></svg>';}
+
+  var sb=window.SBC;
+  if(!sb){
+    authBox.innerHTML='<h3>'+ic("i-alert","i-lg")+'Chưa nối đám mây</h3>'+
+      '<p class="metanote">Khu ghi âm cần Supabase. Điền khóa vào <b>config.js</b> theo SETUP.md rồi tải lại trang.</p>';
+    return;
+  }
+
+  var user=null, items=[];
+  var goBtn=document.getElementById("rec-go"),
+      timeEl=document.getElementById("rec-time"),
+      msgEl=document.getElementById("rec-msg"),
+      listEl=document.getElementById("rec-list"),
+      countEl=document.getElementById("rec-count"),
+      selA=document.getElementById("cmp-a"), selB=document.getElementById("cmp-b");
+
+  /* ---------- Đăng nhập ---------- */
+  function renderAuth(){
+    var on=!!user;
+    mainBox.hidden=!on;listBox.hidden=!on;cmpBox.hidden=!on;
+    if(on){
+      authBox.innerHTML='<h3>'+ic("i-check","i-lg")+'Đã đăng nhập</h3>'+
+        '<p class="metanote">Tài khoản: <b>'+esc(user.email||"")+'</b>. Bản thu được khoá riêng — chỉ bạn nghe được.</p>'+
+        '<button class="reset" id="rec-out" type="button">'+ic("i-arrow")+'Đăng xuất</button>';
+      var out=document.getElementById("rec-out");
+      if(out)out.addEventListener("click",function(){sb.auth.signOut();});
+    }else{
+      authBox.innerHTML='<h3>'+ic("i-users","i-lg")+'Đăng nhập để ghi âm</h3>'+
+        '<p class="metanote">Nhập email đã được cấp quyền. Bạn sẽ nhận một link đăng nhập trong hộp thư — bấm vào là xong, không cần nhớ mật khẩu.</p>'+
+        '<form class="myform" id="rec-login" autocomplete="off"><input type="email" id="rec-email" placeholder="email của bạn" required>'+
+        '<button type="submit">'+ic("i-arrow")+'Gửi link đăng nhập</button></form>'+
+        '<div class="recmsg" id="rec-authmsg"></div>';
+      var f=document.getElementById("rec-login");
+      if(f)f.addEventListener("submit",async function(e){
+        e.preventDefault();
+        var em=(document.getElementById("rec-email").value||"").trim();
+        var m=document.getElementById("rec-authmsg");
+        if(!em)return;
+        m.textContent="Đang gửi…";
+        try{
+          var r=await sb.auth.signInWithOtp({email:em,options:{shouldCreateUser:false,
+            emailRedirectTo:location.origin+location.pathname}});
+          if(r.error)m.textContent="Không gửi được: "+r.error.message+" — email này có thể chưa được cấp quyền.";
+          else m.textContent="Đã gửi! Mở hộp thư "+em+" và bấm link đăng nhập (kiểm tra cả mục Spam).";
+        }catch(err){m.textContent="Lỗi: "+(err.message||err);}
+      });
+    }
+  }
+
+  /* ---------- Thu âm ---------- */
+  var mr=null,chunks=[],t0=0,tick=null;
+  function fmt(s){var m=Math.floor(s/60),x=Math.floor(s%60);return (m<10?"0":"")+m+":"+(x<10?"0":"")+x;}
+  function setBtn(on){goBtn.classList.toggle("on",on);
+    var sp=goBtn.querySelector("span");if(sp)sp.textContent=on?"Dừng & lưu":"Bắt đầu thu";}
+
+  goBtn.addEventListener("click",async function(){
+    if(mr&&mr.state==="recording"){mr.stop();return;}
+    if(!navigator.mediaDevices||!window.MediaRecorder){msgEl.textContent="Trình duyệt này không hỗ trợ ghi âm.";return;}
+    try{
+      var stream=await navigator.mediaDevices.getUserMedia({audio:true});
+      var opt={audioBitsPerSecond:32000};
+      if(window.MediaRecorder.isTypeSupported&&MediaRecorder.isTypeSupported("audio/webm;codecs=opus"))opt.mimeType="audio/webm;codecs=opus";
+      else if(window.MediaRecorder.isTypeSupported&&MediaRecorder.isTypeSupported("audio/mp4"))opt.mimeType="audio/mp4";
+      mr=new MediaRecorder(stream,opt);chunks=[];
+      mr.ondataavailable=function(e){if(e.data&&e.data.size)chunks.push(e.data);};
+      mr.onstop=function(){
+        try{stream.getTracks().forEach(function(t){t.stop();});}catch(e){}
+        clearInterval(tick);setBtn(false);
+        save(new Blob(chunks,{type:mr.mimeType||"audio/webm"}),(Date.now()-t0)/1000);
+      };
+      mr.start();t0=Date.now();setBtn(true);
+      msgEl.textContent="Đang thu… nói to và rõ.";timeEl.textContent="00:00";
+      tick=setInterval(function(){timeEl.textContent=fmt((Date.now()-t0)/1000);},250);
+    }catch(err){msgEl.textContent="Không mở được micro: "+(err.message||err);}
+  });
+
+  async function save(blob,dur){
+    if(!user){msgEl.textContent="Cần đăng nhập trước.";return;}
+    msgEl.textContent="Đang tải lên… ("+Math.round(blob.size/1024)+" KB)";
+    try{
+      var ext=(blob.type.indexOf("mp4")>-1||blob.type.indexOf("m4a")>-1)?"m4a":"webm";
+      var path=user.id+"/"+Date.now()+"."+ext;
+      var up=await sb.storage.from("recordings").upload(path,blob,{contentType:blob.type||"audio/webm"});
+      if(up.error)throw up.error;
+      var dv=parseInt(document.getElementById("rec-day").value,10);
+      var lb=(document.getElementById("rec-label").value||"").trim();
+      var ins=await sb.from("recordings").insert({user_id:user.id,day:isNaN(dv)?null:dv,label:lb,path:path,duration:dur});
+      if(ins.error)throw ins.error;
+      msgEl.textContent="Đã lưu lên đám mây ✓";
+      await loadList();
+    }catch(err){msgEl.textContent="Lỗi lưu: "+(err.message||err);}
+  }
+
+  /* ---------- Danh sách + nghe lại ---------- */
+  async function loadList(){
+    listEl.innerHTML='<div class="myempty">Đang tải…</div>';
+    var r=await sb.from("recordings").select("*").order("created_at",{ascending:false});
+    if(r.error){listEl.innerHTML='<div class="myempty">Lỗi tải: '+esc(r.error.message)+'</div>';return;}
+    items=r.data||[];
+    countEl.textContent=items.length?items.length+" bản":"";
+    if(!items.length){listEl.innerHTML='<div class="myempty">Chưa có bản thu nào — bấm "Bắt đầu thu" ở trên.</div>';fillCmp();return;}
+    listEl.innerHTML=items.map(function(it){
+      return '<div class="recitem" data-id="'+esc(it.id)+'"><div class="ri-main">'+
+        '<div class="ri-t">'+(it.day?"Ngày "+esc(it.day)+" — ":"")+esc(it.label||"Bản thu")+'</div>'+
+        '<div class="ri-m">'+esc(new Date(it.created_at).toLocaleString("vi-VN"))+' · '+Math.round(it.duration||0)+'s</div>'+
+        '<div class="ri-p"></div></div>'+
+        '<button class="tbtn ri-play" type="button">'+ic("i-cplay")+'Nghe</button>'+
+        '<button class="mi-del ri-del" type="button" title="Xoá" aria-label="Xoá">'+ic("i-trash")+'</button></div>';
+    }).join("");
+    fillCmp();
+  }
+
+  async function signed(path){
+    var s=await sb.storage.from("recordings").createSignedUrl(path,3600);
+    if(s.error)throw s.error;
+    return s.data.signedUrl;
+  }
+
+  listEl.addEventListener("click",async function(e){
+    var row=e.target.closest?e.target.closest(".recitem"):null;if(!row)return;
+    var it=items.filter(function(x){return String(x.id)===row.getAttribute("data-id");})[0];if(!it)return;
+    if(e.target.closest(".ri-play")){
+      var box=row.querySelector(".ri-p");
+      if(box.querySelector("audio"))return;
+      box.innerHTML='<div class="recmsg">Đang mở…</div>';
+      try{
+        box.innerHTML='<audio controls preload="none" src="'+esc(await signed(it.path))+'"></audio>';
+        var a=box.querySelector("audio");if(a)a.play().catch(function(){});
+      }catch(err){box.innerHTML='<div class="recmsg">Lỗi mở file: '+esc(err.message||err)+'</div>';}
+      return;
+    }
+    if(e.target.closest(".ri-del")){
+      if(!confirm("Xoá bản thu này? Không hoàn tác được."))return;
+      try{
+        await sb.storage.from("recordings").remove([it.path]);
+        var d=await sb.from("recordings").delete().eq("id",it.id);
+        if(d.error)throw d.error;
+        await loadList();
+      }catch(err){alert("Không xoá được: "+(err.message||err));}
+    }
+  });
+
+  /* ---------- So sánh 2 bản ---------- */
+  function optHtml(){
+    return '<option value="">— chọn bản thu —</option>'+items.map(function(it){
+      return '<option value="'+esc(it.id)+'">'+(it.day?"Ngày "+esc(it.day)+" — ":"")+esc(it.label||"Bản thu")+
+        " ("+esc(new Date(it.created_at).toLocaleDateString("vi-VN"))+")</option>";
+    }).join("");
+  }
+  function fillCmp(){
+    selA.innerHTML=optHtml();selB.innerHTML=optHtml();
+    document.getElementById("cmp-ap").innerHTML="";document.getElementById("cmp-bp").innerHTML="";
+  }
+  async function mount(sel,boxId){
+    var tgt=document.getElementById(boxId);tgt.innerHTML="";
+    var it=items.filter(function(x){return String(x.id)===sel.value;})[0];if(!it)return;
+    tgt.innerHTML='<div class="recmsg">Đang mở…</div>';
+    try{tgt.innerHTML='<audio controls preload="none" src="'+esc(await signed(it.path))+'"></audio>';}
+    catch(err){tgt.innerHTML='<div class="recmsg">Lỗi: '+esc(err.message||err)+'</div>';}
+  }
+  selA.addEventListener("change",function(){mount(selA,"cmp-ap");});
+  selB.addEventListener("change",function(){mount(selB,"cmp-bp");});
+
+  /* ---------- Khởi động ---------- */
+  sb.auth.getSession().then(function(r){
+    user=(r&&r.data&&r.data.session)?r.data.session.user:null;
+    renderAuth();if(user)loadList();
+  }).catch(function(){renderAuth();});
+  sb.auth.onAuthStateChange(function(_e,session){
+    user=session?session.user:null;renderAuth();if(user)loadList();
+  });
 })();
 </script>
 

@@ -1,13 +1,12 @@
 /* =========================================================================
    CẤU HÌNH ĐỒNG BỘ ĐÁM MÂY (Supabase)
    -------------------------------------------------------------------------
-   - Điền 2 giá trị bên dưới theo hướng dẫn trong file SETUP.md.
-   - Nếu để TRỐNG: trang vẫn chạy bình thường, nhưng từ vựng / kịch bản
-     bạn thêm chỉ lưu trên MÁY NÀY (không đồng bộ sang thiết bị khác).
-   - Điền đúng 2 giá trị: nội dung sẽ đồng bộ trên mọi thiết bị.
-   - anon key được thiết kế để công khai (an toàn khi đặt ở đây),
-     miễn là bạn đã bật Row Level Security theo SETUP.md.
+   - Khóa "publishable" (hoặc anon) được thiết kế để CÔNG KHAI trong web.
+     An toàn vì dữ liệu đã khoá bằng Row Level Security + danh sách email
+     được phép đăng nhập (xem SETUP.md → PHẦN 1B).
+   - TUYỆT ĐỐI KHÔNG dán khóa service_role / secret vào đây.
+   - Để trống 2 dòng dưới thì web vẫn chạy, chỉ là lưu tại máy này.
    ========================================================================= */
 
-window.SB_URL = "";  // Ví dụ: https://abcdxyzpt....supabase.co
-window.SB_KEY = "";  // anon public key (chuỗi rất dài bắt đầu bằng "eyJ...")
+window.SB_URL = "https://lohtwcalxfyflcvpjzwx.supabase.co";
+window.SB_KEY = "sb_publishable_jR1VliEaSpBib4vGRaIcuQ_i-XAiaEc";
