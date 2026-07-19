@@ -292,8 +292,9 @@
   summary:focus-visible{outline:2px solid var(--brand);outline-offset:-2px}
   .acc-body{padding:2px 20px 20px}
   .acc-body h4{margin:20px 0 8px;font:700 13.5px/1.3 var(--sans);color:var(--ink);display:flex;align-items:center;gap:9px;flex-wrap:wrap}
-  .acc-body h4 .tag{font:700 10px/1 var(--sans);text-transform:uppercase;letter-spacing:.05em;color:var(--c);
-    background:color-mix(in srgb,var(--c) 12%,var(--surface));padding:4px 7px;border-radius:6px;border:1px solid color-mix(in srgb,var(--c) 22%,transparent)}
+  h4 .tag{font:700 10px/1 var(--sans);text-transform:uppercase;letter-spacing:.05em;color:var(--c);
+    background:color-mix(in srgb,var(--c) 12%,var(--surface));padding:4px 7px;border-radius:6px;
+    border:1px solid color-mix(in srgb,var(--c) 22%,transparent);flex:none}
   .acc-body>p{font:500 13px/1.5 var(--sans);color:var(--muted);margin:9px 0}
   .rule-gold{font:600 12.5px/1.5 var(--sans);color:var(--ink);background:var(--gold-bg);border-left:3px solid var(--milestone);
     padding:9px 13px;border-radius:0 9px 9px 0;margin:10px 0}
@@ -353,7 +354,8 @@
   .mybox{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:16px;
     box-shadow:var(--shadow);padding:16px 20px 20px;border-top:3px solid var(--c)}
   .mybox-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-  .mybox-head h4{margin:6px 0}
+  .mybox-head h4{margin:6px 0;display:flex;align-items:center;gap:9px;flex-wrap:wrap;
+    font:700 13.5px/1.3 var(--sans);color:var(--ink)}
   .syncbadge{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font:600 11px/1 var(--sans);
     padding:6px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
   .syncbadge.cloud{color:var(--doc);border-color:color-mix(in srgb,var(--doc) 40%,var(--line));background:color-mix(in srgb,var(--doc) 8%,var(--surface))}
