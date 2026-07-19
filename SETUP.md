@@ -106,12 +106,18 @@ create policy "rec_files_delete" on storage.objects for delete
   using (bucket_id='recordings' and auth.uid()::text = (storage.foldername(name))[1]);
 ```
 
-### Bước B. Bật đăng nhập bằng email (magic link)
-1. Menu trái → **Authentication** → **Providers** → **Email**: để **bật** (mặc định đã bật). Có thể **TẮT** "Confirm email" cho đỡ 1 bước xác nhận.
-2. **Authentication** → **URL Configuration**:
+### Bước B. Bật đăng nhập bằng email (magic link) — CHỈ cho email của bạn
+1. Menu trái → **Authentication** → **Providers** → **Email**: để **bật**. Có thể **TẮT** "Confirm email" cho đỡ 1 bước.
+2. **CHẶN người lạ đăng ký** (để không ai ăn dung lượng của bạn):
+   - Trong **Authentication → Providers → Email** (hoặc **Authentication → Sign In / Providers**), **TẮT** mục cho phép đăng ký mới (**"Allow new users to sign up" / "Enable sign ups"**).
+   - Thêm sẵn (các) người được phép: **Authentication → Users → Add user** → nhập **email của bạn** (và vài người bạn muốn). Chỉ những email này mới đăng nhập được.
+   - App sẽ gọi đăng nhập với `shouldCreateUser: false`, nên email lạ bị từ chối ngay.
+3. **Authentication → URL Configuration**:
    - **Site URL**: `https://sotayhoctienganh.vercel.app`
    - **Redirect URLs** → Add: `https://sotayhoctienganh.vercel.app/` và `https://tranngocthuy1210.github.io/sotayhoctienganh/`
-3. (Không cần đổi gì thêm — người dùng nhập email, nhận link đăng nhập trong hộp thư, bấm là vào.)
+4. Xong. Người dùng nhập email (đã được thêm ở bước 2) → nhận link/mã trong hộp thư → bấm là vào. Email không nằm trong danh sách sẽ không đăng nhập được.
+
+> Muốn thêm/bớt người dùng sau này: vào **Authentication → Users** thêm hoặc xoá email. Đơn giản, không cần sửa code.
 
 ### Bước C. Dán khóa vào config.js
 Giống PHẦN 1 (URL + anon key). Nếu đã làm PHẦN 1 rồi thì **không cần làm lại** — dùng chung 1 dự án Supabase.
