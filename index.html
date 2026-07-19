@@ -2,10 +2,18 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <meta name="description" content="Sổ tay học tiếng Anh 90 ngày — 4 kỹ năng, lịch, từ vựng và kịch bản.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%93%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#0F7A6E">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Sổ tay Anh">
 <title>SỔ TAY HỌC TIẾNG ANH — by tranngocthuy</title>
 </head>
 <body>
@@ -413,6 +421,21 @@
   .wlwords .wlword .say{padding:2px 4px}
   /* Loa trong kịch bản */
   .sl .say,.qa .txt .say{margin-left:7px}
+  /* Banner cài app (PWA) */
+  #pwa-install{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom));
+    z-index:60;max-width:calc(100% - 24px);display:flex;align-items:center;gap:11px;
+    background:var(--surface);border:1px solid var(--line-strong);border-radius:14px;box-shadow:var(--shadow-lift);
+    padding:11px 12px 11px 14px}
+  #pwa-install[hidden]{display:none}
+  #pwa-install .pwa-ic{width:34px;height:34px;border-radius:9px;flex:none}
+  #pwa-install .pwa-tx{font:600 12.5px/1.35 var(--sans);color:var(--ink)}
+  #pwa-install .pwa-tx small{display:block;font-weight:500;color:var(--muted);font-size:11.5px}
+  #pwa-add{appearance:none;cursor:pointer;border:none;background:var(--brand);color:#fff;border-radius:9px;
+    padding:9px 13px;font:700 12.5px/1 var(--sans);white-space:nowrap}
+  #pwa-add:hover{background:var(--brand-ink)}
+  #pwa-x{appearance:none;cursor:pointer;background:none;border:1px solid var(--line);border-radius:8px;color:var(--faint);
+    padding:6px;display:inline-flex;flex:none}
+  #pwa-x:hover{color:var(--damphan);border-color:var(--damphan)}
   /* Bộ 600 từ theo chủ đề */
   #voc600{margin:10px 0 6px}
   details.acc.voc-theme{margin:10px 0}
@@ -1312,6 +1335,55 @@
   });
 
   render("vocab");render("scripts");
+})();
+</script>
+
+<div id="pwa-install" hidden>
+  <img class="pwa-ic" src="./icon-192.png" alt="" width="34" height="34">
+  <div class="pwa-tx">Cài "Sổ tay Anh" lên máy<small id="pwa-sub">Mở nhanh như app, chạy cả khi mất mạng.</small></div>
+  <button id="pwa-add" type="button">Cài</button>
+  <button id="pwa-x" type="button" aria-label="Đóng"><svg class="i i-sm"><use href="#i-trash"/></svg></button>
+</div>
+
+<script>
+/* ➋ PWA: đăng ký service worker + gợi ý cài lên màn hình chính */
+(function(){
+  if("serviceWorker" in navigator){
+    window.addEventListener("load",function(){
+      navigator.serviceWorker.register("./service-worker.js").catch(function(){});
+    });
+  }
+  var box=document.getElementById("pwa-install");if(!box)return;
+  var addBtn=document.getElementById("pwa-add"), xBtn=document.getElementById("pwa-x"), sub=document.getElementById("pwa-sub");
+  var DKEY="pwa.install.dismiss";
+  var standalone=(matchMedia&&matchMedia("(display-mode: standalone)").matches)||navigator.standalone===true;
+  var dismissed=false; try{dismissed=localStorage.getItem(DKEY)==="1";}catch(e){}
+  var isiOS=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+  var deferred=null;
+
+  function show(){if(!standalone&&!dismissed)box.hidden=false;}
+  function hide(){box.hidden=true;}
+  function dismiss(){hide();try{localStorage.setItem(DKEY,"1");}catch(e){}}
+
+  xBtn.addEventListener("click",dismiss);
+
+  // Android / Chrome: có prompt cài tự động
+  window.addEventListener("beforeinstallprompt",function(e){
+    e.preventDefault();deferred=e;addBtn.style.display="";show();
+  });
+  addBtn.addEventListener("click",function(){
+    if(!deferred)return;
+    deferred.prompt();
+    deferred.userChoice.then(function(){deferred=null;hide();});
+  });
+  window.addEventListener("appinstalled",function(){deferred=null;dismiss();});
+
+  // iOS Safari: không có prompt → chỉ dẫn thao tác
+  if(isiOS&&!standalone){
+    addBtn.style.display="none";
+    if(sub)sub.textContent="Bấm nút Chia sẻ ⬆️ ở thanh dưới rồi chọn “Thêm vào MH chính”.";
+    setTimeout(show,1200);
+  }
 })();
 </script>
 </body>
