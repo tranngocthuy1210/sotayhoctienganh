@@ -535,6 +535,11 @@
   .vw-ex{display:flex;align-items:flex-start;gap:8px;font:500 13px/1.5 var(--sans);color:var(--ink);
     background:var(--surface-2);border-left:3px solid var(--c);border-radius:0 8px 8px 0;padding:8px 11px}
   .vw-ex .exq{flex:1}
+  .vw-ex+.vw-ex{margin-top:7px}
+  .vw-ex.alt{border-left-color:var(--line-strong);background:transparent}
+  .extag{display:block;font:700 9px/1 var(--sans);text-transform:uppercase;letter-spacing:.05em;
+    color:var(--c);margin-bottom:4px}
+  .vw-ex.alt .extag{color:var(--faint)}
   .vw-tip{font:500 12px/1.45 var(--sans);color:var(--muted);margin-top:7px;display:flex;gap:7px}
   .vw-tip .i{color:var(--c);flex:none;margin-top:1px}
 
@@ -1793,6 +1798,14 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
   function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
   var sb=(window.PRON&&window.PRON.sayBtn)?window.PRON.sayBtn:function(){return "";};
   function icon(id){return '<svg class="i i-sm"><use href="#'+id+'"/></svg>';}
+  /* 2 câu ví dụ: ex = ngữ cảnh công việc của người dùng, ex2 = ngữ cảnh đời thường */
+  function exHTML(w){
+    var h="";
+    if(w.ex)h+='<div class="vw-ex"><span class="exq"><span class="extag">Việc của bạn</span>“'+esc(w.ex)+'”</span>'+sb(w.ex)+'</div>';
+    if(w.ex2)h+='<div class="vw-ex alt"><span class="exq"><span class="extag">Ngữ cảnh khác</span>“'+esc(w.ex2)+'”</span>'+sb(w.ex2)+'</div>';
+    return h;
+  }
+
   function wordHTML(w){
     return '<details class="vw"><summary>'+
       '<span class="vw-word">'+esc(w.t)+'</span>'+
@@ -1802,7 +1815,7 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
       '<span class="vw-mean">'+esc(w.vn||"")+'</span>'+
       '<span class="vw-chev">'+icon("i-arrow")+'</span></summary>'+
       '<div class="vw-body">'+
-      (w.ex?'<div class="vw-ex"><span class="exq">“'+esc(w.ex)+'”</span>'+sb(w.ex)+'</div>':'')+
+      exHTML(w)+
       (w.tip?'<div class="vw-tip">'+icon("i-target")+'<span>'+esc(w.tip)+'</span></div>':'')+
       '</div></details>';
   }
@@ -1990,7 +2003,8 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
         '<div class="srs-hint">Nhớ nghĩa chưa? Nói to 1 câu có từ này rồi bấm xem đáp án.</div>';
       back='<div class="srs-ans"><div class="srs-mean">'+esc(w.vn||"")+'</div>';
     }
-    back+=(w.ex?'<div class="vw-ex"><span class="exq">“'+esc(w.ex)+'”</span>'+sayBtn(w.ex)+'</div>':'')+
+    back+=(w.ex?'<div class="vw-ex"><span class="exq"><span class="extag">Việc của bạn</span>“'+esc(w.ex)+'”</span>'+sayBtn(w.ex)+'</div>':'')+
+      (w.ex2?'<div class="vw-ex alt"><span class="exq"><span class="extag">Ngữ cảnh khác</span>“'+esc(w.ex2)+'”</span>'+sayBtn(w.ex2)+'</div>':'')+
       (w.tip?'<div class="vw-tip">'+icon("i-target","i-sm")+'<span>'+esc(w.tip)+'</span></div>':'')+'</div>';
 
     return '<div class="srs-head"><h4>'+icon("i-layers")+'Đang ôn'+(isNew?' · <span style="color:var(--brand)">từ mới</span>':'')+'</h4>'+
