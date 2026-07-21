@@ -3,9 +3,9 @@
    - Trang (index.html): ưu tiên mạng để luôn lấy bản mới; mất mạng thì dùng bản đã lưu
    - Tài nguyên khác cùng nguồn: dùng bản lưu ngay + âm thầm cập nhật (stale-while-revalidate)
    - Bỏ qua yêu cầu khác nguồn (vd CDN Supabase) để không chặn */
-var CACHE = "sotay-v2";
+var CACHE = "sotay-v3";
 var CORE = [
-  "./", "./index.html", "./data-vocab.js", "./config.js", "./manifest.json",
+  "./", "./index.html", "./data-vocab.js", "./data-vocab-plus.js", "./config.js", "./manifest.json",
   "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png", "./apple-touch-icon.png"
 ];
 
