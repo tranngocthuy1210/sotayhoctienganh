@@ -661,8 +661,10 @@
     border-left:3px solid var(--c);border-radius:0 8px 8px 0;padding:10px 12px;margin-top:11px}
   .dic-full .lb{display:block;font:700 9.5px/1 var(--sans);text-transform:uppercase;
     letter-spacing:.05em;color:var(--faint);margin-bottom:5px}
-  .dic-src{font:600 10.5px/1 var(--sans);text-transform:uppercase;letter-spacing:.04em;
-    color:var(--faint);margin-bottom:10px}
+  .dic-src{font:600 10.5px/1.5 var(--sans);text-transform:uppercase;letter-spacing:.04em;
+    color:var(--faint);margin-bottom:10px;display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+  .dic-cred{color:var(--doc);text-decoration:none;text-transform:none;letter-spacing:0}
+  .dic-cred:hover{text-decoration:underline}
   @media(max-width:560px){
     .dic-play{padding:22px 14px;font-size:14px}
     .dic-line{font-size:14px;line-height:1.85}
@@ -1839,6 +1841,7 @@
 
 <script src="./data-vocab.js"></script>
 <script src="./data-vocab-plus.js"></script>
+<script src="./data-dictation-tatoeba.js"></script>
 <script>
 /* Gộp bộ 600 gốc + phần mở rộng (Oxford 3000 chọn lọc) thành 1 kho dùng chung
    cho cả phần hiển thị lẫn phần ôn Anki. */
@@ -2206,7 +2209,7 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
     if(sv&&typeof sv==="object"){
       S.h=sv.h||{}; S.k=sv.k||{}; S.acc=sv.acc||[];
       if(sv.cfg){
-        S.cfg.src=({all:1,vocab:1,script:1}[sv.cfg.src])?sv.cfg.src:"all";
+        S.cfg.src=({all:1,vocab:1,script:1,human:1}[sv.cfg.src])?sv.cfg.src:"all";
         S.cfg.rate=(+sv.cfg.rate===0.7||+sv.cfg.rate===1)?+sv.cfg.rate:1;
       }
     }
@@ -2226,7 +2229,12 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
   var POOL=null;
   function wc(s){return String(s).trim().split(/\s+/).length;}
   function buildPool(){
-    var voc=[],scr=[];
+    var voc=[],scr=[],hum=[];
+    (window.DICT_TATOEBA||[]).forEach(function(r){
+      hum.push({t:r.t,src:"Giọng người thật",
+        audio:"https://audio.tatoeba.org/sentences/eng/"+r.id+".mp3",
+        by:r.by,lic:r.lic,id:r.id});
+    });
     (window.VOCAB_ALL||[]).forEach(function(g){
       (g.words||[]).forEach(function(w){
         [w.ex,w.ex2].forEach(function(e){
@@ -2243,13 +2251,14 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
         if(!/[a-zA-Z]/.test(t))return;
         scr.push({t:t,src:"Kịch bản F&B"});
       });
-    POOL={vocab:voc,script:scr};
+    POOL={vocab:voc,script:scr,human:hum};
   }
   function pool(){
     if(!POOL)buildPool();
     if(S.cfg.src==="vocab")return POOL.vocab;
     if(S.cfg.src==="script")return POOL.script;
-    return POOL.vocab.concat(POOL.script);
+    if(S.cfg.src==="human")return POOL.human;
+    return POOL.vocab.concat(POOL.script).concat(POOL.human);
   }
 
   /* ---- Chuỗi ngày ---- */
@@ -2326,12 +2335,25 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
   /* ---- Trạng thái phiên ---- */
   var Q=[],qi=0,checked=false,lastOps=null,lastPct=0,nDone=0,sum=0;
 
+  var audioEl=null;
+  function ttsSpeak(it,rate){
+    if(window.PRON&&window.PRON.speak)window.PRON.speak(it.t,null,rate||S.cfg.rate);
+  }
   function speak(rate){
     var it=Q[qi];if(!it)return;
     var btn=host.querySelector(".dic-play");
-    if(window.PRON&&window.PRON.speak){
-      if(btn){btn.classList.add("playing");setTimeout(function(){btn.classList.remove("playing");},900);}
-      window.PRON.speak(it.t,null,rate||S.cfg.rate);
+    function flash(){if(btn){btn.classList.add("playing");setTimeout(function(){btn.classList.remove("playing");},900);}}
+    try{window.speechSynthesis&&window.speechSynthesis.cancel();}catch(e){}
+    if(audioEl){try{audioEl.pause();}catch(e){}audioEl=null;}
+    if(it.audio){
+      /* Câu Tatoeba: phát MP3 giọng người thật. Lỗi mạng/hết file thì tự lùi về giọng máy. */
+      flash();
+      var a=new Audio(it.audio);audioEl=a;
+      try{a.playbackRate=(rate||S.cfg.rate)<1?0.75:1;a.preservesPitch=true;a.mozPreservesPitch=true;a.webkitPreservesPitch=true;}catch(e){}
+      a.onerror=function(){audioEl=null;ttsSpeak(it,rate);};
+      a.play().catch(function(){audioEl=null;ttsSpeak(it,rate);});
+    }else{
+      flash();ttsSpeak(it,rate);
     }
   }
 
@@ -2361,6 +2383,7 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
           '<button type="button" class="seg" data-src="all" aria-pressed="'+(S.cfg.src==="all")+'">Trộn</button>'+
           '<button type="button" class="seg" data-src="vocab" aria-pressed="'+(S.cfg.src==="vocab")+'">Từ vựng</button>'+
           '<button type="button" class="seg" data-src="script" aria-pressed="'+(S.cfg.src==="script")+'">Kịch bản</button>'+
+          (POOL&&POOL.human.length?'<button type="button" class="seg" data-src="human" aria-pressed="'+(S.cfg.src==="human")+'">Giọng thật</button>':'')+
         '</div>'+
         '<span class="lbl">Tốc độ đọc</span>'+
         '<div class="segwrap" role="group" aria-label="Tốc độ đọc">'+
@@ -2370,9 +2393,10 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
       '</div>'+
       '<button type="button" class="srs-btn wide" data-act="start"'+(p.length?"":" disabled")+'>'+
         icon("i-play")+(p.length?"Bắt đầu chép — "+GOAL+" câu":"Chưa có câu nào để chép")+'</button>'+
-      '<div class="srs-note">Giọng đọc là <b>giọng máy</b> của trình duyệt, không phải người thật — '+
-      'nó đọc rõ và đều hơn tiếng thật. Phần này luyện chính tả và nghe từng từ; muốn quen tiếng thật '+
-      'thì vẫn phải nghe podcast/phim.'+
+      '<div class="srs-note">Nguồn <b>Từ vựng</b> và <b>Kịch bản</b> đọc bằng <b>giọng máy</b> của trình duyệt (rõ và đều). '+
+      'Nguồn <b>Giọng thật</b> là '+(POOL?POOL.human.length:0)+' câu có <b>giọng người bản xứ</b> thu sẵn, lấy từ dự án '+
+      '<a href="https://tatoeba.org" target="_blank" rel="noopener" class="dic-cred">Tatoeba</a> (giấy phép mở CC BY) — '+
+      'gần với tiếng thật hơn. Muốn quen tiếng thật tốc độ cao, ồn ào thì vẫn nên nghe podcast/phim.'+
       (S.acc.length?' · <button type="button" class="srs-chip" data-act="reset" style="margin-left:4px">Xoá tiến độ chính tả</button>':'')+'</div>';
   }
 
@@ -2382,8 +2406,9 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
       '<button type="button" class="srs-chip" data-act="quit">Dừng</button></div>'+
       '<div class="srs-bar"><i style="width:'+pct+'%"></i></div>'+
       '<div class="srs-count"><span>Đã chép '+nDone+'</span><span>Còn '+rem+' câu</span></div>'+
-      '<div class="dic-src">'+esc(it.src)+' · '+wc(it.t)+' từ</div>'+
-      '<button type="button" class="dic-play" data-act="play">'+icon("i-volume")+'Bấm để nghe</button>'+
+      '<div class="dic-src">'+(it.audio?icon("i-users","i-sm")+' ':'')+esc(it.src)+' · '+wc(it.t)+' từ'+
+        (it.audio?' · <a href="https://tatoeba.org/en/sentences/show/'+esc(it.id)+'" target="_blank" rel="noopener" class="dic-cred">Tatoeba · '+esc(it.by)+' · '+esc(it.lic)+'</a>':'')+'</div>'+
+      '<button type="button" class="dic-play" data-act="play">'+icon(it.audio?"i-users":"i-volume")+(it.audio?'Bấm để nghe giọng người thật':'Bấm để nghe')+'</button>'+
       '<div class="dic-tools">'+
         '<button type="button" class="dic-tool" data-act="play">'+icon("i-volume","i-sm")+'Nghe lại</button>'+
         '<button type="button" class="dic-tool" data-act="slow">'+icon("i-volume","i-sm")+'Nghe chậm</button>'+
@@ -2447,8 +2472,12 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
   }
 
   var inSession=false,lastTyped="";
+  function stopAudio(){
+    if(audioEl){try{audioEl.pause();}catch(e){}audioEl=null;}
+    try{window.speechSynthesis&&window.speechSynthesis.cancel();}catch(e){}
+  }
   function render(h){host.innerHTML=h;}
-  function home(){inSession=false;render(homeHTML());}
+  function home(){inSession=false;stopAudio();render(homeHTML());}
 
   function start(){
     var p=pool().slice();
