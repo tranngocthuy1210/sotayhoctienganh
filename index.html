@@ -665,7 +665,6 @@
     color:var(--faint);margin-bottom:10px;display:flex;align-items:center;gap:5px;flex-wrap:wrap}
   .dic-cred{color:var(--doc);text-decoration:none}
   .dic-cred:hover{text-decoration:underline}
-  .dic-real{color:var(--doc);text-transform:none;letter-spacing:0}
   .dic-credit{margin-top:16px;padding-top:13px;border-top:1px solid var(--line);
     font:500 11px/1.6 var(--sans);color:var(--faint)}
   @media(max-width:560px){
@@ -2421,8 +2420,7 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
       '<button type="button" class="srs-chip" data-act="quit">Dừng</button></div>'+
       '<div class="srs-bar"><i style="width:'+pct+'%"></i></div>'+
       '<div class="srs-count"><span>Đã chép '+nDone+'</span><span>Còn '+rem+' câu</span></div>'+
-      '<div class="dic-src">'+(it.audio?icon("i-users","i-sm")+' ':'')+esc(it.src)+' · '+wc(it.t)+' từ'+
-        (it.audio?' · <span class="dic-real">giọng người thật</span>':'')+'</div>'+
+      '<div class="dic-src">'+(it.audio?icon("i-users","i-sm")+' ':'')+esc(it.src)+' · '+wc(it.t)+' từ</div>'+
       '<button type="button" class="dic-play" data-act="play">'+icon(it.audio?"i-users":"i-volume")+(it.audio?'Bấm để nghe giọng người thật':'Bấm để nghe')+'</button>'+
       '<div class="dic-tools">'+
         '<button type="button" class="dic-tool" data-act="play">'+icon("i-volume","i-sm")+'Nghe lại</button>'+
