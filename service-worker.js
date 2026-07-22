@@ -1,9 +1,11 @@
 /* Service worker cho PWA "Sổ tay học tiếng Anh"
    - Cache app để chạy offline
-   - Trang (index.html): ưu tiên mạng để luôn lấy bản mới; mất mạng thì dùng bản đã lưu
-   - Tài nguyên khác cùng nguồn: dùng bản lưu ngay + âm thầm cập nhật (stale-while-revalidate)
-   - Bỏ qua yêu cầu khác nguồn (vd CDN Supabase) để không chặn */
-var CACHE = "sotay-v6";
+   - Trang + file mã/dữ liệu (.js, .html): ƯU TIÊN MẠNG — online luôn lấy bản mới,
+     mất mạng mới dùng bản đã lưu. (Trước đây .js dùng cache-first nên người dùng
+     hay thấy bản cũ sau khi cập nhật — đã sửa.)
+   - Ảnh / manifest: dùng bản lưu ngay + âm thầm cập nhật (nhanh, ít đổi)
+   - Bỏ qua yêu cầu khác nguồn (vd CDN Supabase, audio Tatoeba) để không chặn */
+var CACHE = "sotay-v7";
 var CORE = [
   "./", "./index.html", "./data-vocab.js", "./data-vocab-plus.js", "./data-vocab-oxford.js", "./data-dictation-tatoeba.js", "./data-sentence-vn.js", "./config.js", "./manifest.json",
   "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png", "./apple-touch-icon.png"
@@ -32,7 +34,11 @@ self.addEventListener("fetch", function (e) {
   try { url = new URL(req.url); } catch (err) { return; }
   if (url.origin !== self.location.origin) return;
 
-  if (req.mode === "navigate") {
+  var path = url.pathname;
+  // Trang + mã + dữ liệu: ưu tiên mạng để luôn có bản mới nhất
+  var freshFirst = req.mode === "navigate" || path.endsWith("/") || /\.(js|html|json)$/.test(path);
+
+  if (freshFirst) {
     e.respondWith(
       fetch(req).then(function (res) {
         var copy = res.clone();
@@ -45,6 +51,7 @@ self.addEventListener("fetch", function (e) {
     return;
   }
 
+  // Ảnh / tài nguyên tĩnh khác: dùng bản lưu ngay, cập nhật ngầm
   e.respondWith(
     caches.match(req).then(function (cached) {
       var net = fetch(req).then(function (res) {
