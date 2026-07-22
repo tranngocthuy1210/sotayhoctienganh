@@ -663,8 +663,11 @@
     letter-spacing:.05em;color:var(--faint);margin-bottom:5px}
   .dic-src{font:600 10.5px/1.5 var(--sans);text-transform:uppercase;letter-spacing:.04em;
     color:var(--faint);margin-bottom:10px;display:flex;align-items:center;gap:5px;flex-wrap:wrap}
-  .dic-cred{color:var(--doc);text-decoration:none;text-transform:none;letter-spacing:0}
+  .dic-cred{color:var(--doc);text-decoration:none}
   .dic-cred:hover{text-decoration:underline}
+  .dic-real{color:var(--doc);text-transform:none;letter-spacing:0}
+  .dic-credit{margin-top:16px;padding-top:13px;border-top:1px solid var(--line);
+    font:500 11px/1.6 var(--sans);color:var(--faint)}
   @media(max-width:560px){
     .dic-play{padding:22px 14px;font-size:14px}
     .dic-line{font-size:14px;line-height:1.85}
@@ -2394,10 +2397,22 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
       '<button type="button" class="srs-btn wide" data-act="start"'+(p.length?"":" disabled")+'>'+
         icon("i-play")+(p.length?"Bắt đầu chép — "+GOAL+" câu":"Chưa có câu nào để chép")+'</button>'+
       '<div class="srs-note">Nguồn <b>Từ vựng</b> và <b>Kịch bản</b> đọc bằng <b>giọng máy</b> của trình duyệt (rõ và đều). '+
-      'Nguồn <b>Giọng thật</b> là '+(POOL?POOL.human.length:0)+' câu có <b>giọng người bản xứ</b> thu sẵn, lấy từ dự án '+
-      '<a href="https://tatoeba.org" target="_blank" rel="noopener" class="dic-cred">Tatoeba</a> (giấy phép mở CC BY) — '+
+      'Nguồn <b>Giọng thật</b> là '+(POOL?POOL.human.length:0)+' câu có <b>giọng người bản xứ</b> thu sẵn — '+
       'gần với tiếng thật hơn. Muốn quen tiếng thật tốc độ cao, ồn ào thì vẫn nên nghe podcast/phim.'+
-      (S.acc.length?' · <button type="button" class="srs-chip" data-act="reset" style="margin-left:4px">Xoá tiến độ chính tả</button>':'')+'</div>';
+      (S.acc.length?' · <button type="button" class="srs-chip" data-act="reset" style="margin-left:4px">Xoá tiến độ chính tả</button>':'')+'</div>'+
+      creditHTML();
+  }
+
+  /* Ghi công gộp cho toàn bộ audio Tatoeba (giấy phép CC BY yêu cầu ghi công tác giả —
+     để một chỗ ở cuối tab là hợp lệ, không cần lặp dưới từng câu). */
+  function creditHTML(){
+    if(!POOL||!POOL.human.length)return "";
+    var names={};POOL.human.forEach(function(x){if(x.by)names[x.by]=1;});
+    var list=Object.keys(names).sort().join(", ");
+    return '<div class="dic-credit">Giọng người thật: '+POOL.human.length+' câu từ dự án '+
+      '<a href="https://tatoeba.org" target="_blank" rel="noopener" class="dic-cred">Tatoeba</a>, '+
+      'thu bởi '+esc(list)+', giấy phép '+
+      '<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" class="dic-cred">CC BY 4.0</a>.</div>';
   }
 
   function cardHTML(){
@@ -2407,7 +2422,7 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
       '<div class="srs-bar"><i style="width:'+pct+'%"></i></div>'+
       '<div class="srs-count"><span>Đã chép '+nDone+'</span><span>Còn '+rem+' câu</span></div>'+
       '<div class="dic-src">'+(it.audio?icon("i-users","i-sm")+' ':'')+esc(it.src)+' · '+wc(it.t)+' từ'+
-        (it.audio?' · <a href="https://tatoeba.org/en/sentences/show/'+esc(it.id)+'" target="_blank" rel="noopener" class="dic-cred">Tatoeba · '+esc(it.by)+' · '+esc(it.lic)+'</a>':'')+'</div>'+
+        (it.audio?' · <span class="dic-real">giọng người thật</span>':'')+'</div>'+
       '<button type="button" class="dic-play" data-act="play">'+icon(it.audio?"i-users":"i-volume")+(it.audio?'Bấm để nghe giọng người thật':'Bấm để nghe')+'</button>'+
       '<div class="dic-tools">'+
         '<button type="button" class="dic-tool" data-act="play">'+icon("i-volume","i-sm")+'Nghe lại</button>'+
