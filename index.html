@@ -659,6 +659,8 @@
   .dic-legend em{font-style:normal;padding:3px 6px;border-radius:5px;margin-right:4px}
   .dic-full{font:500 13.5px/1.6 var(--sans);color:var(--ink);background:var(--surface);
     border-left:3px solid var(--c);border-radius:0 8px 8px 0;padding:10px 12px;margin-top:11px}
+  .dic-vn{display:block;margin-top:7px;padding-top:7px;border-top:1px dashed var(--line);
+    font:500 13px/1.5 var(--sans);color:var(--muted)}
   .dic-full .lb{display:block;font:700 9.5px/1 var(--sans);text-transform:uppercase;
     letter-spacing:.05em;color:var(--faint);margin-bottom:5px}
   .dic-src{font:600 10.5px/1.5 var(--sans);text-transform:uppercase;letter-spacing:.04em;
@@ -762,7 +764,7 @@
       <div class="acc-body">
         <div class="rule-gold" id="acc-voc">Luật vàng: 10 từ/ngày, mỗi từ phải NÓI thành tiếng 1 câu có ngữ cảnh thật của bạn. Không nói ra tiếng = chưa học.</div>
         <h4 id="voc600-head"><span class="tag">Nền tảng</span>600 từ thông dụng theo chủ đề</h4>
-        <p>Bấm vào từng chủ đề để mở danh sách từ, rồi bấm 1 từ để xem nghĩa, ví dụ và mẹo. Mỗi từ có IPA (giọng Mỹ) + nút loa nghe. Học 10 từ/ngày, nhớ NÓI thành tiếng.</p>
+        <p>Bấm vào từng chủ đề để mở danh sách từ, rồi bấm 1 từ để xem nghĩa, ví dụ và mẹo. Mỗi từ có IPA (giọng Mỹ) + nút loa nghe. Học 10 từ/ngày, nhớ NÓI thành tiếng. Các chủ đề <b>theo ngữ cảnh</b> có sẵn 2 câu ví dụ; phần <b>Oxford 3000 · A–Z</b> là kho tra cứu đầy đủ (đang bổ sung ví dụ dần).</p>
         <div id="voc600"><div class="myempty">Đang tải bộ 600 từ…</div></div>
         <h4><span class="tag">Tuần 5</span>Sản phẩm của bạn — 60 từ</h4>
         <p>Nhóm quan trọng nhất. Bạn không thể bán thứ mình không gọi tên được.</p>
@@ -1843,11 +1845,13 @@
 
 <script src="./data-vocab.js"></script>
 <script src="./data-vocab-plus.js"></script>
+<script src="./data-vocab-oxford.js"></script>
 <script src="./data-dictation-tatoeba.js"></script>
+<script src="./data-sentence-vn.js"></script>
 <script>
-/* Gộp bộ 600 gốc + phần mở rộng (Oxford 3000 chọn lọc) thành 1 kho dùng chung
-   cho cả phần hiển thị lẫn phần ôn Anki. */
-window.VOCAB_ALL=(window.VOCAB600||[]).concat(window.VOCAB_PLUS||[]);
+/* Gộp bộ 600 gốc + phần mở rộng có ví dụ + kho Oxford 3000 A–Z (tra cứu) thành 1 kho
+   dùng chung cho cả phần hiển thị lẫn phần ôn Anki. */
+window.VOCAB_ALL=(window.VOCAB600||[]).concat(window.VOCAB_PLUS||[]).concat(window.VOCAB_OXFORD||[]);
 window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[]).length);},0);
 </script>
 <script>
@@ -1858,7 +1862,7 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
   var host=document.getElementById("voc600");if(!host)return;
   if(!window.VOCAB_ALL||!window.VOCAB_ALL.length){host.innerHTML='<div class="myempty">Không tải được kho từ vựng (data-vocab.js).</div>';return;}
   var CVAR={noi:"--noi",nghe:"--nghe",doc:"--doc",viet:"--viet",damphan:"--damphan",tonghop:"--tonghop",italki:"--italki"};
-  var POS={v:"động từ",n:"danh từ",adj:"tính từ",adv:"trạng từ",phr:"cụm từ",prep:"giới từ"};
+  var POS={v:"động từ",n:"danh từ",adj:"tính từ",adv:"trạng từ",phr:"cụm từ",prep:"giới từ",det:"hạn định từ",pron:"đại từ",conj:"liên từ",exclam:"thán từ",num:"số từ",modalv:"động từ khiếm khuyết",art:"mạo từ",abbr:"viết tắt",part:"tiểu từ"};
   function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
   var sb=(window.PRON&&window.PRON.sayBtn)?window.PRON.sayBtn:function(){return "";};
   function icon(id){return '<svg class="i i-sm"><use href="#'+id+'"/></svg>';}
@@ -1908,7 +1912,7 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
 
   /* Cập nhật tiêu đề theo số từ thật */
   var hd=document.getElementById("voc600-head");
-  if(hd)hd.innerHTML='<span class="tag">Nền tảng</span>'+window.VOCAB_COUNT+' từ thông dụng theo chủ đề';
+  if(hd)hd.innerHTML='<span class="tag">Nền tảng</span>'+window.VOCAB_COUNT+' từ Oxford — chủ đề + tra cứu A–Z';
 })();
 </script>
 
@@ -1940,7 +1944,7 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
   function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
   function icon(id,cls){return '<svg class="i'+(cls?" "+cls:"")+'"><use href="#'+id+'"/></svg>';}
   var sayBtn=(window.PRON&&window.PRON.sayBtn)?window.PRON.sayBtn:function(){return "";};
-  var POS={v:"động từ",n:"danh từ",adj:"tính từ",adv:"trạng từ",phr:"cụm từ",prep:"giới từ"};
+  var POS={v:"động từ",n:"danh từ",adj:"tính từ",adv:"trạng từ",phr:"cụm từ",prep:"giới từ",det:"hạn định từ",pron:"đại từ",conj:"liên từ",exclam:"thán từ",num:"số từ",modalv:"động từ khiếm khuyết",art:"mạo từ",abbr:"viết tắt",part:"tiểu từ"};
 
   function pad(n){return (n<10?"0":"")+n;}
   function ymd(d){return d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());}
@@ -2466,8 +2470,15 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
         '<span><em class="dic-w-miss">abc</em>nghe sót / sai từ</span>'+
         '<span><em class="dic-w-extra">abc</em>thừa</span>'+
       '</div>'+
-      '<div class="dic-full"><span class="lb">Câu đúng</span>'+esc(Q[qi].t)+'</div>'+
+      '<div class="dic-full"><span class="lb">Câu đúng</span>'+esc(Q[qi].t)+
+        (vnOf(Q[qi].t)?'<span class="dic-vn">'+esc(vnOf(Q[qi].t))+'</span>':'')+'</div>'+
       '</div>';
+  }
+  /* Nghĩa tiếng Việt của câu — tra trong SENTENCE_VN (dịch tay, bổ sung dần).
+     Câu chưa dịch thì trả rỗng, KHÔNG hiện gì (không bịa nghĩa). */
+  function vnOf(t){
+    var M=window.SENTENCE_VN;if(!M||!t)return "";
+    return M[t]||M[String(t).trim()]||"";
   }
 
   function doneHTML(){
