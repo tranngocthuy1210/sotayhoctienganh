@@ -68,7 +68,7 @@ Bảng: `vocab`, `scripts`, `recordings`, `allowed_emails`. Bucket riêng tư `r
 | — | **1129 bản dịch tiếng Việt** cho toàn bộ câu chép chính tả | ✅ |
 | — | **Giọng người thật** 94 câu Tatoeba CC BY 4.0, có ghi công | ✅ |
 | — | **Render lazy** kho từ theo chủ đề (không giật trên mobile) | ✅ |
-| — | **Khoá dữ liệu "Của tôi"** theo `user_id` | ✅ **XONG** — SQL 1C đã chạy. Xác nhận 2026-07-23 bằng `pg_policies`: đúng 2 chính sách `vocab_own` / `scripts_own`, `cmd=ALL`, `qual=(auth.uid() = user_id)`, không còn chính sách mở |
+| — | **Khoá dữ liệu "Của tôi"** theo `user_id` | ✅ **XONG, ĐÃ KIỂM ĐỦ 2026-07-23** — cột `user_id` có trên cả `vocab`+`scripts`, `column_default=auth.uid()`, chính sách `vocab_own`/`scripts_own` `cmd=ALL` `qual=(auth.uid() = user_id)`, không còn chính sách mở. **Không phải chạy lại gì nữa** |
 
 ---
 
