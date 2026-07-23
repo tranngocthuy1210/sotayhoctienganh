@@ -68,7 +68,7 @@ Bảng: `vocab`, `scripts`, `recordings`, `allowed_emails`. Bucket riêng tư `r
 | — | **1129 bản dịch tiếng Việt** cho toàn bộ câu chép chính tả | ✅ |
 | — | **Giọng người thật** 94 câu Tatoeba CC BY 4.0, có ghi công | ✅ |
 | — | **Render lazy** kho từ theo chủ đề (không giật trên mobile) | ✅ |
-| — | **Khoá dữ liệu "Của tôi"** theo `user_id` | ✅ code — **CHỜ USER CHẠY SQL PHẦN 1C** |
+| — | **Khoá dữ liệu "Của tôi"** theo `user_id` | ✅ code — SQL 1C **có vẻ ĐÃ chạy rồi** (2026-07-23 chạy lại báo `42710: policy "vocab_own" already exists`). **Chờ kết quả `select … from pg_policies` để chốt** |
 
 ---
 
@@ -113,6 +113,12 @@ Phần audio giấy phép mở của Tatoeba **lệch nặng về câu meme/chí
 Trước đây file `.js` dùng **cache-first** → người dùng thấy bản cũ sau mỗi lần cập nhật dữ liệu,
 **đã hiểu nhầm 3 lần** ("sao chỉ có 794 từ"). Đã sửa: `.js/.html/.json` giờ **network-first**
 (online luôn mới, offline mới dùng bản lưu); ảnh vẫn cache-first. **Giữ nguyên cách này.**
+
+### ⚠️ BẪY 7: KHÔNG kiểm RLS bằng mã HTTP
+Gọi `/rest/v1/vocab` bằng khoá công khai rồi thấy **`200` + `[]`** thì **KHÔNG kết luận được gì**:
+bảng đã khoá RLS và bảng rỗng chưa khoá trả về **giống hệt nhau** (PostgREST lọc hết dòng chứ
+không trả 401). AI đã kết luận sai đúng chỗ này ngày 2026-07-23 và báo nhầm là "còn lỗ hổng".
+**Chỉ kiểm bằng `select … from pg_policies where tablename in ('vocab','scripts')`** — xem PHẦN 1C.
 
 ### ⚠️ BẪY 6b: đổi `id` nhóm từ vựng làm hỏng tiến độ Anki
 Tab Anki lưu **danh sách chủ đề đã chọn theo `id`** vào localStorage (`ielts90.srs.v1` → `cfg.topics`),
@@ -170,9 +176,12 @@ Chạy: `cd "D:\AI Challenge\so-tay-web\tools" && python <script>.py`
 
 ## 7. VIỆC TIẾP THEO
 
-### 🔴 VIỆC GẤP — người dùng phải tự làm
-**Chạy SQL PHẦN 1C trong SETUP.md** (Supabase → SQL Editor) để khoá `vocab`/`scripts` theo `user_id`.
-Chưa chạy thì **ai có link vẫn sửa/xoá được** từ vựng & kịch bản "Của tôi".
+### 🔴 VIỆC GẤP — người dùng phải tự làm (AI không vào được Supabase dashboard)
+**Xác nhận SQL PHẦN 1C đã chạy đủ chưa.** Ngày 2026-07-23 chạy lại thì báo
+`42710: policy "vocab_own" for table "vocab" already exists` → **nhiều khả năng đã chạy từ trước**,
+mục này trong HANDOFF trước đó ghi sai. Lần chạy lỗi đó đã rollback, không hỏng gì.
+Chốt bằng cách chạy query `pg_policies` ở cuối PHẦN 1C trong SETUP.md rồi cập nhật lại mục này.
+Khối SQL 1C nay đã **chạy lại được nhiều lần** (thêm `drop policy if exists`).
 
 ### 🔴 Ưu tiên cao nhất — RÀ NGHĨA TIẾNG VIỆT KHO OXFORD
 Bản PDF Oxford 3000 cho **nghĩa cổ / nghĩa phụ**, sai hẳn với cách dùng hằng ngày.

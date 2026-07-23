@@ -158,11 +158,34 @@ alter table scripts alter column user_id set default auth.uid();
 drop policy if exists "cho phep doc ghi vocab"   on vocab;
 drop policy if exists "cho phep doc ghi scripts" on scripts;
 
+-- xoá luôn bản cũ cùng tên để CHẠY LẠI LẦN 2 KHÔNG VỠ
+drop policy if exists "vocab_own"   on vocab;
+drop policy if exists "scripts_own" on scripts;
+
 create policy "vocab_own"   on vocab   for all
   using (auth.uid() = user_id) with check (auth.uid() = user_id);
 create policy "scripts_own" on scripts for all
   using (auth.uid() = user_id) with check (auth.uid() = user_id);
 ```
+
+> **Chạy lần 2 báo `42710: policy "vocab_own" already exists`?** Nghĩa là khối này **đã chạy rồi** —
+> không phải lỗi của bạn, và Supabase đã rollback nên không hỏng gì. Khối trên giờ đã thêm 2 dòng
+> `drop policy if exists` nên chạy lại bao nhiêu lần cũng được.
+
+### Kiểm tra đã khoá thật chưa
+
+⚠️ **Đừng thử bằng cách gọi API bằng khoá công khai rồi xem mã HTTP.** Bảng bị RLS chặn vẫn trả về
+**`200` kèm `[]`**, y hệt bảng rỗng chưa khoá — nhìn mã 200 mà kết luận là **sai**. Kiểm bằng SQL:
+
+```sql
+select tablename, policyname, cmd, qual
+from pg_policies
+where tablename in ('vocab','scripts')
+order by tablename, policyname;
+```
+
+Đúng thì có **đúng 2 dòng** `vocab_own` / `scripts_own`, `qual` = `(auth.uid() = user_id)`,
+và **không còn** dòng nào tên `cho phep doc ghi ...`.
 
 Chạy xong: khu "Của tôi" sẽ hiện **"Cần đăng nhập"** cho tới khi bạn đăng nhập ở tab **Ghi âm & tiến bộ**. Đăng nhập rồi thì huy hiệu chuyển sang xanh **"Đồng bộ đám mây"** và dùng bình thường.
 
