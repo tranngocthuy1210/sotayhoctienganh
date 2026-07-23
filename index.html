@@ -542,8 +542,39 @@
   .vs-hit{background:color-mix(in srgb,var(--gold) 26%,transparent);border-radius:3px}
   /* Bộ 600 từ theo chủ đề */
   #voc600{margin:10px 0 6px}
+  /* Dải tab ngang cuộn được — 41 chủ đề nằm gọn 1 hàng thay vì xếp dọc */
+  .voctabs{display:flex;gap:8px;overflow-x:auto;overflow-y:hidden;padding:4px 2px 10px;
+    scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+  .voctabs::-webkit-scrollbar{height:7px}
+  .voctabs::-webkit-scrollbar-thumb{background:var(--line-strong);border-radius:99px}
+  .voctabs::-webkit-scrollbar-track{background:transparent}
+  .voctab{scroll-snap-align:center;flex:none;appearance:none;cursor:pointer;display:inline-flex;
+    align-items:center;gap:7px;white-space:nowrap;border-radius:999px;padding:9px 14px;
+    background:var(--surface);border:1px solid var(--line);color:var(--muted);
+    font:600 12.5px/1 var(--sans);transition:background .15s,border-color .15s,color .15s}
+  .voctab .i{width:15px;height:15px;flex:none;color:var(--c)}
+  .voctab:hover{border-color:var(--c);color:var(--ink)}
+  .voctab:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+  .voctab-n{font:700 10px/1 var(--sans);padding:3px 6px;border-radius:99px;
+    background:var(--surface-2);color:var(--faint)}
+  .voctab-sep{flex:none;align-self:center;display:inline-flex;align-items:center;
+    white-space:nowrap;padding:0 10px 0 4px;border-left:1px solid var(--line);
+    margin-left:2px;font:700 9.5px/1 var(--sans);text-transform:uppercase;
+    letter-spacing:.05em;color:var(--faint)}
+  .voctab-sep:first-child{border-left:none;margin-left:0;padding-left:0}
+  .voctab.on{background:color-mix(in srgb,var(--c) 12%,var(--surface));
+    border-color:var(--c);color:var(--c)}
+  .voctab.on .voctab-n{background:color-mix(in srgb,var(--c) 20%,var(--surface));color:var(--c)}
+  .vocpanel{background:var(--surface);border:1px solid var(--line);border-radius:16px;
+    box-shadow:var(--shadow);border-top:3px solid var(--c);padding:2px 6px 8px}
+  .vocpanel-h{display:flex;align-items:center;gap:9px;padding:13px 12px 9px;
+    font:700 13.5px/1.3 var(--sans);color:var(--ink)}
+  .vocpanel-h .i{width:17px;height:17px;flex:none;color:var(--c)}
+  .vocpanel-h span{margin-left:auto;font:600 11px/1 var(--sans);color:var(--faint);
+    border:1px solid var(--line);border-radius:99px;padding:5px 9px;white-space:nowrap}
   details.acc.voc-theme{margin:10px 0}
   .voc-list{padding:2px 16px 12px}
+  .vocpanel .voc-list{padding:0 12px 6px}
   details.vw{border-bottom:1px solid var(--line)}
   details.vw:last-child{border-bottom:none}
   details.vw>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:10px 4px;flex-wrap:wrap}
@@ -790,7 +821,7 @@
       <div class="acc-body">
         <div class="rule-gold" id="acc-voc">Luật vàng: 10 từ/ngày, mỗi từ phải NÓI thành tiếng 1 câu có ngữ cảnh thật của bạn. Không nói ra tiếng = chưa học.</div>
         <h4 id="voc600-head"><span class="tag">Nền tảng</span>600 từ thông dụng theo chủ đề</h4>
-        <p>Gõ vào ô tìm kiếm để tra nhanh 1 từ, hoặc bấm vào từng chủ đề để mở danh sách rồi bấm 1 từ để xem nghĩa, ví dụ và mẹo. Mỗi từ có IPA (giọng Mỹ) + nút loa nghe. Học 10 từ/ngày, nhớ NÓI thành tiếng. Nhóm <b>15 chủ đề đầu</b> có sẵn câu ví dụ; <b>26 chủ đề Oxford 3000</b> bên dưới là kho tra cứu (đang bổ sung ví dụ dần).</p>
+        <p>Gõ vào ô tìm kiếm để tra nhanh 1 từ, hoặc chọn chủ đề trên dải tab ngang (vuốt ngang để xem hết) rồi bấm 1 từ để xem nghĩa, ví dụ và mẹo. Mỗi từ có IPA (giọng Mỹ) + nút loa nghe. Học 10 từ/ngày, nhớ NÓI thành tiếng. Nhóm <b>15 chủ đề đầu</b> có sẵn câu ví dụ; <b>26 chủ đề Oxford 3000</b> bên dưới là kho tra cứu (đang bổ sung ví dụ dần).</p>
         <div id="vocsearch" class="nokey"></div>
         <div id="voc600"><div class="myempty">Đang tải bộ 600 từ…</div></div>
         <h4><span class="tag">Tuần 5</span>Sản phẩm của bạn — 60 từ</h4>
@@ -1919,27 +1950,71 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
       '</div></details>';
   }
 
-  var html="";
+  /* ---- 41 chủ đề dựng thành DẢI TAB NGANG cuộn được ----
+     Xếp dọc thì phải cuộn qua 41 khối mới tới chủ đề cuối. Dải ngang giữ mọi
+     chủ đề trong 1 hàng, bấm cái nào chỉ hiện từ của cái đó ngay bên dưới. */
+  var tabs="",lastKind="";
   window.VOCAB_ALL.forEach(function(g,gi){
     var cvar=CVAR[g.c]||"--tonghop";
-    html+='<details class="acc voc-theme" data-gi="'+gi+'" style="--c:var('+cvar+')">'+
-      '<summary><span class="sicon">'+icon(g.icon||"i-layers")+'</span>'+esc(g.title)+
-      '<span class="scount">'+(g.words||[]).length+' từ</span><span class="chev">'+icon("i-arrow")+'</span></summary>'+
-      '<div class="voc-list"></div></details>';
+    /* Vạch phân nhóm: chủ đề CÓ VÍ DỤ (id không bắt đầu bằng "ox-") đứng trước,
+       kho Oxford tra cứu đứng sau. Vuốt ngang 41 tab mà không có mốc thì rất dễ lạc. */
+    var kind=(String(g.id||"").indexOf("ox-")===0)?"ox":"core";
+    if(kind!==lastKind){
+      lastKind=kind;
+      tabs+='<span class="voctab-sep" aria-hidden="true">'+
+        (kind==="ox"?"Oxford 3000 · tra cứu":"Có sẵn ví dụ")+'</span>';
+    }
+    tabs+='<button type="button" class="voctab" role="tab" data-gi="'+gi+'"'+
+      ' aria-selected="false" style="--c:var('+cvar+')">'+
+      icon(g.icon||"i-layers")+'<span class="voctab-t">'+esc(g.title)+'</span>'+
+      '<span class="voctab-n">'+(g.words||[]).length+'</span></button>';
   });
-  host.innerHTML=html;
+  host.innerHTML='<div class="voctabs" role="tablist" aria-label="Chủ đề từ vựng">'+tabs+'</div>'+
+    '<div class="vocpanel" id="voc-panel" role="tabpanel"></div>';
 
-  /* Dựng danh sách từ vào lần mở đầu tiên */
-  Array.prototype.forEach.call(host.querySelectorAll("details.voc-theme"),function(d){
-    d.addEventListener("toggle",function(){
-      if(!d.open||d.getAttribute("data-filled"))return;
-      d.setAttribute("data-filled","1");
-      var g=window.VOCAB_ALL[+d.getAttribute("data-gi")];if(!g)return;
-      var box=d.querySelector(".voc-list");if(!box)return;
-      box.innerHTML=(g.words||[]).map(wordHTML).join("");
-      if(window.PRON&&window.PRON.refresh)window.PRON.refresh();
+  var strip=host.querySelector(".voctabs"),
+      panel=document.getElementById("voc-panel"),
+      cache={};   /* gi -> HTML đã dựng, khỏi dựng lại mỗi lần bấm */
+
+  function show(gi){
+    var g=window.VOCAB_ALL[gi]; if(!g) return;
+    Array.prototype.forEach.call(strip.querySelectorAll(".voctab"),function(b){
+      var on=(+b.getAttribute("data-gi")===gi);
+      b.classList.toggle("on",on);
+      b.setAttribute("aria-selected",on?"true":"false");
     });
+    var cvar=CVAR[g.c]||"--tonghop";
+    panel.setAttribute("style","--c:var("+cvar+")");
+    if(cache[gi]==null){
+      /* .map(wordHTML) truyền cả CHỈ SỐ và MẢNG vào tham số 2-3 của wordHTML
+         -> phải bọc hàm, không thì gname thành số và hl thành mảng rồi vỡ. */
+      cache[gi]=(g.words||[]).map(function(w){return wordHTML(w);}).join("");
+    }
+    panel.innerHTML='<div class="vocpanel-h">'+icon(g.icon||"i-layers")+
+      '<b>'+esc(g.title)+'</b><span>'+(g.words||[]).length+' từ</span></div>'+
+      '<div class="voc-list">'+cache[gi]+'</div>';
+    if(window.PRON&&window.PRON.refresh)window.PRON.refresh();
+  }
+
+  strip.addEventListener("click",function(e){
+    var b=e.target.closest?e.target.closest(".voctab"):null;
+    if(!b)return;
+    show(+b.getAttribute("data-gi"));
+    /* kéo tab vừa bấm vào giữa tầm nhìn cho dễ theo dõi */
+    if(b.scrollIntoView)b.scrollIntoView({block:"nearest",inline:"center",behavior:"smooth"});
   });
+  /* mũi tên trái/phải chạy dọc dải tab cho bàn phím */
+  strip.addEventListener("keydown",function(e){
+    if(e.key!=="ArrowRight"&&e.key!=="ArrowLeft")return;
+    var all=Array.prototype.slice.call(strip.querySelectorAll(".voctab")),
+        i=all.indexOf(document.activeElement);
+    if(i<0)return;
+    var j=i+(e.key==="ArrowRight"?1:-1);
+    if(j<0||j>=all.length)return;
+    e.preventDefault(); all[j].focus(); all[j].click();
+  });
+
+  show(0);   /* mở sẵn chủ đề đầu để vào là có nội dung ngay */
 
   /* Cập nhật tiêu đề theo số từ thật */
   var hd=document.getElementById("voc600-head");
