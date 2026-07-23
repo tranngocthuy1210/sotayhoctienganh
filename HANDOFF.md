@@ -68,7 +68,7 @@ Bảng: `vocab`, `scripts`, `recordings`, `allowed_emails`. Bucket riêng tư `r
 | — | **1129 bản dịch tiếng Việt** cho toàn bộ câu chép chính tả | ✅ |
 | — | **Giọng người thật** 94 câu Tatoeba CC BY 4.0, có ghi công | ✅ |
 | — | **Render lazy** kho từ theo chủ đề (không giật trên mobile) | ✅ |
-| — | **Khoá dữ liệu "Của tôi"** theo `user_id` | ✅ code — SQL 1C **có vẻ ĐÃ chạy rồi** (2026-07-23 chạy lại báo `42710: policy "vocab_own" already exists`). **Chờ kết quả `select … from pg_policies` để chốt** |
+| — | **Khoá dữ liệu "Của tôi"** theo `user_id` | ✅ **XONG** — SQL 1C đã chạy. Xác nhận 2026-07-23 bằng `pg_policies`: đúng 2 chính sách `vocab_own` / `scripts_own`, `cmd=ALL`, `qual=(auth.uid() = user_id)`, không còn chính sách mở |
 
 ---
 
@@ -176,12 +176,14 @@ Chạy: `cd "D:\AI Challenge\so-tay-web\tools" && python <script>.py`
 
 ## 7. VIỆC TIẾP THEO
 
-### 🔴 VIỆC GẤP — người dùng phải tự làm (AI không vào được Supabase dashboard)
-**Xác nhận SQL PHẦN 1C đã chạy đủ chưa.** Ngày 2026-07-23 chạy lại thì báo
-`42710: policy "vocab_own" for table "vocab" already exists` → **nhiều khả năng đã chạy từ trước**,
-mục này trong HANDOFF trước đó ghi sai. Lần chạy lỗi đó đã rollback, không hỏng gì.
-Chốt bằng cách chạy query `pg_policies` ở cuối PHẦN 1C trong SETUP.md rồi cập nhật lại mục này.
-Khối SQL 1C nay đã **chạy lại được nhiều lần** (thêm `drop policy if exists`).
+### ✅ HẾT VIỆC GẤP — bảo mật đã xong
+SQL PHẦN 1C **đã chạy xong từ trước**, xác nhận ngày 2026-07-23 bằng `pg_policies`:
+`vocab_own` / `scripts_own`, `cmd=ALL`, `qual=(auth.uid() = user_id)`, không còn chính sách mở.
+Các bản HANDOFF trước ghi "CHỜ USER CHẠY" là **sai** — đừng bảo người dùng chạy lại.
+Khối SQL 1C nay cũng đã chạy lại được nhiều lần (thêm `drop policy if exists`).
+
+**Việc AI KHÔNG làm được:** vào Supabase dashboard (cần đăng nhập — AI không nhập mật khẩu).
+Mọi thay đổi schema/policy đều phải nhờ người dùng dán SQL vào SQL Editor.
 
 ### 🔴 Ưu tiên cao nhất — RÀ NGHĨA TIẾNG VIỆT KHO OXFORD
 Bản PDF Oxford 3000 cho **nghĩa cổ / nghĩa phụ**, sai hẳn với cách dùng hằng ngày.
