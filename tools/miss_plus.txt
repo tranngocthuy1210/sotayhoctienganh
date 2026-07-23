@@ -1,0 +1,386 @@
+Sitting all day is bad for your body.
+Cold water is a shock to the body.
+I have a headache after the long meeting.
+He hit his head on the door.
+Her face looked tired this morning.
+Wash your face with cold water.
+Keep an eye on the kitchen screen.
+She has beautiful brown eyes.
+The music is too loud for my ears.
+The baby has very small ears.
+I can smell the coffee with my nose.
+My nose is blocked because of the cold.
+Open your mouth wider when you speak English.
+Don't talk with your mouth full.
+I brush my teeth twice a day.
+My little boy lost his first tooth.
+Staff must tie their hair back in the kitchen.
+I want to cut my hair short.
+My neck hurts from looking at the laptop.
+I wear a scarf around my neck in winter.
+He carried the box on his shoulder.
+My son sat on my shoulders at the park.
+She broke her arm last month.
+She held the baby in her arms.
+Wash your hands before you start the shift.
+Give me your hand, the road is busy.
+He pointed at the screen with his finger.
+I cut my finger while cooking.
+My legs hurt after standing all day.
+The dog has short legs.
+Waiters are on their feet for eight hours.
+My left foot is bigger than my right one.
+He hurt his knee playing football.
+He sat down and put the child on his knee.
+My back hurts after a long flight.
+I sleep on my back.
+My stomach hurts after that spicy food.
+I can't swim right after eating, my stomach hurts.
+Coffee makes my heart beat faster.
+My heart was beating fast after the run.
+The doctor took a blood test.
+I don't like the sight of blood.
+The sun is bad for your skin.
+Her skin is very dry in winter.
+He broke a bone in his hand.
+The dog buried a bone in the garden.
+Sleep helps your brain remember new words.
+Reading is good exercise for the brain.
+We added healthy options to the menu.
+My grandmother is eighty and still healthy.
+Two staff are ill today.
+My daughter was ill all weekend.
+He missed a week because of illness.
+He recovered from a long illness.
+I feel sick, I need to go home.
+The cat was sick on the carpet.
+Heart disease is common in older people.
+The doctors are studying this rare disease.
+I have a pain in my back.
+I felt a sharp pain in my leg.
+The injection was a bit painful.
+The first day at the gym was painful.
+My eyes hurt after eight hours on the screen.
+My feet hurt after the long walk.
+He had a knee injury last season.
+He got an injury while playing football.
+Two people were injured in the accident.
+The injured bird could not fly.
+Clean the wound before you cover it.
+The wound on his hand healed slowly.
+This medicine will cure the infection.
+There is still no cure for the common cold.
+The treatment takes about two weeks.
+She is having treatment at the local clinic.
+Take this medicine after meals.
+This medicine tastes terrible.
+The doctor gave me a new drug.
+The doctor gave her a strong drug for the pain.
+You should see a doctor about that cough.
+My sister wants to be a doctor.
+The nurse checked my blood pressure.
+The nurse was very kind to my mother.
+She works in a hospital near my house.
+My son was born in this hospital.
+He needs an operation on his knee.
+She had an operation on her eyes last year.
+I do exercise three times a week.
+Walking is the easiest exercise.
+You need to be fit for this job.
+He runs every morning to stay fit.
+Take a rest before the evening rush.
+You look tired, you need some rest.
+I only slept five hours last night.
+The baby sleeps for twelve hours.
+He fell asleep on the bus.
+The children are already asleep.
+I wake up at six thirty every day.
+The noise woke me at three in the morning.
+Breathe slowly before you start speaking.
+It is hard to breathe in this hot room.
+I lost weight after I stopped drinking soda.
+The doctor asked me about my weight.
+The app also works for blind users.
+Their dog helps a blind man cross the street.
+He is deaf in one ear.
+My grandfather is going deaf.
+The battery is dead.
+The plant is dead, I forgot to water it.
+The company closed after the owner's death.
+The whole village came after his death.
+His grandmother is still alive.
+The fish is still alive in the bucket.
+A wet kitchen floor is dangerous.
+Swimming in this river is dangerous.
+The company pays for medical insurance.
+He is studying at a medical school.
+He has a fever, so he cannot come in today.
+The child had a fever all night.
+Long shifts affect mental health too.
+Walking outside is good for mental health.
+This is the most important client this month.
+Family is the most important thing to me.
+Each outlet has a different menu.
+Life in the countryside is completely different.
+Our system is similar to Toast, but cheaper.
+My brother and I have similar taste in music.
+We use the same POS in all five outlets.
+We went to the same school as children.
+Is it possible to go live next month?
+Is it possible to get there by bus?
+That deadline is impossible for our team.
+It is impossible to park here on Sunday.
+Training is necessary before go-live.
+Take a jacket, it may be necessary tonight.
+That report is very useful for planning.
+This little knife is very useful when camping.
+Milk tea is popular with young customers.
+That beach is popular with young families.
+They are a famous chain in Hanoi.
+The town is famous for its noodles.
+This is a common problem in busy kitchens.
+Rain is common in this season.
+It is normal to feel nervous at first.
+It is normal for a puppy to sleep a lot.
+We have a special price for three outlets.
+My mother cooks something special on my birthday.
+The main problem is staff training.
+The main road is closed today.
+The basic package covers one outlet.
+He only knows basic Japanese.
+The setup is simple — about two hours.
+I like simple food, nothing fancy.
+The app is easy to use for new staff.
+This game is easy enough for a child.
+It is difficult to hire good cashiers.
+The exam was more difficult than I expected.
+Speaking English on the phone is hard for me.
+The bed in the hotel was very hard.
+Is this the correct invoice number?
+Only one answer is correct.
+The system sent the wrong order to the kitchen.
+I took the wrong bus and got lost.
+That is true, but there is another side.
+Is it true that you are moving to Hanoi?
+Let me show you a real example.
+Those flowers are not real.
+His family owns a rich chain of restaurants.
+They are not rich, but they are happy.
+The internet here is poor at peak hours.
+The soil here is too poor for rice.
+The box is too heavy for one person.
+This bag is too heavy for me to carry.
+Can I ask a quick question?
+Let me take a quick shower first.
+Our support response is very fast.
+He drives too fast on the highway.
+The old system was slow at peak hours.
+The traffic is very slow this morning.
+Keep the counter clean during service.
+Put on a clean shirt before we go.
+The tablet screen gets dirty very fast.
+The children came home with dirty shoes.
+Your data is safe on our servers.
+It is not safe to cycle here at night.
+The system will be ready by Friday.
+Dinner is ready, come to the table.
+Here is the complete quote.
+I have the complete set of his books.
+The restaurant was empty at three o'clock.
+The bottle is empty already.
+We are full every Saturday night.
+The bus was full, so I walked.
+The whole team joined the training.
+He ate the whole cake by himself.
+That timing is perfect for us.
+The weather was perfect for a picnic.
+The old reports were terrible.
+I had a terrible night, the dog kept barking.
+We were lucky to sign that deal.
+You are lucky it did not rain.
+They want a modern look for the new store.
+They live in a modern flat near the river.
+They still use a traditional cash box.
+My mother still cooks the traditional way.
+We work with local suppliers.
+We buy vegetables at the local market.
+They are planning a national rollout.
+Today is a national holiday.
+The prices are not public yet.
+There is a public park behind our house.
+Your sales data stays private.
+This is a private garden, not a park.
+I will send the official quote tomorrow.
+The official language here is Vietnamese.
+He is a regular customer here.
+He is a regular visitor to my parents' house.
+In a recent update we added offline mode.
+In recent years the village has grown a lot.
+Please contact me for further details.
+The shop is a little further down this street.
+We support various payment methods.
+We saw various birds at the lake.
+I am certain the data is correct.
+I am certain I locked the door.
+Are you sure about that number?
+Are you sure you don't want coffee?
+They are likely to sign this week.
+It is likely to rain this afternoon.
+It is unlikely we can finish by Friday.
+He is unlikely to come, he hates parties.
+The obvious answer is to add one more till.
+It was obvious that the child was tired.
+Is there a particular feature you need?
+Do you have a particular restaurant in mind?
+In general, setup takes two hours.
+In general, I sleep badly in hotels.
+Can you give me a specific example?
+Be specific about the time you will arrive.
+This is our standard contract.
+This is the standard size for a single bed.
+A typical cafe needs two tablets.
+A typical Sunday for me is cooking and reading.
+The actual cost was lower than the quote.
+The actual journey took five hours.
+What is your current system?
+What is your current address?
+Their previous provider had no support team.
+We met at a previous wedding.
+Training is the most effective way to reduce errors.
+Hot tea with honey is effective for a sore throat.
+Your feedback is very valuable to us.
+This old watch is very valuable to me.
+This package is suitable for a small cafe.
+That film is not suitable for small children.
+That is a reasonable request.
+The hotel was clean and the price was reasonable.
+A two-week delay is not acceptable.
+Coming ten minutes late is acceptable here.
+The receipts lie on the counter.
+The cat likes to lie in the sun.
+Sales jumped after the promotion.
+The children jumped into the pool.
+Revenue climbed twenty percent.
+We climbed the hill to watch the sunset.
+Orders fall after nine at night.
+Be careful, you might fall on the wet floor.
+Costs rise every year.
+The sun rises at half past five.
+Push the button to print the bill.
+I had to push the door hard to open it.
+Pull the report from the dashboard.
+Pull the rope slowly.
+Two people should lift that box.
+Can you lift this suitcase for me?
+The waiter carries four plates at once.
+She carried her shopping bags home.
+Sales dropped during the rain.
+I dropped my phone in the street.
+He ran to catch the last bus.
+Don't throw away the old receipts yet.
+Don't throw stones at the birds.
+Enter the discount code here.
+Please take off your shoes before you enter.
+I will return the tablet on Friday.
+We return from holiday on Sunday.
+Please follow these three steps.
+The dog follows me everywhere.
+Can you pass me the menu?
+We passed a beautiful lake on the way.
+Cross the street and it is on the left.
+Look both ways before you cross.
+You can reach me on Zalo any time.
+I can't reach the top shelf.
+I will visit your store on Monday.
+We visit my grandparents every Sunday.
+Nobody can escape the peak-hour rush.
+The bird escaped from its cage.
+There is no hurry, take your time.
+Hurry up, the film starts in ten minutes.
+Customers hate to wait for the bill.
+I waited an hour for my friend.
+I will stay until the system is stable.
+We stayed at my aunt's house.
+It is very quiet here in the evening.
+There is a problem with the printer.
+There are three cats in our street.
+The KDS is above the pass.
+The birds were flying above the trees.
+Sales are below target this month.
+The temperature fell below zero last night.
+We can do it under budget.
+The cat is sleeping under the bed.
+We have over fifty outlets now.
+The bridge goes over the river.
+The price is between ten and twelve million.
+The shop is between the bank and the post office.
+We are among the top three providers.
+I found my old photos among some books.
+Put the printer beside the register.
+Come and sit beside me.
+We are behind schedule by one week.
+The garden behind the house is small.
+The queue is in front of the counter.
+A tall man sat in front of me at the cinema.
+The router is inside the cabinet.
+Let's eat inside, it is too cold outside.
+There are ten tables outside.
+The children are playing outside.
+It costs around five million a month.
+We walked around the lake.
+Orders come through the app.
+The train goes through a long tunnel.
+The same price applies across all outlets.
+She swam across the river.
+There are five cafes along this street.
+We walked along the beach at sunset.
+We are moving toward a full rollout.
+The dog ran toward its owner.
+Don't step backward in the kitchen.
+He took one step backward in surprise.
+Sales are up fifteen percent.
+The cat ran up the tree.
+The system is down for maintenance.
+Sit down and rest for a minute.
+The total is at the top of the receipt.
+There is snow on the top of the mountain.
+Sign at the bottom of the contract.
+My keys were at the bottom of my bag.
+We are in the middle of the rollout.
+The dog slept in the middle of the room.
+Please remove that item from the bill.
+Please remove your shoes at the door.
+We will replace the broken printer today.
+I need to replace the light bulb.
+Transport costs went up this year.
+Public transport here is cheap.
+The journey to Da Nang takes two hours.
+It was a long journey by train.
+The delivery route covers five districts.
+This is the fastest route to the beach.
+He applied for the manager position.
+He changed position because his leg hurt.
+This location gets the most walk-in customers.
+The house has a quiet location near the park.
+The news spread quickly among the staff.
+The children spread a blanket on the grass.
+We shake hands after we agree.
+Shake the bottle before you open it.
+We will roll out the update next week.
+The ball rolled under the car.
+Slide the drawer closed after each payment.
+The children love to slide on the ice.
+Hang the menu board near the door.
+Hang your coat behind the door.
+Can we separate the bill for this table?
+We separate paper and plastic for recycling.
+Let's divide the cost into three payments.
+Let's divide the cake into six pieces.
+I need to gather more data before I answer.
+The family gathers here every New Year.
+We collect feedback from customers every month.
+My son collects football cards.
+The first step is a short demo.
+Watch that first step, it is high.
+The printer is on the left side of the counter.
+There is a small garden on the side of the house.

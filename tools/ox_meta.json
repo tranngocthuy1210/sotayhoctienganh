@@ -1,0 +1,10682 @@
+{
+"a": {
+"p": "det",
+"vn": "nhỏ, một ít"
+},
+"abandon": {
+"p": "v",
+"vn": "bỏ, từ bỏ"
+},
+"abandoned": {
+"p": "adj",
+"vn": "bị bỏ rơi, bị ruồng bỏ"
+},
+"ability": {
+"p": "n",
+"vn": "khả năng, năng lực"
+},
+"able": {
+"p": "adj",
+"vn": "có năng lực, có tài"
+},
+"about": {
+"p": "adv",
+"vn": "khoảng, về"
+},
+"absence": {
+"p": "n",
+"vn": "sự vắng mặt"
+},
+"absolute": {
+"p": "adj",
+"vn": "tuyệt đối, hoàn toàn"
+},
+"absolutely": {
+"p": "adv",
+"vn": "tuyệt đối, hoàn toàn"
+},
+"absorb": {
+"p": "v",
+"vn": "hút, hấp thu, lôi cuốn"
+},
+"abuse": {
+"p": "n",
+"vn": "lộng hành, lạm dụng"
+},
+"academic": {
+"p": "adj",
+"vn": "thuộc học viện, ĐH, viện hàn lâm"
+},
+"accent": {
+"p": "n",
+"vn": "trọng âm, dấu trọng âm"
+},
+"accident": {
+"p": "n",
+"vn": "nạn, rủi ro. by accident: tình cờ"
+},
+"accidental": {
+"p": "adj",
+"vn": "tình cờ, bất ngờ"
+},
+"accidentally": {
+"p": "adv",
+"vn": "tình cờ, ngẫu nhiên"
+},
+"accommodation": {
+"p": "n",
+"vn": "sự thích nghi, sự điều tiết, sự làm cho phù hợp"
+},
+"accompany": {
+"p": "v",
+"vn": "đi theo, đi cùng, kèm theo."
+},
+"according to": {
+"p": "prep",
+"vn": ""
+},
+"accurate": {
+"p": "adj",
+"vn": "đúng đắn, chính xác, xác đáng"
+},
+"accurately": {
+"p": "adv",
+"vn": "đúng đắn, chính xác"
+},
+"accuse": {
+"p": "v",
+"vn": "tố cáo, buộc tội, kết tội"
+},
+"achieve": {
+"p": "v",
+"vn": "đạt được, dành được"
+},
+"achievement": {
+"p": "n",
+"vn": "thành tích, thành tựu"
+},
+"acid": {
+"p": "n",
+"vn": ""
+},
+"acknowledge": {
+"p": "v",
+"vn": "công nhận, thừa nhận"
+},
+"acquire": {
+"p": "v",
+"vn": "dành được, đạt được, kiếm được"
+},
+"act": {
+"p": "n",
+"vn": "hành động, hành vi, cử chỉ, đối xử"
+},
+"action": {
+"p": "n",
+"vn": "hành động, hành vi, tác động. Take action: hành động"
+},
+"active": {
+"p": "adj",
+"vn": "tích cực hoạt động, nhanh nhẹn"
+},
+"actively": {
+"p": "adv",
+"vn": "tích cực hoạt động; nhanh nhẹn, linh lợi; có hiệu lực"
+},
+"activity": {
+"p": "n",
+"vn": "sự tích cực, sự hoạt động, sự nhanh nhẹn, sự linh lợi"
+},
+"actor": {
+"p": "n",
+"vn": "diễn viên nam"
+},
+"actress": {
+"p": "n",
+"vn": "diễn viên nữ"
+},
+"adapt": {
+"p": "v",
+"vn": "lắp vào"
+},
+"add": {
+"p": "v",
+"vn": "cộng, thêm vào"
+},
+"addition": {
+"p": "n",
+"vn": "tính cộng, phép cộng"
+},
+"additional": {
+"p": "adj",
+"vn": "thêm vào, tăng thêm"
+},
+"address": {
+"p": "n",
+"vn": "địa chỉ, đề địa chỉ"
+},
+"adequate": {
+"p": "adj",
+"vn": "đầy, đầy đủ"
+},
+"adequately": {
+"p": "adv",
+"vn": "tương xứng, thỏa đáng"
+},
+"adjust": {
+"p": "v",
+"vn": "sửa lại cho đúng, điều chỉnh"
+},
+"admiration": {
+"p": "n",
+"vn": "sự khâm phục, thán phục"
+},
+"admire": {
+"p": "v",
+"vn": "khâm phục, thán phục"
+},
+"admit": {
+"p": "v",
+"vn": "nhận vào, cho vào, kết hợp"
+},
+"adopt": {
+"p": "v",
+"vn": "nhận làm con nuôi, bố mẹ nuôi"
+},
+"adult": {
+"p": "n",
+"vn": "người lớn, người trưởng thành; trưởng thành"
+},
+"advance": {
+"p": "n",
+"vn": "sự tiến bộ, tiến lên; đưa lên, đề xuat"
+},
+"advanced": {
+"p": "adj",
+"vn": "tiên tiến, tiến bộ, cap cao. in advance trước, sớm"
+},
+"adventure": {
+"p": "n",
+"vn": "sự phiêu lưu, mạo hiểm"
+},
+"advertise": {
+"p": "v",
+"vn": "báo cho biết, báo cho biết trước"
+},
+"advertisement": {
+"p": "n",
+"vn": "quảng cáo"
+},
+"advertising": {
+"p": "n",
+"vn": "sự quảng cáo, nghề quảng cáo"
+},
+"advice": {
+"p": "n",
+"vn": "lời khuyên, lời chỉ bảo"
+},
+"advise": {
+"p": "v",
+"vn": "khuyên, khuyên bảo, răn bảo"
+},
+"affair": {
+"p": "n",
+"vn": "việc"
+},
+"affect": {
+"p": "v",
+"vn": "làm ảnh hưởng, tác động đến"
+},
+"affection": {
+"p": "n",
+"vn": "tình cảm, sự yêu mến"
+},
+"after": {
+"p": "prep",
+"vn": "đằng sau, sau khi"
+},
+"afterwards": {
+"p": "adv",
+"vn": "này, về sau, rồi thì, sau đây"
+},
+"again": {
+"p": "adv",
+"vn": "lại, nữa, lần nữa"
+},
+"against": {
+"p": "prep",
+"vn": "chống lại, phản đối"
+},
+"aged": {
+"p": "adj",
+"vn": "già đi"
+},
+"agency": {
+"p": "n",
+"vn": "tác dụng, lực; môi giới, trung gian"
+},
+"agent": {
+"p": "n",
+"vn": "đại lý, tác nhân"
+},
+"aggressive": {
+"p": "adj",
+"vn": "xâm lược, hung hăng (US: xông xáo)"
+},
+"ago": {
+"p": "adv",
+"vn": "trước đây"
+},
+"ahead": {
+"p": "adv",
+"vn": "trước, về phía trước"
+},
+"aid": {
+"p": "n",
+"vn": "sự giúp đỡ; thêm vào, phụ vào"
+},
+"aim": {
+"p": "n",
+"vn": "sự nhắm (bắn), mục tiêu, ý định; nhắm, tập trung, hướng vào"
+},
+"air": {
+"p": "n",
+"vn": "không khí, bầu không khí, không gian"
+},
+"aircraft": {
+"p": "n",
+"vn": "máy bay, khí cầu"
+},
+"alarm": {
+"p": "n",
+"vn": "báo động, báo nguy"
+},
+"alarmed": {
+"p": "adj",
+"vn": "báo động"
+},
+"alarming": {
+"p": "adj",
+"vn": "làm lo sợ, làm hốt hoảng, làm sợ hãi"
+},
+"alcohol": {
+"p": "n",
+"vn": "rượu cồn"
+},
+"alcoholic": {
+"p": "adj",
+"vn": "rượu; người nghiện rượu"
+},
+"all": {
+"p": "pron",
+"vn": "tất cả"
+},
+"all right": {
+"p": "adj",
+"vn": ", exclamation ɔ:l'rait tốt, ổn, khỏe mạnh; được"
+},
+"allied": {
+"p": "adj",
+"vn": "liên minh, đồng minh, thông gia"
+},
+"allow": {
+"p": "v",
+"vn": "phép, để cho"
+},
+"ally": {
+"p": "n",
+"vn": "nước đồng minh, liên minh; liên kết, kết thông gia"
+},
+"alone": {
+"p": "adj",
+"vn": "cô đơn, một mình"
+},
+"alongside": {
+"p": "prep",
+"vn": "sát cạnh, kế bên, dọc theo"
+},
+"aloud": {
+"p": "adv",
+"vn": "lớn tiếng, to tiếng"
+},
+"alphabet": {
+"p": "n",
+"vn": "bảng chữ cái, bước đầu, điều cơ bản"
+},
+"alphabetical": {
+"p": "adj",
+"vn": "thuộc bảng chứ cái"
+},
+"alphabetically": {
+"p": "adv",
+"vn": "thứ tự abc"
+},
+"alter": {
+"p": "v",
+"vn": "đổi, biến đổi, sửa đổi"
+},
+"alternative": {
+"p": "n",
+"vn": "sự lựa chọn; lựa chọn"
+},
+"alternatively": {
+"p": "adv",
+"vn": "như một sự lựa chọn"
+},
+"altogether": {
+"p": "adv",
+"vn": "hoàn toàn, hầu như; nói chung"
+},
+"amaze": {
+"p": "v",
+"vn": "làm ngạc nhiên, làm sửng sốt"
+},
+"amazed": {
+"p": "adj",
+"vn": "ngạc, sửng sốt"
+},
+"amazing": {
+"p": "adj",
+"vn": "ngạc, sửng sốt"
+},
+"ambition": {
+"p": "n",
+"vn": "hoài bão, khát vọng"
+},
+"ambulance": {
+"p": "n",
+"vn": "cứu thương, xe cấp cứu"
+},
+"amuse": {
+"p": "v",
+"vn": "làm cho vui, thích, làm buồn cười"
+},
+"amused": {
+"p": "adj",
+"vn": "thích"
+},
+"amusing": {
+"p": "adj",
+"vn": "thích"
+},
+"analysis": {
+"p": "n",
+"vn": "sự phân tích"
+},
+"ancient": {
+"p": "adj",
+"vn": "xưa, cổ"
+},
+"and": {
+"p": "conj",
+"vn": "và"
+},
+"anger": {
+"p": "n",
+"vn": "sự tức giận, sự giận dữ"
+},
+"angle": {
+"p": "n",
+"vn": "góc"
+},
+"angrily": {
+"p": "adv",
+"vn": "tức giận, giận dữ"
+},
+"animal": {
+"p": "n",
+"vn": "động vật, thú vật"
+},
+"ankle": {
+"p": "n",
+"vn": "mắt cá chân"
+},
+"anniversary": {
+"p": "n",
+"vn": "ngày, lễ kỉ niệm"
+},
+"announce": {
+"p": "v",
+"vn": "báo, thông báo"
+},
+"annoy": {
+"p": "v",
+"vn": "chọc tức, làm bực mình; làm phiền, quẫy nhiễu"
+},
+"annoying": {
+"p": "adj",
+"vn": "chọc tức, làm bực mình; làm phiền, quấy nhiễu"
+},
+"annual": {
+"p": "adj",
+"vn": "hàng năm, từng năm"
+},
+"annually": {
+"p": "adv",
+"vn": "hàng năm, từng năm"
+},
+"another": {
+"p": "det",
+"vn": "khác"
+},
+"anti": {
+"p": "",
+"vn": "chống lại"
+},
+"anticipate": {
+"p": "v",
+"vn": "thấy trước, chặn trước, lường trước"
+},
+"anxiety": {
+"p": "n",
+"vn": "mối lo âu, sự lo lắng"
+},
+"anxious": {
+"p": "adj",
+"vn": "âu, lo lắng, băn khoăn"
+},
+"anxiously": {
+"p": "adv",
+"vn": "âu, lo lắng, băn khoăn"
+},
+"any detpron": {
+"p": "adv",
+"vn": "một người, vật nào đó; bất cứ; một chút nào, tí nào"
+},
+"anyone": {
+"p": "pron",
+"vn": "người nào, bất cứ ai"
+},
+"anything": {
+"p": "pron",
+"vn": "việc gì, vật gì; bất cứ việc gì, vật gì"
+},
+"anywhere": {
+"p": "adv",
+"vn": "bất cứ chỗ nào, bất cứ nơi đâu"
+},
+"apart": {
+"p": "adv",
+"vn": "về một bên, qua một bên"
+},
+"apart from": {
+"p": "prep",
+"vn": "ngoài… ra"
+},
+"apparent": {
+"p": "adj",
+"vn": "rõ ràng, rành mạch; bề ngoài, có vẻ"
+},
+"apparently": {
+"p": "adv",
+"vn": "nhìn bên ngoài, hình như"
+},
+"appeal": {
+"p": "n",
+"vn": "sự kêu gọi, lời kêu gọi; kêu gọi, cầu khẩn"
+},
+"appear": {
+"p": "v",
+"vn": "xuất hiện, hiện ra, trình diện"
+},
+"appearance": {
+"p": "n",
+"vn": "sự xuất hiện, sự trình diện"
+},
+"apple": {
+"p": "n",
+"vn": "quả táo"
+},
+"application": {
+"p": "n",
+"vn": "sự gắn vào, vật gắn vào; sự chuyên cần, chuyên tâm"
+},
+"apply": {
+"p": "v",
+"vn": "gắn vào, ghép vào, áp dụng vào"
+},
+"appoint": {
+"p": "v",
+"vn": "bổ nhiệm, chỉ định, chọn"
+},
+"appreciate": {
+"p": "v",
+"vn": "thấy rõ; nhận thức"
+},
+"approach": {
+"p": "v",
+"vn": "đến gần, lại gần; sự đến gần, sự lại gần"
+},
+"appropriate": {
+"p": "adj",
+"vn": "thích hợp, thích đáng"
+},
+"approval": {
+"p": "n",
+"vn": "sự tán thành, đồng ý, sự chấp thuận"
+},
+"approve of": {
+"p": "v",
+"vn": "tán thành, đồng ý, chấp thuận"
+},
+"approving": {
+"p": "adj",
+"vn": "tán thành, đồng ý, chấp thuận"
+},
+"approximate": {
+"p": "adj",
+"vn": ", to ə'prɔksimit giống với, giống hệt với"
+},
+"approximately": {
+"p": "adv",
+"vn": "khoảng chừng, độ chừng"
+},
+"April": {
+"p": "n",
+"vn": "tháng Tư"
+},
+"area": {
+"p": "n",
+"vn": "diện tích, bề mặt"
+},
+"argue": {
+"p": "v",
+"vn": "chứng tỏ, chỉ rõ"
+},
+"argument": {
+"p": "n",
+"vn": "lý lẽ"
+},
+"arise": {
+"p": "v",
+"vn": "xuất hiện, nảy ra, nảy sinh ra"
+},
+"armed": {
+"p": "adj",
+"vn": "vũ trang"
+},
+"arms": {
+"p": "n",
+"vn": "vũ khí, binh giới, binh khí"
+},
+"army": {
+"p": "n",
+"vn": "quân đội"
+},
+"arrangement": {
+"p": "n",
+"vn": "sự sắp xếp, sắp đặt, sự sửa soạn"
+},
+"arrest": {
+"p": "v",
+"vn": "bắt giữ, sự bắt giữ"
+},
+"arrival": {
+"p": "n",
+"vn": "sự đến, sự tới nơi"
+},
+"arrow": {
+"p": "n",
+"vn": "tên, mũi tên"
+},
+"art": {
+"p": "n",
+"vn": "nghệ thuật, mỹ thuật"
+},
+"article": {
+"p": "n",
+"vn": "bài báo, đề mục"
+},
+"artificial": {
+"p": "adj",
+"vn": "nhân tạo"
+},
+"artificially": {
+"p": "adv",
+"vn": "nhân tạo"
+},
+"artist": {
+"p": "n",
+"vn": "nghệ sĩ"
+},
+"artistic": {
+"p": "adj",
+"vn": "thuộc nghệ thuật, thuộc mỹ thuật"
+},
+"as": {
+"p": "adv",
+"vn": "như (as you know…)"
+},
+"ashamed": {
+"p": "adj",
+"vn": "ngượng, xấu hổ"
+},
+"aside": {
+"p": "adv",
+"vn": "về một bên, sang một bên. aside from: ngoài ra, trư ra"
+},
+"aspect": {
+"p": "n",
+"vn": "vẻ bề ngoài, diện mạo"
+},
+"assist": {
+"p": "v",
+"vn": "giúp, giúp đỡ; tham dự, có mặt"
+},
+"assistance": {
+"p": "n",
+"vn": "sự giúp đỡ"
+},
+"assistant": {
+"p": "n",
+"vn": "người giúp đỡ, người phụ tá; giúp đỡ"
+},
+"associate": {
+"p": "v",
+"vn": "kết giao, liên kết, kết hợp, cho cộng tác. associated with liên kết với"
+},
+"association": {
+"p": "n",
+"vn": "sự kết hợp, sự liên kết"
+},
+"assume": {
+"p": "v",
+"vn": "khoác, có, lấy (cái vẻ, tính chất…)"
+},
+"assure": {
+"p": "v",
+"vn": "đảm bảo, cấm đoán"
+},
+"atmosphere": {
+"p": "n",
+"vn": "khí quyển"
+},
+"atom": {
+"p": "n",
+"vn": "nguyên tử"
+},
+"attached": {
+"p": "adj",
+"vn": "gắn bó"
+},
+"attack": {
+"p": "n",
+"vn": "sự tấn công, sự công kích; tấn công, công kích"
+},
+"attempt": {
+"p": "n",
+"vn": "sự cố gắng, sự thử; cố gắng, thử"
+},
+"attempted": {
+"p": "adj",
+"vn": "cố gắng, thử"
+},
+"attention": {
+"p": "n",
+"vn": "sự chú ý"
+},
+"attorney": {
+"p": "n",
+"vn": "người được ủy quyền"
+},
+"attract": {
+"p": "v",
+"vn": "hút; thu hút, hấp dẫn"
+},
+"attraction": {
+"p": "n",
+"vn": "sự hút, sức hút"
+},
+"attractive": {
+"p": "adj",
+"vn": "hút, thu hút, có duyên, lôi cuốn"
+},
+"audience": {
+"p": "n",
+"vn": "thính, khan giả"
+},
+"August": {
+"p": "n",
+"vn": "tháng Tám"
+},
+"author": {
+"p": "n",
+"vn": "tác giả"
+},
+"authority": {
+"p": "n",
+"vn": "quyền, quyền lực"
+},
+"automatic": {
+"p": "adj",
+"vn": "tự động"
+},
+"automatically": {
+"p": "adv",
+"vn": "một cách tự động"
+},
+"autumn": {
+"p": "n",
+"vn": "mùa thu (US: mùa thu là fall)"
+},
+"average": {
+"p": "adj",
+"vn": "bình, số trung bình, mức trung bình"
+},
+"avoid": {
+"p": "v",
+"vn": "tránh, tránh xa"
+},
+"awake": {
+"p": "adj",
+"vn": "đánh thức, làm thức dậy"
+},
+"award": {
+"p": "n",
+"vn": "phần thưởng; tặng, thưởng"
+},
+"aware": {
+"p": "adj",
+"vn": "biết, nhận thức, nhận thức thấy"
+},
+"away": {
+"p": "adv",
+"vn": "cách, rời xa, đi xa"
+},
+"awful": {
+"p": "adj",
+"vn": "nghiêm, dễ sợ"
+},
+"awfully": {
+"p": "adv",
+"vn": "tàn khốc, khủng khiếp"
+},
+"awkward": {
+"p": "adj",
+"vn": "vụng về, lung túng"
+},
+"awkwardly": {
+"p": "adv",
+"vn": "vụng về, lung túng"
+},
+"background": {
+"p": "n",
+"vn": "phía sau; nền"
+},
+"backwards": {
+"p": "adv",
+"vn": "ngược"
+},
+"bacteria": {
+"p": "n",
+"vn": "khuẩn"
+},
+"bad": {
+"p": "adj",
+"vn": "xấu, tồi. go bad bẩn thỉu, thối, hỏng"
+},
+"badly": {
+"p": "adv",
+"vn": "xấu, tồi"
+},
+"bad-tempered": {
+"p": "adj",
+"vn": "xấu tính, dễ nổi cáu"
+},
+"baggage": {
+"p": "n",
+"vn": "hành lý"
+},
+"bake": {
+"p": "v",
+"vn": "nướng bằng lò"
+},
+"balance": {
+"p": "n",
+"vn": "cái cân; làm cho cân bằng, tương xứng"
+},
+"ball": {
+"p": "n",
+"vn": "quả bóng"
+},
+"ban": {
+"p": "v",
+"vn": "cấm, cấm chỉ; sự cấm"
+},
+"band": {
+"p": "n",
+"vn": "băng, đai, nẹp"
+},
+"bandage": {
+"p": "n",
+"vn": "dải băng; băng bó"
+},
+"bar": {
+"p": "n",
+"vn": "quán bán rượu"
+},
+"barrier": {
+"p": "n",
+"vn": "đặt chướng ngại vật"
+},
+"base": {
+"p": "n",
+"vn": "cơ sở, cơ bản, nền móng; đặt tên, đặt cơ sở trên cái gì. based on dựa trên"
+},
+"basis": {
+"p": "n",
+"vn": "nền tảng, cơ sở"
+},
+"bath": {
+"p": "n",
+"vn": "sự tắm"
+},
+"battle": {
+"p": "n",
+"vn": "trận đánh, chiến thuật"
+},
+"bay": {
+"p": "n",
+"vn": "(nhà), nhịp (cầu), chuồng (ngựa); bays: vòng nguyệt quế, vịnh"
+},
+"be": {
+"p": "",
+"vn": "bị ốm"
+},
+"beach": {
+"p": "n",
+"vn": "bãi biển"
+},
+"beak": {
+"p": "n",
+"vn": "mỏ chim"
+},
+"bear": {
+"p": "v",
+"vn": "cầm, vác, đeo, ôm"
+},
+"beard": {
+"p": "n",
+"vn": "râu"
+},
+"beat": {
+"p": "n",
+"vn": "tiếng đập, sự đập; đánh đập, đấm"
+},
+"beautiful": {
+"p": "adj",
+"vn": "đẹp"
+},
+"beautifully": {
+"p": "adv",
+"vn": "tốt đẹp, đáng hài lòng"
+},
+"beauty": {
+"p": "n",
+"vn": "vẻ đẹp, cái đẹp; người đẹp"
+},
+"beef": {
+"p": "n",
+"vn": "thịt bò"
+},
+"beer": {
+"p": "n",
+"vn": "rượu bia"
+},
+"before": {
+"p": "prep",
+"vn": "trước, đằng trước"
+},
+"beginning": {
+"p": "n",
+"vn": "phần đầu, lúc bắt đầu, lúc khởi đầu"
+},
+"behalf": {
+"p": "n",
+"vn": "sự thay mặt. on behalf of sb thay mặt cho ai, nhân danh ai"
+},
+"behave": {
+"p": "v",
+"vn": "đối xử, ăn ở, cư xử"
+},
+"belief": {
+"p": "n",
+"vn": "lòng tin, đức tin, sự tin tưởng"
+},
+"bell": {
+"p": "n",
+"vn": "cái chuông, tiếng chuông"
+},
+"belong": {
+"p": "v",
+"vn": "thuộc về, của, thuộc quyền sở hữu"
+},
+"belt": {
+"p": "n",
+"vn": "dây lưng, thắt lưng"
+},
+"bend": {
+"p": "v",
+"vn": "chỗ rẽ, chỗ uốn; khuỷu tay; cúi xuống, uốn cong"
+},
+"beneath": {
+"p": "prep",
+"vn": "ở dưới, dưới thấp"
+},
+"bent": {
+"p": "adj",
+"vn": "khiếu, sở thích, khuynh hướng"
+},
+"bet": {
+"p": "v",
+"vn": "đánh cuộc, cá cược; sự đánh cuộc"
+},
+"betting": {
+"p": "n",
+"vn": "sự đánh cuộc"
+},
+"beyond": {
+"p": "prep",
+"vn": "ở xa, phía bên kia"
+},
+"bicycle": {
+"p": "n",
+"vn": "đạp"
+},
+"bid": {
+"p": "v",
+"vn": "đặt giá, trả giá; sự đặt giá, sự trả giá"
+},
+"big": {
+"p": "adj",
+"vn": "lớn"
+},
+"bin": {
+"p": "n",
+"vn": "thùng, thùng đựng rượu"
+},
+"biology": {
+"p": "n",
+"vn": "vật học"
+},
+"bird": {
+"p": "n",
+"vn": ""
+},
+"birth": {
+"p": "n",
+"vn": "sự ra đời, sự sinh đẻ"
+},
+"biscuit": {
+"p": "n",
+"vn": "bánh quy"
+},
+"bit": {
+"p": "n",
+"vn": "miếng, mảnh. a bit một chút, một t"
+},
+"bite": {
+"p": "v",
+"vn": "cắn, ngoạm; sự cắn, sự ngoạm"
+},
+"bitter": {
+"p": "adj",
+"vn": "đắng; đắng cay, chua xót"
+},
+"bitterly": {
+"p": "adv",
+"vn": "đắng, đắng cay, chua xót"
+},
+"black": {
+"p": "adj",
+"vn": "đen; màu đen"
+},
+"blade": {
+"p": "n",
+"vn": "lưỡi (dao, kiếm); lá (cỏ, cây); mái (chèo); cánh (chong chóng)"
+},
+"blame": {
+"p": "v",
+"vn": "khiển trách, mắng trách; sự khiển trách, sự mắng trách"
+},
+"blank": {
+"p": "adj",
+"vn": "trống, để trắng; sự trống rỗng"
+},
+"blankly": {
+"p": "adv",
+"vn": "ngây ra, không có thần"
+},
+"block": {
+"p": "n",
+"vn": "khối, tảng (đá); làm ngăn cản, ngăn chặn"
+},
+"blonde": {
+"p": "adj",
+"vn": "vàng, mái tóc hoe vàng"
+},
+"blow": {
+"p": "v",
+"vn": "nở hoa; sự nở hoa"
+},
+"blue": {
+"p": "adj",
+"vn": "màu xanh"
+},
+"board": {
+"p": "n",
+"vn": "tấm ván; lát ván, lót ván. on board trên tàu thủy"
+},
+"boat": {
+"p": "n",
+"vn": "tàu, thuyền"
+},
+"boil": {
+"p": "v",
+"vn": "sôi, luộc"
+},
+"bomb": {
+"p": "n",
+"vn": "quả bom; oánh bom, thả bom"
+},
+"boot": {
+"p": "n",
+"vn": "giày ống"
+},
+"border": {
+"p": "n",
+"vn": "bờ, mép, vỉa, lề (đường)"
+},
+"bore": {
+"p": "v",
+"vn": "buồn chán, buồn tẻ"
+},
+"boring": {
+"p": "adj",
+"vn": "buồn chán"
+},
+"born": {
+"p": "v",
+"vn": "đẻ"
+},
+"borrow": {
+"p": "v",
+"vn": "mượn"
+},
+"both": {
+"p": "det",
+"vn": "cả hai"
+},
+"bother": {
+"p": "v",
+"vn": "làm phiền, quấy rầy, làm bực mình"
+},
+"bottle": {
+"p": "n",
+"vn": "lọ"
+},
+"bound": {
+"p": "adj",
+"vn": "nhất định, chắc chắn"
+},
+"bowl": {
+"p": "n",
+"vn": "cái bát"
+},
+"box": {
+"p": "n",
+"vn": "hộp, thùng"
+},
+"boy": {
+"p": "n",
+"vn": "thiếu niên"
+},
+"boyfriend": {
+"p": "n",
+"vn": "bạn trai"
+},
+"branch": {
+"p": "n",
+"vn": "ngành; nhành cây, nhánh song, ngả đường"
+},
+"break": {
+"p": "v",
+"vn": "bẻ gẫy, đập vỡ; sự gãy, sự vỡ"
+},
+"breast": {
+"p": "n",
+"vn": "ngực, vú"
+},
+"breath": {
+"p": "n",
+"vn": "hơi thở, hơi"
+},
+"breathing": {
+"p": "n",
+"vn": "sự hô hấp, sự thở"
+},
+"breed": {
+"p": "v",
+"vn": "nuôi dưỡng, chăm sóc, giáo dục; sinh đẻ; nòi giống"
+},
+"brick": {
+"p": "n",
+"vn": "gạch"
+},
+"bridge": {
+"p": "n",
+"vn": "cái cầu"
+},
+"brief": {
+"p": "adj",
+"vn": "ngắn, gọn, vắn tắt"
+},
+"briefly": {
+"p": "adv",
+"vn": "ngắn, gọn, vắn tắt, tóm tắt"
+},
+"bright": {
+"p": "adj",
+"vn": "sáng, sáng chói"
+},
+"brightly": {
+"p": "adv",
+"vn": "sáng chói, tươi"
+},
+"brilliant": {
+"p": "adj",
+"vn": "tỏa sáng, rực rỡ, chói lọi"
+},
+"broad": {
+"p": "adj",
+"vn": "rộng"
+},
+"broadcast": {
+"p": "v",
+"vn": "khắp nơi,truyền rộng rãi; phát thanh, quảng bá"
+},
+"broadly": {
+"p": "adv",
+"vn": "rộng, rộng rãi"
+},
+"broken": {
+"p": "adj",
+"vn": "bị gãy, bị vỡ"
+},
+"brown": {
+"p": "adj",
+"vn": "nâu, màu nâu"
+},
+"brush": {
+"p": "n",
+"vn": "brΔ∫ bàn chải; chải, quét"
+},
+"bubble": {
+"p": "n",
+"vn": "bΔbl bong bóng, bọt, tăm"
+},
+"budget": {
+"p": "n",
+"vn": "ngân sách"
+},
+"build": {
+"p": "v",
+"vn": "xây dựng"
+},
+"bullet": {
+"p": "n",
+"vn": "đạn (súng trường, súng lục)"
+},
+"bunch": {
+"p": "n",
+"vn": "bΛnt∫ búi, chùm, bó, cụm, buồng; bầy, đàn"
+},
+"burn": {
+"p": "v",
+"vn": "đốt, đốt cháy, thắp, nung, thiêu"
+},
+"burnt": {
+"p": "adj",
+"vn": "bị đốt, bị cháy, khê; rám nắng, sạm (da)"
+},
+"burst": {
+"p": "v",
+"vn": "nổ, nổ tung (bom, đạn); nổ, vỡ (bong bóng); háo hức"
+},
+"bury": {
+"p": "v",
+"vn": "chôn cất, mai táng"
+},
+"bush": {
+"p": "n",
+"vn": "bu∫ bụi cây, bụi rậm"
+},
+"business": {
+"p": "n",
+"vn": "việc buôn bán, thương mại, kinh doanh"
+},
+"butter": {
+"p": "n",
+"vn": "bơ"
+},
+"buyer": {
+"p": "n",
+"vn": "người mua"
+},
+"by": {
+"p": "prep",
+"vn": "bởi, bằng"
+},
+"bye": {
+"p": "",
+"vn": "tạm biệt"
+},
+"cabinet": {
+"p": "n",
+"vn": "tủ có nhiều ngăn đựng đồ"
+},
+"cable": {
+"p": "n",
+"vn": "dây cáp"
+},
+"calculate": {
+"p": "v",
+"vn": "tính toán"
+},
+"calculation": {
+"p": "n",
+"vn": "sự tính toán"
+},
+"calmly": {
+"p": "adv",
+"vn": "yên lặng, êm ả; bình tĩnh, điềm tĩnh"
+},
+"camera": {
+"p": "n",
+"vn": "máy ảnh"
+},
+"camp": {
+"p": "n",
+"vn": "trại, chỗ cắm trại; cắm trại, hạ trại"
+},
+"campaign": {
+"p": "n",
+"vn": "chiến dịch, cuộc vận động"
+},
+"camping": {
+"p": "n",
+"vn": "sự cắm trại"
+},
+"can modal": {
+"p": "v",
+"vn": "có thể; nhà tù, nhà giam, bình, ca đựng. cannot không thể"
+},
+"cancer": {
+"p": "n",
+"vn": "bệnh ung thư"
+},
+"candidate": {
+"p": "n",
+"vn": "người ứng cử, thí sinh, người dự thi"
+},
+"candy": {
+"p": "n",
+"vn": "kẹo"
+},
+"cap": {
+"p": "n",
+"vn": "mũ lưỡi trai, mũ vải"
+},
+"capable of": {
+"p": "adj",
+"vn": "có tài, có năng lực; có khả năng, cả gan"
+},
+"capacity": {
+"p": "n",
+"vn": "năng lực, khả năng tiếp thu, năng suất"
+},
+"capital": {
+"p": "n",
+"vn": "thủ đô, tiền vốn; chủ yếu, chính yếu, cơ bản"
+},
+"captain": {
+"p": "n",
+"vn": "người cầm đầu, người chỉ huy, thủ lĩnh"
+},
+"capture": {
+"p": "v",
+"vn": "bắt giữ, bắt; sự bắt giữ, sự bị bắt"
+},
+"cardboard": {
+"p": "n",
+"vn": "bìa cứng, các tông"
+},
+"care": {
+"p": "n",
+"vn": "sự chăm sóc, chăm nom; chăm sóc"
+},
+"career": {
+"p": "n",
+"vn": "nghề nghiệp, sự nghiệp"
+},
+"carelessly": {
+"p": "adv",
+"vn": "cẩu thả, bất cẩn"
+},
+"carpet": {
+"p": "n",
+"vn": "tấm thảm, thảm (cỏ)"
+},
+"carrot": {
+"p": "n",
+"vn": "củ cà rốt"
+},
+"case": {
+"p": "n",
+"vn": "vỏ, ngăn, túi,trường hợp, cảnh ngộ, hoàn cảnh, tình thế"
+},
+"cast": {
+"p": "v",
+"vn": "quăng, ném, thả, đánh gục; sự quăng, sự ném (lưới), sự thả (neo)"
+},
+"castle": {
+"p": "n",
+"vn": "thành trì, thành quách"
+},
+"cat": {
+"p": "n",
+"vn": "mèo"
+},
+"category": {
+"p": "n",
+"vn": "hạng, loại; phạm trù"
+},
+"cause": {
+"p": "n",
+"vn": "nguyên nhân, nguyên do; gây ra, gây nên"
+},
+"CD": {
+"p": "n",
+"vn": "đĩa CD"
+},
+"cease": {
+"p": "v",
+"vn": "dừng, ngưng, ngớt, thôi, hết, tạnh"
+},
+"ceiling": {
+"p": "n",
+"vn": "trần nhà"
+},
+"celebrate": {
+"p": "v",
+"vn": "kỷ niệm, làm lễ kỷ niệm; tán dương, ca tụng"
+},
+"celebration": {
+"p": "n",
+"vn": "sự kỷ niệm, lễ kỷ niệm; sự tán dương, sự ca tụng"
+},
+"cell": {
+"p": "n",
+"vn": "ô, ngăn"
+},
+"cent": {
+"p": "",
+"vn": "đồng xu (bằng 1/100 đô la)"
+},
+"centimetre": {
+"p": "n",
+"vn": "senti,mi:tз xen ti mét"
+},
+"central": {
+"p": "adj",
+"vn": "tâm, ở giữa, trung ương"
+},
+"centre": {
+"p": "n",
+"vn": "điểm giữa, trung tâm, trung ương"
+},
+"century": {
+"p": "n",
+"vn": "thế kỷ"
+},
+"ceremony": {
+"p": "n",
+"vn": "thức, nghi lễ"
+},
+"certainly": {
+"p": "adv",
+"vn": "chắc chắn, nhất định"
+},
+"certificate": {
+"p": "n",
+"vn": "giấy chứng nhận, bằng, chứng chỉ"
+},
+"chain": {
+"p": "n",
+"vn": "dây, xích; xính lại, trói lại"
+},
+"challenge": {
+"p": "n",
+"vn": "sự thử thách, sự thách thức; thách thức, thử thách"
+},
+"chamber": {
+"p": "n",
+"vn": "buồng, phòng, buồng ngủ"
+},
+"chance": {
+"p": "n",
+"vn": ", tʃɑ:ns sự may rủi, sự tình cờ, ngẫu nhiên"
+},
+"channel": {
+"p": "n",
+"vn": "kênh (TV, radio), eo biển"
+},
+"chapter": {
+"p": "n",
+"vn": "chương (sách)"
+},
+"character": {
+"p": "n",
+"vn": "tính cách, đặc tính, nhân vật"
+},
+"characteristic": {
+"p": "adj",
+"vn": "riêng, riêng biệt, đặc trưng, đặc tính, đặc điểm"
+},
+"charity": {
+"p": "n",
+"vn": "lòng tư thiện, lòng nhân đức; sự bố thí"
+},
+"chase": {
+"p": "v",
+"vn": "săn bắt; sự săn bắt"
+},
+"chat": {
+"p": "v",
+"vn": "nói chuyện, tán gẫu; chuyện phiếm, chuyện gẫu"
+},
+"cheaply": {
+"p": "adv",
+"vn": "rẻ, rẻ tiền"
+},
+"cheat": {
+"p": "v",
+"vn": "lưa, lưa đảo; trò lưa đảo, trò gian lận"
+},
+"cheek": {
+"p": "n",
+"vn": "má"
+},
+"cheerful": {
+"p": "adj",
+"vn": "mưng, phấn khởi, hồ hởi"
+},
+"cheerfully": {
+"p": "adv",
+"vn": "vẻ, phấn khởi"
+},
+"cheese": {
+"p": "n",
+"vn": "mát"
+},
+"chemical": {
+"p": "adj",
+"vn": "thuộc hóa học; chất hóa học, hóa chất"
+},
+"chemist": {
+"p": "n",
+"vn": "nhà hóa học"
+},
+"chemistry": {
+"p": "n",
+"vn": "hóa học, môn hóa học, ngành hóa học"
+},
+"cheque": {
+"p": "n",
+"vn": "t∫ek séc"
+},
+"chest": {
+"p": "n",
+"vn": "tủ, rương, hòm"
+},
+"chew": {
+"p": "v",
+"vn": "ngẫm nghĩ"
+},
+"chicken": {
+"p": "n",
+"vn": "gà, gà con, thịt gà"
+},
+"chief": {
+"p": "adj",
+"vn": "trọng yếu, chính yếu; thủ lĩnh, lãnh tụ, người đứng đầu, xếp"
+},
+"chin": {
+"p": "n",
+"vn": "cằm"
+},
+"chip": {
+"p": "n",
+"vn": "vỏ bào, mảnh vỡ, chỗ sứt, mẻ"
+},
+"chocolate": {
+"p": "n",
+"vn": "sô cô la"
+},
+"choice": {
+"p": "n",
+"vn": "sự lựa chọn"
+},
+"chop": {
+"p": "v",
+"vn": "chặt, đốn, chẻ"
+},
+"church": {
+"p": "n",
+"vn": "nhà thờ"
+},
+"cigarette": {
+"p": "n",
+"vn": "điếu thuốc lá"
+},
+"cinema": {
+"p": "n",
+"vn": "rạp xi nê, rạp chiếu bóng"
+},
+"circle": {
+"p": "n",
+"vn": "đường tròn, hình tròn"
+},
+"circumstance": {
+"p": "n",
+"vn": "hoàn cảnh, trường hợp, tình huống"
+},
+"citizen": {
+"p": "n",
+"vn": "người thành thị"
+},
+"civil": {
+"p": "adj",
+"vn": "(thuộc) công dân"
+},
+"claim": {
+"p": "v",
+"vn": "đòi hỏi, yêu sách; sự đòi hỏi, sự yêu sách, sự thỉnh cầu"
+},
+"clap": {
+"p": "v",
+"vn": "vỗ, vỗ tay; tiếng nổ, tiếng vỗ tay"
+},
+"class": {
+"p": "n",
+"vn": "lớp học"
+},
+"classic": {
+"p": "adj",
+"vn": "cổ điển, kinh điển"
+},
+"classroom": {
+"p": "n",
+"vn": "klα:si lớp học, phòng học"
+},
+"clearly": {
+"p": "adv",
+"vn": "rõ ràng, sáng sủa"
+},
+"clerk": {
+"p": "n",
+"vn": "thư ký, linh mục, mục sư"
+},
+"clever": {
+"p": "adj",
+"vn": "lợi, thông minh. tài giỏi, khéo léo"
+},
+"click": {
+"p": "v",
+"vn": "làm thành tiếng lách cách; tiếng lách cách, cú nhắp (chuột)"
+},
+"climate": {
+"p": "n",
+"vn": "khí hậu, thời tiết"
+},
+"climbing": {
+"p": "n",
+"vn": "sự leo trèo"
+},
+"closed": {
+"p": "adj",
+"vn": "bảo thủ, không cởi mở, khép kín"
+},
+"closely": {
+"p": "adv",
+"vn": "chặt chẽ, kỹ lưỡng, tỉ mỉ"
+},
+"closet": {
+"p": "n",
+"vn": "buồng, phòng để đồ, phòng kho"
+},
+"cloth": {
+"p": "n",
+"vn": "vải, khăn trải bàn, áo thầy tu"
+},
+"clothing": {
+"p": "n",
+"vn": "quần áo, y phục"
+},
+"club": {
+"p": "n",
+"vn": "câu lạc bộ; gậy, dùi cui"
+},
+"coach": {
+"p": "n",
+"vn": "huấn luyện viên"
+},
+"coal": {
+"p": "n",
+"vn": "đá"
+},
+"coast": {
+"p": "n",
+"vn": "sự lao dốc; bờ biển"
+},
+"coat": {
+"p": "n",
+"vn": "áo choàng"
+},
+"code": {
+"p": "n",
+"vn": "mật mã, luật, điều lệ"
+},
+"coldly": {
+"p": "adv",
+"vn": "lạnh nhạt, hờ hững, vô tâm"
+},
+"collapse": {
+"p": "v",
+"vn": "đổ, sụp đổ; sự đổ nát, sự sụp đổ"
+},
+"collection": {
+"p": "n",
+"vn": "sự sưu tập, sự tụ họp"
+},
+"college": {
+"p": "n",
+"vn": "trường cấo đẳng, trường đại học"
+},
+"coloured": {
+"p": "adj",
+"vn": "màu sắc, có màu sắc"
+},
+"column": {
+"p": "n",
+"vn": "cột , mục (báo)"
+},
+"combination": {
+"p": "n",
+"vn": "sự kết hợp, sự phối hợp"
+},
+"combine": {
+"p": "v",
+"vn": "kết hợp, phối hợp"
+},
+"comedy": {
+"p": "n",
+"vn": "hài kịch"
+},
+"comfort": {
+"p": "n",
+"vn": "kΔmfзt sự an ủi, khuyên giải, lời động viên, sự an nhàn; dỗ dành, an ủi"
+},
+"comfortably": {
+"p": "adv",
+"vn": "dễ chịu, thoải mái, tiện nghi, ấm cúng"
+},
+"command": {
+"p": "v",
+"vn": "lệnh, chỉ huy; lệnh, mệnh lệnh, quyền ra lệnh, quyền chỉ huy"
+},
+"comment": {
+"p": "n",
+"vn": "lời bình luận, lời chú giải; bình luận, phê bình, chú thích, dẫn giải"
+},
+"commercial": {
+"p": "adj",
+"vn": "buôn bán, thương mại"
+},
+"commit": {
+"p": "v",
+"vn": "gửi, ủy nhiệm, ủy thác; tống giam, bỏ tù"
+},
+"committee": {
+"p": "n",
+"vn": "ủy ban"
+},
+"commonly": {
+"p": "adv",
+"vn": "thông thường, bình thường"
+},
+"communicate": {
+"p": "v",
+"vn": "truyền, truyền đạt; giao thiệp, liên lạc"
+},
+"communication": {
+"p": "n",
+"vn": "sự giao tiếp, liên lạc, sự truyền đạt, truyền tin"
+},
+"community": {
+"p": "n",
+"vn": "dân chúng, nhân dân"
+},
+"company": {
+"p": "n",
+"vn": "công ty"
+},
+"comparison": {
+"p": "n",
+"vn": "sự so sánh"
+},
+"compete": {
+"p": "v",
+"vn": "đua tranh, ganh đua, cạnh tranh"
+},
+"competition": {
+"p": "n",
+"vn": "sự cạnh tranh, cuộc thi, cuộc thi đau"
+},
+"competitive": {
+"p": "adj",
+"vn": "cạnh tranh, đua tranh"
+},
+"complaint": {
+"p": "n",
+"vn": "lời than phiền, than thở; sự khiếu nại, đơn kiện"
+},
+"completely": {
+"p": "adv",
+"vn": "kзm'pli:tli hoàn thành, đầy đủ, trọn vẹn"
+},
+"complex": {
+"p": "adj",
+"vn": "phức tạp, rắc rối"
+},
+"complicate": {
+"p": "v",
+"vn": "làm phức tạp, rắc rối"
+},
+"complicated": {
+"p": "adj",
+"vn": "phức tạp, rắc rối"
+},
+"concentrate": {
+"p": "v",
+"vn": "tập trung"
+},
+"concentration": {
+"p": "n",
+"vn": "sự tập trung, nơi tập trung"
+},
+"concept": {
+"p": "n",
+"vn": "khái niệm"
+},
+"concern": {
+"p": "v",
+"vn": "liên quan, dính líu tới; sự liên quan, sự dính líu tới"
+},
+"concerned": {
+"p": "adj",
+"vn": "có liên quan, có dính líu"
+},
+"concerning": {
+"p": "n",
+"vn": "có liên quan, dính líu tới"
+},
+"concert": {
+"p": "n",
+"vn": "buổi hòa nhạc"
+},
+"conclude": {
+"p": "v",
+"vn": "kết luận, kết thúc, chấm dứt (công việc)"
+},
+"conclusion": {
+"p": "n",
+"vn": "sự kết thúc, sự kết luận, phần kết luận"
+},
+"concrete": {
+"p": "adj",
+"vn": "bằng bê tông; bê tông"
+},
+"conduct": {
+"p": "v",
+"vn": "điều khiển, chỉ đạo, chỉ huy; sự điều khiển, chỉ huy"
+},
+"conference": {
+"p": "n",
+"vn": "hội nghị, sự bàn bạc"
+},
+"confidence": {
+"p": "n",
+"vn": "lòng tin tưởng, sự tin cậy"
+},
+"confidently": {
+"p": "adv",
+"vn": "tự tin"
+},
+"confine": {
+"p": "v",
+"vn": "giữ, hạn chế"
+},
+"confined": {
+"p": "adj",
+"vn": "hạn chế, giới hạn"
+},
+"conflict": {
+"p": "n",
+"vn": "đột, va chạm; sự xung đột, sự va chạm"
+},
+"confront": {
+"p": "v",
+"vn": "đối mặt, đối diện, đối chiếu"
+},
+"confuse": {
+"p": "v",
+"vn": "làm lộn xộn, xáo trộn"
+},
+"confused": {
+"p": "adj",
+"vn": "bối rối, lúng túng, ngượng"
+},
+"confusing": {
+"p": "adj",
+"vn": "khó hiểu, gây bối rối"
+},
+"confusion": {
+"p": "n",
+"vn": "sự lộn xộn, sự rối loạn"
+},
+"congratulations": {
+"p": "n",
+"vn": "sự chúc mưng, khen ngợi; lời chúc mưng, khen ngợi (s)"
+},
+"congress": {
+"p": "n",
+"vn": "đại hội, hội nghị, Quốc hội"
+},
+"connection": {
+"p": "n",
+"vn": "sự kết nối, sự giao kết"
+},
+"conscious": {
+"p": "adj",
+"vn": "tỉnh táo, có ý thức, biết rõ"
+},
+"consequence": {
+"p": "n",
+"vn": "kết quả, hậu quả"
+},
+"conservative": {
+"p": "adj",
+"vn": "thận trọng, dè dặt, bảo thủ"
+},
+"consider": {
+"p": "v",
+"vn": "cân nhắc, xem xét; để ý, quan tâm, lưu ý đến"
+},
+"considerable": {
+"p": "adj",
+"vn": "lớn lao, to tát, đáng kể"
+},
+"considerably": {
+"p": "adv",
+"vn": "đáng kể, lớn lao, nhiều"
+},
+"consideration": {
+"p": "n",
+"vn": "sự cân nhắc, sự xem xét, sự để ý, sự quan tâm"
+},
+"consist of": {
+"p": "v",
+"vn": "gồm có"
+},
+"constant": {
+"p": "adj",
+"vn": "kiên trì, bền lòng"
+},
+"constantly": {
+"p": "adv",
+"vn": "kiên định"
+},
+"construct": {
+"p": "v",
+"vn": "xây dựng"
+},
+"construction": {
+"p": "n",
+"vn": "sự xây dựng"
+},
+"consult": {
+"p": "v",
+"vn": "cứu, tham khảo, thăm dò, hỏi ý kiến"
+},
+"consumer": {
+"p": "n",
+"vn": "người tiêu dùng"
+},
+"contain": {
+"p": "v",
+"vn": "hàm, chứa đựng, bao gồm"
+},
+"container": {
+"p": "n",
+"vn": "cái đựng, chứa; công te nơ"
+},
+"contemporary": {
+"p": "adj",
+"vn": "đương thời, đương đại"
+},
+"content": {
+"p": "n",
+"vn": "nội dung, sự hài lòng"
+},
+"contest": {
+"p": "n",
+"vn": "cuộc thi, trận đấu, cuộc tranh luận cuộc chiến đấu, chiến tranh"
+},
+"context": {
+"p": "n",
+"vn": "văn cảnh, khung cảnh, phạm vi"
+},
+"continent": {
+"p": "n",
+"vn": "lục địa, đại lục (lục địa Bắc Mỹ)"
+},
+"continuous": {
+"p": "adj",
+"vn": "liên tục, liên tiếp"
+},
+"continuously": {
+"p": "adv",
+"vn": "liên tục, liên tiếp"
+},
+"contract": {
+"p": "n",
+"vn": "hợp đồng, sự ký hợp đồng; ký kết"
+},
+"contrast": {
+"p": "n",
+"vn": "sự tương phản; làm tương phản, làm trái ngược"
+},
+"contrasting": {
+"p": "adj",
+"vn": "tương phản"
+},
+"contribute": {
+"p": "v",
+"vn": "đóng góp, ghóp phần"
+},
+"contribution": {
+"p": "n",
+"vn": "sự đóng góp, sự góp phần"
+},
+"control": {
+"p": "n",
+"vn": "sự điều khiển, quyền hành, quyền lực, quyền chỉ huy"
+},
+"controlled": {
+"p": "adj",
+"vn": "được điều khiển, được kiểm tra"
+},
+"convention": {
+"p": "n",
+"vn": "hội nghị, hiệp định, quy ước"
+},
+"conventional": {
+"p": "adj",
+"vn": "ước"
+},
+"convert": {
+"p": "v",
+"vn": "đổi, biến đổi"
+},
+"cooker": {
+"p": "n",
+"vn": "lò, bếp, nồi nấu"
+},
+"cookie": {
+"p": "n",
+"vn": "bánh quy"
+},
+"cooking": {
+"p": "n",
+"vn": "sự nấu ăn, cách nấu ăn"
+},
+"cool": {
+"p": "adj",
+"vn": "mát mẻ, điềm tĩnh; làm mát,"
+},
+"cope": {
+"p": "v",
+"vn": "đối phó, đương đầu"
+},
+"copy": {
+"p": "n",
+"vn": "bản sao, bản chép lại; sự sao chép; sao chép, bắt chước"
+},
+"core": {
+"p": "n",
+"vn": "nòng cốt, hạt nhân; đáy lòng"
+},
+"correctly": {
+"p": "adv",
+"vn": "đúng, chính xác"
+},
+"cost": {
+"p": "n",
+"vn": ", kɒst giá, chi phí; trả giá, phải trả"
+},
+"cottage": {
+"p": "n",
+"vn": "nhà tranh"
+},
+"cotton": {
+"p": "n",
+"vn": "bông, chỉ, sợi"
+},
+"cough": {
+"p": "v",
+"vn": "sự ho, tiếng hoa"
+},
+"coughing": {
+"p": "n",
+"vn": ""
+},
+"could modal": {
+"p": "v",
+"vn": "có thể"
+},
+"council": {
+"p": "n",
+"vn": "hội đồng"
+},
+"count": {
+"p": "v",
+"vn": "đếm, tính"
+},
+"country": {
+"p": "n",
+"vn": "nước, quốc gia, đất nước"
+},
+"countryside": {
+"p": "n",
+"vn": "miền quê, miền nông thôn"
+},
+"county": {
+"p": "n",
+"vn": "hạt, tỉnh"
+},
+"couple": {
+"p": "n",
+"vn": "đôi, cặp; đôi vợ chồng, cặp nam nữ. a couple một cặp, một đôi"
+},
+"courage": {
+"p": "n",
+"vn": "sự can đảm, sự dũng cảm, dũng khí"
+},
+"course": {
+"p": "n",
+"vn": "tiến trình, quá trình diễn tiến; sân chạy đua. of course dĩ nhiên, loạt; khoá; đợt; lớp"
+},
+"court": {
+"p": "n",
+"vn": ", koʊrt sân, sân (tennis...), tòa án, quan tòa, phiên tòa"
+},
+"cover": {
+"p": "v",
+"vn": "bọc, che phủ; vỏ, vỏ bọc"
+},
+"covered": {
+"p": "adj",
+"vn": "có mái che, kín đáo"
+},
+"covering": {
+"p": "n",
+"vn": "sự bao bọc, sự che phủ, cái bao, bọc"
+},
+"cow": {
+"p": "n",
+"vn": "bò cái"
+},
+"crack": {
+"p": "n",
+"vn": "cừ, xuất sắc; làm nứt, làm vỡ, nứt nẻ, rạn nứt"
+},
+"cracked": {
+"p": "adj",
+"vn": "rạn, nứt"
+},
+"craft": {
+"p": "n",
+"vn": "nghề, nghề thủ công"
+},
+"crash": {
+"p": "n",
+"vn": "vải thô; sự rơi (máy bấy), sự phá sản, sụp đổ; phá tan tành, phá vụn"
+},
+"crazy": {
+"p": "adj",
+"vn": "điên, mất trí"
+},
+"cream": {
+"p": "n",
+"vn": ""
+},
+"create": {
+"p": "v",
+"vn": "sáng tạo, tạo nên"
+},
+"creature": {
+"p": "n",
+"vn": "vật, loài vật"
+},
+"credit": {
+"p": "n",
+"vn": "sự tin, lòng tin, danh tiếng; tiền gử ngân hàng"
+},
+"credit card": {
+"p": "n",
+"vn": "thẻ tín dụng"
+},
+"crime": {
+"p": "n",
+"vn": "tội, tội ác, tội phạm"
+},
+"criminal": {
+"p": "adj",
+"vn": "có tội, phạm tội; kẻ phạm tội, tội phạm"
+},
+"crisis": {
+"p": "n",
+"vn": "sự khủng hoảng, cơn khủng hoảng"
+},
+"crisp": {
+"p": "adj",
+"vn": "giòn"
+},
+"criterion": {
+"p": "n",
+"vn": "tiêu chuẩn"
+},
+"critical": {
+"p": "adj",
+"vn": "phê bình, phê phán; khó tính"
+},
+"criticism": {
+"p": "n",
+"vn": "sự phê bình, sự phê phán, lời phê bình, lời phê phán"
+},
+"criticize": {
+"p": "v",
+"vn": "phê bình, phê phán, chỉ trích"
+},
+"crop": {
+"p": "n",
+"vn": "vụ mùa"
+},
+"crowd": {
+"p": "n",
+"vn": "đám đông"
+},
+"crowded": {
+"p": "adj",
+"vn": "đông đúc"
+},
+"crown": {
+"p": "n",
+"vn": "vương miện, vua, ngai vàng; đỉnh cao nhất"
+},
+"crucial": {
+"p": "adj",
+"vn": "quyết định, cốt yếu, chủ yếu"
+},
+"cruel": {
+"p": "adj",
+"vn": "độc ác, dữ tợn, tàn nhẫn"
+},
+"crush": {
+"p": "v",
+"vn": "krᴧ∫ ép, vắt, đè nát, đè bẹp"
+},
+"cry": {
+"p": "v",
+"vn": "khóc, kêu la; sự khóc, tiếng khóc, sự kêu la"
+},
+"cultural": {
+"p": "adj",
+"vn": "(thuộc) văn hóa"
+},
+"culture": {
+"p": "n",
+"vn": "văn hóa, sự mở mang, sự giáo dục"
+},
+"cup": {
+"p": "n",
+"vn": "tách, chén"
+},
+"cupboard": {
+"p": "n",
+"vn": "1 loại tủ có ngăn"
+},
+"curb": {
+"p": "v",
+"vn": "kiềm chế, nén lại, hạn chế"
+},
+"curiously": {
+"p": "adv",
+"vn": "tò mò, hiếu kỳ, lạ kỳ"
+},
+"curl": {
+"p": "v",
+"vn": "quăn, xoắn, uốn quăn, làm xoắn; sự uốn quăn"
+},
+"curly": {
+"p": "adj",
+"vn": "quăn, xoắn"
+},
+"curtain": {
+"p": "n",
+"vn": "màn (cửa, rạp hát, khói, sương)"
+},
+"curve": {
+"p": "n",
+"vn": "đường cong, đường vòng; cong, uốn cong, bẻ cong"
+},
+"curved": {
+"p": "adj",
+"vn": ""
+},
+"custom": {
+"p": "n",
+"vn": "tục, tục lệ, thói quen, tập quán"
+},
+"customs": {
+"p": "n",
+"vn": "thuế nhập khẩu, hải quan"
+},
+"cut": {
+"p": "v",
+"vn": "cắt, chặt; sự cắt"
+},
+"cycle": {
+"p": "n",
+"vn": "kỳ, chu trình, vòng; quay vòng theo chu kỳ, đi xe đạp"
+},
+"cycling": {
+"p": "n",
+"vn": "sự đi xe đạp"
+},
+"dad": {
+"p": "n",
+"vn": "bố, cha"
+},
+"daily": {
+"p": "adj",
+"vn": "hàng ngày"
+},
+"damage": {
+"p": "n",
+"vn": "mối hạn, điều hại, sự thiệt hại; làm hư hại, làm hỏng, gây thiệt hại"
+},
+"damp": {
+"p": "adj",
+"vn": "ẩm, ẩm ướt, ẩm thấp"
+},
+"dance": {
+"p": "n",
+"vn": "sự nhảy múa, sự khiêu vũ; nhảy múa, khiêu vũ"
+},
+"dancer": {
+"p": "n",
+"vn": "diễn viên múa, người nhảy múa"
+},
+"dancing": {
+"p": "n",
+"vn": "sự nhảy múa, sự khiêu vũ"
+},
+"danger": {
+"p": "n",
+"vn": "sự nguy hiểm, mối hiểm nghèo; nguy cơ, mối đe dọa"
+},
+"dare": {
+"p": "v",
+"vn": "dám, dám đương đầu với; thách"
+},
+"dark": {
+"p": "adj",
+"vn": "tối, tối tăm; bóng tối, ám muội"
+},
+"deal": {
+"p": "v",
+"vn": "phân phát, phân phối; sự giao dịch, thỏa thuận mua bán. deal with giải quyết"
+},
+"debate": {
+"p": "n",
+"vn": "cuộc tranh luận, cuộc tranh cãi; tranh luận, bàn cãi"
+},
+"debt": {
+"p": "n",
+"vn": "nợ"
+},
+"decade": {
+"p": "n",
+"vn": "thập kỷ, bộ mười, nhóm mười"
+},
+"decay": {
+"p": "n",
+"vn": "tình trạng suy tàn, suy sụp, tình trạng đổ nát"
+},
+"December": {
+"p": "n",
+"vn": "tháng mười hai, tháng Chạp"
+},
+"declare": {
+"p": "v",
+"vn": "tuyên bố, công bố"
+},
+"decline": {
+"p": "n",
+"vn": "sự suy tàn, sự suy sụp; suy sụp, suy tàn"
+},
+"decorate": {
+"p": "v",
+"vn": "hoàng, trang trí"
+},
+"decoration": {
+"p": "n",
+"vn": "sự trang hoàng, đồ trang hoàng, trang trí"
+},
+"decorative": {
+"p": "adj",
+"vn": "để trang hoàng, để trang trí, để làm cảnh"
+},
+"decrease": {
+"p": "v",
+"vn": "giảm bớt, làm suy giảm, sự giảm đi, sự giảm sút"
+},
+"deep": {
+"p": "adj",
+"vn": "sâu, khó lường, bí ẩn"
+},
+"deeply": {
+"p": "adv",
+"vn": "sâu, sâu xa, sâu sắc"
+},
+"defeat": {
+"p": "v",
+"vn": "đánh thắng, đánh bại; sự thất bại (1 kế hoạch), sự tiêu tan (hyvọng..)"
+},
+"defence": {
+"p": "n",
+"vn": "cái để bảo vệ, vật để chống đỡ, sự che chở"
+},
+"defend": {
+"p": "v",
+"vn": "chở, bảo vệ, bào chữa"
+},
+"define": {
+"p": "v",
+"vn": "định nghĩa"
+},
+"definite": {
+"p": "adj",
+"vn": "xác định, định rõ, rõ ràng"
+},
+"definition": {
+"p": "n",
+"vn": "defini∫n sự định nghĩa, lời định nghĩa"
+},
+"degree": {
+"p": "n",
+"vn": "mức độ, trình độ; bằng cấp; độ"
+},
+"deliberate": {
+"p": "adj",
+"vn": "thận trọng, có tính toán, chủ tâm, có suy nghĩ cân nhắc"
+},
+"deliberately": {
+"p": "adv",
+"vn": "thận trọng, có suy nghĩ cân nhắc"
+},
+"delicate": {
+"p": "adj",
+"vn": "nhã, thanh tú, tế nhị, khó xử"
+},
+"delight": {
+"p": "n",
+"vn": "sự vui thích, sự vui sướng, điều thích thú; làm vui thích, làm say mê"
+},
+"delighted": {
+"p": "adj",
+"vn": "mừng, hài lòng"
+},
+"demand": {
+"p": "n",
+"vn": "sự đòi hỏi, sự yêu cầu; đòi hỏi, yêu cầu"
+},
+"demonstrate": {
+"p": "v",
+"vn": "chứng minh, giải thích; bày tỏ, biểu lộ"
+},
+"dentist": {
+"p": "n",
+"vn": "sĩ"
+},
+"deny": {
+"p": "v",
+"vn": "từ chối, phản đối, phủ nhận"
+},
+"department": {
+"p": "n",
+"vn": "cục, sở, ty, ban, khoa; gian hàng, khu bày hàng"
+},
+"departure": {
+"p": "n",
+"vn": "sự rời khỏi, sự đi, sự khởi hành"
+},
+"depend on": {
+"p": "v",
+"vn": "phụ thuộc, tùy thuộc; dựa vào, ỷ vào, trông mong vào"
+},
+"deposit": {
+"p": "n",
+"vn": "vật gửi, tiền gửi, tiền đặt cọc; gửi, đặt cọc"
+},
+"depress": {
+"p": "v",
+"vn": "làm chán nản, làm phiền muộn; làm suy giảm"
+},
+"depressed": {
+"p": "adj",
+"vn": "chán nản, thất vọng, phiền muộn; suy yếu, đình trệ"
+},
+"depressing": {
+"p": "adj",
+"vn": "di'presiη làm chán nản làm thát vọng, làm trì trệ"
+},
+"depth": {
+"p": "n",
+"vn": "chiều sâu, độ dày"
+},
+"derive": {
+"p": "v",
+"vn": "nhận được từ, lấy được từ; xuất phát từ, bắt nguồn, chuyển hóa từ (from)"
+},
+"describe": {
+"p": "v",
+"vn": "diễn tả, miêu tả, mô tả"
+},
+"description": {
+"p": "n",
+"vn": "sự mô tả, sự tả, sự miêu tả"
+},
+"desert": {
+"p": "n",
+"vn": "mạc; công lao, giá trị; rời bỏ, bỏ trốn"
+},
+"deserted": {
+"p": "adj",
+"vn": "di'zз:tid hoang vắng, không người ở"
+},
+"deserve": {
+"p": "v",
+"vn": "di'zз:v đáng, xứng đáng"
+},
+"design": {
+"p": "n",
+"vn": "sự thiết kế, kế hoạch, đề cương. phác thảo; phác họa, thiết kế"
+},
+"desire": {
+"p": "n",
+"vn": "ước muốn; thèm muốn, ao ước"
+},
+"desperate": {
+"p": "adj",
+"vn": "liều mạng, liều lĩnh; tuyệt vọng"
+},
+"desperately": {
+"p": "adv",
+"vn": "liều lĩnh, liều mạng"
+},
+"despite": {
+"p": "prep",
+"vn": "dù, mặc dù, bất chấp"
+},
+"destroy": {
+"p": "v",
+"vn": "phá, phá hoại, phá huỷ, tiêu diệt, triệt phá"
+},
+"destruction": {
+"p": "n",
+"vn": "sự phá hoại, sự phá hủy, sự tiêu diệt"
+},
+"detail": {
+"p": "n",
+"vn": "; (v) dɪˈteɪl chi tiết. in detail: tường tận, tỉ mỉ"
+},
+"detailed": {
+"p": "adj",
+"vn": "cặn kẽ, tỉ mỉ, nhiều chi tiết"
+},
+"determination": {
+"p": "n",
+"vn": "sự xác định, sự định rõ; sự quyết định"
+},
+"determine": {
+"p": "v",
+"vn": "di'tз:min xác định, định rõ; quyết định"
+},
+"determined": {
+"p": "adj",
+"vn": "đã được xác định, đã được xác định rõ"
+},
+"develop": {
+"p": "v",
+"vn": "phát triển, mở rộng; trình bày, bày tỏ"
+},
+"development": {
+"p": "n",
+"vn": "sự phát triển, sự trình bày, sự bày tỏ"
+},
+"devote": {
+"p": "v",
+"vn": "hiến dâng, dành hết cho"
+},
+"devoted": {
+"p": "adj",
+"vn": "hiến cho, dâng cho, dành cho; hết lòng, nhiệt tình"
+},
+"diagram": {
+"p": "n",
+"vn": "biểu đồ"
+},
+"diamond": {
+"p": "n",
+"vn": "cương"
+},
+"diary": {
+"p": "n",
+"vn": "sổ nhật ký; lịch ghi nhớ"
+},
+"dictionary": {
+"p": "n",
+"vn": "từ điển"
+},
+"die": {
+"p": "v",
+"vn": "chết, tư trần, hy sinh"
+},
+"diet": {
+"p": "n",
+"vn": "chế độ ăn uống, chế độ ăn kiêng"
+},
+"difference": {
+"p": "n",
+"vn": ", ˈdɪfrəns sự khác nhau"
+},
+"differently": {
+"p": "adv",
+"vn": "difrзntli khác, khác biệt, khác nhau"
+},
+"difficulty": {
+"p": "n",
+"vn": "sự khó khăn, nỗi khó khăn, điều cản trở"
+},
+"dig": {
+"p": "v",
+"vn": "đào bới, xới"
+},
+"direct": {
+"p": "adj",
+"vn": "trực tiếp, thẳng, thẳng thắn; gửi, viết cho ai, điều khiển"
+},
+"directly": {
+"p": "adv",
+"vn": "trực tiếp, thẳng"
+},
+"director": {
+"p": "n",
+"vn": "giám đốc, người điều khiển, chỉ huy"
+},
+"dirt": {
+"p": "n",
+"vn": "đồ bẩn thỉu, đồ dơ bẩn, vật rác rưởi"
+},
+"disabled": {
+"p": "adj",
+"vn": "bất lực, không có khả năng"
+},
+"disadvantage": {
+"p": "n",
+"vn": "sự bất lợi, sự thiệt hại"
+},
+"disagree": {
+"p": "v",
+"vn": "bất đồng, không đồng ý, khác, không giống; không hợp"
+},
+"disagreement": {
+"p": "n",
+"vn": "sự bất đồng, sự không đồng ý, sự khác nhau"
+},
+"disappear": {
+"p": "v",
+"vn": "biến mất, biến đi"
+},
+"disappoint": {
+"p": "v",
+"vn": "không làm thỏa ước nguyện, ý mong đợi; thất ước, làm thất bại"
+},
+"disappointing": {
+"p": "adj",
+"vn": "làm chán ngán, làm thất vọng"
+},
+"disappointment": {
+"p": "n",
+"vn": "sự chán ngán, sự thất vọng"
+},
+"disapproval": {
+"p": "n",
+"vn": "sự phản đổi, sự không tán thành"
+},
+"disapprove of": {
+"p": "v",
+"vn": "không tán thành, phản đối, chê"
+},
+"disapproving": {
+"p": "adj",
+"vn": "phản đối"
+},
+"disaster": {
+"p": "n",
+"vn": "họa, thảm họa"
+},
+"discipline": {
+"p": "n",
+"vn": "kỷ luật"
+},
+"discount": {
+"p": "n",
+"vn": "sự bớt giá, sự chiết khấu, tiền bớt chiết khấu"
+},
+"discover": {
+"p": "v",
+"vn": "khám phá, phát hiện ra, nhận ra"
+},
+"discovery": {
+"p": "n",
+"vn": "sự khám phá, sự tìm ra, sự phát hiện ra"
+},
+"discussion": {
+"p": "n",
+"vn": "sự thảo luận, sự tranh luận"
+},
+"disgust": {
+"p": "v",
+"vn": "làm ghê tởm, làm kinh tởm, làm phẫn nộ"
+},
+"disgusted": {
+"p": "adj",
+"vn": "chán ghét, phẫn nộ"
+},
+"disgusting": {
+"p": "adj",
+"vn": "làm ghê tởm, kinh tởm"
+},
+"dishonest": {
+"p": "adj",
+"vn": "bất lương, không thành thật"
+},
+"dishonestly": {
+"p": "adv",
+"vn": "bất lương, không lương thiện"
+},
+"disk": {
+"p": "n",
+"vn": "đĩa, đĩa hát"
+},
+"dislike": {
+"p": "v",
+"vn": "sự không ưa, không thích, sự ghé"
+},
+"dismiss": {
+"p": "v",
+"vn": "giải tán (quân đội, đám đông); sa thải (người làm)"
+},
+"display": {
+"p": "v",
+"vn": "bày tỏ, phô trương, trưng bày; sự bày ra, phô bày, trưng bày"
+},
+"dissolve": {
+"p": "v",
+"vn": "rã, phân hủy, giải tán"
+},
+"distinguish": {
+"p": "v",
+"vn": "phân biệt, nhận ra, nghe ra"
+},
+"distribute": {
+"p": "v",
+"vn": "phân bổ, phân phối, sắp xếp, phân loại"
+},
+"distribution": {
+"p": "n",
+"vn": "sự phân bổ, sự phân phối, phân phát, sự sắp xếp"
+},
+"disturb": {
+"p": "v",
+"vn": "làm mất yên tĩnh, làm náo động, quấy rầy"
+},
+"disturbing": {
+"p": "adj",
+"vn": "xáo trộn"
+},
+"division": {
+"p": "n",
+"vn": "sự chia, sự phân chia, sự phân loại"
+},
+"divorce": {
+"p": "n",
+"vn": "sự ly dị"
+},
+"divorced": {
+"p": "adj",
+"vn": "đã ly dị"
+},
+"do vauxiliary": {
+"p": "v",
+"vn": "làm"
+},
+"dog": {
+"p": "n",
+"vn": "chó"
+},
+"dollar": {
+"p": "n",
+"vn": "đô la Mỹ"
+},
+"domestic": {
+"p": "adj",
+"vn": "vật nuôi trong nhà, (thuộc) nội trợ, quốc nội"
+},
+"dominate": {
+"p": "v",
+"vn": "chiếm ưu thế, có ảnh hưởng, chi phối; kiềm chế"
+},
+"dot": {
+"p": "n",
+"vn": "chấm nhỏ, điểm; của hồi môn"
+},
+"doubt": {
+"p": "n",
+"vn": "sự nghi ngờ, sự ngờ vực; nghi ngờ, ngờ vực"
+},
+"downstairs": {
+"p": "adv",
+"vn": "daun'steзz ở dưới nhà, ở tầng dưới; xống gác; tầng dưới"
+},
+"downward": {
+"p": "adj",
+"vn": "xuống, đi xuống"
+},
+"downwards": {
+"p": "adv",
+"vn": "xuống, đi xuống"
+},
+"draft": {
+"p": "n",
+"vn": "bản phác thảo, sơ đồ thiết kế; phác thảo, thiết kế"
+},
+"drag": {
+"p": "v",
+"vn": "drӕg lôi kéo, kéo lê"
+},
+"drama": {
+"p": "n",
+"vn": "kịch, tuồng"
+},
+"dramatic": {
+"p": "adj",
+"vn": "như kịch, như đóng kịch, thích hợp với sân khấu"
+},
+"dramatically": {
+"p": "adv",
+"vn": "đột ngột"
+},
+"draw": {
+"p": "v",
+"vn": "vẽ, kéo"
+},
+"drawing": {
+"p": "n",
+"vn": "bản vẽ, bức vẽ, sự kéo"
+},
+"dream": {
+"p": "n",
+"vn": "giấc mơ, mơ"
+},
+"dress": {
+"p": "n",
+"vn": "quần áo, mặc (quần áo), ăn mặc"
+},
+"dressed": {
+"p": "adj",
+"vn": "cách ăn mặc"
+},
+"driver": {
+"p": "n",
+"vn": "người lái xe"
+},
+"driving": {
+"p": "n",
+"vn": "sự lái xe, cuộc đua xe"
+},
+"drugstore": {
+"p": "n",
+"vn": "hiệu thuốc, cửa hàng dược phẩm"
+},
+"drum": {
+"p": "n",
+"vn": "cái trống, tiếng trống"
+},
+"drunk": {
+"p": "adj",
+"vn": "rượu"
+},
+"dry": {
+"p": "adj",
+"vn": "khô, cạn; làm khô, sấy khô"
+},
+"due": {
+"p": "adj",
+"vn": "đến kỳ hạn (trả nợ); xứng đáng, thích đáng. due to vì, do, tại, nhờ có"
+},
+"dull": {
+"p": "adj",
+"vn": "chậm hiểu, ngu đần"
+},
+"dump": {
+"p": "v",
+"vn": "đổ rác; đống rác, nơi đổ rác"
+},
+"during": {
+"p": "prep",
+"vn": "lúc, trong thời gian"
+},
+"dust": {
+"p": "n",
+"vn": "bụi, rác; rắc (bụi, phấn), quét bụi, phủi bụi"
+},
+"duty": {
+"p": "n",
+"vn": "sự tôn kính, kính trọng; bồn phận, trách nhiệm"
+},
+"DVD": {
+"p": "n",
+"vn": "đĩa DVD"
+},
+"dying": {
+"p": "adj",
+"vn": "sự chết"
+},
+"each": {
+"p": "det",
+"vn": "mỗi"
+},
+"each other": {
+"p": "n",
+"vn": ", pro nhau, lẫn nhau"
+},
+"earth": {
+"p": "n",
+"vn": "đất, trái đất"
+},
+"ease": {
+"p": "n",
+"vn": "sự thanh thản, sự thoải mái; làm thanh thản, làm yên tâm, làm dễ chịu"
+},
+"easily": {
+"p": "adv",
+"vn": "dễ dàng"
+},
+"east": {
+"p": "n",
+"vn": "hướng đông, phía đông, (thuộc) đông, ở phía đông"
+},
+"eastern": {
+"p": "adj",
+"vn": "đông"
+},
+"eat": {
+"p": "v",
+"vn": "ăn"
+},
+"economic": {
+"p": "adj",
+"vn": "(thuộc) Kinh tế"
+},
+"economy": {
+"p": "n",
+"vn": "sự tiết kiệm, sự quản lý kinh tế"
+},
+"edge": {
+"p": "n",
+"vn": "edӡ lưỡi, cạnh sắc"
+},
+"edition": {
+"p": "n",
+"vn": "nhà xuất bản, sự xuất bản"
+},
+"editor": {
+"p": "n",
+"vn": "người thu thập và xuất bản, chủ bút"
+},
+"educate": {
+"p": "v",
+"vn": "giáo dục, cho ăn học; rèn luyện"
+},
+"educated": {
+"p": "adj",
+"vn": "được giáo dục, được đào tạo"
+},
+"education": {
+"p": "n",
+"vn": "sự giáo dục, sự rèn luyện (kỹ năng)"
+},
+"effect": {
+"p": "n",
+"vn": "hiệu ứng, hiệu quả, kết quả"
+},
+"effectively": {
+"p": "adv",
+"vn": "có kết quả, có hiệu lực"
+},
+"efficient": {
+"p": "adj",
+"vn": "có hiệu lực, có hiệu quả"
+},
+"efficiently": {
+"p": "adv",
+"vn": "có hiệu quả, hiệu nghiệm"
+},
+"effort": {
+"p": "n",
+"vn": "sự cố gắng, sự nỗ lực"
+},
+"egg": {
+"p": "n",
+"vn": "trứng"
+},
+"elbow": {
+"p": "n",
+"vn": "khuỷu tay"
+},
+"elderly": {
+"p": "adj",
+"vn": "có tuổi, cao tuổi"
+},
+"elect": {
+"p": "v",
+"vn": "bầu, quyết định"
+},
+"election": {
+"p": "n",
+"vn": "sự bầu cử, cuộc tuyển cử"
+},
+"electric": {
+"p": "adj",
+"vn": "(thuộc) điện, có điện, phát điện"
+},
+"electrical": {
+"p": "adj",
+"vn": "(thuộc) điện"
+},
+"electricity": {
+"p": "n",
+"vn": "điện, điện lực; điện lực học"
+},
+"electronic": {
+"p": "adj",
+"vn": ", ˌilɛkˈtrɒnɪk (thuộc) điện tử"
+},
+"elegant": {
+"p": "adj",
+"vn": "lịch, tao nhã"
+},
+"element": {
+"p": "n",
+"vn": "yếu tố, nguyên tố"
+},
+"elevator": {
+"p": "n",
+"vn": "máy nâng, thang máy"
+},
+"else": {
+"p": "adv",
+"vn": "khác, nữa; nếu không"
+},
+"elsewhere": {
+"p": "adv",
+"vn": "ở một nơi nào khác"
+},
+"embarrass": {
+"p": "v",
+"vn": "lúng túng, làm ngượng nghịu; làm rắc rối, gây khó khăn"
+},
+"embarrassing": {
+"p": "adj",
+"vn": "làm lúng túng, ngăn trở"
+},
+"embarrassment": {
+"p": "n",
+"vn": "sự lúng túng, sự bối rối"
+},
+"emerge": {
+"p": "v",
+"vn": "nổi lên, hiện ra; nổi bật lên"
+},
+"emergency": {
+"p": "n",
+"vn": "i'mз:dЗensi tình trạng khẩn cấp"
+},
+"emotion": {
+"p": "n",
+"vn": "xự xúc động, sự cảm động, mối xác cảm"
+},
+"emotional": {
+"p": "adj",
+"vn": "cảm động, xúc động, xúc cảm; dễ cảm động, dễ xúc cảm"
+},
+"emotionally": {
+"p": "adv",
+"vn": "xúc động"
+},
+"emphasis": {
+"p": "n",
+"vn": "sự nhấn mạnh, tầm quan trọng"
+},
+"emphasize": {
+"p": "v",
+"vn": "nhấn mạnh, làm nổi bật"
+},
+"empire": {
+"p": "n",
+"vn": "đế chế, đế quốc"
+},
+"employ": {
+"p": "v",
+"vn": "dùng, thuê ai làm gì"
+},
+"employee": {
+"p": "n",
+"vn": "người lao động, người làm công"
+},
+"employer": {
+"p": "n",
+"vn": "chủ, người sử dụng lao động"
+},
+"employment": {
+"p": "n",
+"vn": "sự thuê mướn"
+},
+"enable": {
+"p": "v",
+"vn": "làm cho có thể, có khả năng; cho phép ai làm gì"
+},
+"encounter": {
+"p": "v",
+"vn": "chạm chán, bắt gặp; sự chạm trán, sự bắt gặp"
+},
+"encourage": {
+"p": "v",
+"vn": "in'kΔridЗ động viên, ủng hộ, giúp đỡ, làm cấn đảm, mạnh dạn"
+},
+"encouragement": {
+"p": "n",
+"vn": "niềm cổ vũ, động viên, khuyến khích"
+},
+"end": {
+"p": "n",
+"vn": "giới hạn, sự kết thúc; kết thúc, chấm dứt. in the end cuối cùng, về sau"
+},
+"ending": {
+"p": "n",
+"vn": "sự kết thúc, sự chấm dứt; phần cuối, kết cục"
+},
+"enemy": {
+"p": "n",
+"vn": "kẻ thù, quân địch"
+},
+"energy": {
+"p": "n",
+"vn": "năng lượng, nghị lực, sinh lực"
+},
+"engage": {
+"p": "v",
+"vn": "hứa hẹn, cam kết, đính ước"
+},
+"engaged": {
+"p": "adj",
+"vn": "đã đính ước, đã hứa hôn; đã có người"
+},
+"engine": {
+"p": "n",
+"vn": "máy, động cơ"
+},
+"engineer": {
+"p": "n",
+"vn": "kỹ sư"
+},
+"engineering": {
+"p": "n",
+"vn": "nghề kỹ sư, công việc của kỹ sư"
+},
+"enjoy": {
+"p": "v",
+"vn": "in'dЗoi thưởng thức, thích thú cái gì, được hưởng, có được"
+},
+"enjoyable": {
+"p": "adj",
+"vn": "thú vị, thích thú"
+},
+"enjoyment": {
+"p": "n",
+"vn": "sự thích thú, sự có được, được hưởng"
+},
+"enormous": {
+"p": "adj",
+"vn": "lớn, khổng lồ"
+},
+"enquiry": {
+"p": "n",
+"vn": "sự điều tra, sự thẩm vấn"
+},
+"ensure": {
+"p": "v",
+"vn": ", ɛnˈʃɜr bảo đảm, chắc chắn"
+},
+"entertain": {
+"p": "v",
+"vn": "giải trí, tiếp đón, chiêu đãi"
+},
+"entertainer": {
+"p": "n",
+"vn": "người quản trò, người tiếp đãi, chiêu đãi"
+},
+"entertaining": {
+"p": "adj",
+"vn": "giải trí"
+},
+"entertainment": {
+"p": "n",
+"vn": "sự giải trí, sự tiếp đãi, chiêu đãi"
+},
+"enthusiasm": {
+"p": "n",
+"vn": "sự hăng hái, sự nhiệt tình"
+},
+"enthusiastic": {
+"p": "adj",
+"vn": "hăng hái, say mê, nhiệt tình"
+},
+"entire": {
+"p": "adj",
+"vn": "toàn thể, toàn bộ"
+},
+"entirely": {
+"p": "adv",
+"vn": "toàn vẹn, trọn vẹn, toàn bộ"
+},
+"entitle": {
+"p": "v",
+"vn": "tiêu đề, cho tên (sách); cho quyền làm gì"
+},
+"entrance": {
+"p": "n",
+"vn": "sự đi vào, sự nhậm chức"
+},
+"entry": {
+"p": "n",
+"vn": "sự ghi vào sổ sách, sự đi vào, sự tiếp nhận (pháp lý)"
+},
+"envelope": {
+"p": "n",
+"vn": "bì"
+},
+"environment": {
+"p": "n",
+"vn": "môi trường, hoàn cảnh xung quanh"
+},
+"environmental": {
+"p": "adj",
+"vn": "thuộc về môi trường"
+},
+"equal": {
+"p": "adj",
+"vn": "bằng; người ngang hàng, ngang tài, sức; bằng, ngang"
+},
+"equally": {
+"p": "adv",
+"vn": "i:kwзli bằng nhau, ngang bằng"
+},
+"equipment": {
+"p": "n",
+"vn": "thiết bị"
+},
+"equivalent": {
+"p": "adj",
+"vn": "tương đương; tư, vật tương đương"
+},
+"essay": {
+"p": "n",
+"vn": "bài tiểu luận"
+},
+"essential": {
+"p": "adj",
+"vn": "bản chất, thực chất, cốt yếu; yếu tố cần thiết"
+},
+"essentially": {
+"p": "adv",
+"vn": "về bản chất, về cơ bản"
+},
+"establish": {
+"p": "v",
+"vn": "lập, thành lập"
+},
+"estate": {
+"p": "n",
+"vn": "tài sản, di sản, bất động sản"
+},
+"estimate": {
+"p": "n",
+"vn": "sự ước lượng, đánh giá; ước lượng, đánh giá"
+},
+"euro": {
+"p": "n",
+"vn": "đơn vị tiền tệ của liên minh châu Âu"
+},
+"event": {
+"p": "n",
+"vn": "sự việc, sự kiện"
+},
+"eventually": {
+"p": "adv",
+"vn": "cuối cùng"
+},
+"ever": {
+"p": "adv",
+"vn": "từng, từ trước tới giờ"
+},
+"every": {
+"p": "det",
+"vn": "mỗi, mọi"
+},
+"everything": {
+"p": "pron",
+"vn": "mọi vật, mọi thứ"
+},
+"everywhere": {
+"p": "adv",
+"vn": "mọi nơi"
+},
+"evidence": {
+"p": "n",
+"vn": "điều hiển nhiên, điều rõ ràng"
+},
+"evil": {
+"p": "adj",
+"vn": "xấu, ác; điều xấu, điều ác, điều tai hại"
+},
+"ex-": {
+"p": "",
+"vn": "tiền tố chỉ bên ngoài"
+},
+"exact": {
+"p": "adj",
+"vn": "chính xác, đúng"
+},
+"exactly": {
+"p": "adv",
+"vn": "chính xác, đúng đắn"
+},
+"exaggerate": {
+"p": "v",
+"vn": "cường điệu, phóng đại"
+},
+"exaggerated": {
+"p": "adj",
+"vn": "cường điệu, phòng đại"
+},
+"exam": {
+"p": "n",
+"vn": "viết tắt của Examination (xem nghĩa phía dưới)"
+},
+"examination": {
+"p": "n",
+"vn": "sự thi cử, kỳ thi"
+},
+"examine": {
+"p": "v",
+"vn": "thẩm tra, khám xét, hỏi han (thí sinh)"
+},
+"example": {
+"p": "n",
+"vn": "thí dụ, ví dụ"
+},
+"excellent": {
+"p": "adj",
+"vn": "xuất sắc, xuất chúng"
+},
+"except": {
+"p": "prep",
+"vn": "trừ ra, không kể; trừ phi"
+},
+"exception": {
+"p": "n",
+"vn": "sự trừ ra, sự loại ra"
+},
+"exchange": {
+"p": "v",
+"vn": "đổi; sự trao đổi"
+},
+"excite": {
+"p": "v",
+"vn": "kích thích, kích động"
+},
+"excitement": {
+"p": "n",
+"vn": "sự kích thích, sự kích động"
+},
+"exciting": {
+"p": "adj",
+"vn": "hứng thú, thú vị"
+},
+"exclude": {
+"p": "v",
+"vn": "ngăn chặn, loại trừ"
+},
+"excluding": {
+"p": "prep",
+"vn": "ngoài ra, trư ra"
+},
+"excuse": {
+"p": "n",
+"vn": "lời xin lỗi, bào chữa; xin lỗi, tha thứ, tha lỗi"
+},
+"executive": {
+"p": "n",
+"vn": "sự thi hành, chấp hành; (thuộc) sự thi hành, chấp hành"
+},
+"exhibit": {
+"p": "v",
+"vn": "trưng bày, triển lãm; vật trưng bày vật triển lãm"
+},
+"exhibition": {
+"p": "n",
+"vn": "cuộc triển lãm, trưng bày"
+},
+"exist": {
+"p": "v",
+"vn": "tồn tại, sống"
+},
+"existence": {
+"p": "n",
+"vn": "sự tồn tại, sự sống"
+},
+"exit": {
+"p": "n",
+"vn": "lỗi ra, sự đi ra, thoát ra"
+},
+"expand": {
+"p": "v",
+"vn": "mở rộng, phát triển, nở, giãn ra"
+},
+"expect": {
+"p": "v",
+"vn": "chờ đợi, mong ngóng; liệu trước"
+},
+"expectation": {
+"p": "n",
+"vn": ",ekspek'tei∫n sự mong chờ, sự chờ đợi"
+},
+"expected": {
+"p": "adj",
+"vn": "được chờ đợi, được hy vọng"
+},
+"expense": {
+"p": "n",
+"vn": "phí"
+},
+"experience": {
+"p": "n",
+"vn": "nghiệm; trải qua, nếm mùi"
+},
+"experienced": {
+"p": "adj",
+"vn": "có kinh nghiệm, tưng trải, giàu kinh nghiệm"
+},
+"experiment": {
+"p": "n",
+"vn": "cuộc thí nghiệm; thí nghiệm"
+},
+"expert": {
+"p": "n",
+"vn": ",ekspз'ti:z chuyên gia; chuyên môn, thành thạo"
+},
+"explanation": {
+"p": "n",
+"vn": "sự giải nghĩa, giải thích"
+},
+"explode": {
+"p": "v",
+"vn": "đập tan (hy vọng...), làm nổ, nổ"
+},
+"explore": {
+"p": "v",
+"vn": "thăm dò, thám hiểm"
+},
+"explosion": {
+"p": "n",
+"vn": "sự nổ, sự phát triển ồ ạt"
+},
+"export": {
+"p": "v",
+"vn": "xuất khẩu; hàng xuất khẩu, sự xuất khẩu"
+},
+"expose": {
+"p": "v",
+"vn": "trưng bày, phơi bày"
+},
+"express": {
+"p": "v",
+"vn": "diễn tả, biểu lộ, bày tỏ; nhanh, tốc hành"
+},
+"expression": {
+"p": "n",
+"vn": "sự diễn tả, sự bày tỏ, biểu lộ, sự diễn đạt"
+},
+"extend": {
+"p": "v",
+"vn": "giơ, duỗi ra (tay, châ(n).); kéo dài (thời gia(n).), dành cho, gửi lời"
+},
+"extensive": {
+"p": "adj",
+"vn": "rộng rãi, bao quát"
+},
+"extent": {
+"p": "",
+"vn": "mô, phạm vi"
+},
+"extra": {
+"p": "adj",
+"vn": "thêm, phụ, ngoại; thứ thêm, phụ"
+},
+"extraordinary": {
+"p": "adj",
+"vn": "đặc biệt, lạ thường, khác thường"
+},
+"extreme": {
+"p": "adj",
+"vn": "vô cùng, khắc nghiệt, quá khích, cực đoan; sự quá khích"
+},
+"extremely": {
+"p": "adv",
+"vn": "vô cùng, cực độ"
+},
+"facility": {
+"p": "n",
+"vn": "điều kiện dễ dàng, sự dễ dàng, thuận lợi"
+},
+"fact": {
+"p": "n",
+"vn": "việc, sự việc, sự kiện"
+},
+"factor": {
+"p": "n",
+"vn": "nhân tố"
+},
+"factory": {
+"p": "n",
+"vn": "nhà máy, xí nghiệp, xưởng"
+},
+"fail": {
+"p": "v",
+"vn": "thất bại"
+},
+"failure": {
+"p": "n",
+"vn": "sự thất bại, người thất bại"
+},
+"faint": {
+"p": "adj",
+"vn": "nhút nhát, yếu ớt"
+},
+"faintly": {
+"p": "adv",
+"vn": "nhút nhát, yếu ớt"
+},
+"fairly": {
+"p": "adv",
+"vn": "hợp lý, công bằng"
+},
+"faith": {
+"p": "n",
+"vn": "sự tin tưởng, tin cậy; niềm tin, vật đảm bảo"
+},
+"faithful": {
+"p": "adj",
+"vn": "thành, chung thủy, trung thực"
+},
+"faithfully": {
+"p": "adv",
+"vn": "thành, chung thủy, trung thực. yours faithfully bạn chân thành"
+},
+"FALSE": {
+"p": "adj",
+"vn": "nhầm, giả dối"
+},
+"fame": {
+"p": "n",
+"vn": "tên tuổi, danh tiếng"
+},
+"familiar": {
+"p": "adj",
+"vn": "thân thiết, quen thộc"
+},
+"fancy": {
+"p": "v",
+"vn": "tưởng tượng, cho, nghĩ rằng; tưởng tượng"
+},
+"farm": {
+"p": "n",
+"vn": "trại"
+},
+"farmer": {
+"p": "n",
+"vn": "nông dân, người chủ trại"
+},
+"farming": {
+"p": "n",
+"vn": "công việc trồng trọt, đồng áng"
+},
+"fashion": {
+"p": "n",
+"vn": "mốt, thời trang"
+},
+"fashionable": {
+"p": "adj",
+"vn": "đúng mốt, hợp thời trang"
+},
+"fasten": {
+"p": "v",
+"vn": "buộc, trói"
+},
+"fat": {
+"p": "adj",
+"vn": "béo, béo bở; mỡ, chất béo"
+},
+"faucet": {
+"p": "n",
+"vn": "vòi (ở thùng rượu....)"
+},
+"fault": {
+"p": "n",
+"vn": "sự thiết sót, sai sót"
+},
+"favour": {
+"p": "n",
+"vn": "feivз thiện ý, sự quý mến; sự đồng ý; sự chiếu cố. in favour/favor (of): ủng hộ cái gì (to be in favour of something )"
+},
+"favourite": {
+"p": "adj",
+"vn": "feivзrit được ưa thích; người (vật) được ưa thích"
+},
+"fear": {
+"p": "n",
+"vn": "sự sợ hãi, e sợ; sợ, lo ngại"
+},
+"feather": {
+"p": "n",
+"vn": "lông chim"
+},
+"February": {
+"p": "n",
+"vn": "tháng 2"
+},
+"federal": {
+"p": "adj",
+"vn": "liên bang"
+},
+"fee": {
+"p": "n",
+"vn": "tiền thù lao, học phí"
+},
+"feed": {
+"p": "v",
+"vn": "ăn, nuôi"
+},
+"fellow": {
+"p": "n",
+"vn": "chàng (đáng yêu), đồng chí"
+},
+"female": {
+"p": "adj",
+"vn": "thuộc giống cái; giống cái"
+},
+"fence": {
+"p": "n",
+"vn": "hàng rào"
+},
+"festival": {
+"p": "n",
+"vn": "lễ hội, đại hội liên hoan"
+},
+"fetch": {
+"p": "v",
+"vn": "tìm về, đem về; làm bực mình; làm say mê, quyến rũ"
+},
+"few": {
+"p": "det",
+"vn": "ít,vài; một ít, một vài. a few một ít, một vài"
+},
+"field": {
+"p": "n",
+"vn": "cánh đồng, bãi chiến trường"
+},
+"fight": {
+"p": "v",
+"vn": "đấu tranh, chiến đấu; sự đấu tranh, cuộc chiến đấu"
+},
+"fighting": {
+"p": "n",
+"vn": "sự chiến đấu, sự đấu tranh"
+},
+"figure": {
+"p": "n",
+"vn": "hình dáng, nhân vật; hình dung, miêu tả"
+},
+"fill": {
+"p": "v",
+"vn": "làm đấy, lấp kín"
+},
+"film": {
+"p": "n",
+"vn": "được dựng thành phim"
+},
+"final": {
+"p": "adj",
+"vn": "cuối cùng, cuộc đấu chung kết"
+},
+"finance": {
+"p": "n",
+"vn": ", ˈfaɪnæns tài chính; tài trợ, cấp vốn"
+},
+"financial": {
+"p": "adj",
+"vn": "thuộc (tài chính)"
+},
+"fine": {
+"p": "adj",
+"vn": "tốt, giỏi"
+},
+"finely": {
+"p": "adv",
+"vn": "đẹp đẽ, tế nhị, cao thượng"
+},
+"finish": {
+"p": "v",
+"vn": "kết thúc, hoàn thành; sự kết thúc, phần cuối"
+},
+"finished": {
+"p": "adj",
+"vn": "hoàn tất, hoàn thành"
+},
+"fire": {
+"p": "n",
+"vn": "lửa; đốt cháy. set fire to: đốt cháy cái gì"
+},
+"firm": {
+"p": "n",
+"vn": "hãng, công ty; chắc, kiên quyết, vũng vàng, mạnh mẽ"
+},
+"firmly": {
+"p": "adv",
+"vn": "vững chắc, kiên quyết"
+},
+"first": {
+"p": "det",
+"vn": "thứ nhất, đầu tiên, trước hết; người, vật đầu tiên, thứ nhất. at first trực tiếp"
+},
+"fish": {
+"p": "n",
+"vn": "cá, món cá; câu cá, bắt cá"
+},
+"fishing": {
+"p": "n",
+"vn": "sự câu cá, sự đánh cá"
+},
+"fixed": {
+"p": "adj",
+"vn": "đứng yên, bất động"
+},
+"flag": {
+"p": "n",
+"vn": "quốc kỳ"
+},
+"flame": {
+"p": "n",
+"vn": "ngọn lửa"
+},
+"flash": {
+"p": "v",
+"vn": "loé sáng, vụt sáng; ánh sáng lóe lên, đèn nháy"
+},
+"flat": {
+"p": "adj",
+"vn": "bằng phẳng, bẹt, nhẵn; dãy phòng, căn phòng, mặt phẳng"
+},
+"flavour": {
+"p": "n",
+"vn": "vị, mùi; cho gia vị, làm tăng thêm mùi vị"
+},
+"flesh": {
+"p": "n",
+"vn": "fle∫ thịt"
+},
+"float": {
+"p": "v",
+"vn": "nổi, trôi, lơ lửng"
+},
+"flood": {
+"p": "n",
+"vn": "lụt, lũ lụtl; tràn đầy, tràn ngập"
+},
+"flour": {
+"p": "n",
+"vn": "bột, bột mỳ"
+},
+"flow": {
+"p": "n",
+"vn": "sự chảy; chảy"
+},
+"flower": {
+"p": "n",
+"vn": "bông, đóa, cây hoa"
+},
+"flu": {
+"p": "n",
+"vn": "bệnh cúm"
+},
+"fly": {
+"p": "v",
+"vn": "sự bay, quãng đường bay"
+},
+"flying": {
+"p": "adj",
+"vn": "biết bay; sự bay, chuyến bay"
+},
+"focus": {
+"p": "v",
+"vn": "tập trung; trung tâm, trọng tâm ((n)bóng)"
+},
+"fold": {
+"p": "v",
+"vn": "gấp, vén, xắn; nếp gấp"
+},
+"folding": {
+"p": "adj",
+"vn": "gấp lại được"
+},
+"following": {
+"p": "adj",
+"vn": "tiếp theo, theo sau, sau đây; sau, tiếp theo"
+},
+"football": {
+"p": "n",
+"vn": "bóng đá"
+},
+"for": {
+"p": "prep",
+"vn": "dành cho..."
+},
+"force": {
+"p": "n",
+"vn": "sức mạnh; ép buộc, cưỡng ép"
+},
+"forecast": {
+"p": "n",
+"vn": "sự dự đoán, dự báo; dự đoán, dự báo"
+},
+"foreign": {
+"p": "adj",
+"vn": "(thuộc) nước ngoài, tư nước ngoài, ở nước ngoài"
+},
+"forest": {
+"p": "n",
+"vn": "rừng"
+},
+"forever": {
+"p": "adv",
+"vn": "mãi mãi"
+},
+"forget": {
+"p": "v",
+"vn": "quên"
+},
+"forgive": {
+"p": "v",
+"vn": "thứ"
+},
+"fork": {
+"p": "n",
+"vn": "cái nĩa"
+},
+"form": {
+"p": "n",
+"vn": "hình thể, hình dạng, hình thức; làm thành, được tạo thành"
+},
+"formal": {
+"p": "adj",
+"vn": "hình thức"
+},
+"formally": {
+"p": "adv",
+"vn": "fo:mзlaiz chính thức"
+},
+"former": {
+"p": "adj",
+"vn": "trước, cũ, xưa, nguyên"
+},
+"formerly": {
+"p": "adv",
+"vn": "trước đây, thuở xưa"
+},
+"formula": {
+"p": "n",
+"vn": "công thức, thể thức, cách thức"
+},
+"fortune": {
+"p": "n",
+"vn": "sự giàu có, sự thịnh vượng"
+},
+"found": {
+"p": "v",
+"vn": "tìm, tìm thấy"
+},
+"foundation": {
+"p": "n",
+"vn": "faun'dei∫n sự thành lập, sự sáng lập; tổ chức"
+},
+"frame": {
+"p": "n",
+"vn": "cấu trúc, hệ thống; dàn xếp, bố trí"
+},
+"freedom": {
+"p": "n",
+"vn": "sự tự do; nền tự do"
+},
+"freely": {
+"p": "adv",
+"vn": "tự do, thoải mái"
+},
+"freeze": {
+"p": "v",
+"vn": "đóng băng, đông lạnh"
+},
+"frequent": {
+"p": "adj",
+"vn": "thường xuyên"
+},
+"frequently": {
+"p": "adv",
+"vn": "thường xuyên"
+},
+"freshly": {
+"p": "adv",
+"vn": "tươi mát, khỏe khoắn"
+},
+"Friday": {
+"p": "n",
+"vn": "thứ Sáu"
+},
+"friendship": {
+"p": "n",
+"vn": "tình bạn, tình hữu nghị"
+},
+"frighten": {
+"p": "v",
+"vn": "làm sợ, làm hoảng sợ"
+},
+"frightened": {
+"p": "adj",
+"vn": "hoảng sợ, khiếp sợ"
+},
+"frightening": {
+"p": "adj",
+"vn": "khủng, khủng khiếp"
+},
+"from": {
+"p": "prep",
+"vn": "tư"
+},
+"front": {
+"p": "n",
+"vn": "mặt; đằng trước, về phía trước. in front (of): ở phía trước"
+},
+"frozen": {
+"p": "adj",
+"vn": "lạnh giá"
+},
+"fruit": {
+"p": "n",
+"vn": "quả, trái cây"
+},
+"fry": {
+"p": "v",
+"vn": "rán, chiên; thịt rán"
+},
+"fuel": {
+"p": "n",
+"vn": "chất đốt, nhiên liệu"
+},
+"fully": {
+"p": "adv",
+"vn": "đầy đủ, hoàn toàn"
+},
+"fun": {
+"p": "n",
+"vn": "sự vui đùa, sự vui thích; hài hước make fun of: đùa cợt, chế giễu, chế nhạo"
+},
+"function": {
+"p": "n",
+"vn": "chức năng; họat động, chạy (máy)"
+},
+"fund": {
+"p": "n",
+"vn": "quỹ; tài trợ, tiền bạc, để tiền vào công quỹ"
+},
+"fundamental": {
+"p": "adj",
+"vn": "cơ bản, cơ sở, chủ yếu"
+},
+"funeral": {
+"p": "n",
+"vn": "lễ tang, đám tang"
+},
+"fur": {
+"p": "n",
+"vn": "bộ da lông thú"
+},
+"furniture": {
+"p": "n",
+"vn": "đồ đạc (trong nhà)"
+},
+"future": {
+"p": "n",
+"vn": "tương lai"
+},
+"gain": {
+"p": "v",
+"vn": "lợi, lợi ích; giành được, kiếm được, đạt tới"
+},
+"gallon": {
+"p": "n",
+"vn": "Galông 1gl = 4, 54 lít ở Anh, 3, 78 lít ở Mỹ"
+},
+"gamble": {
+"p": "v",
+"vn": "đánh bạc; cuộc đánh bạc"
+},
+"gambling": {
+"p": "n",
+"vn": "trò cờ bạc"
+},
+"game": {
+"p": "n",
+"vn": "trò chơi"
+},
+"gap": {
+"p": "n",
+"vn": "đèo, lỗ hổng, kẽ hở; chỗ trống"
+},
+"garage": {
+"p": "n",
+"vn": "nhà để ô tô"
+},
+"garbage": {
+"p": "n",
+"vn": "lòng, ruột (thú)"
+},
+"garden": {
+"p": "n",
+"vn": "vườn"
+},
+"gas": {
+"p": "n",
+"vn": "khí, hơi đốt"
+},
+"gasoline": {
+"p": "n",
+"vn": "dầu lửa, dầu hỏa, xăng"
+},
+"gate": {
+"p": "n",
+"vn": "cổng"
+},
+"gear": {
+"p": "n",
+"vn": "cơ cấu, thiết bị, dụng cụ"
+},
+"generally": {
+"p": "adv",
+"vn": "nói chung, đại thể. in general: nói chung, đại khái"
+},
+"generate": {
+"p": "v",
+"vn": "đẻ ra"
+},
+"generation": {
+"p": "n",
+"vn": "sự sinh ra, sự phát sinh ra; thế hệ đời"
+},
+"generously": {
+"p": "adv",
+"vn": "rộng lượng, hào phóng"
+},
+"gentleman": {
+"p": "n",
+"vn": "người quý phái, người thượng lưu"
+},
+"gently": {
+"p": "adv",
+"vn": "nhẹ nhàng, êm ái, dịu dàng"
+},
+"genuine": {
+"p": "adj",
+"vn": "thành thật, chân thật; xác thực"
+},
+"genuinely": {
+"p": "adv",
+"vn": "thành thật, chân thật"
+},
+"geography": {
+"p": "n",
+"vn": "địa lý, khoa địa lý"
+},
+"giant": {
+"p": "n",
+"vn": "người khổng lồ, người phi thường khổng lồ, phi thường"
+},
+"gift": {
+"p": "n",
+"vn": "quà tặng"
+},
+"girl": {
+"p": "n",
+"vn": "g3:l con gái"
+},
+"girlfriend": {
+"p": "n",
+"vn": "gз:lfrend bạn gái, người yêu"
+},
+"glass": {
+"p": "n",
+"vn": "kính, thủy tinh, cái cốc, ly"
+},
+"global": {
+"p": "",
+"vn": "toàn cầu, toàn thể, toàn bộ"
+},
+"glove": {
+"p": "n",
+"vn": "găng tay"
+},
+"glue": {
+"p": "n",
+"vn": "hồ; gắn lại, dán bằng keo, hồ"
+},
+"god": {
+"p": "n",
+"vn": "thần, Chúa"
+},
+"gold": {
+"p": "n",
+"vn": "vàng; bằng vàng"
+},
+"good": {
+"p": "adj",
+"vn": "tốt, hay, tuyệt; điều tốt, điều thiện. good at: tiến bộ ở. good for: có lợi cho"
+},
+"goodbye exclamation": {
+"p": "n",
+"vn": "tạm biệt; lời chào tạm biệt"
+},
+"goods": {
+"p": "n",
+"vn": "của cải, tài sản, hàng hóa"
+},
+"govern": {
+"p": "v",
+"vn": "trị, thống trị, cầm quyền"
+},
+"government": {
+"p": "n",
+"vn": ", ˈgʌvərmənt chính phủ, nội các; sự cai trị"
+},
+"governor": {
+"p": "n",
+"vn": "thủ lĩnh, chủ; kẻ thống trị"
+},
+"grab": {
+"p": "v",
+"vn": "túm lấy, vồ, chộp lấy"
+},
+"grade": {
+"p": "n",
+"vn": "điểm, điểm số; phân loại, xếp loại"
+},
+"gradual": {
+"p": "adj",
+"vn": "dần dần, tưng bước một"
+},
+"gradually": {
+"p": "adv",
+"vn": "dần dần, tư tư"
+},
+"grain": {
+"p": "n",
+"vn": "thóc lúa, hạt, hột; tính chất, bản chất"
+},
+"gram": {
+"p": "n",
+"vn": "đậu xanh"
+},
+"grammar": {
+"p": "n",
+"vn": "văn phạm"
+},
+"grand": {
+"p": "adj",
+"vn": "rộng lớn, vĩ đại"
+},
+"grandchild": {
+"p": "n",
+"vn": "cháu (của ông bà)"
+},
+"granddaughter": {
+"p": "n",
+"vn": "cháu gái"
+},
+"grandparent": {
+"p": "n",
+"vn": "ông bà"
+},
+"grandson": {
+"p": "n",
+"vn": "cháu trai"
+},
+"grant": {
+"p": "v",
+"vn": "grα:nt cho, bán, cấp; sự cho, sự bán, sự cấp"
+},
+"grass": {
+"p": "n",
+"vn": "cỏ; bãi cỏ, đồng cỏ"
+},
+"grave": {
+"p": "n",
+"vn": "mộ, dấu huyền; trang nghiêm, nghiêm trọng"
+},
+"gray": {
+"p": "",
+"vn": "xám, hoa râm (tóc)"
+},
+"great": {
+"p": "adj",
+"vn": "lớn, vĩ đại"
+},
+"greatly": {
+"p": "adv",
+"vn": "rất, lắm; cao thượng, cao cả"
+},
+"green": {
+"p": "adj",
+"vn": "lá cây"
+},
+"grey": {
+"p": "adj",
+"vn": "xám, hoa râm (tóc)"
+},
+"groceries": {
+"p": "n",
+"vn": "hàng tạp hóa"
+},
+"grocery": {
+"p": "n",
+"vn": "cửa hàng tạp phẩm"
+},
+"ground": {
+"p": "n",
+"vn": "mặt đất, đất, bãi đất"
+},
+"group": {
+"p": "n",
+"vn": "nhóm"
+},
+"grow": {
+"p": "v",
+"vn": "mọc, mọc lên. grow up lớn lên, trưởng thành"
+},
+"growth": {
+"p": "n",
+"vn": "sự lớn lên, sự phát triển"
+},
+"guard": {
+"p": "n",
+"vn": "cái chắn, người bảo vệ; bảo vệ, gác, canh giữ"
+},
+"guess": {
+"p": "v",
+"vn": "đoán, phỏng đoán; sự đoán, sự ước chưng"
+},
+"guide": {
+"p": "n",
+"vn": "điều chỉ dẫn, người hướng dẫn; dẫn đường, chỉ đường"
+},
+"guilty": {
+"p": "adj",
+"vn": "có tội, phạm tội, tội lỗi"
+},
+"gun": {
+"p": "n",
+"vn": "súng"
+},
+"guy": {
+"p": "n",
+"vn": "bù nhìn, anh chàng, gã"
+},
+"habit": {
+"p": "n",
+"vn": "thói quen, tập quán"
+},
+"hairdresser": {
+"p": "n",
+"vn": "thợ làm tóc"
+},
+"hall": {
+"p": "n",
+"vn": "đại sảnh, tòa (thị chính), hội trường"
+},
+"hammer": {
+"p": "n",
+"vn": "búa"
+},
+"happily": {
+"p": "adv",
+"vn": "sướng, hạnh phúc"
+},
+"happiness": {
+"p": "n",
+"vn": "sự sung sướng, hạnh phúc"
+},
+"hardly": {
+"p": "adv",
+"vn": "khắc nghiệt, nghiêm khắc, tàn tệ, khó khăn"
+},
+"harm": {
+"p": "n",
+"vn": "thiệt hại, tổn hao; làm hại, gây thiệt hại"
+},
+"harmful": {
+"p": "adj",
+"vn": "gây tai hại, có hại"
+},
+"harmless": {
+"p": "adj",
+"vn": "không có hại"
+},
+"hat": {
+"p": "n",
+"vn": "cái mũ"
+},
+"hate": {
+"p": "v",
+"vn": "ghét; lòng căm ghét, thù hận"
+},
+"hatred": {
+"p": "n",
+"vn": "lòng căm thì, sự căm ghét"
+},
+"have vauxiliary": {
+"p": "v",
+"vn": "có"
+},
+"have to modal": {
+"p": "v",
+"vn": "phải (bắt buộc, có bổn phận phải)"
+},
+"he": {
+"p": "n",
+"vn": ", pro hi: nó, anh ấy, ông ấy"
+},
+"headache": {
+"p": "n",
+"vn": "chứng nhức đầu"
+},
+"heal": {
+"p": "v",
+"vn": "chữa khỏi, làm lành"
+},
+"hearing": {
+"p": "n",
+"vn": "sự nghe, thính giác"
+},
+"heat": {
+"p": "n",
+"vn": "hơi nóng, sức nóng"
+},
+"heating": {
+"p": "n",
+"vn": "hi:tiη sự đốt nóng, sự làm nóng"
+},
+"heaven": {
+"p": "n",
+"vn": "thiên đường"
+},
+"heavily": {
+"p": "adv",
+"vn": "nặng, nặng nề"
+},
+"heel": {
+"p": "n",
+"vn": "gót chân"
+},
+"height": {
+"p": "n",
+"vn": "chiều cao, độ cao; đỉnh, điểm cao"
+},
+"hell": {
+"p": "n",
+"vn": "địa ngục"
+},
+"hello exclamation": {
+"p": "n",
+"vn": "hз'lou chào, xin chào; lời chào"
+},
+"hence": {
+"p": "adv",
+"vn": "đây, kể từ đây; do đó, vì thế"
+},
+"her": {
+"p": "pron",
+"vn": "hз: nó, chị ấy, cô ấy, bà ấy"
+},
+"hero": {
+"p": "n",
+"vn": "người anh hùng"
+},
+"hers": {
+"p": "pron",
+"vn": "cái của nó, cái của cô ấy, cái của chị ấy, cái của bà ấy"
+},
+"herself": {
+"p": "pron",
+"vn": "chính nó, chính cô ta, chính chị ta chính bà ta"
+},
+"hesitate": {
+"p": "v",
+"vn": "ngập ngưng, do dự"
+},
+"hi": {
+"p": "",
+"vn": "chào"
+},
+"hide": {
+"p": "v",
+"vn": "trốn, ẩn nấp; che giấu"
+},
+"high": {
+"p": "adj",
+"vn": "ở mức độ cao"
+},
+"highlight": {
+"p": "v",
+"vn": "làm nổi bật, nêu bật; chỗ nổi bật nhất, đẹp, sáng nhất"
+},
+"highly": {
+"p": "adv",
+"vn": "tốt, cao; hết sức, ở mức độ cao"
+},
+"highway": {
+"p": "n",
+"vn": "đường quốc lộ"
+},
+"hill": {
+"p": "n",
+"vn": "đồi"
+},
+"him": {
+"p": "pron",
+"vn": "nó, hắn, ông ấy, anh ấy"
+},
+"himself": {
+"p": "pron",
+"vn": "chính nó, chính hắn, chính ông ta, chính anh ta"
+},
+"hip": {
+"p": "n",
+"vn": "hông"
+},
+"his": {
+"p": "det",
+"vn": "của nó, của hắn, của ông ấy, của anh ấy; cái của nó, cái của hắn, cái của ông ấy, cái của anh ấy"
+},
+"historical": {
+"p": "adj",
+"vn": "lịch sử, thuộc lịch sử"
+},
+"history": {
+"p": "n",
+"vn": "lịch sử, sử học"
+},
+"hit": {
+"p": "v",
+"vn": "đánh, đấm, ném trúng; đòn, cú đấm"
+},
+"hole": {
+"p": "n",
+"vn": "lỗ, lỗ trống; hang"
+},
+"hollow": {
+"p": "adj",
+"vn": "rỗng, trống rỗng"
+},
+"holy": {
+"p": "adj",
+"vn": "thiêng; sùng đạo"
+},
+"home": {
+"p": "n",
+"vn": "nhà; ở tại nhà, nước mình"
+},
+"homework": {
+"p": "n",
+"vn": "bài tập về nhà (học sinh), công việc làm ở nhà"
+},
+"honour": {
+"p": "n",
+"vn": "onз danh dự, thanh danh, lòng kính trọng. in honour/honor of: để tỏ lòng tôn kính, trân trọng đối với"
+},
+"hook": {
+"p": "n",
+"vn": "cái móc; bản lề; lưỡi câu"
+},
+"hope": {
+"p": "v",
+"vn": "vọng; nguồn hy vọng"
+},
+"horizontal": {
+"p": "adj",
+"vn": "(thuộc) chân trời, ở chân trời; ngang, nằm ngang (trục hoành)"
+},
+"horn": {
+"p": "n",
+"vn": "sừng (trâu, bò...)"
+},
+"horror": {
+"p": "n",
+"vn": "điều kinh khủng, sự ghê rợn"
+},
+"horse": {
+"p": "n",
+"vn": "ngựa"
+},
+"host": {
+"p": "n",
+"vn": "chủ nhà, chủ tiệc; dẫn (c.trình), đăng cai tổ chức (hội nghị....)"
+},
+"household": {
+"p": "n",
+"vn": "hộ, gia đình; (thuộc) gia đình"
+},
+"housing": {
+"p": "n",
+"vn": "nơi ăn chốn ở"
+},
+"how": {
+"p": "adv",
+"vn": "thế nào, như thế nào, làm sao, ra sao"
+},
+"huge": {
+"p": "adj",
+"vn": "lớn, khổng lồ"
+},
+"human": {
+"p": "adj",
+"vn": "(thuộc) con người, loài người"
+},
+"humorous": {
+"p": "adj",
+"vn": "hài hước, hóm hỉnh"
+},
+"humour": {
+"p": "n",
+"vn": "sự hài hước, sự hóm hỉnh"
+},
+"hunt": {
+"p": "v",
+"vn": "săn, đi săn"
+},
+"hunting": {
+"p": "n",
+"vn": "sự đi săn"
+},
+"ice cream": {
+"p": "n",
+"vn": ""
+},
+"idea": {
+"p": "n",
+"vn": "ai'diз ý tưởng, quan niệm"
+},
+"ideal": {
+"p": "adj",
+"vn": "(thuộc) quan niệm, tư tưởng; lý tưởng"
+},
+"ideally": {
+"p": "adv",
+"vn": "lý tưởng, đúng như lý tưởng"
+},
+"identify": {
+"p": "v",
+"vn": "nhận biết, nhận ra, nhận dạng"
+},
+"identity": {
+"p": "n",
+"vn": "cá tính, nét nhận dạng; tính đồng nhất, giống hệt"
+},
+"if": {
+"p": "conj",
+"vn": "nếu, nếu như"
+},
+"ignore": {
+"p": "v",
+"vn": "phớt lờ, tỏ ra không biết đến"
+},
+"illegal": {
+"p": "adj",
+"vn": "trái luật, bất hợp pháp"
+},
+"illegally": {
+"p": "adv",
+"vn": "trái luật, bất hợp pháp"
+},
+"illustrate": {
+"p": "v",
+"vn": "họa, làm rõ ý"
+},
+"image": {
+"p": "n",
+"vn": "ảnh, hình ảnh"
+},
+"imaginary": {
+"p": "adj",
+"vn": "tưởng tượng, ảo"
+},
+"imagination": {
+"p": "n",
+"vn": "trí tưởng tượng, sự tưởng tượng"
+},
+"imagine": {
+"p": "v",
+"vn": "tưởng tượng, hình dung; tưởng rằng, cho rằng"
+},
+"immediate": {
+"p": "adj",
+"vn": "lập tức, tức thì"
+},
+"immediately": {
+"p": "adv",
+"vn": "lập tức"
+},
+"immoral": {
+"p": "adj",
+"vn": "trái đạo đức, luân lý; xấu xa"
+},
+"impact": {
+"p": "n",
+"vn": "sự và chạm, sự tác động, ảnh hưởng"
+},
+"impatient": {
+"p": "adj",
+"vn": "thiếu kiên nhẫn, nóng vội"
+},
+"impatiently": {
+"p": "adv",
+"vn": "im'pei∫зns nóng lòng, sốt ruột"
+},
+"implication": {
+"p": "n",
+"vn": "sự lôi kéo, sự liên can, điều gợi ý"
+},
+"imply": {
+"p": "v",
+"vn": "ngụ ý, bao hàm"
+},
+"import": {
+"p": "n",
+"vn": "sự nhập, sự nhập khẩu; nhập, nhập khẩu"
+},
+"importance": {
+"p": "n",
+"vn": "sự quan trọng, tầm quan trọng"
+},
+"importantly": {
+"p": "adv",
+"vn": "trọng, trọng yếu"
+},
+"impose": {
+"p": "v",
+"vn": "đánh (thuế...), bắt gánh vác; đánh tráo, lợi dụng"
+},
+"impress": {
+"p": "v",
+"vn": "khắc, in sâu vào; gây ấn tượng, làm cảm động"
+},
+"impressed": {
+"p": "adj",
+"vn": "được ghi, khắc, in sâu vào"
+},
+"impression": {
+"p": "n",
+"vn": "ấn tượng, cảm giác; sự in, đóng dấu"
+},
+"impressive": {
+"p": "adj",
+"vn": "gây ấn tượng mạnh; hùng vĩ, oai vệ"
+},
+"improvement": {
+"p": "n",
+"vn": "sự cải thiện, sự cải tiến, sự mở mang"
+},
+"in": {
+"p": "prep",
+"vn": "ở, tại, trong; vào"
+},
+"in case of": {
+"p": "n",
+"vn": "ếu......"
+},
+"inability": {
+"p": "n",
+"vn": "sự bất lực, bất tài"
+},
+"inch": {
+"p": "n",
+"vn": "insơ (đơn vị đo chiều dài Anh bằng 2, 54 cm)"
+},
+"incident": {
+"p": "n",
+"vn": "việc xảy ra, việc có liên quan"
+},
+"including": {
+"p": "prep",
+"vn": "gồm, kể cả"
+},
+"increasingly": {
+"p": "adv",
+"vn": "tăng thêm"
+},
+"indeed": {
+"p": "adv",
+"vn": "thật vậy, quả thật"
+},
+"independence": {
+"p": "n",
+"vn": "sự độc lập, nền độc lập"
+},
+"independent": {
+"p": "adj",
+"vn": "độc lập"
+},
+"independently": {
+"p": "adv",
+"vn": ",indi'pendзntli độc lập"
+},
+"index": {
+"p": "n",
+"vn": "chỉ số, sự biểu thị"
+},
+"indicate": {
+"p": "v",
+"vn": "chỉ, cho biết; biểu thị, trình bày ngắn gọn"
+},
+"indication": {
+"p": "n",
+"vn": ",indi'kei∫n sự chỉ, sự biểu thị, sự biểu lộ"
+},
+"indirect": {
+"p": "adj",
+"vn": "gián tiếp"
+},
+"indirectly": {
+"p": "adv",
+"vn": "gián tiếp"
+},
+"individual": {
+"p": "adj",
+"vn": "indivídʤuəl riêng, riêng biệt; cá nhân"
+},
+"indoor": {
+"p": "adj",
+"vn": "nhà"
+},
+"indoors": {
+"p": "adv",
+"vn": "ở trong nhà"
+},
+"industrial": {
+"p": "adj",
+"vn": "(thuộc) công nghiệp, kỹ nghệ"
+},
+"industry": {
+"p": "n",
+"vn": "công nghiệp, kỹ nghệ"
+},
+"inevitable": {
+"p": "adj",
+"vn": "không thể tránh được, chắc chắn xảy ra; vẫn thường thấy, nghe"
+},
+"inevitably": {
+"p": "adv",
+"vn": "chắc chắn, chắc hẳn"
+},
+"infect": {
+"p": "v",
+"vn": "nhiễm, tiêm nhiễm, đầu độc, lan truyền"
+},
+"infected": {
+"p": "adj",
+"vn": "bị nhiễm, bị đầu độc"
+},
+"infection": {
+"p": "n",
+"vn": "sự nhiễm, sự đầu độc"
+},
+"infectious": {
+"p": "adj",
+"vn": "lây, nhiễm"
+},
+"influence": {
+"p": "n",
+"vn": "sự ảnh hưởng, sự tác dụng; ảnh hưởng, tác động"
+},
+"inform": {
+"p": "v",
+"vn": "báo cho biết, cung cấp tin tức"
+},
+"informal": {
+"p": "adj",
+"vn": "không chính thức, không nghi thức"
+},
+"information": {
+"p": "n",
+"vn": "tức, tài liệu, kiến thức"
+},
+"initial": {
+"p": "adj",
+"vn": "i'ni∫зl ban đầu, lúc đầu; chữ đầu (của 1 tên gọi)"
+},
+"initially": {
+"p": "adv",
+"vn": "vào lúc ban đầu, ban đầu"
+},
+"initiative": {
+"p": "n",
+"vn": ", ɪˈnɪʃətɪv bước đầu, sự khởi đầu"
+},
+"injure": {
+"p": "v",
+"vn": "làm tổn thương, làm hại, xúc phạm"
+},
+"ink": {
+"p": "n",
+"vn": "iηk mực"
+},
+"inner": {
+"p": "adj",
+"vn": "ở trong, nội bộ; thân cận"
+},
+"innocent": {
+"p": "adj",
+"vn": "vô tội, trong trắng, ngây thơ"
+},
+"insect": {
+"p": "n",
+"vn": "sâu bọ, côn trùng"
+},
+"insert": {
+"p": "v",
+"vn": "chèn vào, lồng vào"
+},
+"insist on": {
+"p": "v",
+"vn": "cứ nhất định, cứ khăng khăng"
+},
+"instance": {
+"p": "n",
+"vn": "thí dị, ví dụ; trường hợp cá biệt. for instance ví dụ chẳng hạn"
+},
+"institute": {
+"p": "n",
+"vn": "viện, học viện"
+},
+"institution": {
+"p": "n",
+"vn": "sự thành lập, lập; cơ quan, trụ sở"
+},
+"instruction": {
+"p": "n",
+"vn": "sự dạy, tài liệu cung cấp"
+},
+"instrument": {
+"p": "n",
+"vn": "dụng cụ âm nhạc khí"
+},
+"insult": {
+"p": "v",
+"vn": "lăng mạ, xỉ nhục; lời lăng mạ, sự xỉ nhục"
+},
+"insulting": {
+"p": "adj",
+"vn": "lăng mạ, xỉ nhục"
+},
+"insurance": {
+"p": "n",
+"vn": "sự bảo hiểm"
+},
+"intelligence": {
+"p": "n",
+"vn": "sự hiểu biết, trí thông minh"
+},
+"intelligent": {
+"p": "adj",
+"vn": "in,teli'dЗen∫зl thông minh, sáng trí"
+},
+"intend": {
+"p": "v",
+"vn": "ý định, có ý định"
+},
+"intended": {
+"p": "adj",
+"vn": "có ý định, có dụng ý"
+},
+"intention": {
+"p": "n",
+"vn": "ý định, mục đích"
+},
+"interest": {
+"p": "n",
+"vn": "sự thích thú, sự quan tâm, chú ý; làm quan tâm, làm chú ý"
+},
+"interesting": {
+"p": "adj",
+"vn": "làm thích thú, làm quan tâm, làm chú ý"
+},
+"interior": {
+"p": "n",
+"vn": "phần trong, phía trong; ở trong, ở phía trong"
+},
+"internal": {
+"p": "adj",
+"vn": "ở trong, bên trong, nội địa"
+},
+"international": {
+"p": "adj",
+"vn": "quốc tế"
+},
+"interpret": {
+"p": "v",
+"vn": "in'tз:prit giải thích"
+},
+"interpretation": {
+"p": "n",
+"vn": "sự giải thích"
+},
+"interrupt": {
+"p": "v",
+"vn": "làm gián đoạn, ngắt lời"
+},
+"interruption": {
+"p": "n",
+"vn": "sự gián đoạn, sự ngắt lời"
+},
+"interval": {
+"p": "n",
+"vn": "khoảng (khoãng thời gian), khoảng cách"
+},
+"interview": {
+"p": "n",
+"vn": "cuộc phỏng vấn, sự gặp mặt; phỏng vấn, nói chuyện riêng"
+},
+"into": {
+"p": "prep",
+"vn": "vào, vào trong"
+},
+"introduction": {
+"p": "n",
+"vn": "sự giới thiệu, lời giới thiệu"
+},
+"invent": {
+"p": "v",
+"vn": "phát minh, sáng chế"
+},
+"invention": {
+"p": "n",
+"vn": "sự phát minh, sự sáng chế"
+},
+"invest": {
+"p": "v",
+"vn": "đầu tư"
+},
+"investigate": {
+"p": "v",
+"vn": "điều tra, nghiên cứu"
+},
+"investigation": {
+"p": "n",
+"vn": "sự điều tra, nghiên cứu"
+},
+"investment": {
+"p": "n",
+"vn": "sự đầu tư, vốn đầu tư"
+},
+"invitation": {
+"p": "n",
+"vn": "lời mời, sự mời"
+},
+"involve": {
+"p": "v",
+"vn": "gồm, bao hàm; thu hút, dồn tâm trí. involved in để hết tâm trí vào"
+},
+"involvement": {
+"p": "n",
+"vn": "sự gồm, sự bao hàm; sự để, dồn hết tâm trí vào"
+},
+"iron": {
+"p": "n",
+"vn": "sắt; bọc sắt"
+},
+"irritate": {
+"p": "v",
+"vn": "làm phát cáu, chọc tức"
+},
+"irritated": {
+"p": "adj",
+"vn": "tức giận, cáu tiết"
+},
+"irritating": {
+"p": "adj",
+"vn": "làm phát cáu, chọc tức"
+},
+"island": {
+"p": "n",
+"vn": "hòn đảo"
+},
+"it": {
+"p": "n",
+"vn": ", pro it cái đó, điều đó, con vật đó"
+},
+"item": {
+"p": "n",
+"vn": "tức; khoả(n)., mó(n).., tiết mục"
+},
+"its": {
+"p": "det",
+"vn": "của cái đó, của điều đó, của con vật đó; cái của điều đó, cái của con vật đó"
+},
+"itself": {
+"p": "pron",
+"vn": "chính cái đó, chính điều đó, chính con vật đó"
+},
+"jacket": {
+"p": "n",
+"vn": "áo vét"
+},
+"jam": {
+"p": "n",
+"vn": "mứt, sự mắc kẹt, sự kẹt (máy...)"
+},
+"January": {
+"p": "n",
+"vn": "tháng giêng"
+},
+"jealous": {
+"p": "adj",
+"vn": "tị"
+},
+"jeans": {
+"p": "n",
+"vn": "dЗeins quần bò, quần zin"
+},
+"jelly": {
+"p": "n",
+"vn": "thạch"
+},
+"jewellery": {
+"p": "n",
+"vn": "nữ trang, kim hoàn"
+},
+"joint": {
+"p": "adj",
+"vn": "(giữa 2 người hoặc hơn); chỗ nối, đầu nối"
+},
+"jointly": {
+"p": "adv",
+"vn": "cùng nhau, cùng chung"
+},
+"joke": {
+"p": "n",
+"vn": "trò cười, lời nói đùa; nói đùa, giễu cợt"
+},
+"journalist": {
+"p": "n",
+"vn": "nhà báo"
+},
+"joy": {
+"p": "n",
+"vn": "niềm vui, sự vui mừng"
+},
+"judge": {
+"p": "n",
+"vn": "xét xử, phân xử; quan tòa, thẩm phán"
+},
+"judgement": {
+"p": "n",
+"vn": "sự xét xử"
+},
+"July": {
+"p": "n",
+"vn": "tháng 7"
+},
+"June": {
+"p": "n",
+"vn": "dЗu:n tháng 6"
+},
+"junior": {
+"p": "adj",
+"vn": "trẻ hơn, ít tuổi hơn; người ít tuổi hơn"
+},
+"just": {
+"p": "adv",
+"vn": "đúng, vưa đủ; vưa mới, chỉ"
+},
+"justice": {
+"p": "n",
+"vn": "sự công bằng"
+},
+"justified": {
+"p": "adj",
+"vn": "hợp lý, được chứng minh là đúng"
+},
+"justify": {
+"p": "v",
+"vn": "bào chữa, biện hộ"
+},
+"keen": {
+"p": "adj",
+"vn": "sắc, bén. keen on: say mê, ưa thích"
+},
+"keyboard": {
+"p": "n",
+"vn": "bàn phím"
+},
+"kick": {
+"p": "v",
+"vn": "đá; cú đá"
+},
+"kid": {
+"p": "n",
+"vn": "dê non"
+},
+"kill": {
+"p": "v",
+"vn": "giết, tiêu diệt"
+},
+"killing": {
+"p": "n",
+"vn": "sự giết chóc, sự tàn sát"
+},
+"kilometre": {
+"p": "n",
+"vn": "Kilômet"
+},
+"kindly": {
+"p": "adv",
+"vn": "tử tế, tốt bụng"
+},
+"kindness": {
+"p": "n",
+"vn": "sự tử tế, lòng tốt"
+},
+"king": {
+"p": "n",
+"vn": "quốc vương"
+},
+"kiss": {
+"p": "v",
+"vn": "hôn, cái hôn"
+},
+"knife": {
+"p": "n",
+"vn": ""
+},
+"knit": {
+"p": "v",
+"vn": "đan, thêu"
+},
+"knitted": {
+"p": "adj",
+"vn": "được đan, được thêu"
+},
+"knitting": {
+"p": "n",
+"vn": "việc đan; hàng dệt kim"
+},
+"knock": {
+"p": "v",
+"vn": "đánh, đập; cú đánh"
+},
+"knot": {
+"p": "n",
+"vn": "cái nơ; điểm nút, điểm trung tâm"
+},
+"knowledge": {
+"p": "n",
+"vn": "sự hiểu biết, tri thức"
+},
+"label": {
+"p": "n",
+"vn": "nhãn, mác; dán nhãn, ghi mác"
+},
+"labour": {
+"p": "n",
+"vn": "leibз lao động; công việc"
+},
+"lack of": {
+"p": "n",
+"vn": "sự thiếu; thiếu"
+},
+"lacking": {
+"p": "adj",
+"vn": "đần, ngây ngô"
+},
+"lady": {
+"p": "n",
+"vn": "người yêu, vợ, quý bà, tiểu thư"
+},
+"lake": {
+"p": "n",
+"vn": "hồ"
+},
+"lamp": {
+"p": "n",
+"vn": "đèn"
+},
+"land": {
+"p": "n",
+"vn": "đất, đất canh tác, đất đai"
+},
+"landscape": {
+"p": "n",
+"vn": "cảnh"
+},
+"lane": {
+"p": "n",
+"vn": "đường nhỏ (làng, hẻm phố)"
+},
+"language": {
+"p": "n",
+"vn": "ngôn ngữ"
+},
+"large": {
+"p": "adj",
+"vn": "rộng, lớn, to"
+},
+"largely": {
+"p": "adv",
+"vn": "phú, ở mức độ lớn"
+},
+"last": {
+"p": "det",
+"vn": ", , adv, n, v lɑ:st lần cuối, sau cùng; người cuối cùng; cuối cùng, rốt hết; kéo dài"
+},
+"later": {
+"p": "adv",
+"vn": "chậm hơn"
+},
+"latest": {
+"p": "adj",
+"vn": "muộn nhất, chậm nhất, gần đây nhất"
+},
+"latter": {
+"p": "adj",
+"vn": "cùng, gần đây, mới đây"
+},
+"laugh": {
+"p": "v",
+"vn": "cười; tiếng cười"
+},
+"launch": {
+"p": "v",
+"vn": "hạ thủy (tàu); khai trương; sự hạ thủy, buổi giới thiệu sản phầm"
+},
+"law": {
+"p": "n",
+"vn": "luật"
+},
+"lawyer": {
+"p": "n",
+"vn": ", ˈlɔɪər luật sư"
+},
+"lay": {
+"p": "v",
+"vn": "xếp, đặt, bố trí"
+},
+"layer": {
+"p": "n",
+"vn": "lớp"
+},
+"leader": {
+"p": "n",
+"vn": "người lãnh đạo, lãnh tụ"
+},
+"leading": {
+"p": "adj",
+"vn": "lãnh đạo, dẫn đầu"
+},
+"leaf": {
+"p": "n",
+"vn": "lá cây, lá (vàng...)"
+},
+"league": {
+"p": "n",
+"vn": "liên minh, liên hoàn"
+},
+"lean": {
+"p": "v",
+"vn": "nghiêng, dựa, ỷ vào"
+},
+"learn": {
+"p": "v",
+"vn": "học, nghiên cứu"
+},
+"least": {
+"p": "det",
+"vn": "tối thiểu; ít nhất. at least: ít ra, ít nhất, chí ít"
+},
+"leather": {
+"p": "n",
+"vn": "thuộc"
+},
+"lecture": {
+"p": "n",
+"vn": "bài diễn thuyết, bài thuyết trình, bài nói chuyện"
+},
+"legal": {
+"p": "adj",
+"vn": "hợp pháp"
+},
+"legally": {
+"p": "adv",
+"vn": "li:gзlizm hợp pháp"
+},
+"lemon": {
+"p": "n",
+"vn": "quả chanh"
+},
+"lend": {
+"p": "v",
+"vn": "mượn"
+},
+"length": {
+"p": "n",
+"vn": "chiều dài, độ dài"
+},
+"less": {
+"p": "det",
+"vn": "nhỏ bé, ít hơn; số lượng ít hơn"
+},
+"lesson": {
+"p": "n",
+"vn": "bài học"
+},
+"letter": {
+"p": "n",
+"vn": "thư; chữ cái, mẫu tự"
+},
+"level": {
+"p": "n",
+"vn": "trình độ, cấp, vị trí; bằng, ngang bằng"
+},
+"library": {
+"p": "n",
+"vn": "thư viện"
+},
+"licence": {
+"p": "n",
+"vn": "bằng, chứng chỉ, bằng cử nhân; sự cho phép"
+},
+"license": {
+"p": "v",
+"vn": "laisзns cấp chứng chỉ, cấp bằng, cho phép"
+},
+"lid": {
+"p": "n",
+"vn": "nắp, vung (xoong, nồi..); mi mắt (eyelid)"
+},
+"life": {
+"p": "n",
+"vn": "đời, sự sống"
+},
+"lightly": {
+"p": "adv",
+"vn": "nhẹ nhàng"
+},
+"like": {
+"p": "prep",
+"vn": ", vconj laik giống như; thích; như"
+},
+"limit": {
+"p": "n",
+"vn": "giới hạn, ranh giới; giới hạn, hạn chế"
+},
+"limited": {
+"p": "adj",
+"vn": "hạn chế, có giới hạn"
+},
+"line": {
+"p": "n",
+"vn": "dây, đường, tuyến"
+},
+"lip": {
+"p": "n",
+"vn": "môi"
+},
+"liquid": {
+"p": "n",
+"vn": "chất lỏng; lỏng, êm ái, du dương, không vững"
+},
+"list": {
+"p": "n",
+"vn": "sách; ghi vào danh sách"
+},
+"listen to": {
+"p": "v",
+"vn": "lắng nghe"
+},
+"literature": {
+"p": "n",
+"vn": "văn chương, văn học"
+},
+"litre": {
+"p": "n",
+"vn": "lít"
+},
+"little": {
+"p": "adj",
+"vn": "nhỏ, bé, chút ít; không nhiều; một chút"
+},
+"lively": {
+"p": "adj",
+"vn": "sống, sinh động"
+},
+"living": {
+"p": "adj",
+"vn": "sống, đang sống"
+},
+"load": {
+"p": "n",
+"vn": "gánh nặng, vật nặng; chất, chở"
+},
+"locally": {
+"p": "adv",
+"vn": "có tính chat địa phương, cục bộ"
+},
+"locate": {
+"p": "v",
+"vn": "xác định vị trí, định vị"
+},
+"located": {
+"p": "adj",
+"vn": "định vị"
+},
+"lock": {
+"p": "v",
+"vn": "khóa; khóa"
+},
+"logic": {
+"p": "n",
+"vn": "lô gic"
+},
+"logical": {
+"p": "adj",
+"vn": "hợp lý, hợp logic"
+},
+"long": {
+"p": "adj",
+"vn": "dài, xa; lâu"
+},
+"look": {
+"p": "v",
+"vn": "nhìn; cái nhìn"
+},
+"loose": {
+"p": "adj",
+"vn": "lỏng, không chặt"
+},
+"loosely": {
+"p": "adv",
+"vn": "lỏng lẻo"
+},
+"lord": {
+"p": "n",
+"vn": "Chúa, vua"
+},
+"lorry": {
+"p": "n",
+"vn": "tải"
+},
+"loss": {
+"p": "n",
+"vn": ", lɒs sự mất, sự thua"
+},
+"lost": {
+"p": "adj",
+"vn": "mất"
+},
+"loudly": {
+"p": "adv",
+"vn": "ầm ĩ, inh ỏi"
+},
+"love": {
+"p": "n",
+"vn": "tình yêu, lòng yêu thương; yêu, thích"
+},
+"lovely": {
+"p": "adj",
+"vn": "đẹp, xinh xắn, có duyên"
+},
+"lover": {
+"p": "n",
+"vn": "người yêu, người tình"
+},
+"low": {
+"p": "adj",
+"vn": "thấp, bé, lùn"
+},
+"luck": {
+"p": "n",
+"vn": "mắn, vận may"
+},
+"lump": {
+"p": "n",
+"vn": "lΛmp cục, tảng, miếng; cái bướu"
+},
+"lung": {
+"p": "n",
+"vn": "phổi"
+},
+"machine": {
+"p": "n",
+"vn": "máy, máy móc"
+},
+"machinery": {
+"p": "n",
+"vn": "máy móc, thiết bị"
+},
+"mad": {
+"p": "adj",
+"vn": "điên, mất trí; bực điên người"
+},
+"magazine": {
+"p": "n",
+"vn": "tạp chí"
+},
+"magic": {
+"p": "n",
+"vn": "thuật, ảo thuật; (thuộc) ma thuật, ảo thuật"
+},
+"mail": {
+"p": "n",
+"vn": "thư tư, bưu kiện; gửi qua bưu điện"
+},
+"mainly": {
+"p": "adv",
+"vn": "chính, chủ yếu, phần lớn"
+},
+"maintain": {
+"p": "v",
+"vn": "giữ gìn, duy trì, bảo vệ"
+},
+"major": {
+"p": "adj",
+"vn": "lớn, nhiều hơn, trọng đại, chủ yếu"
+},
+"majority": {
+"p": "n",
+"vn": "phần lớn, đa số, ưu thế"
+},
+"make-up": {
+"p": "n",
+"vn": "đồ hóa trang, son phấn"
+},
+"male": {
+"p": "adj",
+"vn": "trống, đực; con trai, đàn ông, con trống, đực"
+},
+"man": {
+"p": "n",
+"vn": "người; đàn ông"
+},
+"management": {
+"p": "n",
+"vn": "sự quản lý, sự trông nom, sự điều khiển"
+},
+"manager": {
+"p": "n",
+"vn": "người quản lý, giám đốc"
+},
+"manner": {
+"p": "n",
+"vn": "cách, lối, kiểu; dáng, vẻ, thái độ"
+},
+"manufacture": {
+"p": "v",
+"vn": "sản xuất, chế tạo"
+},
+"manufacturer": {
+"p": "n",
+"vn": "người chế tạo, người sản xuất"
+},
+"manufacturing": {
+"p": "n",
+"vn": "sự sản xuất, sự chế tạo"
+},
+"many": {
+"p": "det",
+"vn": "nhiều"
+},
+"March": {
+"p": "n",
+"vn": "tháng ba"
+},
+"mark": {
+"p": "n",
+"vn": "dấu, nhãn, nhãn mác; đánh dấu, ghi dấu"
+},
+"marketing": {
+"p": "n",
+"vn": "mα:kitiη ma-kết-tinh"
+},
+"marriage": {
+"p": "n",
+"vn": "sự cưới xin, sự kết hôn, lễ cưới"
+},
+"marry": {
+"p": "v",
+"vn": "cưới (vợ), lấy (chồng)"
+},
+"mass": {
+"p": "n",
+"vn": "khối, khối lượng; quần chúng, đại chúng"
+},
+"massive": {
+"p": "adj",
+"vn": "lớn, đồ sộ"
+},
+"master": {
+"p": "n",
+"vn": "chủ, chủ nhân, thầy giáo, thạc sĩ"
+},
+"match": {
+"p": "n",
+"vn": "trận thi đấu, đối thủ, địch thủ; đối chọi, sánh được"
+},
+"matching": {
+"p": "adj",
+"vn": "tính địch thù, thi đấu"
+},
+"mate": {
+"p": "n",
+"vn": "bạn, bạn nghề; giao phối"
+},
+"material": {
+"p": "n",
+"vn": "nguyên vật liệu; vật chất, hữu hình"
+},
+"matter": {
+"p": "n",
+"vn": "chất, vật chất; có ý nghĩa, có tính chất quan trọng"
+},
+"maximum": {
+"p": "adj",
+"vn": "cực độ, tối đa; trị số cực đại, lượng cực đại, cực độ"
+},
+"may": {
+"p": "v",
+"vn": ", modal mei có thể, có lẽ"
+},
+"mayor": {
+"p": "n",
+"vn": "thị trưởng"
+},
+"me": {
+"p": "n",
+"vn": ", pro mi: tôi, tao, tớ"
+},
+"meaning": {
+"p": "n",
+"vn": "ý, ý nghĩa"
+},
+"means": {
+"p": "n",
+"vn": "của cải, tài sản, phương tiện. by means: of bằng phương tiện"
+},
+"meanwhile": {
+"p": "adv",
+"vn": "lúc đó, trong lúc ấy"
+},
+"measure": {
+"p": "v",
+"vn": "đo, đo lường; sự đo lường, đơn vị đo lường"
+},
+"measurement": {
+"p": "n",
+"vn": "sự đo lường, phép đo"
+},
+"meat": {
+"p": "n",
+"vn": "thịt"
+},
+"media": {
+"p": "n",
+"vn": "phương tiện truyền thông đại chúng"
+},
+"medium": {
+"p": "adj",
+"vn": "bình, trung, vưa; sự trung gian, sự môi giới"
+},
+"melt": {
+"p": "v",
+"vn": "chảy ra; làm tan chảy ra"
+},
+"member": {
+"p": "n",
+"vn": "thành viên, hội viên"
+},
+"membership": {
+"p": "n",
+"vn": "tư cách hội viên, địa vị hội viên"
+},
+"memory": {
+"p": "n",
+"vn": "bộ nhớ, trí nhớ, kỉ niệm. in memory of: sự tưởng nhớ"
+},
+"mentally": {
+"p": "adv",
+"vn": "về mặt tinh thần"
+},
+"mention": {
+"p": "v",
+"vn": "kể ra, nói đến, đề cập"
+},
+"mere": {
+"p": "adj",
+"vn": "chỉ là"
+},
+"merely": {
+"p": "adv",
+"vn": "chỉ, đơn thuần"
+},
+"mess": {
+"p": "n",
+"vn": "tình trạng bưa bộn, tình trạng lộn xộn; người nhếch nhác, bẩn thỉu"
+},
+"metal": {
+"p": "n",
+"vn": "loại"
+},
+"method": {
+"p": "n",
+"vn": "phương pháp, cách thức"
+},
+"metre": {
+"p": "n",
+"vn": "mét"
+},
+"midday": {
+"p": "n",
+"vn": "trưa, buổi trưa"
+},
+"midnight": {
+"p": "n",
+"vn": "nửa đêm, 12h đêm"
+},
+"might modal": {
+"p": "v",
+"vn": "có thể, có lẽ"
+},
+"mild": {
+"p": "adj",
+"vn": "nhẹ, êm dịu, ôn hòa"
+},
+"mile": {
+"p": "n",
+"vn": "dặm (đo lường)"
+},
+"military": {
+"p": "adj",
+"vn": "(thuộc) quân đội, quân sự"
+},
+"mind": {
+"p": "n",
+"vn": "tâm trí, tinh thần, trí tuệ; chú ý, để ý, chăm sóc, quan tâm"
+},
+"mine": {
+"p": "pron",
+"vn": "của tôi"
+},
+"mineral": {
+"p": "n",
+"vn": ", ˈmɪnrəl công nhân, thợ mỏ; khoáng"
+},
+"minimum": {
+"p": "adj",
+"vn": "tối thiểu; số lượng tối thiểu, mức tối thiểu"
+},
+"minister": {
+"p": "n",
+"vn": "bộ trưởng"
+},
+"ministry": {
+"p": "n",
+"vn": "bộ"
+},
+"minor": {
+"p": "adj",
+"vn": "nhỏ hơn, thứ yếu, không quan trọng"
+},
+"minority": {
+"p": "n",
+"vn": "phần ít, thiểu số"
+},
+"mirror": {
+"p": "n",
+"vn": "gương"
+},
+"miss": {
+"p": "v",
+"vn": "lỡ, trượt; sự trượt, sự thiếu vắng"
+},
+"missing": {
+"p": "adj",
+"vn": "vắng, thiếu, thất lạc"
+},
+"mistake": {
+"p": "n",
+"vn": "lỗi, sai lầm, lỗi lầm; phạm lỗi, phạm sai lầm"
+},
+"mistaken": {
+"p": "adj",
+"vn": "lầm, hiểu lầm"
+},
+"mix": {
+"p": "v",
+"vn": "trộn lẫn; sự pha trộn"
+},
+"mixed": {
+"p": "adj",
+"vn": "lẫn lộn, pha trộn"
+},
+"mixture": {
+"p": "n",
+"vn": "sự pha trộn, sự hỗn hợp"
+},
+"mobile": {
+"p": "adj",
+"vn": "chuyển động, di động"
+},
+"mobile phone": {
+"p": "n",
+"vn": "điện thoại đi động"
+},
+"model": {
+"p": "n",
+"vn": "mẫu, kiểu mẫu"
+},
+"moment": {
+"p": "n",
+"vn": "chốc, lát"
+},
+"Monday": {
+"p": "n",
+"vn": "thứ 2"
+},
+"monitor": {
+"p": "n",
+"vn": "lớp trưởng, màn hình máy tính; nghe, ghi phát thanh, giám sát"
+},
+"moon": {
+"p": "n",
+"vn": "mặt trăng"
+},
+"moral": {
+"p": "adj",
+"vn": ", ˈmɒrəl (thuộc) đạo đức, luân lý, phẩm hạnh; có đạo đức"
+},
+"morally": {
+"p": "adv",
+"vn": "có đạo đức"
+},
+"more": {
+"p": "det",
+"vn": "hơn, nhiều hơn"
+},
+"moreover": {
+"p": "adv",
+"vn": "hơn nữa, ngoài ra, vả lại"
+},
+"most": {
+"p": "det",
+"vn": ", pro, n, adv moust lớn nhất, nhiều nhất; nhất, hơn cả"
+},
+"mostly": {
+"p": "adv",
+"vn": "hầu hết, chủ yếu là"
+},
+"motion": {
+"p": "n",
+"vn": "sự chuyển động, sụ di động"
+},
+"motor": {
+"p": "n",
+"vn": "động cơ mô tô"
+},
+"motorcycle": {
+"p": "n",
+"vn": "mô tô"
+},
+"mount": {
+"p": "v",
+"vn": "trèo; núi"
+},
+"mountain": {
+"p": "n",
+"vn": "núi"
+},
+"mouse": {
+"p": "n",
+"vn": "chuột"
+},
+"movement": {
+"p": "n",
+"vn": "sự chuyển động, sự hoạt động; cử động, động tác"
+},
+"movie": {
+"p": "n",
+"vn": "nê"
+},
+"movie theater": {
+"p": "n",
+"vn": "rạp chiếu phim"
+},
+"moving": {
+"p": "adj",
+"vn": "động, hoạt động"
+},
+"Mr": {
+"p": "",
+"vn": "Ông, ngài"
+},
+"Mrs": {
+"p": "",
+"vn": "Cô"
+},
+"Ms": {
+"p": "",
+"vn": "Bà, Cô"
+},
+"much": {
+"p": "det",
+"vn": "nhiều, lắm"
+},
+"mud": {
+"p": "n",
+"vn": "bùn"
+},
+"multiply": {
+"p": "v",
+"vn": "nhân lên, làm tăng lên nhiều lần; sinh sôi nảy nở"
+},
+"mum": {
+"p": "n",
+"vn": "mẹ"
+},
+"murder": {
+"p": "n",
+"vn": "tội giết người, tội ám sát; giết người, ám sát"
+},
+"muscle": {
+"p": "n",
+"vn": "cơ, bắp thịt"
+},
+"museum": {
+"p": "n",
+"vn": "bảo tàng"
+},
+"music": {
+"p": "n",
+"vn": "nhạc, âm nhạc"
+},
+"musical": {
+"p": "adj",
+"vn": "(thuộc) nhạc, âm nhạc; du dương, êm ái"
+},
+"musician": {
+"p": "n",
+"vn": "nhạc sĩ"
+},
+"must": {
+"p": "v",
+"vn": ", modal mʌst phải, cần, nên làm"
+},
+"my": {
+"p": "det",
+"vn": "của tôi"
+},
+"myself": {
+"p": "pron",
+"vn": "tự tôi, chính tôi"
+},
+"mysterious": {
+"p": "adj",
+"vn": "thần bí, huyền bí, khó hiểu"
+},
+"mystery": {
+"p": "n",
+"vn": "điều huyền bí, điều thần bí"
+},
+"nail": {
+"p": "n",
+"vn": "móng (tay, chân) móng vuốt"
+},
+"naked": {
+"p": "adj",
+"vn": "trần, khỏa thân, trơ trụi"
+},
+"narrow": {
+"p": "adj",
+"vn": "hẹp, chật hẹp"
+},
+"nation": {
+"p": "n",
+"vn": "nei∫n dân tộc, quốc gia"
+},
+"natural": {
+"p": "adj",
+"vn": "(thuộc) tự nhiên, thiên nhiên"
+},
+"naturally": {
+"p": "adv",
+"vn": "vốn, tự nhiên, đương nhiên"
+},
+"nature": {
+"p": "n",
+"vn": "tự nhiên, thiên nhiên"
+},
+"navy": {
+"p": "n",
+"vn": "hải quân"
+},
+"nearby": {
+"p": "adj",
+"vn": "gần"
+},
+"neat": {
+"p": "adj",
+"vn": "sạch, ngăn nắp; rành mạch"
+},
+"neatly": {
+"p": "adv",
+"vn": "gọn gàng, ngăn nắp"
+},
+"necessarily": {
+"p": "adv",
+"vn": "tất yếu, nhất thiết"
+},
+"needle": {
+"p": "n",
+"vn": "cái kim, mũi nhọn"
+},
+"neighbour": {
+"p": "n",
+"vn": "hàng xóm"
+},
+"neighbourhood": {
+"p": "n",
+"vn": "hàng xóm, làng giềng"
+},
+"neither": {
+"p": "det",
+"vn": "không này mà cũng không kia"
+},
+"nephew": {
+"p": "n",
+"vn": "cháu trai (con anh, chị, em)"
+},
+"nerve": {
+"p": "n",
+"vn": "khí lực, thần kinh, can đảm"
+},
+"nervously": {
+"p": "adv",
+"vn": "nз:vзstli bồn chồn, lo lắng"
+},
+"nest": {
+"p": "n",
+"vn": "tổ, ổ; làm tổ"
+},
+"net": {
+"p": "n",
+"vn": "lưới, mạng"
+},
+"nevertheless": {
+"p": "adv",
+"vn": "nhiên, tuy thế mà"
+},
+"new": {
+"p": "adj",
+"vn": "mới, mới mẻ, mới lạ"
+},
+"newly": {
+"p": "adv",
+"vn": "mới"
+},
+"news": {
+"p": "n",
+"vn": "tức"
+},
+"newspaper": {
+"p": "n",
+"vn": "báo"
+},
+"next": {
+"p": "adj",
+"vn": "sát, gần, bên cạnh; lần sau, tiếp nữa. next to: Gần"
+},
+"nice": {
+"p": "adj",
+"vn": "đẹp, thú vị, dễ chịu"
+},
+"nicely": {
+"p": "adv",
+"vn": "thú vị, dễ chịu"
+},
+"niece": {
+"p": "n",
+"vn": "cháu gái"
+},
+"no exclamation": {
+"p": "det",
+"vn": "không"
+},
+"nobody": {
+"p": "pron",
+"vn": "không ai, không người nào"
+},
+"noise": {
+"p": "n",
+"vn": "tiếng ồn, sự huyên náo"
+},
+"noisily": {
+"p": "adv",
+"vn": "ồn ào, huyên náo"
+},
+"noisy": {
+"p": "adj",
+"vn": "ồn ào, huyên náo"
+},
+"non-": {
+"p": "",
+"vn": "không"
+},
+"none": {
+"p": "n",
+"vn": ", pro nʌn không ai, không người, vật gì"
+},
+"nonsense": {
+"p": "n",
+"vn": "lời nói vô lý, vô nghĩa"
+},
+"nor": {
+"p": "adv",
+"vn": "cũng không"
+},
+"normally": {
+"p": "adv",
+"vn": "no:mзli thông thường, như thường lệ"
+},
+"north": {
+"p": "n",
+"vn": "phía bắc, phương bắc"
+},
+"northern": {
+"p": "adj",
+"vn": "Bắc"
+},
+"not": {
+"p": "adv",
+"vn": "không"
+},
+"nothing": {
+"p": "pron",
+"vn": "không gì, không cái gì"
+},
+"notice": {
+"p": "n",
+"vn": "thông báo, yết thị; chú ý, để ý, nhận biết. take notice of chú ý"
+},
+"noticeable": {
+"p": "adj",
+"vn": "đáng chú ý, đáng để ý"
+},
+"novel": {
+"p": "n",
+"vn": "tiểu thuyết, truyện"
+},
+"November": {
+"p": "n",
+"vn": "tháng 11"
+},
+"nowhere": {
+"p": "adv",
+"vn": "không nơi nào, không ở đâu"
+},
+"nuclear": {
+"p": "adj",
+"vn": "nju:kliз (thuộc) hạt nhân"
+},
+"number no": {
+"p": "n",
+"vn": "số"
+},
+"nut": {
+"p": "n",
+"vn": "quả hạch; đầu"
+},
+"o clock": {
+"p": "adv",
+"vn": "đúng giờ"
+},
+"obey": {
+"p": "v",
+"vn": "vâng lời, tuân theo, tuân lệnh"
+},
+"object": {
+"p": "n",
+"vn": "; (v) əbˈdʒɛkt vật, vật thể, đối tượng; phản đối,chống lại"
+},
+"objective": {
+"p": "n",
+"vn": "mục tiêu, mục đích; (thuộc) mục tiêu, khách quan"
+},
+"observation": {
+"p": "n",
+"vn": "sự quan sát, sự theo dõi"
+},
+"observe": {
+"p": "v",
+"vn": "sát, theo dõi"
+},
+"obtain": {
+"p": "v",
+"vn": "đạt được, giành được"
+},
+"obviously": {
+"p": "adv",
+"vn": "một cách rõ ràng, có thể thấy được"
+},
+"occasion": {
+"p": "n",
+"vn": "dịp, cơ hội"
+},
+"occasionally": {
+"p": "adv",
+"vn": "з'keiЗnзli thỉnh thoảng, đôi khi"
+},
+"occupied": {
+"p": "adj",
+"vn": "đang sử dụng, đầy (người)"
+},
+"occupy": {
+"p": "v",
+"vn": "giữ, chiếm lĩnh, chiếm giữ"
+},
+"occur": {
+"p": "v",
+"vn": "xảy ra, xảy đến, xuất hiện"
+},
+"ocean": {
+"p": "n",
+"vn": "đại dương"
+},
+"October": {
+"p": "n",
+"vn": "tháng 10"
+},
+"odd": {
+"p": "adj",
+"vn": "kỳ quặc, kỳ cục, lẻ (số)"
+},
+"oddly": {
+"p": "adv",
+"vn": "kỳ quặc, kỳ cục, lẻ (số)"
+},
+"of": {
+"p": "prep",
+"vn": "của"
+},
+"off": {
+"p": "adv",
+"vn": "tắt; khỏi, cách, rời"
+},
+"offence": {
+"p": "n",
+"vn": "sự vi phạm, sự phạm tội"
+},
+"offend": {
+"p": "v",
+"vn": "xúc phạm, làm bực mình, làm khó chịu"
+},
+"offensive": {
+"p": "n",
+"vn": "sự tấn công, cuộc tấn công, sỉ nhục"
+},
+"office": {
+"p": "n",
+"vn": "cơ quấn, văn phòng, bộ"
+},
+"officer": {
+"p": "n",
+"vn": "viên chức, cảnh sát, sĩ quấn"
+},
+"officially": {
+"p": "adv",
+"vn": "một cách trịnh trọng, một cách chính thức"
+},
+"oh": {
+"p": "",
+"vn": "ôi chao, chà, này.."
+},
+"oil": {
+"p": "n",
+"vn": "dầu"
+},
+"OK exclamation": {
+"p": "adj",
+"vn": "đồng ý, tán thành"
+},
+"old-fashioned": {
+"p": "adj",
+"vn": "lỗi thời"
+},
+"on": {
+"p": "adv",
+"vn": "trên, ở trên; tiếp tục, tiếp diễn"
+},
+"once": {
+"p": "adv",
+"vn": "một lần; khi mà, ngay khi, một khi"
+},
+"one": {
+"p": "num",
+"vn": "một; một người, một vật nào đó"
+},
+"onion": {
+"p": "n",
+"vn": "củ hành"
+},
+"only": {
+"p": "adj",
+"vn": "chỉ có 1, duy nhất; chỉ, mới"
+},
+"onto": {
+"p": "prep",
+"vn": "về phía trên, lên trên"
+},
+"open": {
+"p": "adj",
+"vn": "mở, ngỏ; mở, bắt đầu, khai mạc"
+},
+"opening": {
+"p": "n",
+"vn": "hở, lỗ; sự bắt đầu, sự khai mạc, lễ khánh thành"
+},
+"openly": {
+"p": "adv",
+"vn": "công khai, thẳng thắn"
+},
+"operate": {
+"p": "v",
+"vn": "hoạt động, điều khiển"
+},
+"opinion": {
+"p": "n",
+"vn": "ý kiến, quan điểm"
+},
+"opponent": {
+"p": "n",
+"vn": "địch thủ, đối thủ, kẻ thù"
+},
+"oppose": {
+"p": "v",
+"vn": "đối kháng, đối chọi, đối lập; chống đối, phản đối"
+},
+"opposed": {
+"p": "",
+"vn": "chống lại, phản đối"
+},
+"opposing": {
+"p": "adj",
+"vn": "з'pouziη tính đối kháng, đối chọi"
+},
+"opposite": {
+"p": "adj",
+"vn": ", nprep ɔpəzit đối nhau, ngược nhau; trước mặt, đối diện; điều trái ngược"
+},
+"opposition": {
+"p": "n",
+"vn": "sự đối lập, sự đối nhau; sự chống lại, sự phản đối; phe đối lập"
+},
+"option": {
+"p": "n",
+"vn": "sự lựa chọn"
+},
+"orange": {
+"p": "n",
+"vn": "quả cam; có màu da cam"
+},
+"order": {
+"p": "n",
+"vn": "thứ, bậc; ra lệnh. in order to hợp lệ"
+},
+"ordinary": {
+"p": "adj",
+"vn": "thường, thông thường"
+},
+"organ": {
+"p": "n",
+"vn": "đàn óoc gan"
+},
+"organization": {
+"p": "n",
+"vn": "tổ chức, cơ quan; sự tổ chức"
+},
+"organize": {
+"p": "v",
+"vn": "tổ chức, thiết lập"
+},
+"organized": {
+"p": "adj",
+"vn": "o:gзnaizd có trật tự, ngăn nắp, được sắp xếp, được tổ chức"
+},
+"origin": {
+"p": "n",
+"vn": "gốc, nguồn gốc, căn nguyên"
+},
+"original": {
+"p": "adj",
+"vn": "(thuộc) gốc, nguồn gốc, căn nguyên; nguyên bản"
+},
+"originally": {
+"p": "adv",
+"vn": "một cách sáng tạo, mới mẻ, độc đáo; khởi đầu, đầu tiên"
+},
+"other": {
+"p": "adj",
+"vn": "khác"
+},
+"ought to": {
+"p": "v",
+"vn": ", modal ɔ:t phải, nên, hẳn là"
+},
+"our": {
+"p": "det",
+"vn": "của chúng ta, thuộc chúng ta, của chúng tôi, của chúng mình"
+},
+"ours": {
+"p": "n",
+"vn": "của chúng ta, thuộc chúng ta, của chúng tôi, của chúng mình"
+},
+"ourselves": {
+"p": "pron",
+"vn": "bản thân chúng ta, bản thân chúng tôi, bản thân chúng mình; tự chúng mình"
+},
+"out of": {
+"p": "adv",
+"vn": "ngoài, ở ngoài, ra ngoài"
+},
+"outdoor": {
+"p": "adj",
+"vn": "ngoài trời, ở ngoài"
+},
+"outdoors": {
+"p": "adv",
+"vn": "ở ngoài trời, ở ngoài nhà"
+},
+"outer": {
+"p": "adj",
+"vn": "ở phía ngoài, ở xa hơn"
+},
+"outline": {
+"p": "v",
+"vn": "vẽ, phác tảo; đường nét, hình dáng, nét ngoài"
+},
+"output": {
+"p": "n",
+"vn": "sự sản xuất; sản phẩm, sản lượng"
+},
+"outstanding": {
+"p": "adj",
+"vn": "nổi bật, đáng chú ý; còn tồn lại"
+},
+"oven": {
+"p": "n",
+"vn": "lò (nướng)"
+},
+"overall": {
+"p": "adj",
+"vn": "toàn bộ, toàn thể; tất cả, bao gồm"
+},
+"overcome": {
+"p": "v",
+"vn": "thắng, chiến thắng, khắc phục, đánh bại (khó khăn)"
+},
+"owe": {
+"p": "v",
+"vn": "nợ, hàm ơn; có được (cái gì)"
+},
+"own": {
+"p": "adj",
+"vn": "của chính mình, tự mình; nhận, nhìn nhận"
+},
+"owner": {
+"p": "n",
+"vn": "người chủ, chủ nhân"
+},
+"pace": {
+"p": "n",
+"vn": "bước chân, bước"
+},
+"pack": {
+"p": "v",
+"vn": "gói, bọc; bó, gói"
+},
+"package": {
+"p": "n",
+"vn": "gói đồ, bưu kiện; đóng gói, đóng kiện"
+},
+"packaging": {
+"p": "n",
+"vn": "bì"
+},
+"packet": {
+"p": "n",
+"vn": "gói nhỏ"
+},
+"page": {
+"p": "n",
+"vn": "(sách)"
+},
+"paint": {
+"p": "n",
+"vn": "sơn, vôi màu; sơn, quét sơn"
+},
+"painter": {
+"p": "n",
+"vn": "họa sĩ"
+},
+"painting": {
+"p": "n",
+"vn": "sự sơn; bức họa, bức tranh"
+},
+"pair": {
+"p": "n",
+"vn": "đôi, cặp"
+},
+"palace": {
+"p": "n",
+"vn": "điện, lâu đài"
+},
+"pale": {
+"p": "adj",
+"vn": "taí, nhợt"
+},
+"pan": {
+"p": "n",
+"vn": "chảo"
+},
+"panel": {
+"p": "n",
+"vn": "ván ô (cửa, tường), pa nô"
+},
+"pants": {
+"p": "n",
+"vn": "quần lót, quần đùi dài"
+},
+"paper": {
+"p": "n",
+"vn": "giấy"
+},
+"parallel": {
+"p": "adj",
+"vn": "tương đương"
+},
+"parent": {
+"p": "n",
+"vn": "mẹ"
+},
+"park": {
+"p": "n",
+"vn": "công viên, vườn hoa; khoanh vùng thành công viên"
+},
+"parliament": {
+"p": "n",
+"vn": "viện, quốc hội"
+},
+"part": {
+"p": "n",
+"vn": "phần, bộ phận"
+},
+"particularly": {
+"p": "adv",
+"vn": "một cách đặc biệt, cá biệt, riêng biệt"
+},
+"partly": {
+"p": "adv",
+"vn": "đến chừng mực nào đó, phần nào đó"
+},
+"partnership": {
+"p": "n",
+"vn": "sự chung phần, sự cộng tác"
+},
+"party": {
+"p": "n",
+"vn": "tiệc, buổi liên hoan; đảng"
+},
+"passage": {
+"p": "n",
+"vn": "sự đi qua, sự trôi qua; hành lang"
+},
+"passenger": {
+"p": "n",
+"vn": "hành khách"
+},
+"passing": {
+"p": "n",
+"vn": "sự đi qua, sự trôi qua; thoáng qua ngắn ngủi"
+},
+"past": {
+"p": "adj",
+"vn": "quá khứ, dĩ vãng; quá, qua"
+},
+"path": {
+"p": "n",
+"vn": "đường mòn; hướng đi"
+},
+"patience": {
+"p": "n",
+"vn": "tính kiên nhẫn, nhẫn nại, kiên trì, sự chịu đựng"
+},
+"pattern": {
+"p": "n",
+"vn": "mẫu, khuôn mẫu"
+},
+"pause": {
+"p": "v",
+"vn": "tạm nghỉ, dưng; sự tạm nghỉ, sự tạm ngưng"
+},
+"payment": {
+"p": "n",
+"vn": "sự trả tiền, số tiền trả, tiền bồi thường"
+},
+"peace": {
+"p": "n",
+"vn": "hòa bình, sự hòa thuận"
+},
+"peaceful": {
+"p": "adj",
+"vn": "hòa bình, thái bình, yên tĩnh"
+},
+"peak": {
+"p": "n",
+"vn": "lưỡi trai; đỉnh, chóp"
+},
+"pen": {
+"p": "n",
+"vn": "bút"
+},
+"pence": {
+"p": "n",
+"vn": "đồng xu"
+},
+"pencil": {
+"p": "n",
+"vn": "bút chì"
+},
+"penny": {
+"p": "n",
+"vn": "đồng xu"
+},
+"pension": {
+"p": "n",
+"vn": "tiền trợ cấp, lương hưu"
+},
+"people": {
+"p": "n",
+"vn": "dân tộc, dòng giống; người"
+},
+"pepper": {
+"p": "n",
+"vn": "hạt tiêu, cây ớt"
+},
+"per": {
+"p": "prep",
+"vn": "mỗi"
+},
+"per cent usn": {
+"p": "adj",
+"vn": "phần trăm"
+},
+"perfectly": {
+"p": "adv",
+"vn": "một cách hoàn hảo"
+},
+"perform": {
+"p": "v",
+"vn": "biểu diễn; làm, thực hiện"
+},
+"performance": {
+"p": "n",
+"vn": "sự làm, sự thực hiện, sự thi hành, sự biểu diễn"
+},
+"performer": {
+"p": "n",
+"vn": "người biểu diễn, người trình diễn"
+},
+"perhaps": {
+"p": "adv",
+"vn": "có thể, có lẽ"
+},
+"permanent": {
+"p": "adj",
+"vn": "lâu dài, vĩnh cửu, thường xuyên"
+},
+"permanently": {
+"p": "adv",
+"vn": "cách thường xuyên, vĩnh cửu"
+},
+"permit": {
+"p": "v",
+"vn": "phép, cho cơ hội"
+},
+"person": {
+"p": "n",
+"vn": "người, người"
+},
+"personal": {
+"p": "adj",
+"vn": "cá nhân, tư, riêng tư"
+},
+"personality": {
+"p": "n",
+"vn": "nhân cách, tính cách; nhân phẩm, cá tính"
+},
+"personally": {
+"p": "adv",
+"vn": "đích thân, bản thân, về phần tôi, đối với tôi"
+},
+"pet": {
+"p": "n",
+"vn": "cơn nóng giận; vật cưng, người được yêu thích"
+},
+"petrol": {
+"p": "n",
+"vn": "xăng dầu"
+},
+"phase": {
+"p": "n",
+"vn": "tuần trăng; giai đoạn, thời kỳ"
+},
+"philosophy": {
+"p": "n",
+"vn": "triết học, triết lý"
+},
+"photocopy": {
+"p": "n",
+"vn": "bản sao chụp; sao chụp"
+},
+"photograph": {
+"p": "n",
+"vn": "ảnh, bức ảnh; chụp ảnh"
+},
+"photographer": {
+"p": "n",
+"vn": "thợ chụp ảnh, nhà nhiếp ảnh"
+},
+"photography": {
+"p": "n",
+"vn": "thuật chụp ảnh, nghề nhiếp ảnh"
+},
+"phrase": {
+"p": "n",
+"vn": "câu; thành ngữ, cụm tư"
+},
+"physical": {
+"p": "adj",
+"vn": "vật chất; (thuộc) cơ thể, thân thể"
+},
+"physically": {
+"p": "adv",
+"vn": "về thân thể, theo luật tự nhiên"
+},
+"physics": {
+"p": "n",
+"vn": "vật lý học"
+},
+"piano": {
+"p": "n",
+"vn": "đàn pianô, dương cầm"
+},
+"pick": {
+"p": "v",
+"vn": "cuốc (đất); đào, khoét (lỗ). pick sth up cuốc, vỡ, xé"
+},
+"picture": {
+"p": "n",
+"vn": "bức vẽ, bức họa"
+},
+"piece": {
+"p": "n",
+"vn": "mảnh, mẩu; đồng tiền"
+},
+"pig": {
+"p": "n",
+"vn": "lợn"
+},
+"pile": {
+"p": "n",
+"vn": "cọc, chồng, đống, pin; đóng cọc, chất chồng"
+},
+"pill": {
+"p": "n",
+"vn": "viên thuốc"
+},
+"pilot": {
+"p": "n",
+"vn": "công"
+},
+"pin": {
+"p": "n",
+"vn": "đinh ghim; ghim., kẹp"
+},
+"pink": {
+"p": "adj",
+"vn": "piηk màu hồng; hoa cẩm chướng, tình trạng tốt, hoàn hảo"
+},
+"pint": {
+"p": "n",
+"vn": "Panh (đơn vị (đo lường) ở Anh bằng 0, 58 lít; ở Mỹ bằng 0, 473 lít); panh, lít (bia, sữa) a pint of beer + một panh bia"
+},
+"pipe": {
+"p": "n",
+"vn": "ống dẫn (khí, nước...)"
+},
+"pity": {
+"p": "n",
+"vn": "lòng thương hại, điều đáng tiếc, đáng thương"
+},
+"place": {
+"p": "n",
+"vn": "nơi, địa điểm; quảng trường. take place: xảy ra, được cử hành, được tổ chức"
+},
+"plain": {
+"p": "adj",
+"vn": "thẳng, đơn giản, chất phác"
+},
+"plane": {
+"p": "n",
+"vn": "mặt phẳng, mặt bằng, máy bay"
+},
+"planet": {
+"p": "n",
+"vn": "hành tinh"
+},
+"planning": {
+"p": "n",
+"vn": "sự lập kế hoạch, sự quy hoạch"
+},
+"plant": {
+"p": "n",
+"vn": ", plɑnt thực vật, sự mọc lên; trồng, gieo"
+},
+"plastic": {
+"p": "n",
+"vn": "chất dẻo, làm bằng chất dẻo"
+},
+"plate": {
+"p": "n",
+"vn": "bản, tấm kim loại"
+},
+"platform": {
+"p": "n",
+"vn": "nền, bục, bệ; thềm, sân ga"
+},
+"player": {
+"p": "n",
+"vn": "pleiз người chơi 1 trò chơi nào đó (nhạc cụ)"
+},
+"pleasant": {
+"p": "adj",
+"vn": "vẻ, dễ thương; dịu dàng, thân mật"
+},
+"pleasantly": {
+"p": "adv",
+"vn": "vẻ, dễ thương; thân mật"
+},
+"please exclamation": {
+"p": "v",
+"vn": "làm vui lòng, vưa lòng, mong... vui lòng, xin mời"
+},
+"pleased": {
+"p": "adj",
+"vn": "hài lòng"
+},
+"pleasing": {
+"p": "adj",
+"vn": "lại niềm vui thích; dễ chịu"
+},
+"pleasure": {
+"p": "n",
+"vn": "niềm vui thích, điều thích thú, điều thú vị; ý muốn, ý thích"
+},
+"plenty": {
+"p": "n",
+"vn": ", pro plenti nhiều (s.k.lượng); chỉ sự thưa; sự sung túc, sự p.phú"
+},
+"plot": {
+"p": "n",
+"vn": "mảnh đất nhỏ, sơ đồ, đồ thị, đồ án; vẽ sơ đồ, dựng đồ án"
+},
+"plug": {
+"p": "n",
+"vn": "nút (thùng, chậu, bồ(n)..), cái phíc cắm"
+},
+"plus": {
+"p": "n",
+"vn": "cộng với (số, người...); dấu cộng; cộng, thêm vào"
+},
+"pocket": {
+"p": "n",
+"vn": "túi (quần áo, trong xe hơi), túi tiền"
+},
+"poem": {
+"p": "n",
+"vn": "bài thơ"
+},
+"poetry": {
+"p": "n",
+"vn": "chất thơ"
+},
+"point": {
+"p": "n",
+"vn": "mũi nhọn, điểm; vót, làm nhọn, chấm (câu..)"
+},
+"pointed": {
+"p": "adj",
+"vn": "nhọn, có đầu nhọn"
+},
+"poison": {
+"p": "n",
+"vn": "chất độc, thuốc độc; đánh thuốc độc, tẩm thuốc độc"
+},
+"poisonous": {
+"p": "adj",
+"vn": "độc, có chất độc, gây chết, bệnh"
+},
+"pole": {
+"p": "n",
+"vn": "người Ba Lan; cực (nam châm, trái đat...)"
+},
+"police": {
+"p": "n",
+"vn": "cảnh sát, công an"
+},
+"policy": {
+"p": "n",
+"vn": "chính sách"
+},
+"polish": {
+"p": "n",
+"vn": "nước bóng, nước láng; đánh bóng, làm cho láng"
+},
+"politely": {
+"p": "adv",
+"vn": "lễ phép, lịch sự"
+},
+"political": {
+"p": "adj",
+"vn": "về chính trị, về chính phủ, có tính chính trị"
+},
+"politically": {
+"p": "adv",
+"vn": "về mặt chính trị; khôn ngoan, thận trọng; sảo quyệt"
+},
+"politician": {
+"p": "n",
+"vn": "nhà chính trị, chính khách"
+},
+"politics": {
+"p": "n",
+"vn": "họat động chính trị, đời sống chính trị, quan điểm chính trị"
+},
+"pollution": {
+"p": "n",
+"vn": "sự ô nhiễm"
+},
+"pool": {
+"p": "n",
+"vn": "vũng nước; bể bơi, hồ bơi"
+},
+"pop": {
+"p": "n",
+"vn": "NAmE pɑːp tiếp bốp, phong cách dân gian hiện đại; nổ bốp"
+},
+"population": {
+"p": "n",
+"vn": "dân cư, dân số; mật độ dân số"
+},
+"port": {
+"p": "n",
+"vn": "cảng"
+},
+"pose": {
+"p": "v",
+"vn": "đưa ra, đề ra, đặt; sự đặt, đề ra"
+},
+"possess": {
+"p": "v",
+"vn": "có, chiếm hữu"
+},
+"possession": {
+"p": "n",
+"vn": "quyền sở hữu, vật sở hữu"
+},
+"possibility": {
+"p": "n",
+"vn": "khả năng, triển vọng"
+},
+"possibly": {
+"p": "adv",
+"vn": "có lẽ, có thể, có thể chấp nhận được"
+},
+"post": {
+"p": "n",
+"vn": "thư, bưu kiện; gửi thư"
+},
+"post office": {
+"p": "n",
+"vn": "bưu điện"
+},
+"pot": {
+"p": "n",
+"vn": "bình, lọ..."
+},
+"potato": {
+"p": "n",
+"vn": "tây"
+},
+"potential": {
+"p": "adj",
+"vn": "tiềm năng; khả năng, tiềm lực"
+},
+"potentially": {
+"p": "adv",
+"vn": "tiềm năng, tiềm ẩn"
+},
+"pound": {
+"p": "n",
+"vn": "đơn vị đo lường"
+},
+"pour": {
+"p": "v",
+"vn": "rót, đổ, giội"
+},
+"powder": {
+"p": "n",
+"vn": "bột, bụi"
+},
+"power": {
+"p": "n",
+"vn": "khả năng, tài năng, năng lực; sức mạnh, nội lực; quyền lực"
+},
+"powerful": {
+"p": "adj",
+"vn": "hùng mạnh, hùng cường"
+},
+"practical": {
+"p": "adj",
+"vn": "thực hành; thực tế"
+},
+"practically": {
+"p": "adv",
+"vn": "về mặt thực hành; thực tế"
+},
+"practice": {
+"p": "n",
+"vn": "thực hành, thực tiễn"
+},
+"practise": {
+"p": "v",
+"vn": "thực hành, tập luyện"
+},
+"praise": {
+"p": "n",
+"vn": "sự ca ngợi, sự tán dương, lòng tôn kính, tôn thờ; khen ngợi, tán dương"
+},
+"prayer": {
+"p": "n",
+"vn": "sự cầu nguyện"
+},
+"precise": {
+"p": "adj",
+"vn": "rõ ràng, chính xác; tỉ mỉ, kỹ tính"
+},
+"precisely": {
+"p": "adv",
+"vn": "đúng, chính xác, cần thận"
+},
+"predict": {
+"p": "v",
+"vn": "báo trước, tiên đoán, dự báo"
+},
+"prefer": {
+"p": "v",
+"vn": "thích hơn"
+},
+"preference": {
+"p": "n",
+"vn": "sự thích hơn, sự ưa hơn; cái được ưa thích hơn"
+},
+"pregnant": {
+"p": "adj",
+"vn": "giàu trí tưởng tượng, sáng tạo"
+},
+"premises": {
+"p": "n",
+"vn": "biệt thự"
+},
+"preparation": {
+"p": "n",
+"vn": "sự sửa soạn, sự chuẩn bị"
+},
+"prepared": {
+"p": "adj",
+"vn": "đã được chuẩn bị"
+},
+"presence": {
+"p": "n",
+"vn": "sự hiện diện, sự có mặt; người, vât hiện diện"
+},
+"preserve": {
+"p": "v",
+"vn": "bảo quản, giữ gìn"
+},
+"president": {
+"p": "n",
+"vn": "hiệu trưởng, chủ tịnh, tổng thống"
+},
+"press": {
+"p": "n",
+"vn": "sự ép, sự nén, sự ấn; ép, nén, bóp, ấn"
+},
+"pressure": {
+"p": "n",
+"vn": "sức ép, áp lực, áp suất"
+},
+"presumably": {
+"p": "adv",
+"vn": "có thể được, có lẽ"
+},
+"pretend": {
+"p": "v",
+"vn": "giả vờ, giả bộ, làm ra vẻ"
+},
+"pretty": {
+"p": "adv",
+"vn": "khá, vưa phải; xinh, xinh xắn;, đẹp"
+},
+"prevent": {
+"p": "v",
+"vn": "ngăn cản, ngăn chặn, ngăn ngưa"
+},
+"previously": {
+"p": "adv",
+"vn": "trước, trước đây"
+},
+"price": {
+"p": "n",
+"vn": "giá"
+},
+"pride": {
+"p": "n",
+"vn": "sự kiêu hãnh, sự hãnh diện; tính kiêu căng, tự phụ"
+},
+"priest": {
+"p": "n",
+"vn": "mục, thầy tu"
+},
+"primarily": {
+"p": "adv",
+"vn": "trước hết, đầu tiên"
+},
+"primary": {
+"p": "adj",
+"vn": "nguyên thủy, đầu tiên; thời cổ đại, nguyên sinh; sơ cấp, tiểu học"
+},
+"prime minister": {
+"p": "n",
+"vn": "thủ tướng"
+},
+"prince": {
+"p": "n",
+"vn": "hoàn tử"
+},
+"princess": {
+"p": "n",
+"vn": "công chúa"
+},
+"principle": {
+"p": "n",
+"vn": "cơ bản, chủ yếu; nguyên lý, nguyên tắc"
+},
+"print": {
+"p": "v",
+"vn": "xuất bản; sự in ra"
+},
+"printing": {
+"p": "n",
+"vn": "sự in, thuật in, kỹ sảo in"
+},
+"prior": {
+"p": "adj",
+"vn": "trước, ưu tiên"
+},
+"priority": {
+"p": "n",
+"vn": "sự ưu tế, quyền ưu tiên"
+},
+"prison": {
+"p": "n",
+"vn": "nhà tù"
+},
+"prisoner": {
+"p": "n",
+"vn": "tù nhân"
+},
+"privately": {
+"p": "adv",
+"vn": "riêng tư, cá nhân"
+},
+"prize": {
+"p": "n",
+"vn": "giải, giải thưởng"
+},
+"probable": {
+"p": "adj",
+"vn": "có thể, có khả năng"
+},
+"procedure": {
+"p": "n",
+"vn": "thủ tục"
+},
+"proceed": {
+"p": "v",
+"vn": "tiến lên, theo duổi, tiếp diễn"
+},
+"process": {
+"p": "n",
+"vn": "quá trình, sự tiến triển, quy trình; chế biến, gia công, xử lý"
+},
+"produce": {
+"p": "v",
+"vn": "sản xuất, chế tạo"
+},
+"producer": {
+"p": "n",
+"vn": "nhà sản xuất"
+},
+"production": {
+"p": "n",
+"vn": "sự sản xuất, chế tạo"
+},
+"profession": {
+"p": "n",
+"vn": "nghề, nghề nghiệp"
+},
+"professional": {
+"p": "adj",
+"vn": "(thuộc) nghề, nghề nghiệp; chuyên nghiệp"
+},
+"professor": {
+"p": "n",
+"vn": "giáo sư, giảng viên"
+},
+"program": {
+"p": "n",
+"vn": "chương trình; lên chương trình"
+},
+"programme": {
+"p": "n",
+"vn": "chương trình"
+},
+"progress": {
+"p": "n",
+"vn": "sự tiến tới, sự tiến triển; tiến bộ, tiến triển, phát triển"
+},
+"promise": {
+"p": "v",
+"vn": "hứa, lời hứa"
+},
+"promotion": {
+"p": "n",
+"vn": "sự thăng chức, sự thăng cấp"
+},
+"prompt": {
+"p": "adj",
+"vn": "lẹ, nhanh chóng; xúi, giục, nhắc nhở"
+},
+"promptly": {
+"p": "adv",
+"vn": "lẹ, ngay lập tức"
+},
+"pronounce": {
+"p": "v",
+"vn": "tuyên bố, thông báo, phát âm"
+},
+"pronunciation": {
+"p": "n",
+"vn": "sự phát âm"
+},
+"proof": {
+"p": "n",
+"vn": "chứng, chứng cớ, bằng chứng; sự kiểm chứng"
+},
+"proper": {
+"p": "adj",
+"vn": "đúng, thích đáng, thích hợp"
+},
+"properly": {
+"p": "adv",
+"vn": "một cách đúng đắn, một cách thích đáng"
+},
+"property": {
+"p": "n",
+"vn": "tài sản, của cải; đất đấi, nhà cửa, bất động sản"
+},
+"proportion": {
+"p": "n",
+"vn": "sự cân xứng, sự cân đối"
+},
+"propose": {
+"p": "v",
+"vn": "prǝ'prouz đề nghị, đề xuat, đưa ra"
+},
+"protect": {
+"p": "v",
+"vn": "bảo vệ, che chở"
+},
+"protection": {
+"p": "n",
+"vn": "sự bảo vệ, sự che chở"
+},
+"protest": {
+"p": "n",
+"vn": "sự phản đối, sự phản kháng; phản đối, phản kháng"
+},
+"proudly": {
+"p": "adv",
+"vn": "một cách tự hào, một cách hãnh diện"
+},
+"prove": {
+"p": "v",
+"vn": "chứng tỏ, chứng minh"
+},
+"publication": {
+"p": "n",
+"vn": "sự công bố; sự xuất bản"
+},
+"publicity": {
+"p": "n",
+"vn": "sự công khai, sự quảng cáo"
+},
+"publicly": {
+"p": "adv",
+"vn": "pΔblikli công khai, công cộng"
+},
+"publish": {
+"p": "v",
+"vn": "công bố, ban bố; xuất bản"
+},
+"publishing": {
+"p": "n",
+"vn": "công việc, nghề xuất bản"
+},
+"punch": {
+"p": "v",
+"vn": "đấm, thụi; quả đấm, cú thụi"
+},
+"punish": {
+"p": "v",
+"vn": "phạt, trưng phạt"
+},
+"punishment": {
+"p": "n",
+"vn": "sự trưng phạt, sự trưng trị"
+},
+"pupil": {
+"p": "n",
+"vn": "học sinh"
+},
+"purchase": {
+"p": "n",
+"vn": "sự mua, sự tậu; mua, sắm, tậu"
+},
+"pure": {
+"p": "adj",
+"vn": "nguyên chất, tinh khiết, trong lành"
+},
+"purely": {
+"p": "adv",
+"vn": "hoàn toàn, chỉ là"
+},
+"purple": {
+"p": "adj",
+"vn": "tía, có màu tía; màu tía"
+},
+"purpose": {
+"p": "n",
+"vn": "mục đích, ý định. on purpose cố tình, cố ý, có chủ tâm"
+},
+"pursue": {
+"p": "v",
+"vn": "đuổi theo, đuổi bắt"
+},
+"qualification": {
+"p": "n",
+"vn": ",kwalifi'keiSn phẩm chất, năng lực; khả năng chuyên môn"
+},
+"qualified": {
+"p": "adj",
+"vn": "đủ tư cách, điều kiện, khả năng"
+},
+"qualify": {
+"p": "v",
+"vn": "đủ khả năng, đủ tư cách, điều kiện"
+},
+"quantity": {
+"p": "n",
+"vn": "lượng, số lượng"
+},
+"queen": {
+"p": "n",
+"vn": "nữ hoàng"
+},
+"quietly": {
+"p": "adv",
+"vn": "lặng, yên lặng, yên tĩnh"
+},
+"quit": {
+"p": "v",
+"vn": "thoát, thoát ra"
+},
+"quote": {
+"p": "v",
+"vn": "trích dẫn"
+},
+"race": {
+"p": "n",
+"vn": "loài, chủng, giống; cuộc đua; đua"
+},
+"racing": {
+"p": "n",
+"vn": "cuộc đua"
+},
+"radio": {
+"p": "n",
+"vn": "sóng vô tuyến, radio"
+},
+"rail": {
+"p": "n",
+"vn": "đường ray"
+},
+"railway": {
+"p": "n",
+"vn": "đường sắt"
+},
+"raise": {
+"p": "v",
+"vn": "nâng lên, đưa lên, ngẩng lên"
+},
+"range": {
+"p": "n",
+"vn": "dãy, hàng, loại; phạm vi, trình độ"
+},
+"rank": {
+"p": "n",
+"vn": "hàng, dãy; sắp xếp thành hàng, dãy"
+},
+"rapid": {
+"p": "adj",
+"vn": "chóng"
+},
+"rapidly": {
+"p": "adv",
+"vn": "chóng"
+},
+"rare": {
+"p": "adj",
+"vn": "hiếm, ít"
+},
+"rarely": {
+"p": "adv",
+"vn": "reзli hiếm khi, ít khi"
+},
+"rate": {
+"p": "n",
+"vn": "tỷ lệ, tốc độ"
+},
+"rather": {
+"p": "adv",
+"vn": "thà.. còn hơn, thích... Hơn. Rather: than hơn là"
+},
+"raw": {
+"p": "adj",
+"vn": "sống (# chín), thô, còn nguyên chất"
+},
+"react": {
+"p": "v",
+"vn": "tác động trở lại, phản ứng"
+},
+"reaction": {
+"p": "n",
+"vn": "sự phản ứng; sự phản tác dụng"
+},
+"read": {
+"p": "v",
+"vn": "đọc"
+},
+"reader": {
+"p": "n",
+"vn": "người đọc, độc giả"
+},
+"reading": {
+"p": "n",
+"vn": "sự đọc"
+},
+"realistic": {
+"p": "adj",
+"vn": "BrE also riə- hiện thực"
+},
+"reality": {
+"p": "n",
+"vn": "sự thật, thực tế, thực tại"
+},
+"realize": {
+"p": "v",
+"vn": "thực hiện, thực hành; thấy rõ, hiểu rõ, nhận thức rõ (việc gì...)"
+},
+"rear": {
+"p": "n",
+"vn": "phía sau; ở đằng sau, ở đằng sau"
+},
+"reason": {
+"p": "n",
+"vn": "lý do, lý lẽ"
+},
+"reasonably": {
+"p": "adv",
+"vn": "hợp lý"
+},
+"recall": {
+"p": "v",
+"vn": "gọi về, triệu hồi; nhắc lại, gợi lại"
+},
+"receipt": {
+"p": "n",
+"vn": "công thức; đơn thuốc"
+},
+"reception": {
+"p": "n",
+"vn": "ri'sep∫n sự nhận, sự tiếp nhận, sự đón tiếp"
+},
+"reckon": {
+"p": "v",
+"vn": "tính, đếm"
+},
+"recognition": {
+"p": "n",
+"vn": "sự công nhận, sự thưa nhận"
+},
+"recognize": {
+"p": "v",
+"vn": "nhận ra, nhận diện; công nhận, thưa nhận"
+},
+"record": {
+"p": "n",
+"vn": "bản ghi, sự ghi, bản thu, sự thu; thu, ghi chép"
+},
+"recording": {
+"p": "n",
+"vn": "sự ghi, sự thu âm"
+},
+"recover": {
+"p": "v",
+"vn": "lấy lại, giành lại"
+},
+"red": {
+"p": "adj",
+"vn": "đỏ; màu đỏ"
+},
+"reduction": {
+"p": "n",
+"vn": "sự giảm giá, sự hạ giá"
+},
+"refer to": {
+"p": "v",
+"vn": "khảo; ám chỉ, nhắc đến"
+},
+"reflect": {
+"p": "v",
+"vn": "phản chiếu, phản hồi, phản ánh"
+},
+"reform": {
+"p": "v",
+"vn": "cải cách, cải thiện, cải tạo; sự cải cách, sự cải thiện, cải tạo"
+},
+"refrigerator": {
+"p": "n",
+"vn": "ri'fridЗзreitз tủ lạnh"
+},
+"refusal": {
+"p": "n",
+"vn": "sự từ chối, sự khước từ"
+},
+"regard": {
+"p": "v",
+"vn": "nhìn, đánh giá; cái nhìn, sự quan tâm, sự chú ý (lời chúc tụng cuối thư)"
+},
+"regarding": {
+"p": "prep",
+"vn": "về, về việc, đối với (vấn đề...)"
+},
+"region": {
+"p": "n",
+"vn": "vùng, miền"
+},
+"regional": {
+"p": "adj",
+"vn": "vùng, địa phương"
+},
+"register": {
+"p": "v",
+"vn": "đăng ký, ghi vào sổ; sổ, sổ sách, máy ghi"
+},
+"regret": {
+"p": "v",
+"vn": "đáng tiếc, hối tiếc; lòng thương tiếc, sự hối tiếc"
+},
+"regularly": {
+"p": "adv",
+"vn": "đều đặn, thường xuyên"
+},
+"regulation": {
+"p": "n",
+"vn": "sự điều chỉnh, điều lệ, quy tắc"
+},
+"relate": {
+"p": "v",
+"vn": "kể lại, thuật lại; liên hệ, liên quan"
+},
+"related to": {
+"p": "adj",
+"vn": "có liên quan, có quan hệ với ai, cái gì"
+},
+"relation": {
+"p": "n",
+"vn": "mối quan hệ, sự liên quan, liên lạc"
+},
+"relative": {
+"p": "adj",
+"vn": "có liên quấn đến; người có họ, đạ từ quan hệ"
+},
+"relatively": {
+"p": "adv",
+"vn": "có liên quan, có quan hệ"
+},
+"relax": {
+"p": "v",
+"vn": "giải trí, nghỉ ngơi"
+},
+"relaxing": {
+"p": "adj",
+"vn": "làm giảm, bớt căng thẳng"
+},
+"release": {
+"p": "v",
+"vn": "làm nhẹ, bớt, thả, phóng thích, phát hành; sự giải thoát, thoát khỏi, sự thả, phóng thích, sự phát hành"
+},
+"relevant": {
+"p": "adj",
+"vn": "thích hợp, có liên quan"
+},
+"relief": {
+"p": "n",
+"vn": "sự giảm nhẹ, sự làm cho khuây khỏa; sự trợ cấp; sự đền bù"
+},
+"religion": {
+"p": "n",
+"vn": "tôn giáo"
+},
+"religious": {
+"p": "adj",
+"vn": "(thuộc) tôn giáo"
+},
+"rely on": {
+"p": "v",
+"vn": "vào, tin cậy, tin tưởng vào"
+},
+"remain": {
+"p": "v",
+"vn": "còn lại, vẫn còn như cũ"
+},
+"remaining": {
+"p": "adj",
+"vn": "còn lại"
+},
+"remains": {
+"p": "n",
+"vn": "đồ thưa, cái còn lại"
+},
+"remark": {
+"p": "n",
+"vn": "sự nhận xét, phê bình, sự để ý, chú ý; nhận xét, phê bình, để ý, chú ý"
+},
+"remarkable": {
+"p": "adj",
+"vn": "đáng chú ý, đáng để ý; khác thường"
+},
+"remarkably": {
+"p": "adv",
+"vn": "đáng chú ý, đáng để ý; khác thường"
+},
+"remember": {
+"p": "v",
+"vn": "nhớ, nhớ lại"
+},
+"removal": {
+"p": "n",
+"vn": "viêc di chuyển, việc dọn nhà, dời đi"
+},
+"rent": {
+"p": "n",
+"vn": "sự thuê mướn; cho thuê, thuê"
+},
+"rented": {
+"p": "adj",
+"vn": "được thuê, được mướn"
+},
+"repair": {
+"p": "v",
+"vn": "sửa chữa, chỉnh tu; sự sửa chữa, sự chỉnh tu"
+},
+"repeated": {
+"p": "adj",
+"vn": "được nhắc lại, được lặp lại"
+},
+"repeatedly": {
+"p": "adv",
+"vn": "lặp đi lặp lại nhiều lần"
+},
+"represent": {
+"p": "v",
+"vn": "miêu tả, hình dung; đại diện, thay mặt"
+},
+"representative": {
+"p": "n",
+"vn": "điều tiêu biểu, tượng trưng, mẫu; miêu tả, biểu hiện, đại diện, tượng trưng"
+},
+"reproduce": {
+"p": "v",
+"vn": "tái sản xuất"
+},
+"reputation": {
+"p": "n",
+"vn": "sự nổi tiếng, nổi danh"
+},
+"request": {
+"p": "n",
+"vn": "lời thỉnh cầu, lời đề nghị, yêu cầu; thỉnh cầu, đề nghị, yêu cầu"
+},
+"require": {
+"p": "v",
+"vn": "đòi hỏi, yêu cầu, quy định"
+},
+"requirement": {
+"p": "n",
+"vn": "cầu, sự đòi hỏi; luật lệ, thủ tục"
+},
+"rescue": {
+"p": "v",
+"vn": "giải thoát, cứu nguy; sự giải thoát, sự cứu nguy"
+},
+"research": {
+"p": "n",
+"vn": "sự nghiên cứu"
+},
+"resident": {
+"p": "n",
+"vn": "người sinh sống, trú ngụ, khách trọ; có nhà ở, cư trú, thường trú"
+},
+"resist": {
+"p": "v",
+"vn": "chống lại, phản đổi, kháng cự"
+},
+"resistance": {
+"p": "n",
+"vn": "sự chống lại, sự phản đối, sự kháng cự"
+},
+"resolve": {
+"p": "v",
+"vn": "quyết định, kiên quyết (làm gì); giải quyết (vấn đề, khó khă(n).)"
+},
+"resort": {
+"p": "n",
+"vn": "kế sách, phương kế"
+},
+"resource": {
+"p": "n",
+"vn": "tài nguyên; kế sách, thủ đoạn"
+},
+"respect": {
+"p": "n",
+"vn": "sự kính trọng, sự lễ phép; tôn trọng, kính trọng, khâm phục"
+},
+"respond": {
+"p": "v",
+"vn": "hưởng ứng, phản ứng lại, trả lời"
+},
+"response": {
+"p": "n",
+"vn": "sự trả lời, câu trả lời, sự hưởng ứng, sự đáp lại"
+},
+"responsibility": {
+"p": "n",
+"vn": "ris,ponsз'biliti trách nhiệm, sự chịu trách nhiệm"
+},
+"responsible": {
+"p": "adj",
+"vn": "chịu trách nhiệm về, chịu trách nhiệm trước ai, gì"
+},
+"restore": {
+"p": "v",
+"vn": "hoàn lại, trả lại; sửa chữa lại, phục hồi lại"
+},
+"restrict": {
+"p": "v",
+"vn": "hạn chế, giới hạn"
+},
+"restricted": {
+"p": "adj",
+"vn": "bị hạn chế, có giới hạn; vùng cấm"
+},
+"restriction": {
+"p": "n",
+"vn": "ri'strik∫n sự hạn chế, sự giới hạn"
+},
+"retain": {
+"p": "v",
+"vn": "giữ lại, nhớ được"
+},
+"retire": {
+"p": "v",
+"vn": "rời bỏ, rút về; thôi, nghỉ việc, về hưu"
+},
+"retired": {
+"p": "adj",
+"vn": "ẩn dật, hẻo lánh, đã về hưu, đã nghỉ việc"
+},
+"retirement": {
+"p": "n",
+"vn": "sự ẩn dật, nơi hẻo lánh, sự về hưu, sự nghỉ việc"
+},
+"reveal": {
+"p": "v",
+"vn": "bộc lộ, biểu lộ, tiết lộ; phát hiện, khám phá"
+},
+"reverse": {
+"p": "v",
+"vn": "đảo, ngược lại; điều trái ngược, mặt trái"
+},
+"review": {
+"p": "n",
+"vn": "sự xem lại, sự xét lại; làm lại, xem xét lại"
+},
+"revise": {
+"p": "v",
+"vn": "đọc lại, xem lại, sửa lại, ôn lại"
+},
+"revision": {
+"p": "n",
+"vn": "sự xem lại, sự đọc lại, sự sửa lại, sự ôn lại"
+},
+"revolution": {
+"p": "n",
+"vn": "cuộc cách mạng"
+},
+"reward": {
+"p": "n",
+"vn": "sự thưởng, phần thưởng; thưởng, thưởng công"
+},
+"rhythm": {
+"p": "n",
+"vn": "nhịp điệu"
+},
+"rid": {
+"p": "v",
+"vn": "giải thoát (get rid of : tống khứ)"
+},
+"rider": {
+"p": "n",
+"vn": "người cưỡi ngựa, người đi xe đạp"
+},
+"ridiculous": {
+"p": "adj",
+"vn": "buồn cười, lố bịch, lố lăng"
+},
+"riding": {
+"p": "n",
+"vn": "môn thể thấo cưỡi ngựa, sự đi xe (bus, điện, xe đạp)"
+},
+"rightly": {
+"p": "adv",
+"vn": "đúng, phải, có lý"
+},
+"ring": {
+"p": "n",
+"vn": "chiếc nhẫn, đeo nhẫn cho ai"
+},
+"rival": {
+"p": "n",
+"vn": "đối thủ, địch thủ; đối địch, cạnh tranh"
+},
+"river": {
+"p": "n",
+"vn": "sông"
+},
+"rob": {
+"p": "v",
+"vn": "cướp, lấy trộm"
+},
+"rock": {
+"p": "n",
+"vn": "đá"
+},
+"role": {
+"p": "n",
+"vn": "(diễn), vai trò"
+},
+"romantic": {
+"p": "adj",
+"vn": "lãng mạn"
+},
+"roof": {
+"p": "n",
+"vn": "mái nhà, nóc"
+},
+"root": {
+"p": "n",
+"vn": "gốc, rễ"
+},
+"rope": {
+"p": "n",
+"vn": "dây cáp, dây thưng, xâu, chuỗi"
+},
+"rough": {
+"p": "adj",
+"vn": "rᴧf gồ ghề, lởm chởm"
+},
+"roughly": {
+"p": "adv",
+"vn": "gồ ghề, lởm chởm"
+},
+"round": {
+"p": "adj",
+"vn": "tròn, vòng quanh, xung quanh"
+},
+"rounded": {
+"p": "adj",
+"vn": "bị làm thành tròn; phát triển đầy đủ"
+},
+"routine": {
+"p": "n",
+"vn": "thói thường, lệ thường, thủ tục; thường lệ, thông thường"
+},
+"row": {
+"p": "n",
+"vn": "hàng, dãy"
+},
+"royal": {
+"p": "adj",
+"vn": "(thuộc) vua, nữ hoàng, hoàng gia"
+},
+"rub": {
+"p": "v",
+"vn": "cọ xát, xoa bóp, nghiền, tán"
+},
+"rubber": {
+"p": "n",
+"vn": ""
+},
+"rubbish": {
+"p": "n",
+"vn": "vật vô giá trị, bỏ đi, rác rưởi"
+},
+"rudely": {
+"p": "adv",
+"vn": "bất lịch sự, thô lỗ; thô sơ, đơn giản"
+},
+"ruin": {
+"p": "v",
+"vn": "làm hỏng, làm đổ nát, làm phá sản; sự hỏng, sự đổ nát, sự phá sản"
+},
+"ruined": {
+"p": "adj",
+"vn": "bị hỏng, bị đổ nát, bị phá sản"
+},
+"rule": {
+"p": "n",
+"vn": "tắc, điều lệ, luật lệ; cai trị, chỉ huy, điều khiển"
+},
+"ruler": {
+"p": "n",
+"vn": "người cai trị, người trị vì; thước kẻ"
+},
+"rumour": {
+"p": "n",
+"vn": "đồn, lời đồn"
+},
+"runner": {
+"p": "n",
+"vn": "người chạy"
+},
+"running": {
+"p": "n",
+"vn": "sự chạy, cuộc chạy đua"
+},
+"rural": {
+"p": "adj",
+"vn": "(thuộc) nông thôn, vùng nông thôn"
+},
+"rush": {
+"p": "v",
+"vn": "xông lên, lao vào, xô đẩy; sự xông lên, sự lao vào, sự xô đẩy"
+},
+"sack": {
+"p": "n",
+"vn": "tải; đóng bao, bỏ vào bao"
+},
+"sadly": {
+"p": "adv",
+"vn": "một cách buồn bã, đáng buồn là, không may mà"
+},
+"sadness": {
+"p": "n",
+"vn": "sự buồn rầu, sự buồn bã"
+},
+"safely": {
+"p": "adv",
+"vn": "toàn, chắc chắn, đáng tin"
+},
+"safety": {
+"p": "n",
+"vn": "sự an toàn, sự chắc chăn"
+},
+"sail": {
+"p": "v",
+"vn": "đi tàu, thuyền, nhổ neo; buồm, cánh buồm, chuyến đi bằng thuyền buồm"
+},
+"sailing": {
+"p": "n",
+"vn": "sự đi thuyền"
+},
+"sailor": {
+"p": "n",
+"vn": "thủy thủ"
+},
+"salad": {
+"p": "n",
+"vn": "lát (xà lách trộng dầu dấm); rau sống"
+},
+"salt": {
+"p": "n",
+"vn": "muối"
+},
+"salty": {
+"p": "adj",
+"vn": "chứa vị muối, có muối, mặn"
+},
+"sample": {
+"p": "n",
+"vn": "mẫu, hàng mẫu"
+},
+"sand": {
+"p": "n",
+"vn": "cát"
+},
+"satisfaction": {
+"p": "n",
+"vn": "sự làm cho thỏa mãn, toại nguyện sự trả nợ, bồi thường"
+},
+"satisfied": {
+"p": "adj",
+"vn": "cảm thấy hài lòng, vưa ý, thoả mãn"
+},
+"satisfy": {
+"p": "v",
+"vn": "làm thỏa mãn, hài lòng; trả (nợ), chuộc tội"
+},
+"satisfying": {
+"p": "adj",
+"vn": "đem lại sự thỏa mãn, làm thỏa mãn, làm vưa ý"
+},
+"Saturday": {
+"p": "n",
+"vn": "thứ 7"
+},
+"saving": {
+"p": "n",
+"vn": "sự cứu, sự tiết kiệm"
+},
+"say": {
+"p": "v",
+"vn": "nói"
+},
+"scale": {
+"p": "n",
+"vn": "vảy (cá..), tỷ lệ"
+},
+"scare": {
+"p": "v",
+"vn": "làm kinh hãi, sợ hãi, dọa; sự sợ hãi, sự kinh hoàng"
+},
+"scene": {
+"p": "n",
+"vn": "cảnh, phong cảnh"
+},
+"scheme": {
+"p": "n",
+"vn": "sự sắp xếp, sự phối hợp; kế hoạch thực hiện; lược đồ, sơ đồ"
+},
+"school": {
+"p": "n",
+"vn": "đàn cá, bầy cá, trường học, học đường"
+},
+"science": {
+"p": "n",
+"vn": "học, khoa học tự nhiên"
+},
+"scientific": {
+"p": "adj",
+"vn": "(thuộc) khoa học, có tính khoa học"
+},
+"scientist": {
+"p": "n",
+"vn": "nhà khoa học"
+},
+"scissors": {
+"p": "n",
+"vn": "cái kéo"
+},
+"score": {
+"p": "n",
+"vn": "điểm số, bản thắng, tỷ số; đạt được, thành công, cho điểm"
+},
+"scratch": {
+"p": "v",
+"vn": "cào, làm xước da; sự cào, sự trầy xước da"
+},
+"scream": {
+"p": "v",
+"vn": "gào thét, kêu lên; tiếng thét, tiếng kêu to"
+},
+"screw": {
+"p": "n",
+"vn": "đinh vít, đinh ốc; bắt vít, bắt ốc"
+},
+"sea": {
+"p": "n",
+"vn": "biển"
+},
+"seal": {
+"p": "n",
+"vn": "hải cẩu; săn hải cẩu"
+},
+"search": {
+"p": "n",
+"vn": "sự tìm kiếm, sự thăm dò, sự điều tra; tìm kiếm, thăm dò, điều tra"
+},
+"season": {
+"p": "n",
+"vn": "mùa"
+},
+"seat": {
+"p": "n",
+"vn": "ghế, chỗ ngồi"
+},
+"secondary": {
+"p": "adj",
+"vn": "học, thứ yếu"
+},
+"secret": {
+"p": "adj",
+"vn": "bí mật; điều bí mật"
+},
+"secretary": {
+"p": "n",
+"vn": "thư ký"
+},
+"secretly": {
+"p": "adv",
+"vn": "bí mật, riêng tư"
+},
+"section": {
+"p": "n",
+"vn": "mục, phần"
+},
+"sector": {
+"p": "n",
+"vn": "vực, lĩnh vực"
+},
+"secure": {
+"p": "adj",
+"vn": "chắc chắn, đảm bảo; bảo đảm, giữ an ninh"
+},
+"seed": {
+"p": "n",
+"vn": "hạt, hạt giống"
+},
+"seek": {
+"p": "v",
+"vn": "tìm, tìm kiếm, theo đuổi"
+},
+"seem linking": {
+"p": "v",
+"vn": "có vẻ như, dường như"
+},
+"select": {
+"p": "v",
+"vn": "chọn lựa, chọn lọc"
+},
+"selection": {
+"p": "n",
+"vn": "sự lựa chọn, sự chọc lọc"
+},
+"self": {
+"p": "n",
+"vn": "bản thân mình"
+},
+"self-": {
+"p": "",
+"vn": "tự bản thân mình, cái tôi"
+},
+"senate": {
+"p": "n",
+"vn": "thượng nghi viện, ban giám hiệu"
+},
+"senator": {
+"p": "n",
+"vn": "thượng nghị sĩ"
+},
+"senior": {
+"p": "adj",
+"vn": "nhiều tuổi hơn, dành cho trẻ em trên 11t; người lớn tuổi hơn, sinh viên năm cuối trường trung học, cấo đẳng"
+},
+"sense": {
+"p": "n",
+"vn": "giác quan, tri giác, cảm giác"
+},
+"sensible": {
+"p": "adj",
+"vn": "có óc xét đoán; hiểu, nhận biết được"
+},
+"sensitive": {
+"p": "adj",
+"vn": "dễ bị thương, dễ bị hỏng; dễ bị xúc phạm"
+},
+"sentence": {
+"p": "n",
+"vn": "câu"
+},
+"separated": {
+"p": "adj",
+"vn": "thân"
+},
+"separately": {
+"p": "adv",
+"vn": "không cùng nhau, thành người riêng, vật riêng"
+},
+"separation": {
+"p": "n",
+"vn": "sự chia cắt, phân ly, sự chia tay, ly thân"
+},
+"September": {
+"p": "n",
+"vn": "tháng 9"
+},
+"series": {
+"p": "n",
+"vn": "loạt, dãy, chuỗi"
+},
+"seriously": {
+"p": "adv",
+"vn": "đứng đắn, nghiêm trang"
+},
+"servant": {
+"p": "n",
+"vn": "người hầu, đầy tớ"
+},
+"session": {
+"p": "n",
+"vn": "buổi họp, phiên họp, buổi, phiên"
+},
+"set": {
+"p": "n",
+"vn": "bộ, bọn, đám, lũ; đặt để, bố trí"
+},
+"settle": {
+"p": "v",
+"vn": "giải quyết, dàn xếp, hòa giải, đặt, bố trí"
+},
+"several": {
+"p": "det",
+"vn": "vài"
+},
+"severe": {
+"p": "adj",
+"vn": "khắt khe, gay gắt (thái độ, cư xử); giản dị, mộc mạc (kiểu cách, trang phục, dung nhan)"
+},
+"severely": {
+"p": "adv",
+"vn": "khắt khe, gay gắt (thái độ, cư xử); giản dị, mộc mạc (kiểu cách, trang phục, dung nhan)"
+},
+"sew": {
+"p": "v",
+"vn": "khâu"
+},
+"sewing": {
+"p": "n",
+"vn": "sự khâu, sự may vá"
+},
+"sex": {
+"p": "n",
+"vn": "giới, giống"
+},
+"sexual": {
+"p": "adj",
+"vn": "giới tính, các vấn đề sinh lý"
+},
+"sexually": {
+"p": "adv",
+"vn": "sekSJli giới tính, các vấn đề sinh lý"
+},
+"shade": {
+"p": "n",
+"vn": "bóng, bóng tối"
+},
+"shadow": {
+"p": "n",
+"vn": "bóng, bóng tối, bóng râm, bóng mát"
+},
+"shall": {
+"p": "v",
+"vn": ", modal ʃæl dự đoán tương lai: sẽ"
+},
+"shallow": {
+"p": "adj",
+"vn": "nông, cạn"
+},
+"shame": {
+"p": "n",
+"vn": "sự xấu hổ, thẹn thùng, sự ngượng"
+},
+"shape": {
+"p": "n",
+"vn": "hình, hình dạng, hình thù"
+},
+"shaped": {
+"p": "adj",
+"vn": "có hình dáng được chỉ rõ"
+},
+"share": {
+"p": "v",
+"vn": "đóng góp, tham gia, chia sẻ; phần đóng góp, phần tham gia, phần chia sẻ"
+},
+"sharp": {
+"p": "adj",
+"vn": "sắc, nhọn, bén"
+},
+"sharply": {
+"p": "adv",
+"vn": "sắc, nhọn, bén"
+},
+"shave": {
+"p": "v",
+"vn": "cạo (râu), bào, đẽo (gỗ)"
+},
+"she": {
+"p": "n",
+"vn": ", pro ʃi: nó, bà ấy, chị ấy, cô ấy..."
+},
+"sheep": {
+"p": "n",
+"vn": "cừu"
+},
+"sheet": {
+"p": "n",
+"vn": "chăn, khăn trải giường; lá, tấm, phiến, tờ"
+},
+"shell": {
+"p": "n",
+"vn": "vỏ, mai; vẻ bề ngoài"
+},
+"shelter": {
+"p": "n",
+"vn": "sự nương tựa, sự che chở, sự ẩn náu; che chở, bảo vệ"
+},
+"shine": {
+"p": "v",
+"vn": "chiếu sáng, tỏa sáng"
+},
+"shiny": {
+"p": "adj",
+"vn": "∫aini sáng chói, bóng"
+},
+"ship": {
+"p": "n",
+"vn": "tàu, tàu thủy"
+},
+"shirt": {
+"p": "n",
+"vn": "áo sơ mi"
+},
+"shock": {
+"p": "n",
+"vn": "Sok sự đụng chạm, va chạm, sự kích động, sự choáng; chạm mạnh, va mạnh, gây sốc"
+},
+"shocked": {
+"p": "adj",
+"vn": "Sok bị kích động, bị va chạm, bị sốc"
+},
+"shocking": {
+"p": "adj",
+"vn": "gây ra căm phẫn, tồi tệ, gây kích động"
+},
+"shoe": {
+"p": "n",
+"vn": "giày"
+},
+"shoot": {
+"p": "v",
+"vn": "vụt qua, chạy qua, ném, phóng, bắn; đâm ra, trồi ra"
+},
+"shooting": {
+"p": "n",
+"vn": "∫u:tiη sự bắn, sự phóng đi"
+},
+"shopping": {
+"p": "n",
+"vn": "sự mua sắm"
+},
+"shortly": {
+"p": "adv",
+"vn": "thời gian ngắn, sớm"
+},
+"shot": {
+"p": "n",
+"vn": "đạn, viên đạn"
+},
+"should": {
+"p": "v",
+"vn": ", modal ʃud, ʃəd, ʃd nên"
+},
+"shout": {
+"p": "v",
+"vn": "hò hét, reo hò; sự la hét, sự hò reo"
+},
+"shower": {
+"p": "n",
+"vn": "vòi hoa sen, sự tắm vòi hoa sen"
+},
+"shut": {
+"p": "v",
+"vn": "đóng, khép, đậy; tính khép kín"
+},
+"sideways": {
+"p": "adj",
+"vn": "từ một bên; sang bên"
+},
+"sight": {
+"p": "n",
+"vn": "cảnh đẹp; sự nhìn"
+},
+"sign": {
+"p": "n",
+"vn": "dấu, dấu hiệu, kí hiệu; đánh dấu, viết ký hiệu"
+},
+"signal": {
+"p": "n",
+"vn": "dấu hiệu, tín hiệu; ra hiệu, báo hiệu"
+},
+"signature": {
+"p": "n",
+"vn": ", ˈsɪgnəˌtʃʊər chữ ký"
+},
+"significant": {
+"p": "adj",
+"vn": "nhiều ý nghĩa, quan trọng"
+},
+"significantly": {
+"p": "adv",
+"vn": "đáng kể"
+},
+"silence": {
+"p": "n",
+"vn": "sự im lặng, sự yên tĩnh"
+},
+"silent": {
+"p": "adj",
+"vn": "lặng, yên tĩnh"
+},
+"silk": {
+"p": "n",
+"vn": "tơ, chỉ, lụa"
+},
+"silly": {
+"p": "adj",
+"vn": "ngớ ngẩn, ngu ngốc, khờ dại"
+},
+"silver": {
+"p": "n",
+"vn": "bạc, đồng bạc; làm bằng bạc, trắng như bạc"
+},
+"similarly": {
+"p": "adv",
+"vn": "tương tự, giống nhau"
+},
+"simply": {
+"p": "adv",
+"vn": "một cách dễ dàng, giản dị"
+},
+"since": {
+"p": "prep",
+"vn": "từ, từ khi, từ lúc đó; từ đó, từ lúc ấy"
+},
+"sincere": {
+"p": "adj",
+"vn": "thật thà, thẳng thắng, chân thành"
+},
+"sing": {
+"p": "v",
+"vn": "hát, ca hát"
+},
+"singer": {
+"p": "n",
+"vn": "sĩ"
+},
+"singing": {
+"p": "n",
+"vn": "sự hát, tiếng hát"
+},
+"sink": {
+"p": "v",
+"vn": "chìm, lún, đắm"
+},
+"sir": {
+"p": "n",
+"vn": "xưng hô lịch sự Ngài, Ông"
+},
+"situation": {
+"p": "n",
+"vn": ",sit∫u'ei∫n hoàn cảnh, địa thế, vị trí"
+},
+"skilful": {
+"p": "adj",
+"vn": "tài giỏi, khéo tay"
+},
+"skilfully": {
+"p": "adv",
+"vn": "tài giỏi, khéo tay"
+},
+"skill": {
+"p": "n",
+"vn": "kỹ năng, kỹ sảo"
+},
+"skilled": {
+"p": "adj",
+"vn": "có kỹ năng, có kỹ sảo, khẻo tay; có kinh nghiệm,, lành nghề"
+},
+"skirt": {
+"p": "n",
+"vn": "váy, đầm"
+},
+"sky": {
+"p": "n",
+"vn": "trời, bầu trời"
+},
+"sleeve": {
+"p": "n",
+"vn": "áo, ống tay"
+},
+"slice": {
+"p": "n",
+"vn": "miếng, lát mỏng; cắt ra thành miếng mỏng, lát mỏng"
+},
+"slight": {
+"p": "adj",
+"vn": "mỏng manh, thon, gầy"
+},
+"slightly": {
+"p": "adv",
+"vn": "mảnh khảnh, mỏng manh, yếu ớt"
+},
+"slip": {
+"p": "v",
+"vn": "trượt, tuột, trôi qua, chạy qua"
+},
+"slope": {
+"p": "n",
+"vn": "dốc, đường dốc, độ dốc; nghiêng, dốc"
+},
+"small": {
+"p": "adj",
+"vn": "nhỏ, bé"
+},
+"smash": {
+"p": "v",
+"vn": "đập, vỡ tan thành mảnh; sự đập, vỡ tàn thành mảnh"
+},
+"smell": {
+"p": "v",
+"vn": "ngửi; sự ngửi, khứu giác"
+},
+"smile": {
+"p": "v",
+"vn": "cười, mỉm cười; nụ cười, vẻ tươi cười"
+},
+"smoke": {
+"p": "n",
+"vn": "khói, hơi thuốc; hút thuốc, bốc khói, hơi"
+},
+"smoking": {
+"p": "n",
+"vn": "smoukiη sự hút thuốc"
+},
+"smooth": {
+"p": "adj",
+"vn": "nhẵn, trơn, mượt mà"
+},
+"smoothly": {
+"p": "adv",
+"vn": "một cách êm ả, trôi chảy"
+},
+"snake": {
+"p": "n",
+"vn": "rắn; người nham hiểm, xảo trá"
+},
+"snow": {
+"p": "n",
+"vn": "tuyết; tuyết rơi"
+},
+"soap": {
+"p": "n",
+"vn": "xà phòng"
+},
+"social": {
+"p": "adj",
+"vn": "sou∫l có tính xã hội"
+},
+"socially": {
+"p": "adv",
+"vn": "có tính xã hội"
+},
+"society": {
+"p": "n",
+"vn": "xã hội"
+},
+"sock": {
+"p": "n",
+"vn": "tất ngắn, miếng lót giày"
+},
+"soft": {
+"p": "adj",
+"vn": "mềm, dẻo"
+},
+"softly": {
+"p": "adv",
+"vn": "một cách mềm dẻo"
+},
+"soil": {
+"p": "n",
+"vn": "đất trồng; vết bẩn"
+},
+"soldier": {
+"p": "n",
+"vn": "lính, quân nhân"
+},
+"solid": {
+"p": "adj",
+"vn": "rắn; thể rắn, chất rắn"
+},
+"some": {
+"p": "det",
+"vn": "một it, một vài"
+},
+"somehow": {
+"p": "adv",
+"vn": "không biết làm sao, bằng cách này hay cách khác"
+},
+"something": {
+"p": "pron",
+"vn": "một điều gì đó, một việc gì đó, mộ cái gì đó"
+},
+"somewhat": {
+"p": "adv",
+"vn": "đến mức độ nào đó, hơi, một chút"
+},
+"somewhere": {
+"p": "adv",
+"vn": "nơi nào đó. đâu đó"
+},
+"song": {
+"p": "n",
+"vn": "bài hát"
+},
+"sore": {
+"p": "adj",
+"vn": ", soʊr đau, nhức"
+},
+"sort": {
+"p": "n",
+"vn": "thứ, hạng loại; lựa chọn, sắp xếp, phân loại"
+},
+"soul": {
+"p": "n",
+"vn": "tâm hồn, tâm trí, linh hồn"
+},
+"sound": {
+"p": "n",
+"vn": "âm thanh; nghe"
+},
+"sour": {
+"p": "adj",
+"vn": "có vị giấm"
+},
+"source": {
+"p": "n",
+"vn": "nguồn"
+},
+"south": {
+"p": "n",
+"vn": "phương Nam, hướng Nam; ở phía Nam; hướng về phía Nam"
+},
+"southern": {
+"p": "adj",
+"vn": "thuộc phương Nam"
+},
+"space": {
+"p": "n",
+"vn": "khoảng trống, khoảng cách, không gian"
+},
+"spare": {
+"p": "adj",
+"vn": "thưa thãi, dự trữ, rộng rãi; đồ dự trữ, đồ dự phòng"
+},
+"speaker": {
+"p": "n",
+"vn": "người nói, người diễn thuyết"
+},
+"specialist": {
+"p": "n",
+"vn": "chuyên gia, chuyên viên"
+},
+"specially": {
+"p": "adv",
+"vn": "đặc biệt, riêng biệt"
+},
+"specifically": {
+"p": "adv",
+"vn": "đặc trưng, riêng biệt"
+},
+"speech": {
+"p": "n",
+"vn": "sự nói, khả năng nói, lời nói, cách nói, bài nói"
+},
+"speed": {
+"p": "n",
+"vn": "tốc độ, vận tốc"
+},
+"spell": {
+"p": "v",
+"vn": "đánh vần; sự thu hút, sự quyến rũ say mê"
+},
+"spelling": {
+"p": "n",
+"vn": "sự viết chính tả"
+},
+"spice": {
+"p": "n",
+"vn": "vị"
+},
+"spider": {
+"p": "n",
+"vn": "nhện"
+},
+"spin": {
+"p": "v",
+"vn": "tròn"
+},
+"spirit": {
+"p": "n",
+"vn": "thần, tâm hồn, linh hồn"
+},
+"spiritual": {
+"p": "adj",
+"vn": "(thuộc) tinh thần, linh hồn"
+},
+"spite": {
+"p": "n",
+"vn": "sự giận, sự hận thù; in spite of: mặc dù, bất chấp"
+},
+"split": {
+"p": "v",
+"vn": "chẻ, tách, chia ra; sự chẻ, sự tách sự chia ra"
+},
+"spoil": {
+"p": "v",
+"vn": "cướp, cướp đọat"
+},
+"spoken": {
+"p": "adj",
+"vn": "nói theo 1 cách nào đó"
+},
+"spoon": {
+"p": "n",
+"vn": "cái thìa"
+},
+"sport": {
+"p": "n",
+"vn": "thể thao"
+},
+"spot": {
+"p": "n",
+"vn": "dấu, đốm, vết"
+},
+"spray": {
+"p": "n",
+"vn": "máy, ống, bình phụt, bơm, phun; bơm, phun, xịt"
+},
+"spring": {
+"p": "n",
+"vn": "mùa xuân"
+},
+"square": {
+"p": "adj",
+"vn": "vuông, vuông vắn; dạng hình vuông, hình vuông"
+},
+"squeeze": {
+"p": "v",
+"vn": "ép, vắt, xiết; sự ép, sự vắt, sự xiết"
+},
+"stable": {
+"p": "adj",
+"vn": "ổn định, bình tĩnh, vững vàng; chuồng ngựa"
+},
+"staff": {
+"p": "n",
+"vn": "gậy"
+},
+"stage": {
+"p": "n",
+"vn": "tầng, bệ, sân khấu, giai đoạn"
+},
+"stair": {
+"p": "n",
+"vn": "bậc thang"
+},
+"stamp": {
+"p": "n",
+"vn": "dán tem"
+},
+"star": {
+"p": "n",
+"vn": "ngôi sao, dán sao, trang trí hình sao, đánh dấu sao"
+},
+"stare": {
+"p": "v",
+"vn": "nhìm chằm chằm; sự nhìn chằm chằm"
+},
+"state": {
+"p": "n",
+"vn": "nhà nước, quốc gia, chính quyền; (thuộc) nhà nước, có liên quan đến nhà nước; phát biểu, tuyên bố"
+},
+"statement": {
+"p": "n",
+"vn": "sự bày tỏ, sự phát biểu; sự tuyên bố, sự trình bày"
+},
+"statue": {
+"p": "n",
+"vn": "tượng"
+},
+"status": {
+"p": "n",
+"vn": ", ˈstætəs tình trạng"
+},
+"steadily": {
+"p": "adv",
+"vn": "vững chắc, vững vàng, kiên định"
+},
+"steady": {
+"p": "adj",
+"vn": "vững chắc, vững vàng, kiến định"
+},
+"steal": {
+"p": "v",
+"vn": "ăn cắp, ăn trộm"
+},
+"steam": {
+"p": "n",
+"vn": "hơi nước"
+},
+"steel": {
+"p": "n",
+"vn": "thép, ngành thép"
+},
+"steep": {
+"p": "adj",
+"vn": "dốc, dốc đứng"
+},
+"steeply": {
+"p": "adv",
+"vn": "dốc, cheo leo"
+},
+"steer": {
+"p": "v",
+"vn": "lái (tàu, ô tô...)"
+},
+"stick": {
+"p": "v",
+"vn": "đâm, thọc, chọc, cắm, dính; cái gậy, qua củi, cán"
+},
+"sticky": {
+"p": "adj",
+"vn": "dính; sánh; bầy nhầy, nhớp nháp"
+},
+"stiff": {
+"p": "adj",
+"vn": "cứng, cứng rắn, kiên quyết"
+},
+"stiffly": {
+"p": "adv",
+"vn": "cứng, cứng rắn, kiên quyết"
+},
+"sting": {
+"p": "v",
+"vn": "châm, chích, đốt; ngòi, vòi (ong, muỗi), nọc (rắn); sự châm, chích.."
+},
+"stir": {
+"p": "v",
+"vn": "khuấy, đảo"
+},
+"stock": {
+"p": "n",
+"vn": "sự trữ, hàng dự trữ, vốn"
+},
+"stone": {
+"p": "n",
+"vn": "đá"
+},
+"stop": {
+"p": "v",
+"vn": "dừng, ngưng, nghỉ, thôi; sự dừng, sự ngưng, sự đỗ lại"
+},
+"storm": {
+"p": "n",
+"vn": "cơn giông, b~o"
+},
+"story": {
+"p": "n",
+"vn": "chuyện, câu chuyện"
+},
+"stove": {
+"p": "n",
+"vn": "bếp lò, lò sưởi"
+},
+"strain": {
+"p": "n",
+"vn": "sự căng thẳng, sự căng"
+},
+"strange": {
+"p": "adj",
+"vn": "lạ, chưa quen"
+},
+"strangely": {
+"p": "adv",
+"vn": "lạ, xa lạ, chưa quen"
+},
+"stranger": {
+"p": "n",
+"vn": "người lạ"
+},
+"strategy": {
+"p": "n",
+"vn": "chiến lược"
+},
+"stream": {
+"p": "n",
+"vn": "dòng suối"
+},
+"strength": {
+"p": "n",
+"vn": "sức mạnh, sức khỏe"
+},
+"stress": {
+"p": "n",
+"vn": "sự căng thẳng; căng thẳng, ép, làm căng"
+},
+"stretch": {
+"p": "v",
+"vn": "căng ra, duỗi ra, kéo dài ra"
+},
+"strictly": {
+"p": "adv",
+"vn": "một cách nghiêm khắc"
+},
+"strike": {
+"p": "v",
+"vn": "đánh, đập, bãi công, đình công; cuộc bãi công, cuộc đình công"
+},
+"striking": {
+"p": "adj",
+"vn": "nổi bật, gây ấn tượng"
+},
+"string": {
+"p": "n",
+"vn": "dây, sợi dây"
+},
+"strip": {
+"p": "v",
+"vn": "cởi, lột (quần áo); sự cởi quần áo"
+},
+"stripe": {
+"p": "n",
+"vn": "sọc, vằn, viền"
+},
+"striped": {
+"p": "adj",
+"vn": "có sọc, có vằn"
+},
+"stroke": {
+"p": "n",
+"vn": "cú đánh, cú đòn; cái vuốt ve, sự vuốt ve; vuốt ve"
+},
+"strongly": {
+"p": "adv",
+"vn": "khỏe, chắc chắn"
+},
+"structure": {
+"p": "n",
+"vn": "kết cấu, cấu trúc"
+},
+"struggle": {
+"p": "v",
+"vn": "đấu tranh; cuộc đấu tranh, cuộc chiến đấu"
+},
+"student": {
+"p": "n",
+"vn": "viên"
+},
+"studio": {
+"p": "n",
+"vn": "xưởng phim, trường quay; phòng thu"
+},
+"study": {
+"p": "n",
+"vn": "sự học tập, sự nghiên cứu; học tập, nghiên cứu"
+},
+"stuff": {
+"p": "n",
+"vn": "chất liệu, chất"
+},
+"stupid": {
+"p": "adj",
+"vn": ", ˈstyupɪd ngu ngốc, ngu đần, ngớ ngẩn"
+},
+"style": {
+"p": "n",
+"vn": "cách, kiểu, mẫu, loại"
+},
+"substance": {
+"p": "n",
+"vn": "chất liệu; bản chất; nội dung"
+},
+"substantial": {
+"p": "adj",
+"vn": "thực tế, đáng kể, quan trọng"
+},
+"substantially": {
+"p": "adv",
+"vn": "về thực chất, về căn bản"
+},
+"substitute": {
+"p": "n",
+"vn": "người, vật thay thế; thay thế"
+},
+"succeed": {
+"p": "v",
+"vn": "nối tiếp, kế tiếp; kế nghiệp, kế vị"
+},
+"success": {
+"p": "n",
+"vn": "sự thành công, sự thành đạt"
+},
+"successful": {
+"p": "adj",
+"vn": "thành công, thắng lợi, thành đạt"
+},
+"successfully": {
+"p": "adv",
+"vn": "thành công, thắng lợi, thành đạt"
+},
+"such": {
+"p": "det",
+"vn": "như thế, như vậy, như là. such as đến nỗi, đến mức"
+},
+"suck": {
+"p": "v",
+"vn": "bú, hút; hấp thụ, tiếp thu"
+},
+"sudden": {
+"p": "adj",
+"vn": "thình lình, đột ngột"
+},
+"suf": {
+"p": "n",
+"vn": "phố, đường phố"
+},
+"suffer": {
+"p": "v",
+"vn": "chịu đựng, chịu thiệt hại, đấu khổ"
+},
+"suffering": {
+"p": "n",
+"vn": "sự đau đớn, sự đau khổ"
+},
+"sufficient": {
+"p": "adj",
+"vn": "(+ for) đủ, thích đáng"
+},
+"sufficiently": {
+"p": "adv",
+"vn": "đủ, thích đáng"
+},
+"suggestion": {
+"p": "n",
+"vn": "sự đề nghị, sự đề xuất, sự khêu gợi"
+},
+"suit": {
+"p": "n",
+"vn": "bộ com lê, trang phục; thích hợp, quen, hợp với"
+},
+"suitcase": {
+"p": "n",
+"vn": ""
+},
+"suited": {
+"p": "adj",
+"vn": "hợp, phù hợp, thích hợp với"
+},
+"sum": {
+"p": "n",
+"vn": "tổng, toàn bộ"
+},
+"summer": {
+"p": "n",
+"vn": "mùa hè"
+},
+"sun": {
+"p": "n",
+"vn": "mặt trời"
+},
+"Sunday": {
+"p": "n",
+"vn": "Chủ nhật"
+},
+"superior": {
+"p": "adj",
+"vn": "chất lượng cao"
+},
+"supply": {
+"p": "n",
+"vn": "sự cung cấp, nguồn cung cấp; cung cấp, đáp ứng, tiếp tế"
+},
+"support": {
+"p": "n",
+"vn": "sự chống đỡ, sự ủng hộ; chống đỡ, ủng hộ"
+},
+"supporter": {
+"p": "n",
+"vn": "vật chống đỡ; người cổ vũ, người ủng hộ"
+},
+"suppose": {
+"p": "v",
+"vn": "rằng, tin rằng, nghĩ rằng"
+},
+"surely": {
+"p": "adv",
+"vn": "chắc chắn"
+},
+"surface": {
+"p": "n",
+"vn": "mặt, bề mặt"
+},
+"surname": {
+"p": "n",
+"vn": "họ"
+},
+"surprise": {
+"p": "n",
+"vn": "sự ngạc nhiên, sự bất ngờ; làm ngạc nhiên, gây bất ngờ"
+},
+"surprising": {
+"p": "adj",
+"vn": "làm ngạc nhiên, làm bất ngờ"
+},
+"surprisingly": {
+"p": "adv",
+"vn": "làm ngạc nhiên, làm bất ngờ"
+},
+"surround": {
+"p": "v",
+"vn": "vây quanh, bao quanh"
+},
+"surrounding": {
+"p": "adj",
+"vn": "sự vây quanh, sự bao quanh"
+},
+"surroundings": {
+"p": "n",
+"vn": "vùng xung quanh, môi trường xung quanh"
+},
+"survey": {
+"p": "n",
+"vn": "sự nhìn chung, sự khảo sát; quan sát, nhìn chung, khảo sát, nghiên cứu"
+},
+"survive": {
+"p": "v",
+"vn": "sống lâu hơn, tiếp tục sống, sống sót"
+},
+"suspect": {
+"p": "v",
+"vn": "ngờ, hoài nghi; người khả nghi, người bị tình nghi"
+},
+"suspicion": {
+"p": "n",
+"vn": "sự nghi ngờ, sự ngờ vực"
+},
+"suspicious": {
+"p": "adj",
+"vn": "có sự nghi ngờ, tỏ ra nghi ngờ, khả nghi"
+},
+"swallow": {
+"p": "v",
+"vn": "nuốt, nuốt chửng"
+},
+"swear": {
+"p": "v",
+"vn": "chửi rủa, nguyền rủa; thề, hứa"
+},
+"swearing": {
+"p": "n",
+"vn": "lời thề, lời nguyền rủa, lời thề hứa"
+},
+"sweat": {
+"p": "n",
+"vn": "mồ hôi; đổ mồ hôi"
+},
+"sweater": {
+"p": "n",
+"vn": "swetз người ra mồ hôi,, kẻ bóc lột lấo động"
+},
+"sweep": {
+"p": "v",
+"vn": "quét"
+},
+"swell": {
+"p": "v",
+"vn": "phồng, sưng lên"
+},
+"swelling": {
+"p": "n",
+"vn": "sự sưng lên, sự phồng ra"
+},
+"swim": {
+"p": "v",
+"vn": "bơi lội"
+},
+"swimming": {
+"p": "n",
+"vn": "sự bơi lội"
+},
+"swimming pool": {
+"p": "n",
+"vn": "bể nước"
+},
+"swing": {
+"p": "n",
+"vn": "sự đu đưa, lúc lắc; đánh đu, đu đưa, lúc lắc"
+},
+"switch": {
+"p": "n",
+"vn": "công tắc, roi; tắt, bật, đánh bằng gậy, roi. switch sth off ngắt điện. switch sth on bật điện"
+},
+"swollen": {
+"p": "adj",
+"vn": "sưng phồng, phình căng"
+},
+"swollen swell": {
+"p": "v",
+"vn": "phồng lên, sưng lên"
+},
+"symbol": {
+"p": "n",
+"vn": "biểu tượng, ký hiệu"
+},
+"sympathetic": {
+"p": "adj",
+"vn": "đồng cảm, đáng mến, dễ thương"
+},
+"sympathy": {
+"p": "n",
+"vn": "sự đồng cảm, sự đồng ý"
+},
+"tackle": {
+"p": "v",
+"vn": "giải quyết, khắc phục, bàn thảo; đồ dùng, dụng cụ"
+},
+"tail": {
+"p": "n",
+"vn": "đuôi, đoạn cuối"
+},
+"tank": {
+"p": "n",
+"vn": "thùng, két, bể"
+},
+"tap": {
+"p": "v",
+"vn": "mở vòi, đóng vòi; vòi, khóa"
+},
+"tape": {
+"p": "n",
+"vn": "băng, băng ghi âm; dải, dây"
+},
+"target": {
+"p": "n",
+"vn": "mục tiêu, đích"
+},
+"taste": {
+"p": "n",
+"vn": "vị, vị giác; nếm"
+},
+"teach": {
+"p": "v",
+"vn": "dạy"
+},
+"teacher": {
+"p": "n",
+"vn": "giáo viên"
+},
+"teaching": {
+"p": "n",
+"vn": "sự dạy, công việc dạy học"
+},
+"tear": {
+"p": "v",
+"vn": "xé, làm rắch; chỗ rách, miếng xe; nước mắt"
+},
+"technical": {
+"p": "adj",
+"vn": "(thuộc) kỹ thuật, chuyên môn"
+},
+"technique": {
+"p": "n",
+"vn": "kỹ sảo, kỹ thuật, phương pháp kỹ thuật"
+},
+"technology": {
+"p": "n",
+"vn": "kỹ thuật học, công nghệ học"
+},
+"telephone": {
+"p": "n",
+"vn": "máy điện thoại, gọi điện thoại"
+},
+"temperature": {
+"p": "n",
+"vn": "nhiệt độ"
+},
+"temporarily": {
+"p": "adv",
+"vn": "tempзrзlti tạm"
+},
+"temporary": {
+"p": "adj",
+"vn": "tạm thời, nhất thời"
+},
+"tend": {
+"p": "v",
+"vn": "trông nom, chăm sóc, giữ gìn, hầu hạ"
+},
+"tendency": {
+"p": "n",
+"vn": "hướng, chiều hướng, khuynh hướng"
+},
+"tension": {
+"p": "n",
+"vn": "sự căng, độ căng, tình trạng căng"
+},
+"tent": {
+"p": "n",
+"vn": "lều, rạp"
+},
+"terribly": {
+"p": "adv",
+"vn": "tồi tệ, không chịu nổi"
+},
+"test": {
+"p": "n",
+"vn": "bài kiểm tra, sự thử nghiệm, xét nghiệm; kiểm tra, xét nghiệm, thử nghiệm"
+},
+"text": {
+"p": "n",
+"vn": "nguyên văn, bản văn, chủ đề, đề"
+},
+"than": {
+"p": "prep",
+"vn": "hơn"
+},
+"thank": {
+"p": "v",
+"vn": "cám ơn"
+},
+"thank you exclamation": {
+"p": "n",
+"vn": "cảm ơn bạn (ông bà, anh chị...)"
+},
+"thanks exclamation": {
+"p": "n",
+"vn": "sự cảm ơn, lời cảm ơn"
+},
+"that": {
+"p": "pron",
+"vn": "người ấy, đó, vật ấy, đó; rằng, là"
+},
+"the": {
+"p": "",
+"vn": "cái, con, người, ấy này...."
+},
+"theatre": {
+"p": "n",
+"vn": "rạp hát, nhà hát"
+},
+"their": {
+"p": "det",
+"vn": "của chúng, của chúng nó, của họ"
+},
+"theirs": {
+"p": "n",
+"vn": ", pro ðeəz của chúng, của chúng nó, của họ"
+},
+"them": {
+"p": "n",
+"vn": ", pro ðem chúng, chúng nó, họ"
+},
+"theme": {
+"p": "n",
+"vn": "đề tài, chủ đề"
+},
+"themselves": {
+"p": "n",
+"vn": ", pro ðəm'selvz tự chúng, tự họ, tự"
+},
+"then": {
+"p": "adv",
+"vn": "đó, lúc đó, tiếp đó"
+},
+"theory": {
+"p": "n",
+"vn": "lý thuyết, học thuyết"
+},
+"they": {
+"p": "n",
+"vn": ", pro ðei chúng, chúng nó, họ; những cái ấy"
+},
+"thick": {
+"p": "adj",
+"vn": "dày; đậm"
+},
+"thickly": {
+"p": "adv",
+"vn": "dày; dày đặc; thành lớp dày"
+},
+"thickness": {
+"p": "n",
+"vn": "tính chất dày, độ dày, bề dày"
+},
+"thief": {
+"p": "n",
+"vn": "kẻ trộm, kẻ cắp"
+},
+"thin": {
+"p": "adj",
+"vn": "mỏng, mảnh"
+},
+"thing": {
+"p": "n",
+"vn": "cái, đồ, vật"
+},
+"thinking": {
+"p": "n",
+"vn": "sự suy nghĩ, ý nghĩ"
+},
+"this": {
+"p": "n",
+"vn": ", pro ðis cái này, điều này, việc này"
+},
+"thorough": {
+"p": "adj",
+"vn": "cẩn thận, kỹ lưỡng"
+},
+"thoroughly": {
+"p": "adv",
+"vn": "kỹ lưỡng, thấu đáo, triệt để"
+},
+"thought": {
+"p": "n",
+"vn": "sự suy nghĩ, khả năng suy nghĩ; ý nghĩ, tư tưởng, tư duy"
+},
+"thread": {
+"p": "n",
+"vn": "chỉ, sợi chỉ, sợi dây"
+},
+"threat": {
+"p": "n",
+"vn": "sự đe dọa, lời đe dọa"
+},
+"threaten": {
+"p": "v",
+"vn": "dọa, đe dọa"
+},
+"threatening": {
+"p": "adj",
+"vn": "sự đe dọa, sự hăm dọa"
+},
+"throat": {
+"p": "n",
+"vn": "cổ, cổ họng"
+},
+"throughout": {
+"p": "adv",
+"vn": "khắp, suốt"
+},
+"thumb": {
+"p": "n",
+"vn": "ngón tay cái"
+},
+"Thursday": {
+"p": "n",
+"vn": "thứ 5"
+},
+"thus": {
+"p": "adv",
+"vn": "như vậy, như thế, do đó"
+},
+"tidy": {
+"p": "adj",
+"vn": "sạch sẽ, ngăn nắp, gọn gàng; làm cho sạch sẽ, gọn gàng, ngăn nắp"
+},
+"tie": {
+"p": "v",
+"vn": "buộc, cột, trói; dây buộc, dây trói, dây giày. tie sth up có quan hệ mật thiết, gắn chặt"
+},
+"tight": {
+"p": "adj",
+"vn": "kín, chặt, chật"
+},
+"tightly": {
+"p": "adv",
+"vn": "chặt chẽ, sít sao"
+},
+"till": {
+"p": "",
+"vn": "đến khi, tới lúc mà"
+},
+"timetable": {
+"p": "n",
+"vn": "kế hoạch làm việc, thời gian biểu"
+},
+"tin": {
+"p": "n",
+"vn": "thiếc"
+},
+"tiny": {
+"p": "adj",
+"vn": "rất nhỏ, nhỏ xíu"
+},
+"tire": {
+"p": "v",
+"vn": "taiз làm mệt mỏi, trở nên mệt nhọc; lốp, vỏ xe"
+},
+"tiring": {
+"p": "adj",
+"vn": "sự mệt mỏi, sự mệt nhọc"
+},
+"title": {
+"p": "n",
+"vn": "đầu đề, tiêu đề; tước vị, tư cách"
+},
+"to": {
+"p": "prep",
+"vn": ", tu:, tu, tз theo hướng, tới"
+},
+"toe": {
+"p": "n",
+"vn": "ngón chân (người)"
+},
+"together": {
+"p": "adv",
+"vn": "cùng nhau, cùng với"
+},
+"toilet": {
+"p": "n",
+"vn": "nhà vệ sinh; sự trang điểm (rửa mặt, ăn mặc, chải tóc...)"
+},
+"tomato": {
+"p": "n",
+"vn": "cà chua"
+},
+"ton": {
+"p": "n",
+"vn": "tΔn tấn"
+},
+"tone": {
+"p": "n",
+"vn": "tiếng, giọng"
+},
+"tongue": {
+"p": "n",
+"vn": "lưỡi"
+},
+"tonight": {
+"p": "adv",
+"vn": "vào đêm nay, vào tối nay; đêm nay, tối nay"
+},
+"tonne": {
+"p": "n",
+"vn": "tấn"
+},
+"too": {
+"p": "adv",
+"vn": "cũng"
+},
+"tool": {
+"p": "n",
+"vn": "dụng cụ, đồ dùng"
+},
+"topic": {
+"p": "n",
+"vn": "đề tài, chủ đề"
+},
+"totally": {
+"p": "adv",
+"vn": "hoàn toàn"
+},
+"touch": {
+"p": "v",
+"vn": "sờ, mó, tiếp xúc; sự sờ, sự mó, sự tiếp xúc"
+},
+"tough": {
+"p": "adj",
+"vn": "chắc, bền, dai"
+},
+"tour": {
+"p": "n",
+"vn": "cuộc đo du lịch, cuộc đi dạo, chuyến du lịch; đi du lịch"
+},
+"tourist": {
+"p": "n",
+"vn": "khách du lịch"
+},
+"towards": {
+"p": "prep",
+"vn": "hướng, về hướng"
+},
+"towel": {
+"p": "n",
+"vn": "khăn tắm, khăn lấu"
+},
+"tower": {
+"p": "n",
+"vn": "tháp"
+},
+"town": {
+"p": "n",
+"vn": "thị trấn, thị xã, thành phố nhỏ"
+},
+"toy": {
+"p": "n",
+"vn": "đồ chơi, đồ trang trí; thể loại đồ chơi"
+},
+"trace": {
+"p": "v",
+"vn": "phát hiện, tìm thấy, vạch, chỉ ra, phác họa; dấu, vết, một chút"
+},
+"track": {
+"p": "n",
+"vn": "phần của đĩa; đường mòn, đường đua"
+},
+"trade": {
+"p": "n",
+"vn": "thương mại, buôn bán; buôn bán, trao đổi"
+},
+"trading": {
+"p": "n",
+"vn": "treidiη sự kinh doanh, việc mua bán"
+},
+"tradition": {
+"p": "n",
+"vn": "truyền thống"
+},
+"traditionally": {
+"p": "adv",
+"vn": "(thuộc) truyền thống, là truyền thống"
+},
+"training": {
+"p": "n",
+"vn": "sự dạy dỗ, sự huấn luyện, sự đào tạo"
+},
+"transfer": {
+"p": "v",
+"vn": "dời, di chuyển; sự di chuyển, sự dời chỗ"
+},
+"transform": {
+"p": "v",
+"vn": "đổi, biến đổi"
+},
+"translate": {
+"p": "v",
+"vn": "dịch, biên dịch, phiên dịch"
+},
+"translation": {
+"p": "n",
+"vn": "sự dịch"
+},
+"transparent": {
+"p": "adj",
+"vn": "suốt; dễ hiểu, sáng sủa"
+},
+"trap": {
+"p": "n",
+"vn": "đồ đạc, hành lý; bẫy, cạm bãy; bẫy, giữ, chặn lại"
+},
+"traveller": {
+"p": "n",
+"vn": "người đi, lữ khách"
+},
+"treat": {
+"p": "v",
+"vn": "đối xử, đối đãi, cư xử"
+},
+"tree": {
+"p": "n",
+"vn": "cây"
+},
+"trend": {
+"p": "n",
+"vn": "phương hướng, xu hướng, chiều hướng"
+},
+"trial": {
+"p": "n",
+"vn": "sự thử nghiệm, cuộc thử nghiệm"
+},
+"triangle": {
+"p": "n",
+"vn": "hình tam giác"
+},
+"trick": {
+"p": "n",
+"vn": "mưu mẹo, thủ đoạn, trò lừa gạt, lừa gạt"
+},
+"tropical": {
+"p": "adj",
+"vn": "nhiệt đới"
+},
+"trouble": {
+"p": "n",
+"vn": "điều lo lắng, điều muộn phiền"
+},
+"trousers": {
+"p": "n",
+"vn": "quần tây"
+},
+"truck": {
+"p": "n",
+"vn": "sự trao đổi, sự đổi chác"
+},
+"truly": {
+"p": "adv",
+"vn": "đúng sự thật, đích thực, thực sự"
+},
+"truth": {
+"p": "n",
+"vn": "sự thật"
+},
+"tube": {
+"p": "n",
+"vn": "ống, tuýp"
+},
+"Tuesday": {
+"p": "n",
+"vn": "thứ 3"
+},
+"tune": {
+"p": "n",
+"vn": ", tyun điệu, giai điệu; lên dây, so dây (đàn)"
+},
+"tunnel": {
+"p": "n",
+"vn": "đường hầm, hang"
+},
+"TV television": {
+"p": "v",
+"vn": "ô tuyến truyền hình"
+},
+"twice": {
+"p": "adv",
+"vn": "lần"
+},
+"twin": {
+"p": "n",
+"vn": "đôi, tạo thành cặp; cặp song sinh"
+},
+"twist": {
+"p": "v",
+"vn": "xoắn, cuộn, quắn; sự xoắn, vòng xoắn"
+},
+"twisted": {
+"p": "adj",
+"vn": "được xoắn, được cuộn"
+},
+"type": {
+"p": "n",
+"vn": "loại, kiểu, mẫu; phân loại, xếp loại"
+},
+"typically": {
+"p": "adv",
+"vn": "điển hình, tiêu biểu"
+},
+"tyre": {
+"p": "n",
+"vn": "taiз lốp, vỏ xe"
+},
+"ugly": {
+"p": "adj",
+"vn": "xấu xí, xấu xa"
+},
+"ultimate": {
+"p": "adj",
+"vn": "cuối cùng, sau cùng"
+},
+"ultimately": {
+"p": "adv",
+"vn": "cuối cùng, sau cùng"
+},
+"unable": {
+"p": "adj",
+"vn": "không có năng lực, không có tài, không thể, không có khẳ năng"
+},
+"unacceptable": {
+"p": "adj",
+"vn": "không chấp nhận được"
+},
+"uncertain": {
+"p": "adj",
+"vn": "thiếu chính xác, không chắc chắn"
+},
+"uncomfortable": {
+"p": "adj",
+"vn": "bất tiện, khó chịu, không thoải má"
+},
+"unconscious": {
+"p": "adj",
+"vn": "bất tỉnh, không có ý thức, không biết rõ"
+},
+"uncontrolled": {
+"p": "adj",
+"vn": "không bị điều khiển, không bị kiểm tra, không bị hạn chế"
+},
+"underground": {
+"p": "adj",
+"vn": "dưới mặt đất, ngầm dưới đất; ngầm"
+},
+"underneath": {
+"p": "prep",
+"vn": "dưới, bên dưới"
+},
+"understanding": {
+"p": "n",
+"vn": "trí tuệ, sự hiểu biết"
+},
+"underwater": {
+"p": "adj",
+"vn": "ở dưới mặt nước, dưới mặt nước"
+},
+"underwear": {
+"p": "n",
+"vn": "quần lót"
+},
+"undo": {
+"p": "v",
+"vn": "tháo, gỡ; xóa bỏ, hủy bỏ"
+},
+"unemployed": {
+"p": "adj",
+"vn": "thất nghiệp; không dùng, không sử dụng được"
+},
+"unemployment": {
+"p": "n",
+"vn": "Δnim'ploimзnt sự thất nghiệp, nạn thất nghiệp"
+},
+"unexpected": {
+"p": "adj",
+"vn": "bất ngờ, gây ngạc nhiên"
+},
+"unexpectedly": {
+"p": "adv",
+"vn": "Δniks'pektid bất ngờ, gây ngạc nhiên"
+},
+"unfair": {
+"p": "adj",
+"vn": "lận, không công bằng; bất lợi"
+},
+"unfairly": {
+"p": "adv",
+"vn": "lận, không công bằng; bất lợi"
+},
+"unfortunate": {
+"p": "adj",
+"vn": "không may, rủi ro, bất hạnh"
+},
+"unfortunately": {
+"p": "adv",
+"vn": "một cách đáng tiếc, một cách không may"
+},
+"unfriendly": {
+"p": "adj",
+"vn": "không thân thiện, không có thiện cảm"
+},
+"unhappiness": {
+"p": "n",
+"vn": "nỗi buồn, sự bất hạnh"
+},
+"unhappy": {
+"p": "adj",
+"vn": "buồn rầu, khốn khổ"
+},
+"uniform": {
+"p": "n",
+"vn": "đồng phục; đều, giống nhấu, đồng dạng"
+},
+"unimportant": {
+"p": "adj",
+"vn": "khônh quan trọng, không trọng đạ"
+},
+"union": {
+"p": "n",
+"vn": "liên hiệp, sự đoàn kết, sự hiệp nhất"
+},
+"unique": {
+"p": "adj",
+"vn": "độc nhất vô nhị"
+},
+"unit": {
+"p": "n",
+"vn": "đơn vị"
+},
+"unite": {
+"p": "v",
+"vn": "liên kết, hợp nhất, hợp lại, kết thân"
+},
+"united": {
+"p": "adj",
+"vn": "liên minh, đoàn kết, chung, thống nhất"
+},
+"universe": {
+"p": "n",
+"vn": "vũ trụ"
+},
+"university": {
+"p": "n",
+"vn": "trường đại học"
+},
+"unkind": {
+"p": "adj",
+"vn": "độc ác, tàn nhẫn"
+},
+"unknown": {
+"p": "adj",
+"vn": "không biết"
+},
+"unless": {
+"p": "conj",
+"vn": "trừ phi, trừ khi, nếu không"
+},
+"unlike": {
+"p": "prep",
+"vn": "khác, không giống"
+},
+"unload": {
+"p": "v",
+"vn": "cất gánh nặng, dỡ hàng"
+},
+"unlucky": {
+"p": "adj",
+"vn": "không gặp may, bất hạnh"
+},
+"unnecessary": {
+"p": "adj",
+"vn": "không cần thiết, không mong muốn"
+},
+"unpleasant": {
+"p": "adj",
+"vn": "không dễ chịu, khó chịu, khó ưa"
+},
+"unreasonable": {
+"p": "adj",
+"vn": "vô lý"
+},
+"unsteady": {
+"p": "adj",
+"vn": "không chắc, không ổn định"
+},
+"unsuccessful": {
+"p": "adj",
+"vn": "không thành công, thất bại"
+},
+"untidy": {
+"p": "adj",
+"vn": "không gọn gàng, không ngăn nắp, lộn xộn"
+},
+"Unusual": {
+"p": "",
+"vn": "hiếm, khác thường"
+},
+"unusually": {
+"p": "adv",
+"vn": "cực kỳ, khác thường"
+},
+"Unwilling": {
+"p": "",
+"vn": "không muốn, không có ý định"
+},
+"unwillingly": {
+"p": "adv",
+"vn": "không sẵn lòng, miễn cưỡng"
+},
+"upon": {
+"p": "prep",
+"vn": "trên, ở trên"
+},
+"upper": {
+"p": "adj",
+"vn": "hơn"
+},
+"upsetting": {
+"p": "adj",
+"vn": "tính đánh đổ, làm đổ"
+},
+"upside down": {
+"p": "adv",
+"vn": "lộn ngược"
+},
+"upstairs": {
+"p": "adv",
+"vn": "ở tên gác, cư ngụ ở tầng gác; tầng trên, gác"
+},
+"upward": {
+"p": "adj",
+"vn": "lên, hướng lên, đi lên"
+},
+"upwards": {
+"p": "adv",
+"vn": "lên, hướng lên, đi lên, về phía trên"
+},
+"urban": {
+"p": "adj",
+"vn": "(thuộc) thành phố, khu vực"
+},
+"urge": {
+"p": "v",
+"vn": "thúc, giục, giục giã; sự thúc đẩy, sự thôi thúc"
+},
+"us": {
+"p": "n",
+"vn": ", pro ʌs chúng tôi, chúng ta; tôi và anh"
+},
+"used": {
+"p": "adj",
+"vn": "đã dùng, đã sử dụng. used to sth/to doing sth: sử dụng cái gì, sử dụng để làm cái gì"
+},
+"used to modal": {
+"p": "v",
+"vn": "đã quen dùng"
+},
+"useless": {
+"p": "adj",
+"vn": "vô ích, vô dụng"
+},
+"usual": {
+"p": "adj",
+"vn": "thông thường, thường dùng"
+},
+"valid": {
+"p": "adj",
+"vn": "chắc chắn, hiệu quả, hợp lý"
+},
+"valley": {
+"p": "n",
+"vn": "lũng"
+},
+"van": {
+"p": "n",
+"vn": "tiền đội, quân tiên phong; xe tải"
+},
+"variation": {
+"p": "n",
+"vn": "sự biến đổi, sự thay đổi mức độ, sự khác nhau"
+},
+"varied": {
+"p": "adj",
+"vn": "thuộc nhiều loại khác nhau, những vẻ đa dạng"
+},
+"variety": {
+"p": "n",
+"vn": "sự đa dạng, trạng thái khác nhau"
+},
+"vary": {
+"p": "v",
+"vn": "đổi, làm cho khác nhau, biến đổi"
+},
+"vast": {
+"p": "adj",
+"vn": "rộng lớn, mênh mông"
+},
+"vegetable": {
+"p": "n",
+"vn": ", ˈvɛdʒɪtəbəl rau, thực vật"
+},
+"vehicle": {
+"p": "n",
+"vn": "cộ"
+},
+"venture": {
+"p": "n",
+"vn": "dự án kinh doanh, công việc kinh doanh; liều, mạo hiểm, cả gan"
+},
+"vertical": {
+"p": "adj",
+"vn": "thẳng đứng, đứng"
+},
+"very": {
+"p": "adv",
+"vn": "rất, lắm"
+},
+"via": {
+"p": "prep",
+"vn": "đường"
+},
+"victim": {
+"p": "n",
+"vn": "nạn nhân"
+},
+"victory": {
+"p": "n",
+"vn": "chiến thắng"
+},
+"video": {
+"p": "n",
+"vn": ""
+},
+"view": {
+"p": "n",
+"vn": "sự nhìn, tầm nhìn; nhìn thấy, xem, quan sát"
+},
+"village": {
+"p": "n",
+"vn": "làng, xã"
+},
+"violence": {
+"p": "n",
+"vn": "sự ác liệt, sự dữ dội; bạo lực"
+},
+"violent": {
+"p": "adj",
+"vn": "mãnh liệt, mạnh mẽ, hung dữ"
+},
+"violently": {
+"p": "adv",
+"vn": "vaiзlзntli mãnh liệt, dữ dội"
+},
+"virtually": {
+"p": "adv",
+"vn": "thực sự, hầu như, gần như"
+},
+"virus": {
+"p": "n",
+"vn": "rút"
+},
+"visible": {
+"p": "adj",
+"vn": "hữu hình, thấy được"
+},
+"vision": {
+"p": "n",
+"vn": "sự nhìn, thị lực"
+},
+"visitor": {
+"p": "n",
+"vn": "khách, du khách"
+},
+"vital": {
+"p": "adj",
+"vn": "(thuộc) sự sống, cần cho sự sống"
+},
+"vocabulary": {
+"p": "n",
+"vn": "từ vựng"
+},
+"voice": {
+"p": "n",
+"vn": "tiếng, giọng nói"
+},
+"volume": {
+"p": "n",
+"vn": "thế tích, quyển, tập"
+},
+"vote": {
+"p": "n",
+"vn": "sự bỏ phiếu, sự bầu cử; bỏ phiếu, bầu cử"
+},
+"waist": {
+"p": "n",
+"vn": "chỗ thắt lưng"
+},
+"wake up": {
+"p": "v",
+"vn": "thức dậy, tỉnh thức"
+},
+"walking": {
+"p": "n",
+"vn": "sự đi, sự đi bộ"
+},
+"wander": {
+"p": "v",
+"vn": "đi lang thang; sự đi lang thang"
+},
+"war": {
+"p": "n",
+"vn": "chiến tranh"
+},
+"warm": {
+"p": "adj",
+"vn": "ấm, ấm áp; làm cho nóng, hâm nóng"
+},
+"warmth": {
+"p": "n",
+"vn": "trạng thái ấm, sự ấm áp; hơi ấm"
+},
+"warn": {
+"p": "v",
+"vn": "báo cho biết, cảnh báo"
+},
+"warning": {
+"p": "n",
+"vn": "sự báo trước, lời cảnh báo"
+},
+"wash": {
+"p": "v",
+"vn": ", wɔʃ rửa, giặt"
+},
+"washing": {
+"p": "n",
+"vn": "sự tắm rửa, sự giặt"
+},
+"waste": {
+"p": "v",
+"vn": "lãng phí, uổng phí; vùng hoang vu sa mạc; bỏ hoang"
+},
+"wave": {
+"p": "n",
+"vn": "sóng, gợn nước; gợn sóng, uốn thành sóng"
+},
+"way": {
+"p": "n",
+"vn": "đường, đường đi"
+},
+"we": {
+"p": "pron",
+"vn": "chúng tôi, chúng ta"
+},
+"weakness": {
+"p": "n",
+"vn": "tình trạng yếu đuối, yếu ớt"
+},
+"wealth": {
+"p": "n",
+"vn": "sự giàu có, sự giàu sang"
+},
+"weapon": {
+"p": "n",
+"vn": "vũ khí"
+},
+"wear": {
+"p": "v",
+"vn": "mặc, mang, đeo"
+},
+"web": {
+"p": "n",
+"vn": "mạng, lưới"
+},
+"website": {
+"p": "n",
+"vn": "không gian liên tới với Internet"
+},
+"wedding": {
+"p": "n",
+"vn": "lễ cưới, hôn lễ"
+},
+"Wednesday": {
+"p": "n",
+"vn": "thứ 4"
+},
+"weigh": {
+"p": "v",
+"vn": "cân, cân nặng"
+},
+"well": {
+"p": "adv",
+"vn": ", exclamation wel tốt, giỏi; ôi, may quá!"
+},
+"well known": {
+"p": "adj",
+"vn": "nổi tiếng, được nhiều người biết đến"
+},
+"west": {
+"p": "n",
+"vn": "phía Tây, theo phía tây, về hướng tây"
+},
+"western": {
+"p": "adj",
+"vn": "về phía tây, của phía tây"
+},
+"wet": {
+"p": "adj",
+"vn": "ướt, ẩm ướt"
+},
+"what": {
+"p": "n",
+"vn": ", pro wʌt gì, thế nào"
+},
+"whatever": {
+"p": "n",
+"vn": ", pro wɔt´evə bất cứ thứ gì, bất kể thứ gì"
+},
+"wheel": {
+"p": "n",
+"vn": "bánh xe"
+},
+"when": {
+"p": "adv",
+"vn": "lúc, vào lúc nào"
+},
+"whenever": {
+"p": "conj",
+"vn": "bất cứ lúc nào, lúc nào"
+},
+"where": {
+"p": "adv",
+"vn": "đâu, ở đâu; nơi mà"
+},
+"whereas": {
+"p": "conj",
+"vn": "nhưng trái lại, trong khi mà"
+},
+"wherever": {
+"p": "conj",
+"vn": "ở bất cứ nơi nào, ở bất cứ nơi đâu"
+},
+"whether": {
+"p": "conj",
+"vn": "có..không; có... chăng; không biết có.. không"
+},
+"which": {
+"p": "n",
+"vn": ", pro witʃ nào, bất cứ.. nào; ấy, đó"
+},
+"while": {
+"p": "n",
+"vn": "lúc, trong khi; lúc, chốc, lát"
+},
+"whilst": {
+"p": "conj",
+"vn": "lúc, trong khi"
+},
+"whisper": {
+"p": "v",
+"vn": "nói thì thầm, xì xào; tiếng nói thì thầm, tiếng xì xào"
+},
+"whistle": {
+"p": "n",
+"vn": "sự huýt sáo, sự thổi còi; huýt sáo, thổi còi"
+},
+"white": {
+"p": "adj",
+"vn": "trắng; màu trắng"
+},
+"who": {
+"p": "n",
+"vn": ", pro hu: ai, người nào, kẻ nào, người như thế nào"
+},
+"whoever": {
+"p": "n",
+"vn": ", pro hu:'ev ai, người nào, bất cứ ai, bất cứ người nào, dù ai"
+},
+"whom": {
+"p": "n",
+"vn": ", pro hu:m ai, người nào; người mà"
+},
+"whose": {
+"p": "n",
+"vn": ", pro hu:z của ai"
+},
+"why": {
+"p": "adv",
+"vn": "tại sao, vì sao"
+},
+"wide": {
+"p": "adj",
+"vn": "rộng, rộng lớn"
+},
+"widely": {
+"p": "adv",
+"vn": "nhiều, xa; rộng rãi"
+},
+"width": {
+"p": "n",
+"vn": "tính chất rộng, bề rộng"
+},
+"wild": {
+"p": "adj",
+"vn": "dại, hoang"
+},
+"wildly": {
+"p": "adv",
+"vn": "dại, hoang"
+},
+"will": {
+"p": "v",
+"vn": ", modal wil sẽ; ý chí, ý định"
+},
+"willing": {
+"p": "adj",
+"vn": "bằng lòng, vui lòng, muốn"
+},
+"willingly": {
+"p": "adv",
+"vn": "wiliηli sẵn lòng, tự nguyện"
+},
+"willingness": {
+"p": "n",
+"vn": "sự bằng lòng, sự vui lòng"
+},
+"wind": {
+"p": "v",
+"vn": "quấn lại, cuộn lại. wind sth up: lên dây, quấn, giải quyết"
+},
+"wine": {
+"p": "n",
+"vn": "rượu, đồ uống"
+},
+"wing": {
+"p": "n",
+"vn": "wiη cánh, sự bay, sự cất cánh"
+},
+"winner": {
+"p": "n",
+"vn": "người thắng cuộc"
+},
+"winning": {
+"p": "adj",
+"vn": "đang dành thắng lợi, thắng cuộc"
+},
+"winter": {
+"p": "n",
+"vn": "mùa đông"
+},
+"wire": {
+"p": "n",
+"vn": "dây (kim loại)"
+},
+"wise": {
+"p": "adj",
+"vn": "khôn ngoan, sáng suốt, thông thái"
+},
+"wish": {
+"p": "v",
+"vn": "wi∫ ước, mong muốn; sự mong ước, lòng mong muốn"
+},
+"with": {
+"p": "prep",
+"vn": "với, cùng"
+},
+"withdraw": {
+"p": "v",
+"vn": ", wɪθˈdrɔ rút, rút khỏi, rút lui"
+},
+"within": {
+"p": "prep",
+"vn": "thời gian, trong khoảng thời gian"
+},
+"without": {
+"p": "prep",
+"vn": ", wɪθaʊt không, không có"
+},
+"witness": {
+"p": "n",
+"vn": "sự làm chứng, bằng chứng; chứng kiến, làm chứng"
+},
+"woman": {
+"p": "n",
+"vn": "đàn bà, phụ nữ"
+},
+"wonder": {
+"p": "v",
+"vn": "ngạc nhiên, lấy làm lạ, kinh ngạc"
+},
+"wonderful": {
+"p": "adj",
+"vn": "thường, khác thường, kỳ diệu, tuyệt vời"
+},
+"wood": {
+"p": "n",
+"vn": "gỗ"
+},
+"wooden": {
+"p": "adj",
+"vn": "làm bằng gỗ"
+},
+"wool": {
+"p": "n",
+"vn": ""
+},
+"worker": {
+"p": "n",
+"vn": "người lao động"
+},
+"working": {
+"p": "adj",
+"vn": "sự làm, sự làm việc"
+},
+"world": {
+"p": "n",
+"vn": "thế giới"
+},
+"worry": {
+"p": "v",
+"vn": "lắng, suy nghĩ; sự lo lắng, suy nghĩ"
+},
+"worrying": {
+"p": "adj",
+"vn": "gây lo lắng, gây lo nghĩ"
+},
+"worse": {
+"p": "",
+"vn": "xấu"
+},
+"worship": {
+"p": "n",
+"vn": "sự tôn thờ, sự tôn sùng; thờ, thờ phụng, tôn thờ"
+},
+"worth": {
+"p": "adj",
+"vn": "đáng giá, có giá trị"
+},
+"would": {
+"p": "v",
+"vn": ", modal wud sẽ"
+},
+"wounded": {
+"p": "adj",
+"vn": "bị thương"
+},
+"wrap": {
+"p": "v",
+"vn": "gói, bọc, quấn"
+},
+"wrapping": {
+"p": "n",
+"vn": "vật bao bọc, vật quấn quanh"
+},
+"wrist": {
+"p": "n",
+"vn": "cổ tay"
+},
+"writer": {
+"p": "n",
+"vn": "người viết"
+},
+"writing": {
+"p": "n",
+"vn": "sự viết"
+},
+"written": {
+"p": "adj",
+"vn": "viết ra, được thảo ra"
+},
+"wrongly": {
+"p": "adv",
+"vn": "một cách bất công, không đúng"
+},
+"yard": {
+"p": "n",
+"vn": "sân, thước Anh (bằng 0, 914 mét)"
+},
+"yawn": {
+"p": "v",
+"vn": "há miệng; cử chỉ ngáp"
+},
+"yellow": {
+"p": "adj",
+"vn": "vàng; màu vàng"
+},
+"yes": {
+"p": "n",
+"vn": ", exclamation jes vâng, phải, có chứ"
+},
+"you": {
+"p": "pron",
+"vn": "chị, ông, bà, ngài, ngươi, mày; các anh, các chị, các ông, các bà, các ngài, các người, chúng mày"
+},
+"your": {
+"p": "det",
+"vn": "của anh, của chị, của ngài, của mày; của các anh, của các chị, của các ngài, của chúng mày"
+},
+"yours": {
+"p": "n",
+"vn": ", pro jo:z cái của anh, cái của chị, cái của ngài, cái của mày; cái của các anh, cái của các chị, cái của các ngài, cái của chúng mày"
+},
+"yourself": {
+"p": "pron",
+"vn": "tự anh, tự chị, chính anh, chính mày, tự mày, tự mình"
+},
+"youth": {
+"p": "n",
+"vn": "tuổi trẻ, tuổi xuân, tuổi thanh niên, tuổi niên thiếu"
+},
+"zero": {
+"p": "num",
+"vn": "số không"
+},
+"zone": {
+"p": "n",
+"vn": "vực, miền, vùng EEFC Effortless English Fanclub Community www.EEFC.vn www.EffortlessEnglishClub.vn www.EffortlessEnglishClub.edu.vn https://www.facebook.com/eefcvn http://youtube.com/EffortlessEnglishFC http://google.com/+EffortlessenglishclubVn"
+}
+}
