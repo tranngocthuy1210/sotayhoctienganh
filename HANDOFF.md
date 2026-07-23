@@ -45,7 +45,9 @@ Bảng: `vocab`, `scripts`, `recordings`, `allowed_emails`. Bucket riêng tư `r
 ## 3. BỐ CỤC: 6 TAB (sticky dưới header)
 
 1. **Thời khóa biểu** (`#tab-cal`) — lịch 90 ngày + 3 thói quen + báo thức
-2. **Sổ tay từ vựng** (`#tab-voc`) — **ô tìm kiếm** + 15 nhóm chủ đề (có ví dụ) + 26 nhóm chủ đề Oxford (tra cứu) + "Của tôi"
+2. **Sổ tay từ vựng** (`#tab-voc`) — **ô tìm kiếm** + **dải tab NGANG 41 chủ đề** (15 nhóm có ví dụ + 26 nhóm Oxford tra cứu, có vạch phân nhóm) + "Của tôi"
+   → Trước đây là 41 accordion xếp DỌC, người dùng phải kéo quá dài nên đã đổi (2026-07-23).
+   Bấm tab nào hiện từ của tab đó ở `#voc-panel`; HTML từng chủ đề được cache trong biến `cache`.
 3. **Kịch bản đối thoại F&B** (`#tab-script`) — 3 accordion, có tab dọc bên trái
 4. **Ghi âm & tiến bộ** (`#tab-rec`) — đăng nhập, thu, nghe lại, so sánh
 5. **Ôn từ Anki** (`#tab-anki`) — lặp lại ngắt quãng + chuỗi ngày 🔥
@@ -113,6 +115,16 @@ Phần audio giấy phép mở của Tatoeba **lệch nặng về câu meme/chí
 Trước đây file `.js` dùng **cache-first** → người dùng thấy bản cũ sau mỗi lần cập nhật dữ liệu,
 **đã hiểu nhầm 3 lần** ("sao chỉ có 794 từ"). Đã sửa: `.js/.html/.json` giờ **network-first**
 (online luôn mới, offline mới dùng bản lưu); ảnh vẫn cache-first. **Giữ nguyên cách này.**
+
+### ⚠️ BẪY 8: `.map(hàm)` truyền LÉN chỉ số + mảng
+`arr.map(wordHTML)` gọi `wordHTML(phầnTử, chỉSố, mảng)`. Ngày 2026-07-23 `wordHTML` được thêm
+2 tham số `(w, gname, hl)` cho ô tìm kiếm, mà chỗ dựng danh sách chủ đề vẫn để `.map(wordHTML)`
+→ `hl` nhận nguyên cái mảng (truthy) → `mark(w.t)` gọi mảng như hàm → **ném lỗi, mọi chủ đề rỗng trắng**.
+Tệ hơn: lỗi ném **trong event listener** nên không nổi lên chỗ gọi, `try/catch` bọc ngoài bắt không được,
+console mới thấy → **đẩy lên rồi vẫn tưởng chạy tốt**.
+→ **Luôn bọc: `.map(function(w){return f(w);})`.** Thêm tham số cho hàm nào thì grep hết chỗ gọi `.map(tênHàm)`.
+→ Sau khi sửa JS dựng UI, **kiểm bằng browser pane là có nội dung thật** (đếm số phần tử), đừng chỉ tin `check.py`
+   — `check.py` chỉ soát cú pháp, không chạy thử.
 
 ### ⚠️ BẪY 7: KHÔNG kiểm RLS bằng mã HTTP
 Gọi `/rest/v1/vocab` bằng khoá công khai rồi thấy **`200` + `[]`** thì **KHÔNG kết luận được gì**:
