@@ -830,7 +830,7 @@
       <div class="acc-body">
         <div class="rule-gold" id="acc-voc">Luật vàng: 10 từ/ngày, mỗi từ phải NÓI thành tiếng 1 câu có ngữ cảnh thật của bạn. Không nói ra tiếng = chưa học.</div>
         <h4 id="voc600-head"><span class="tag">Nền tảng</span>600 từ thông dụng theo chủ đề</h4>
-        <p>Gõ vào ô tìm kiếm để tra nhanh 1 từ, hoặc chọn chủ đề trên dải tab ngang (vuốt ngang để xem hết) rồi bấm 1 từ để xem nghĩa, ví dụ và mẹo. Mỗi từ có IPA (giọng Mỹ) + nút loa nghe. Học 10 từ/ngày, nhớ NÓI thành tiếng. Nhóm <b>15 chủ đề đầu</b> có sẵn câu ví dụ; <b>26 chủ đề Oxford 3000</b> bên dưới là kho tra cứu (đang bổ sung ví dụ dần).</p>
+        <p>Gõ vào ô tìm kiếm để tra nhanh 1 từ, hoặc chọn chủ đề trên dải tab ngang (vuốt ngang để xem hết) rồi bấm 1 từ để xem nghĩa, ví dụ và mẹo. Mỗi từ có IPA (giọng Mỹ) + nút loa nghe. Học 10 từ/ngày, nhớ NÓI thành tiếng. Mỗi chủ đề gộp chung cả hai kho: <b>từ có sẵn câu ví dụ xếp lên đầu</b>, phần Oxford 3000 tra cứu xếp sau (đang bổ sung ví dụ dần).</p>
         <div id="vocsearch" class="nokey"></div>
         <div id="voc600"><div class="myempty">Đang tải bộ 600 từ…</div></div>
         <h4><span class="tag">Tuần 5</span>Sản phẩm của bạn — 60 từ</h4>
@@ -1915,11 +1915,43 @@
 <script src="./data-vocab-oxford.js"></script>
 <script src="./data-dictation-tatoeba.js"></script>
 <script src="./data-sentence-vn.js"></script>
+<script src="./data-topics.js"></script>
 <script>
-/* Gộp bộ 600 gốc + phần mở rộng có ví dụ + kho Oxford 3000 A–Z (tra cứu) thành 1 kho
-   dùng chung cho cả phần hiển thị lẫn phần ôn Anki. */
-window.VOCAB_ALL=(window.VOCAB600||[]).concat(window.VOCAB_PLUS||[]).concat(window.VOCAB_OXFORD||[]);
-window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[]).length);},0);
+/* Gộp CẢ 3 KHO vào MỘT bộ 26 chủ đề dùng chung (hiển thị + ôn Anki).
+   Trước đây là 15 nhóm "có sẵn ví dụ" + 26 nhóm Oxford = 41 nhóm rời, phải kéo quá dài.
+   Nay xếp lại theo data-topics.js: mỗi chủ đề chứa cả từ có ví dụ lẫn từ Oxford.
+   3 file dữ liệu gốc GIỮ NGUYÊN — chúng vẫn là nơi chứa t/ipa/p/vn/ex/ex2. */
+(function(){
+  var SRC=(window.VOCAB600||[]).concat(window.VOCAB_PLUS||[]).concat(window.VOCAB_OXFORD||[]);
+  var DEF=window.TOPIC_DEF, OF=window.TOPIC_OF;
+  if(!DEF||!OF){ /* thiếu bảng chủ đề thì dùng tạm cách nhóm cũ, còn hơn trắng trang */
+    window.VOCAB_ALL=SRC;
+    window.VOCAB_COUNT=SRC.reduce(function(s,g){return s+((g.words||[]).length);},0);
+    return;
+  }
+  var bucket={},n=0;
+  DEF.forEach(function(t){bucket[t.id]=[];});
+  SRC.forEach(function(g){
+    (g.words||[]).forEach(function(w){
+      var id="ox-"+OF[w.t];
+      if(!bucket[id])id=DEF[DEF.length-1].id;   /* từ lạ: dồn vào nhóm cuối, không bỏ rơi */
+      bucket[id].push(w); n++;
+    });
+  });
+  /* Trong mỗi chủ đề: từ CÓ VÍ DỤ lên trước (đó là 794 từ thông dụng nhất,
+     đáng học trước), phần Oxford tra cứu xếp sau; mỗi phần tự sắp A–Z. */
+  window.VOCAB_ALL=DEF.map(function(t){
+    var ws=bucket[t.id].sort(function(a,b){
+      var ae=a.ex?0:1, be=b.ex?0:1;
+      if(ae!==be)return ae-be;
+      var x=a.t.toLowerCase(), y=b.t.toLowerCase();
+      return x<y?-1:(x>y?1:0);
+    });
+    return {id:t.id,title:t.title,icon:t.icon,c:t.c,words:ws,
+            nex:ws.filter(function(w){return !!w.ex;}).length};
+  }).filter(function(g){return g.words.length;});
+  window.VOCAB_COUNT=n;
+})();
 </script>
 <script>
 /* Render kho từ theo chủ đề vào #voc600.
@@ -1962,17 +1994,9 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
   /* ---- 41 chủ đề dựng thành DẢI TAB NGANG cuộn được ----
      Xếp dọc thì phải cuộn qua 41 khối mới tới chủ đề cuối. Dải ngang giữ mọi
      chủ đề trong 1 hàng, bấm cái nào chỉ hiện từ của cái đó ngay bên dưới. */
-  var tabs="",lastKind="";
+  var tabs="";
   window.VOCAB_ALL.forEach(function(g,gi){
     var cvar=CVAR[g.c]||"--tonghop";
-    /* Vạch phân nhóm: chủ đề CÓ VÍ DỤ (id không bắt đầu bằng "ox-") đứng trước,
-       kho Oxford tra cứu đứng sau. Vuốt ngang 41 tab mà không có mốc thì rất dễ lạc. */
-    var kind=(String(g.id||"").indexOf("ox-")===0)?"ox":"core";
-    if(kind!==lastKind){
-      lastKind=kind;
-      tabs+='<span class="voctab-sep" aria-hidden="true">'+
-        (kind==="ox"?"Oxford 3000 · tra cứu":"Có sẵn ví dụ")+'</span>';
-    }
     tabs+='<button type="button" class="voctab" data-gi="'+gi+'"'+
       ' aria-expanded="false" aria-controls="voc-panel" style="--c:var('+cvar+')">'+
       icon(g.icon||"i-layers")+'<span class="voctab-t">'+esc(g.title)+'</span>'+
@@ -2012,7 +2036,8 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
       cache[gi]=(g.words||[]).map(function(w){return wordHTML(w);}).join("");
     }
     panel.innerHTML='<div class="vocpanel-h">'+icon(g.icon||"i-layers")+
-      '<b>'+esc(g.title)+'</b><span>'+(g.words||[]).length+' từ</span></div>'+
+      '<b>'+esc(g.title)+'</b><span>'+(g.words||[]).length+' từ'+
+      (g.nex?' · '+g.nex+' có ví dụ':'')+'</span></div>'+
       '<div class="voc-list">'+cache[gi]+'</div>';
     if(window.PRON&&window.PRON.refresh)window.PRON.refresh();
   }
@@ -2040,7 +2065,8 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
 
   /* Cập nhật tiêu đề theo số từ thật */
   var hd=document.getElementById("voc600-head");
-  if(hd)hd.innerHTML='<span class="tag">Nền tảng</span>'+window.VOCAB_COUNT+' từ Oxford theo chủ đề';
+  if(hd)hd.innerHTML='<span class="tag">Nền tảng</span>'+window.VOCAB_COUNT+
+    ' từ chia '+window.VOCAB_ALL.length+' chủ đề';
 
   /* Cho ô tìm kiếm dùng lại đúng cách vẽ 1 từ */
   window.VOCVIEW={wordHTML:wordHTML,POS:POS,esc:esc};
@@ -2216,11 +2242,35 @@ window.VOCAB_COUNT=window.VOCAB_ALL.reduce(function(s,g){return s+((g.words||[])
   window.VOCAB_ALL.forEach(function(g){
     (g.words||[]).forEach(function(w){ ALL[g.id+"|"+w.t]={w:w,g:g}; });
   });
-  /* Kho Oxford đã đổi từ nhóm A–Z sang nhóm THEO CHỦ ĐỀ nên các id cũ (ox-a…ox-z)
-     người dùng từng chọn không còn tồn tại. Không lọc bỏ thì bộ lọc khớp 0 chủ đề
-     và tab ôn tập hiện "hết thẻ" một cách vô lý. Lọc lại, sạch hết thì coi như chọn tất cả. */
+  /* ---- Chuyển tiến độ cũ sang id nhóm mới ----
+     Cách nhóm đã đổi 2 lần (A–Z → chủ đề Oxford → gộp chung 26 chủ đề). Khoá thẻ là
+     "<id nhóm>|<từ>", nên đổi nhóm là mọi thẻ đã học thành mồ côi và người dùng
+     MẤT TRẮNG tiến độ. Từ là duy nhất trong cả kho nên dò lại được theo phần sau dấu "|". */
+  var LIVE={};TOPICS.forEach(function(t){LIVE[t.id]=1;});
+  (function(){
+    var moved=0,drop=0,nc={};
+    for(var k in S.c){
+      if(!S.c.hasOwnProperty(k))continue;
+      var p=k.indexOf("|");
+      if(p<0){drop++;continue;}
+      var gid=k.slice(0,p), w=k.slice(p+1);
+      if(LIVE[gid]&&ALL[k]){nc[k]=S.c[k];continue;}       /* còn dùng được, giữ nguyên */
+      var t=window.TOPIC_OF&&window.TOPIC_OF[w];
+      var nk=t?("ox-"+t+"|"+w):null;
+      if(nk&&ALL[nk]){                                     /* dời sang nhóm mới của từ đó */
+        /* nếu đã có sẵn thì giữ thẻ bậc cao hơn, đừng tụt tiến độ */
+        if(!nc[nk]||(nc[nk].b||0)<(S.c[k].b||0))nc[nk]=S.c[k];
+        moved++;
+      }else drop++;
+    }
+    if(moved||drop){S.c=nc;save();}
+    /* để kiểm được từ console khi cách nhóm đổi lần nữa */
+    window.SRS_MIGRATE={moved:moved,drop:drop,con:Object.keys(nc).length};
+  })();
+
+  /* Id chủ đề người dùng từng chọn cũng theo nhóm cũ — lọc bỏ id không còn tồn tại,
+     sạch hết thì coi như chọn tất cả (không thì bộ lọc khớp 0 chủ đề, hiện "hết thẻ" vô lý). */
   if(S.cfg.topics){
-    var LIVE={};TOPICS.forEach(function(t){LIVE[t.id]=1;});
     var keep=S.cfg.topics.filter(function(id){return LIVE[id];});
     if(keep.length!==S.cfg.topics.length){ S.cfg.topics=keep.length?keep:null; save(); }
   }

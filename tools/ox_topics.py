@@ -39,6 +39,233 @@ TOPICS = [
 
 MAP = {}
 
+# ═══════════════════════════════════════════════════════════════════════
+# 794 TU CO SAN VI DU (data-vocab.js 600 + data-vocab-plus.js 194)
+# Gop chung vao 26 chu de tren, khong con khoi "co san vi du" rieng.
+# Khong tu nao trung voi kho Oxford (da kiem: giao = 0).
+# ═══════════════════════════════════════════════════════════════════════
+
+# -- daily-verbs: Dong tu doi song --
+MAP.update({
+"go":"action","come":"action","get":"action","make":"action","take":"action","do":"action",
+"have":"action","see":"action","know":"mind","think":"mind","want":"feel","need":"mind",
+"use":"action","find":"action","give":"action","tell":"mind","work":"work","call":"work",
+"try":"action","ask":"mind","feel":"feel","become":"change","leave":"action","put":"action",
+"mean":"mind","keep":"action","let":"mind","begin":"change","seem":"mind","help":"action",
+"talk":"mind","turn":"action","start":"change","show":"mind","hear":"action","play":"sport",
+"run":"action","move":"action","live":"people","believe":"mind","bring":"action",
+"happen":"change","write":"edu","sit":"action","stand":"action","lose":"change","pay":"money",
+"meet":"work","include":"mind","continue":"change",
+})
+
+# -- work-verbs: Dong tu cong viec & hanh dong --
+MAP.update({
+"send":"work","receive":"work","manage":"work","lead":"work","sell":"biz","buy":"biz",
+"deliver":"biz","install":"tech","fix":"tech","check":"work","confirm":"work","agree":"mind",
+"arrange":"work","explain":"mind","discuss":"mind","decide":"mind","plan":"work",
+"prepare":"work","report":"work","contact":"work","train":"work","hire":"work",
+"promote":"work","join":"work","close":"biz","increase":"change","reduce":"change",
+"save":"money","spend":"money","earn":"money","charge":"money","book":"biz","cancel":"biz",
+"change":"change","improve":"change","solve":"mind","handle":"work","provide":"biz",
+"suggest":"mind","recommend":"mind","compare":"mind","choose":"mind","accept":"mind",
+"refuse":"mind","complain":"biz","apologize":"mind","remind":"mind","schedule":"work",
+"negotiate":"biz","cooperate":"work",
+})
+
+# -- self-family: Ban than & gia dinh --
+MAP.update({
+"name":"people","age":"people","job":"work","hometown":"place","family":"people",
+"parents":"people","mother":"people","father":"people","brother":"people","sister":"people",
+"siblings":"people","son":"people","daughter":"people","child":"people","kids":"people",
+"wife":"people","husband":"people","married":"people","single":"people","cousin":"people",
+"uncle":"people","aunt":"people","grandparents":"people","grandmother":"people",
+"grandfather":"people","friend":"people","neighbor":"people","boss":"work","colleague":"work",
+"team":"work","hobby":"sport","weekend":"time","birthday":"time","health":"body","tall":"adj",
+"short":"adj","young":"adj","old":"adj","kind":"feel","friendly":"feel","honest":"feel",
+"patient":"feel","confident":"feel","shy":"feel","funny":"feel","smart":"feel",
+"hard-working":"feel","generous":"feel","polite":"feel","calm":"feel",
+})
+
+# -- home-things: Nha o & do vat hang ngay --
+MAP.update({
+"house":"home","apartment":"home","room":"home","kitchen":"home","bedroom":"home",
+"bathroom":"home","door":"home","window":"home","table":"home","chair":"home","bed":"home",
+"desk":"home","phone":"tech","laptop":"tech","computer":"tech","key":"home","bag":"clothes",
+"wallet":"clothes","clock":"time","light":"home","water":"food","food":"food","coffee":"food",
+"tea":"food","car":"travel","motorbike":"travel","street":"place","city":"place",
+"district":"place","building":"place","floor":"home","wall":"home","clothes":"clothes",
+"shoes":"clothes","watch":"clothes","glasses":"clothes","umbrella":"clothes","fridge":"home",
+"fan":"home","air conditioner":"home","television":"media","remote":"home","charger":"tech",
+"internet":"tech","wifi":"tech","battery":"tech","screen":"tech","button":"tech",
+"drawer":"home","shelf":"home",
+})
+
+# -- office-tech: Van phong & phan mem --
+MAP.update({
+"client":"biz","customer":"biz","meeting":"work","deadline":"work","project":"work",
+"task":"work","email":"work","file":"work","folder":"work","document":"work","data":"tech",
+"app":"tech","software":"tech","hardware":"tech","system":"tech","account":"tech",
+"password":"tech","login":"tech","dashboard":"tech","feature":"tech","version":"tech",
+"bug":"tech","issue":"work","error":"tech","cloud":"tech","server":"tech","database":"tech",
+"backup":"tech","device":"tech","tablet":"tech","user":"tech","setting":"tech","sync":"tech",
+"deploy":"tech","notification":"tech","message":"work","link":"tech","download":"tech",
+"upload":"tech","printer":"tech","network":"tech","security":"tech","access":"tech",
+"permission":"tech","spreadsheet":"work","chart":"work","presentation":"work",
+"reminder":"work","workflow":"work","attachment":"work",
+})
+
+# -- fnb: Nganh F&B (giu tron ven trong chu de An uong & F&B) --
+MAP.update({
+"restaurant":"food","café":"food","waiter":"food","waitress":"food","chef":"food",
+"cook":"food","guest":"food","bill":"food","tip":"food","dish":"food","drink":"food",
+"meal":"food","breakfast":"food","lunch":"food","dinner":"food","espresso":"food",
+"latte":"food","cappuccino":"food","juice":"food","smoothie":"food","ice":"food",
+"sugar":"food","milk":"food","bread":"food","cake":"food","rice":"food","noodle":"food",
+"soup":"food","sauce":"food","spicy":"food","sweet":"food","fresh":"food","delicious":"food",
+"serve":"food","portion":"food","reservation":"food","booking":"food","takeaway":"food",
+"delivery":"food","counter":"food","cashier":"food","shift":"food","recipe":"food",
+"ingredient":"food","napkin":"food","tray":"food","menu":"food","snack":"food",
+"dessert":"food","peak hours":"food",
+})
+
+# -- sales: Ban hang & dam phan --
+MAP.update({
+"sale":"biz","proposal":"biz","benefit":"biz","value":"biz","solution":"biz","problem":"mind",
+"goal":"work","result":"change","commission":"money","profit":"money","margin":"money",
+"competitor":"biz","market":"biz","brand":"biz","product":"biz","service":"biz",
+"quality":"biz","guarantee":"biz","warranty":"biz","refund":"money","invoice":"money",
+"installment":"money","negotiation":"biz","objection":"biz","agreement":"biz","term":"biz",
+"condition":"biz","opportunity":"biz","decision":"mind","approve":"mind","reject":"mind",
+"commitment":"biz","partner":"biz","relationship":"people","trust":"feel","loyal":"feel",
+"referral":"biz","upsell":"biz","advantage":"mind","risk":"biz","win":"biz",
+"convince":"mind","persuade":"mind","pitch":"biz","prospect":"biz","offer":"biz",
+"bargain":"biz","incentive":"biz","reference":"biz","turnover":"money",
+})
+
+# -- money-time: Tien, so & thoi gian --
+MAP.update({
+"money":"money","cash":"money","card":"money","coin":"money","amount":"number",
+"total":"number","percent":"number","number":"number","expensive":"adj","cheap":"adj",
+"free":"adj","salary":"money","income":"money","tax":"money","bank":"money","loan":"money",
+"afford":"money","million":"number","thousand":"number","hundred":"number","dozen":"number",
+"half":"number","quarter":"number","double":"number","time":"time","hour":"time",
+"minute":"time","second":"time","day":"time","week":"time","month":"time","year":"time",
+"today":"time","tomorrow":"time","yesterday":"time","morning":"time","afternoon":"time",
+"evening":"time","night":"time","early":"time","late":"time","soon":"time","now":"time",
+"weekly":"time","monthly":"time","yearly":"time","date":"time","o'clock":"time",
+"period":"time","wage":"money",
+})
+
+# -- feelings: Cam xuc & tinh cach --
+MAP.update({
+"happy":"feel","sad":"feel","angry":"feel","tired":"feel","busy":"feel","excited":"feel",
+"bored":"feel","worried":"feel","nervous":"feel","stressed":"feel","relaxed":"feel",
+"surprised":"feel","scared":"feel","proud":"feel","disappointed":"feel","comfortable":"feel",
+"interested":"feel","curious":"feel","grateful":"feel","lonely":"feel","annoyed":"feel",
+"upset":"feel","glad":"feel","hopeful":"feel","motivated":"feel","serious":"feel",
+"strict":"feel","lazy":"feel","brave":"feel","careful":"feel","careless":"feel",
+"creative":"feel","ambitious":"feel","reliable":"feel","flexible":"feel","positive":"feel",
+"negative":"feel","quiet":"feel","loud":"feel","gentle":"feel","rude":"feel","fair":"feel",
+"strong":"feel","weak":"feel","helpful":"feel","mood":"feel","feeling":"feel",
+"attitude":"feel","afraid":"feel","embarrassed":"feel",
+})
+
+# -- connectors: Noi cau & trang tu --
+MAP.update({
+"because":"gram","but":"gram","so":"gram","however":"gram","although":"gram","though":"gram",
+"actually":"adv","honestly":"adv","basically":"adv","usually":"adv","often":"adv",
+"sometimes":"adv","always":"adv","never":"adv","really":"adv","maybe":"adv","probably":"adv",
+"definitely":"adv","especially":"adv","finally":"adv","suddenly":"adv","quickly":"adv",
+"slowly":"adv","carefully":"adv","already":"adv","still":"adv","yet":"adv","also":"adv",
+"either":"gram","instead":"adv","therefore":"gram","otherwise":"gram","besides":"gram",
+"anyway":"adv","even":"adv","almost":"adv","enough":"adv","quite":"adv","nearly":"adv",
+"recently":"adv","currently":"adv","for example":"gram","in fact":"gram","of course":"gram",
+"at least":"gram","by the way":"gram","as well":"gram","to be honest":"gram",
+"more or less":"gram","in general":"gram",
+})
+
+# -- comms: Dien thoai, email & hop --
+MAP.update({
+"hello":"mind","goodbye":"mind","please":"mind","thanks":"mind","sorry":"mind",
+"welcome":"mind","introduce":"mind","appointment":"work","agenda":"work","invite":"work",
+"attend":"work","present":"work","absent":"work","reply":"work","forward":"work",
+"attach":"work","subject":"work","regards":"work","sincerely":"work","dear":"work",
+"hold":"work","connect":"work","voicemail":"work","extension":"work","available":"work",
+"convenient":"adj","postpone":"work","reschedule":"work","summary":"work","note":"work",
+"question":"mind","answer":"mind","clear":"adj","understand":"mind","repeat":"mind",
+"speak":"mind","listen":"mind","conversation":"mind","follow-up":"work","wrap up":"work",
+"speak up":"mind","hold on":"work","go ahead":"mind","I didn't catch that":"mind",
+"get back to you":"work","on the phone":"work","keep in touch":"work",
+"look forward":"work","urgent":"adj","hang up":"work",
+})
+
+# -- outside: Di lai, an uong & mua sam --
+MAP.update({
+"travel":"travel","trip":"travel","airport":"travel","flight":"travel","ticket":"travel",
+"hotel":"travel","taxi":"travel","bus":"travel","station":"travel","map":"travel",
+"direction":"place","left":"place","right":"place","straight":"place","near":"place",
+"far":"place","corner":"place","traffic":"travel","parking":"travel","shop":"biz",
+"store":"biz","mall":"place","supermarket":"biz","size":"number","color":"adj","cart":"biz",
+"queue":"biz","luggage":"travel","passport":"travel","visa":"travel","abroad":"travel",
+"vacation":"travel","holiday":"time","weather":"nature","rain":"nature","sunny":"adj",
+"hot":"adj","cold":"adj","hungry":"body","thirsty":"body","distance":"number",
+"road":"travel","walk":"action","drive":"travel","ride":"travel","arrive":"travel",
+"depart":"travel","delay":"travel","reserve":"biz","try on":"clothes",
+})
+
+# -- body-health: giu TRON VEN trong chu de Co the & suc khoe --
+MAP.update({
+"body":"body","head":"body","face":"body","eye":"body","ear":"body","nose":"body",
+"mouth":"body","tooth":"body","hair":"body","neck":"body","shoulder":"body","arm":"body",
+"hand":"body","finger":"body","leg":"body","foot":"body","knee":"body","back":"body",
+"stomach":"body","heart":"body","blood":"body","skin":"body","bone":"body","brain":"body",
+"healthy":"body","ill":"body","illness":"body","sick":"body","disease":"body","pain":"body",
+"painful":"body","hurt":"body","injury":"body","injured":"body","wound":"body","cure":"body",
+"treatment":"body","medicine":"body","drug":"body","doctor":"body","nurse":"body",
+"hospital":"body","operation":"body","exercise":"body","fit":"body","rest":"body",
+"sleep":"body","asleep":"body","wake":"body","breathe":"body","weight":"body","blind":"body",
+"deaf":"body","dead":"body","death":"body","alive":"body","dangerous":"body",
+"medical":"body","fever":"body","mental":"body",
+})
+
+# -- describe-adj: tinh tu mo ta hay dung nhat --
+MAP.update({
+"important":"adj","different":"adj","similar":"adj","same":"adj","possible":"adj",
+"impossible":"adj","necessary":"adj","useful":"adj","popular":"adj","famous":"adj",
+"common":"adj","normal":"adj","special":"adj","main":"adj","basic":"adj","simple":"adj",
+"easy":"adj","difficult":"adj","hard":"adj","correct":"adj","wrong":"adj","true":"adj",
+"real":"adj","rich":"adj","poor":"adj","heavy":"adj","quick":"adj","fast":"adj","slow":"adj",
+"clean":"adj","dirty":"adj","safe":"adj","ready":"adj","complete":"adj","empty":"adj",
+"full":"adj","whole":"adj","perfect":"adj","terrible":"adj","lucky":"adj","modern":"adj",
+"traditional":"adj","local":"adj","national":"adj","public":"adj","private":"adj",
+"official":"adj","regular":"adj","recent":"adj","further":"adj","various":"adj",
+"certain":"adj","sure":"adj","likely":"adj","unlikely":"adj","obvious":"adj",
+"particular":"adj","general":"adj","specific":"adj","standard":"adj","typical":"adj",
+"actual":"adj","current":"adj","previous":"adj","effective":"adj","valuable":"adj",
+"suitable":"adj","reasonable":"adj","acceptable":"adj",
+})
+
+# -- movement: Dong tu chuyen dong & vi tri --
+MAP.update({
+"lie":"action","jump":"action","climb":"action","fall":"action","rise":"change",
+"push":"action","pull":"action","lift":"action","carry":"action","drop":"action",
+"catch":"action","throw":"action","enter":"action","return":"action","follow":"action",
+"pass":"action","cross":"action","reach":"action","visit":"travel","escape":"action",
+"hurry":"action","wait":"action","stay":"action","here":"place","there":"place",
+"above":"place","below":"place","under":"place","over":"place","between":"place",
+"among":"place","beside":"place","behind":"place","in front of":"place","inside":"place",
+"outside":"place","around":"place","through":"place","across":"place","along":"place",
+"toward":"place","backward":"place","up":"place","down":"place","top":"place",
+"bottom":"place","middle":"place","remove":"change","replace":"change","transport":"travel",
+"journey":"travel","route":"travel","position":"place","location":"place","spread":"action",
+"shake":"action","roll":"action","slide":"action","hang":"action","separate":"action",
+"divide":"number","gather":"action","collect":"action","step":"action","side":"place",
+})
+
+# ═══════════════════════════════════════════════════════════════════════
+# 2649 TU KHO OXFORD (chua co vi du)
+# ═══════════════════════════════════════════════════════════════════════
+
 # ── A ────────────────────────────────────────────────────────────────
 MAP.update({
 "a":"gram","abandon":"action","abandoned":"adj","ability":"mind","able":"adj",

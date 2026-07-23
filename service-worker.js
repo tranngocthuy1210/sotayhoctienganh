@@ -5,9 +5,9 @@
      hay thấy bản cũ sau khi cập nhật — đã sửa.)
    - Ảnh / manifest: dùng bản lưu ngay + âm thầm cập nhật (nhanh, ít đổi)
    - Bỏ qua yêu cầu khác nguồn (vd CDN Supabase, audio Tatoeba) để không chặn */
-var CACHE = "sotay-v11";
+var CACHE = "sotay-v12";
 var CORE = [
-  "./", "./index.html", "./data-vocab.js", "./data-vocab-plus.js", "./data-vocab-oxford.js", "./data-dictation-tatoeba.js", "./data-sentence-vn.js", "./config.js", "./manifest.json",
+  "./", "./index.html", "./data-vocab.js", "./data-vocab-plus.js", "./data-vocab-oxford.js", "./data-dictation-tatoeba.js", "./data-sentence-vn.js", "./data-topics.js", "./config.js", "./manifest.json",
   "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png", "./apple-touch-icon.png"
 ];
 
